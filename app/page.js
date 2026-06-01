@@ -1,0 +1,141 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
+import Reveal from './components/Reveal'
+
+const SLIDES = [
+  {
+    num: '01', title: 'Weddings & Couples', label: 'Weddings & Couples',
+    desc: 'Full-day documentary coverage for the adventurous couple.',
+    cta: 'Explore weddings', href: '/for-couples', img: '/images/wedding-bw-railing.jpg',
+  },
+  {
+    num: '02', title: 'Branding & Lifestyle', label: 'Branding & Lifestyle',
+    desc: 'Considered visual stories for restaurants, makers, and modern brands.',
+    cta: 'Explore branding', href: '/brand-photography', img: '/images/branding-ilnido-1.jpg',
+  },
+  {
+    num: '03', title: 'Portrait Sessions', label: 'Portrait Sessions',
+    desc: 'Intimate, editorial portraiture for individuals and creatives.',
+    cta: 'Explore portraits', href: '/portraits', img: '/images/portrait-guitar.jpg',
+  },
+]
+
+const CARDS = [
+  { num: '01', title: 'Weddings & Couples', desc: 'Documentary & editorial wedding coverage.', img: '/images/wedding-ring-bearers.jpg', href: '/for-couples' },
+  { num: '02', title: 'Branding & Lifestyle', desc: 'Product, food & commercial storytelling.', img: '/images/branding-bubles-1.jpg', href: '/brand-photography' },
+  { num: '03', title: 'Portrait Sessions', desc: 'Personal, lifestyle & creative portraits.', img: '/images/portrait-nyc.jpg', href: '/portraits' },
+]
+
+export default function Home() {
+  const [idx, setIdx] = useState(0)
+
+  useEffect(() => {
+    const t = setInterval(() => setIdx((i) => (i + 1) % SLIDES.length), 5500)
+    return () => clearInterval(t)
+  }, [])
+
+  return (
+    <>
+      <Nav variant="overlay" />
+      <Reveal />
+
+      {/* Hero slideshow */}
+      <div className="hero">
+        {SLIDES.map((s, i) => (
+          <div key={i} className={`hslide${i === idx ? ' active' : ''}`}>
+            <img src={s.img} alt={s.title} />
+            <div className="hscrim" />
+            <div className="hcontent">
+              <div className="hlabel">{s.num} &nbsp;—&nbsp; {s.label}</div>
+              <h1 className="hhead">{s.title}</h1>
+              <p className="hsub">{s.desc}</p>
+              <a className="harrow" href={s.href}>{s.cta} &nbsp;&rarr;</a>
+            </div>
+          </div>
+        ))}
+        <div className="hdots">
+          {SLIDES.map((_, i) => (
+            <button key={i} className={`hdot${i === idx ? ' on' : ''}`} aria-label={`Slide ${i + 1}`} onClick={() => setIdx(i)} />
+          ))}
+        </div>
+        <div className="hscroll">Scroll</div>
+      </div>
+
+      {/* Approach */}
+      <section className="section wrap approach reveal">
+        <div className="label">The approach</div>
+        <p className="serif">
+          I photograph the way moments actually <em>feel</em> — unhurried, honest,
+          a little cinematic. Whatever I&rsquo;m pointing the camera at, the result is
+          something you&rsquo;ll return to for decades.
+        </p>
+      </section>
+
+      {/* Services 3-up */}
+      <section className="wrap" style={{ padding: '20px 48px 120px' }}>
+        <div className="reveal center" style={{ marginBottom: '64px' }}>
+          <div className="label" style={{ marginBottom: '18px' }}>What I offer</div>
+          <h2 className="h2">Three ways to work together</h2>
+        </div>
+        <div className="services">
+          {CARDS.map((c, i) => (
+            <a key={i} className="scard reveal" href={c.href}>
+              <div className="imgblk" style={{ aspectRatio: '4 / 5' }}>
+                <img src={c.img} alt={c.title} />
+              </div>
+              <div className="slabel">{c.num}</div>
+              <div className="stitle">{c.title}</div>
+              <div className="sdesc">{c.desc}</div>
+              <div className="nlink" style={{ marginTop: '14px' }}>Explore</div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      {/* Editorial band */}
+      <div className="wrap reveal">
+        <div className="imgblk" style={{ height: '600px' }}>
+          <img src="/images/wedding-flower-bridge.jpg" alt="Wedding couple on the flower bridge" />
+        </div>
+      </div>
+
+      {/* Quote */}
+      <section className="section quote">
+        <div className="mark reveal">&ldquo;</div>
+        <p className="reveal">
+          Pete will make sure your photos are the kind you want to look at time and
+          time again — because they truly are a work of art.
+        </p>
+        <div className="label reveal">S &amp; M &nbsp;·&nbsp; Married in Connecticut</div>
+      </section>
+
+      {/* About teaser */}
+      <section className="section wrap split reveal">
+        <div className="imgblk" style={{ height: '560px' }}>
+          <img src="/images/wedding-venue-cellar.jpg" alt="On location" />
+        </div>
+        <div>
+          <div className="label" style={{ marginBottom: '26px' }}>Behind the lens</div>
+          <h2>A musician&rsquo;s eye,<br />an editor&rsquo;s <em>restraint</em></h2>
+          <p>Berklee-trained musician turned photographer and designer. A decade behind the camera across two coasts, from intimate elopements to two-day celebrations of 200.</p>
+          <p>Every frame is approached like a creative direction — composed, intentional, and unmistakably yours.</p>
+          <a className="arrow" href="/about" style={{ marginTop: '16px', display: 'inline-block' }}>Read the full story</a>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="section cta">
+        <div className="label reveal" style={{ marginBottom: '30px' }}>Now booking 2026 &amp; 2027</div>
+        <h2 className="reveal">Let&rsquo;s create something<br /><em>worth keeping</em></h2>
+        <div className="reveal" style={{ marginTop: '44px' }}>
+          <a className="btn btn-light" href="/for-couples">Begin an inquiry</a>
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  )
+}
