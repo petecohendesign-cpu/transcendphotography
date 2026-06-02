@@ -56,8 +56,13 @@ export default function Weddings() {
         title={<>Your day, preserved<br />in images you'll treasure forever</>}
         slides={[
           { src: '/images/wedding-flower-bridge.jpg', alt: 'Wedding couple on the flower bridge' },
+          { src: '/images/wedding-groomsmen-formal.jpg', alt: 'Groom with groomsmen formal portrait' },
+          { src: '/images/wedding-rings-hands.jpg',    alt: 'Bride and groom rings detail' },
           { src: '/images/wedding-bw-railing.jpg',    alt: 'Black and white couple portrait' },
+          { src: '/images/wedding-sparkler-exit.jpg',  alt: 'Bride and groom sparkler exit' },
           { src: '/images/wedding-bride-reading.jpg', alt: 'Bride reading before the ceremony' },
+          { src: '/images/wedding-first-dance-sparklers.jpg',  alt: 'First dance with sparklers' },
+          { src: '/images/wedding-bride-flower-girl.jpg',  alt: 'Bride with flower girl' },
           { src: '/images/wedding-ring-bearers.jpg',  alt: 'Ring bearers at the ceremony' },
           { src: '/images/wedding-venue-cellar.jpg',  alt: 'Wedding venue cellar' },
         ]}

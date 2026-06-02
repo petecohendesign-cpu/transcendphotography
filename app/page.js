@@ -9,7 +9,7 @@ const SLIDES = [
   {
     num: '01', title: 'Weddings & Couples', label: 'Weddings & Couples',
     desc: 'Full-day documentary coverage for the adventurous couple.',
-    cta: 'Explore weddings', href: '/for-couples', img: '/images/wedding-bw-railing.jpg',
+    cta: 'Explore weddings', href: '/for-couples', img: '/images/wedding-first-dance-sparklers.jpg',
   },
   {
     num: '02', title: 'Branding & Lifestyle', label: 'Branding & Lifestyle',
@@ -24,7 +24,7 @@ const SLIDES = [
 ]
 
 const CARDS = [
-  { num: '01', title: 'Weddings & Couples', desc: 'Documentary & editorial wedding coverage.', img: '/images/wedding-ring-bearers.jpg', href: '/for-couples' },
+  { num: '01', title: 'Weddings & Couples', desc: 'Documentary & editorial wedding coverage.', img: '/images/wedding-groomsmen-formal.jpg', href: '/for-couples' },
   { num: '02', title: 'Branding & Lifestyle', desc: 'Product, food & commercial storytelling.', img: '/images/branding-bubles-1.jpg', href: '/brand-photography' },
   { num: '03', title: 'Portrait Sessions', desc: 'Personal, lifestyle & creative portraits.', img: '/images/portrait-nyc.jpg', href: '/portraits' },
 ]
