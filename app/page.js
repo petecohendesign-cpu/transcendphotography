@@ -136,7 +136,7 @@ export default function Home() {
           <p style={{ fontSize: '16px', fontWeight: 300, color: 'var(--taupe)', lineHeight: 1.6, marginBottom: '28px', maxWidth: '640px', margin: '0 auto 28px' }}>
             Ideas on light, composition, and the philosophy behind the work. Essays and guides to help you think differently about how photographs can tell your story.
           </p>
-          <a href="https://www.transcendphoto.net/blog" target="_blank" rel="noopener noreferrer" className="arrow" style={{ display: 'inline-block' }}>Visit the blog</a>
+          <a href="/blog" className="arrow" style={{ display: 'inline-block' }}>Visit the blog</a>
         </div>
       </section>
 
