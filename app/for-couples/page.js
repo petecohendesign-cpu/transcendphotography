@@ -4,6 +4,8 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
 import HoneyBook from '../components/HoneyBook'
+import PageHeroSlideshow from '../components/PageHeroSlideshow'
+import QuickContact from '../components/QuickContact'
 
 const OFFERS = [
   ['All-day coverage', 'From getting ready to the last dance — every moment, captured with intention.'],
@@ -49,14 +51,19 @@ export default function Weddings() {
       <Nav variant="overlay" />
       <Reveal />
 
-      <header className="pagehero">
-        <img src="/images/wedding-flower-bridge.jpg" alt="Wedding couple on the flower bridge" />
-        <div className="hscrim" />
-        <div className="inner">
-          <div className="label">Weddings &amp; Couples</div>
-          <h1>Vibrant &amp; timeless<br />wedding photography</h1>
-        </div>
-      </header>
+      <PageHeroSlideshow
+        label="Weddings & Couples"
+        title={<>Your day, preserved<br />in images you'll treasure forever</>}
+        slides={[
+          { src: '/images/wedding-flower-bridge.jpg', alt: 'Wedding couple on the flower bridge' },
+          { src: '/images/wedding-bw-railing.jpg',    alt: 'Black and white couple portrait' },
+          { src: '/images/wedding-bride-reading.jpg', alt: 'Bride reading before the ceremony' },
+          { src: '/images/wedding-ring-bearers.jpg',  alt: 'Ring bearers at the ceremony' },
+          { src: '/images/wedding-venue-cellar.jpg',  alt: 'Wedding venue cellar' },
+        ]}
+      />
+
+      <QuickContact />
 
       <section className="section wrap approach reveal">
         <div className="label">For the two of you</div>

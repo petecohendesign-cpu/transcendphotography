@@ -4,6 +4,8 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
 import HoneyBook from '../components/HoneyBook'
+import PageHeroSlideshow from '../components/PageHeroSlideshow'
+import QuickContact from '../components/QuickContact'
 
 const OFFERS = [
   ['Personal branding', 'Headshots and brand portraits for creatives, founders, and professionals.'],
@@ -49,14 +51,17 @@ export default function Portraits() {
       <Nav variant="overlay" />
       <Reveal />
 
-      <header className="pagehero">
-        <img src="/images/portrait-guitar.jpg" alt="Editorial portrait of a musician" />
-        <div className="hscrim" />
-        <div className="inner">
-          <div className="label">Portrait Sessions</div>
-          <h1>Portraits that feel<br />like you</h1>
-        </div>
-      </header>
+      <PageHeroSlideshow
+        label="Portrait Sessions"
+        title={<>Portraits that capture<br />who you really are</>}
+        slides={[
+          { src: '/images/portrait-guitar.jpg', alt: 'Editorial portrait of a musician' },
+          { src: '/images/portrait-nyc.jpg',    alt: 'Editorial portrait in the city' },
+          { src: '/images/portrait-studio.jpg', alt: 'Studio portrait' },
+        ]}
+      />
+
+      <QuickContact />
 
       <section className="section wrap approach reveal">
         <div className="label">For individuals & creatives</div>

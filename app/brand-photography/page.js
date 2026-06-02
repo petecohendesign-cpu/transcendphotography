@@ -4,6 +4,8 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
 import HoneyBook from '../components/HoneyBook'
+import PageHeroSlideshow from '../components/PageHeroSlideshow'
+import QuickContact from '../components/QuickContact'
 
 const OFFERS = [
   ['Product photography', 'Clean, considered product imagery and styled compositions that sell.'],
@@ -50,14 +52,19 @@ export default function Branding() {
       <Nav variant="overlay" />
       <Reveal />
 
-      <header className="pagehero">
-        <img src="/images/branding-ilnido-1.jpg" alt="Editorial branding photography" />
-        <div className="hscrim" />
-        <div className="inner">
-          <div className="label">Branding &amp; Lifestyle</div>
-          <h1>Visual stories that<br />put your brand forward</h1>
-        </div>
-      </header>
+      <PageHeroSlideshow
+        label="Branding & Lifestyle"
+        title={<>Photography that makes<br />your brand unmistakable</>}
+        slides={[
+          { src: '/images/branding-ilnido-1.jpg',    alt: 'Editorial branding photography' },
+          { src: '/images/branding-claudine-1.jpg',  alt: 'Claudine Bakery' },
+          { src: '/images/branding-bubles-1.jpg',    alt: 'Bubles product photography' },
+          { src: '/images/branding-muha-box.jpg',    alt: 'Muha Meds packaging' },
+          { src: '/images/branding-ilnido-3.jpg',    alt: 'Il Nido detail' },
+        ]}
+      />
+
+      <QuickContact />
 
       <section className="section wrap approach reveal">
         <div className="label">For brands</div>

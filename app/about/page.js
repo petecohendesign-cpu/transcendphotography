@@ -39,10 +39,34 @@ export default function About() {
       </section>
 
       <section className="section" style={{ background: 'var(--bone-2)' }}>
-        <div className="wrap" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px', textAlign: 'center' }}>
+        <div className="wrap" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '40px', textAlign: 'center' }}>
           <div className="reveal"><div className="serif" style={{ fontSize: '56px', color: 'var(--clay)', fontWeight: 300 }}>200+</div><div className="label" style={{ marginTop: '8px' }}>Weddings</div></div>
           <div className="reveal"><div className="serif" style={{ fontSize: '56px', color: 'var(--clay)', fontWeight: 300 }}>50+</div><div className="label" style={{ marginTop: '8px' }}>Brand projects</div></div>
-          <div className="reveal"><div className="serif" style={{ fontSize: '56px', color: 'var(--clay)', fontWeight: 300 }}>10+</div><div className="label" style={{ marginTop: '8px' }}>Years</div></div>
+          <div className="reveal"><div className="serif" style={{ fontSize: '56px', color: 'var(--clay)', fontWeight: 300 }}>300+</div><div className="label" style={{ marginTop: '8px' }}>Portrait sessions</div></div>
+          <div className="reveal"><div className="serif" style={{ fontSize: '56px', color: 'var(--clay)', fontWeight: 300 }}>10+</div><div className="label" style={{ marginTop: '8px' }}>Years experience</div></div>
+        </div>
+      </section>
+
+      <section className="section wrap">
+        <div className="reveal center" style={{ marginBottom: '60px' }}>
+          <div className="label" style={{ marginBottom: '16px' }}>What clients say</div>
+          <h2 className="h2">Trusted by couples, brands &amp; creatives</h2>
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '60px' }}>
+          <div className="reveal">
+            <p style={{ fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic', fontWeight: 300, fontSize: '20px', lineHeight: 1.5, color: 'var(--espresso)', marginBottom: '18px' }}>
+              &ldquo;Pete will make sure your photos are the kind you want to look at time and time again — because they truly are a work of art.&rdquo;
+            </p>
+            <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--espresso)' }}>S &amp; M</div>
+            <div style={{ fontSize: '13px', color: 'var(--taupe)' }}>Married in Connecticut</div>
+          </div>
+          <div className="reveal">
+            <p style={{ fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic', fontWeight: 300, fontSize: '20px', lineHeight: 1.5, color: 'var(--espresso)', marginBottom: '18px' }}>
+              &ldquo;We are filled with fond memories of how special our day was — and how easy and fun it was to shoot them with Pete.&rdquo;
+            </p>
+            <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--espresso)' }}>T &amp; M</div>
+            <div style={{ fontSize: '13px', color: 'var(--taupe)' }}>Celebrated in California</div>
+          </div>
         </div>
       </section>
 

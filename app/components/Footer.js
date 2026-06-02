@@ -6,9 +6,9 @@ export default function Footer() {
         <div className="fcontact">pete@transcendphoto.net &nbsp;·&nbsp; 203.671.5273</div>
       </div>
       <div className="flinks">
+        <a className="nlink" href="https://www.transcendphoto.net/blog" target="_blank" rel="noopener noreferrer">Blog</a>
         <a className="nlink" href="https://instagram.com/transcendwedding" target="_blank" rel="noopener noreferrer">Instagram</a>
         <a className="nlink" href="https://facebook.com/transcendphoto" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <a className="nlink" href="/">Journal</a>
       </div>
     </footer>
   )

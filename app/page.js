@@ -126,6 +126,20 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Blog teaser */}
+      <section className="section wrap reveal">
+        <div className="center" style={{ marginBottom: '60px' }}>
+          <div className="label" style={{ marginBottom: '16px' }}>Insights &amp; perspectives</div>
+          <h2 className="h2">Read the photography journal</h2>
+        </div>
+        <div style={{ background: 'var(--bone-2)', padding: '48px', borderRadius: '2px', textAlign: 'center', marginBottom: '40px' }}>
+          <p style={{ fontSize: '16px', fontWeight: 300, color: 'var(--taupe)', lineHeight: 1.6, marginBottom: '28px', maxWidth: '640px', margin: '0 auto 28px' }}>
+            Ideas on light, composition, and the philosophy behind the work. Essays and guides to help you think differently about how photographs can tell your story.
+          </p>
+          <a href="https://www.transcendphoto.net/blog" target="_blank" rel="noopener noreferrer" className="arrow" style={{ display: 'inline-block' }}>Visit the blog</a>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="section cta">
         <div className="label reveal" style={{ marginBottom: '30px' }}>Now booking 2026 &amp; 2027</div>
