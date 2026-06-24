@@ -4,6 +4,24 @@ import matter from 'gray-matter'
 import { marked } from 'marked'
 
 const postsDirectory = path.join(process.cwd(), 'content/posts')
+const imagesDirectory = path.join(process.cwd(), 'public/blog-images')
+
+function getGalleryImages(slug) {
+  if (!fs.existsSync(imagesDirectory)) return []
+
+  const files = fs.readdirSync(imagesDirectory)
+  return files
+    .filter(f => {
+      // Match slug-N.jpg or slug-N.png (not featured)
+      return f.match(new RegExp(`^${slug}-\\d+\\.(jpg|jpeg|png)$`, 'i'))
+    })
+    .sort((a, b) => {
+      const numA = parseInt(a.replace(`${slug}-`, '').replace(/\.[^.]+$/, ''))
+      const numB = parseInt(b.replace(`${slug}-`, '').replace(/\.[^.]+$/, ''))
+      return numA - numB
+    })
+    .map(f => `/blog-images/${f}`)
+}
 
 export function getAllPosts() {
   if (!fs.existsSync(postsDirectory)) {
@@ -38,21 +56,12 @@ export function getPostBySlug(slug) {
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
-  // Extract gallery images before rendering
-  const galleryMatch = content.match(/## Gallery\n\n([\s\S]*?)(?:\n\n|$)/)
-  const galleryImages = []
+  // Strip any legacy ## Gallery sections from the markdown
+  const cleanContent = content.replace(/## Gallery[\s\S]*$/m, '').replace(/\n---\n$/m, '')
+  const htmlContent = marked(cleanContent)
 
-  if (galleryMatch) {
-    const galleryContent = galleryMatch[1]
-    const imgMatches = galleryContent.matchAll(/<img[^>]+src="([^">]+)"[^>]*\/?>/g)
-    for (const match of imgMatches) {
-      galleryImages.push(match[1])
-    }
-  }
-
-  // Remove gallery section from content before rendering
-  const contentWithoutGallery = content.replace(/## Gallery[\s\S]*$/m, '').replace(/\n---\n$/m, '')
-  const htmlContent = marked(contentWithoutGallery)
+  // Auto-detect gallery images from filesystem
+  const galleryImages = getGalleryImages(slug)
 
   return {
     slug,

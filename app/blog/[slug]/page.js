@@ -54,7 +54,11 @@ export default function BlogPost({ params }) {
 
         {post.featuredImage && (
           <div style={{ marginBottom: '60px' }}>
-            <img src={post.featuredImage} alt={post.title} style={{ width: '100%', borderRadius: '2px' }} />
+            <img
+              src={post.featuredImage}
+              alt={`${post.title} — Pete Cohen Photography, Los Angeles`}
+              style={{ width: '100%', borderRadius: '2px' }}
+            />
           </div>
         )}
 
@@ -69,7 +73,12 @@ export default function BlogPost({ params }) {
             <h2 style={{ fontSize: '28px', fontFamily: 'Cormorant Garamond, serif', fontWeight: 300, marginBottom: '24px' }}>
               Gallery
             </h2>
-            <BlogGallery images={post.galleryImages} />
+            <BlogGallery
+              images={post.galleryImages.map((src, i) => ({
+                src,
+                alt: `${post.title} — photo ${i + 1} by Pete Cohen, Los Angeles photographer`,
+              }))}
+            />
           </div>
         )}
       </article>

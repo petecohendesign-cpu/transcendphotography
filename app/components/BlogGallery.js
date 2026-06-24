@@ -54,18 +54,20 @@ export default function BlogGallery({ images }) {
         ref={scrollContainerRef}
         onScroll={checkScroll}
       >
-        {images.map((src, i) => (
-          <div key={i} className="gallery-image-wrapper">
-            <img
-              src={src}
-              alt={`Gallery image ${i + 1}`}
-              className="gallery-image"
-              style={{
-                '--image-index': i,
-              }}
-            />
-          </div>
-        ))}
+        {images.map((image, i) => {
+          const src = typeof image === 'string' ? image : image.src
+          const alt = typeof image === 'string' ? `Gallery image ${i + 1}` : image.alt
+          return (
+            <div key={i} className="gallery-image-wrapper">
+              <img
+                src={src}
+                alt={alt}
+                className="gallery-image"
+                style={{ '--image-index': i }}
+              />
+            </div>
+          )
+        })}
       </div>
 
       <button
