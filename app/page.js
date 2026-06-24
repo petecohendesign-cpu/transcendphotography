@@ -42,36 +42,32 @@ export default function Home() {
       <Nav variant="overlay" />
       <Reveal />
 
-      {/* Hero slideshow */}
-      <div className="hero">
+      {/* Hero triptych */}
+      <div className="hero-triptych">
         {SLIDES.map((s, i) => (
-          <div key={i} className={`hslide${i === idx ? ' active' : ''}`}>
+          <div
+            key={i}
+            className={`hpanel${i === idx ? ' active' : ''}`}
+            onClick={() => setIdx(i)}
+          >
             <img src={s.img} alt={s.title} />
-            <div className="hscrim" />
-            <div className="hcontent">
+            <div className="hpanel-scrim" />
+
+            {/* Inactive label */}
+            <div className="hpanel-side-label">
+              <span className="hpanel-side-num">{s.num}</span>
+              <span className="hpanel-side-title">{s.label}</span>
+            </div>
+
+            {/* Active content */}
+            <div className="hpanel-content">
               <div className="hlabel">{s.num} &nbsp;—&nbsp; {s.label}</div>
               <h1 className="hhead">{s.title}</h1>
               <p className="hsub">{s.desc}</p>
-              <a className="harrow" href={s.href}>{s.cta} &nbsp;&rarr;</a>
+              <a className="harrow" href={s.href} onClick={e => e.stopPropagation()}>{s.cta} &nbsp;&rarr;</a>
             </div>
           </div>
         ))}
-
-        {/* Service filmstrip */}
-        <div className="hfilm">
-          {SLIDES.map((s, i) => (
-            <button
-              key={i}
-              className={`hfilm-card${i === idx ? ' active' : ''}`}
-              onClick={() => setIdx(i)}
-              aria-label={`View ${s.title}`}
-            >
-              <span className="hfilm-num">{s.num}</span>
-              <span className="hfilm-title">{s.label}</span>
-            </button>
-          ))}
-        </div>
-
         <div className="hscroll">Scroll</div>
       </div>
 
