@@ -3,7 +3,7 @@ title: "Why Is Wedding Photography So Expensive? The Real Costs Explained"
 date: "2024-03-10"
 category: "Wedding Photography"
 excerpt: "Wedding photography often surprises couples with its price tag. Here's an honest breakdown of what you're actually paying for — and why it's worth it."
-featuredImage: "/blog-images/wedding-photographer-cost-los-angeles/wedding-photographer-cost-los-angeles-1.jpg"
+featuredImage: "/blog-images/wedding-photography-understanding-the-costs-featured.png"
 ---
 
 When couples start planning their weddings, photography is almost always one of the bigger line items — and it often catches people off guard. As a Los Angeles wedding photographer, I get asked about pricing constantly. Here's an honest look at what goes into the cost.

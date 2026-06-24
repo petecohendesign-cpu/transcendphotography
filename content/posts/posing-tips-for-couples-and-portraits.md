@@ -3,7 +3,7 @@ title: "Top Posing Tips for Engagement, Wedding, and Portrait Photos"
 date: "2025-04-25"
 category: "wedding"
 excerpt: "Whether you’re planning your engagement shoot, preparing for your wedding day, or booking a lifestyle portrait session, knowing how to pose confidentl..."
-featuredImage: ""
+featuredImage: "/blog-images/pasadena-city-hall-engagement-los-angeles-0.jpg"
 ---
 
 Whether you’re planning your engagement shoot, preparing for your wedding day, or booking a lifestyle portrait session, knowing how to pose confidently can make a world of difference in how your photos turn out. As a professional photographer based in Los Angeles, I’ve had the honor of capturing countless couples and individuals during some of life’s most memorable moments. Today, I’m sharing some of my top tips for posing, designed to help you look and feel your best, whether you're posing solo or with your partner.

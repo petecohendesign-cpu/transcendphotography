@@ -3,7 +3,7 @@ title: "What to Wear for Your Engagement Photos: Tips for Adventurous and Creati
 date: "2024-03-21"
 category: "Engagement Photography"
 excerpt: "Your engagement photo outfits say a lot about your love story. Here's how to choose looks that feel authentic, photograph beautifully, and make you both feel confident."
-featuredImage: "/blog-images/pasadena-city-hall-engagement-los-angeles/pasadena-city-hall-engagement-los-angeles-1.jpg"
+featuredImage: "/blog-images/what-to-wear-for-engagement-photos-featured.jpg"
 ---
 
 Your engagement photo outfits say a lot about your love story — so it's worth thinking them through. As a Los Angeles engagement photographer, I've seen how the right wardrobe choice can elevate a session from good to extraordinary. Here's what I tell every couple before we shoot.

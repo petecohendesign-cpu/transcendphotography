@@ -3,7 +3,7 @@ title: "11 Common Wedding Photography Mistakes and How to Avoid Them"
 date: "2024-03-18"
 category: "Wedding Photography"
 excerpt: "Even the most carefully planned weddings can run into photography pitfalls. Here are 11 mistakes couples make — and exactly how to avoid them."
-featuredImage: "/blog-images/bel-air-bay-club-wedding-venue-los-angeles/bel-air-bay-club-wedding-venue-los-angeles-1.jpg"
+featuredImage: "/blog-images/common-wedding-photography-mistakes-featured.jpg"
 ---
 
 Your wedding day is one of life's most significant milestones, and the photos are what you'll have long after the flowers fade and the cake is gone. Understanding the most common photography pitfalls — before the day arrives — makes all the difference.

@@ -63,9 +63,20 @@ export function getPostBySlug(slug) {
   // Auto-detect gallery images from filesystem
   const galleryImages = getGalleryImages(slug)
 
+  // Also check for a -featured image in blog-images/
+  const featuredCandidates = [
+    path.join(process.cwd(), 'public/blog-images', `${slug}-featured.jpg`),
+    path.join(process.cwd(), 'public/blog-images', `${slug}-featured.png`),
+  ]
+  const autoFeatured = featuredCandidates.find(p => fs.existsSync(p))
+  const featuredImage = data.featuredImage ||
+    (autoFeatured ? `/blog-images/${slug}-featured.${autoFeatured.endsWith('.png') ? 'png' : 'jpg'}` : null) ||
+    (galleryImages[0] ?? null)
+
   return {
     slug,
     ...data,
+    featuredImage,
     content: htmlContent,
     galleryImages,
   }

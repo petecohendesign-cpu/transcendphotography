@@ -3,7 +3,7 @@ title: "What Is Brand Photography and Why Does It Matter for Your Business?"
 date: "2025-09-23"
 category: "branding"
 excerpt: "When you think about your brand, what comes to mind? Maybe it’s your logo, your colors, or the words you use to describe your business. But there’s on..."
-featuredImage: ""
+featuredImage: "/blog-images/branding-photography-claudine-bakery-0.jpg"
 ---
 
 When you think about your brand, what comes to mind? Maybe it’s your logo, your colors, or the words you use to describe your business. But there’s one piece that ties everything together and makes an instant impression: photography.

@@ -3,7 +3,7 @@ title: "A Photographer’s Guide to a Stress-Free Wedding Day Timeline"
 date: "2025-08-22"
 category: "wedding"
 excerpt: "Your wedding day is one of the most memorable days of your life, and your photos will be the lasting record of every smile, tear, and joyful moment. B..."
-featuredImage: ""
+featuredImage: "/blog-images/wedding-photographer-questions-before-booking-0.jpg"
 ---
 
 Your wedding day is one of the most memorable days of your life, and your photos will be the lasting record of every smile, tear, and joyful moment. But without a well-planned timeline, even the most beautiful weddings can feel rushed and chaotic. As a Los Angeles wedding photographer, I’ve helped countless couples design stress-free wedding day schedules that keep everything running smoothly while capturing stunning images along the way.

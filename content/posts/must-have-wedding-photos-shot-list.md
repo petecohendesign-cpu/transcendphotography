@@ -3,7 +3,7 @@ title: "11 Must-Have Wedding Photos You Can't Skip"
 date: "2024-03-10"
 category: "Wedding Photography"
 excerpt: "A great wedding album covers more than the obvious moments. Here are the 11 photos every couple should make sure are on their photographer's radar."
-featuredImage: "/blog-images/wedding-photographer-questions-before-booking/wedding-photographer-questions-before-booking-1.jpg"
+featuredImage: "/blog-images/must-have-wedding-photos-shot-list-featured.jpg"
 ---
 
 A great wedding album isn't just a highlight reel of the big moments — it's a complete story of the day, told through both the milestones and the quiet details in between. Here are the 11 shots I make sure to capture at every wedding, and why each one matters.
