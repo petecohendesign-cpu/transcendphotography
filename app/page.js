@@ -42,26 +42,49 @@ export default function Home() {
       <Nav variant="overlay" />
       <Reveal />
 
-      {/* Hero slideshow */}
-      <div className="hero">
-        {SLIDES.map((s, i) => (
-          <div key={i} className={`hslide${i === idx ? ' active' : ''}`}>
-            <img src={s.img} alt={s.title} />
-            <div className="hscrim" />
-            <div className="hcontent">
-              <div className="hlabel">{s.num} &nbsp;—&nbsp; {s.label}</div>
-              <h1 className="hhead">{s.title}</h1>
-              <p className="hsub">{s.desc}</p>
-              <a className="harrow" href={s.href}>{s.cta} &nbsp;&rarr;</a>
+      {/* Hero slideshow with thumbnails */}
+      <div className="hero-container">
+        <div className="hero">
+          {SLIDES.map((s, i) => (
+            <div key={i} className={`hslide${i === idx ? ' active' : ''}`}>
+              <img src={s.img} alt={s.title} />
+              <div className="hscrim" />
+              <div className="hcontent">
+                <div className="hlabel">{s.num} &nbsp;—&nbsp; {s.label}</div>
+                <h1 className="hhead">{s.title}</h1>
+                <p className="hsub">{s.desc}</p>
+                <a className="harrow" href={s.href}>{s.cta} &nbsp;&rarr;</a>
+              </div>
             </div>
+          ))}
+          <div className="hdots">
+            {SLIDES.map((_, i) => (
+              <button key={i} className={`hdot${i === idx ? ' on' : ''}`} aria-label={`Slide ${i + 1}`} onClick={() => setIdx(i)} />
+            ))}
           </div>
-        ))}
-        <div className="hdots">
-          {SLIDES.map((_, i) => (
-            <button key={i} className={`hdot${i === idx ? ' on' : ''}`} aria-label={`Slide ${i + 1}`} onClick={() => setIdx(i)} />
+          <div className="hscroll">Scroll</div>
+        </div>
+
+        {/* Service thumbnails sidebar */}
+        <div className="hero-thumbnails">
+          {SLIDES.map((s, i) => (
+            i !== idx && (
+              <button
+                key={i}
+                className="hthumbnail"
+                onClick={() => setIdx(i)}
+                aria-label={`View ${s.title}`}
+              >
+                <div className="hthumbnail-image">
+                  <img src={s.img} alt={s.title} />
+                </div>
+                <div className="hthumbnail-content">
+                  <div className="hthumbnail-label">{s.label}</div>
+                </div>
+              </button>
+            )
           ))}
         </div>
-        <div className="hscroll">Scroll</div>
       </div>
 
       {/* Approach */}
