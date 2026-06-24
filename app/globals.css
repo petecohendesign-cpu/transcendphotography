@@ -248,73 +248,72 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
 .rolodex-wrap {
   position: relative;
   width: 100%;
-  height: 620px;
+  height: 680px;
   overflow: hidden;
   background: var(--espresso-2);
-  cursor: grab;
   user-select: none;
 }
-.rolodex-wrap:active { cursor: grabbing; }
 .rolodex-hint {
   position: absolute;
-  bottom: 28px; left: 50%;
+  bottom: 24px; left: 50%;
   transform: translateX(-50%);
-  font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase;
-  color: rgba(245,241,234,.35);
+  font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase;
+  color: rgba(245,241,234,.3);
   z-index: 10;
   pointer-events: none;
 }
 .rolodex-scene {
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
-  perspective: 1400px;
-  perspective-origin: 50% 50%;
+  /* Perspective from slightly above so you see cards flipping up from behind */
+  perspective: 1100px;
+  perspective-origin: 50% 38%;
 }
 .rolodex-ring {
   position: relative;
   width: 0; height: 0;
   transform-style: preserve-3d;
-  transition: none;
 }
 .rolodex-card {
   position: absolute;
-  width: 300px;
-  height: 420px;
-  top: -210px;
-  left: -150px;
-  transform-style: preserve-3d;
+  width: 320px;
+  height: 440px;
+  /* Center the card on the ring axis */
+  top: -220px;
+  left: -160px;
   cursor: pointer;
-  transition: opacity .4s ease;
-  border-radius: 2px;
   overflow: hidden;
+  border-radius: 2px;
+  /* Smooth brightness transition */
+  transition: filter .5s ease;
+  backface-visibility: hidden;
 }
 .rolodex-card img {
   width: 100%; height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform .6s cubic-bezier(.22,1,.36,1);
+  pointer-events: none;
 }
-.rolodex-card.active img { transform: scale(1.03); }
 .rolodex-card-label {
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  padding: 40px 20px 20px;
-  background: linear-gradient(to top, rgba(10,8,6,.8), transparent);
-  font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase;
-  color: rgba(245,241,234,.8);
+  padding: 50px 22px 22px;
+  background: linear-gradient(to top, rgba(10,8,6,.85), transparent);
+  font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase;
+  color: rgba(245,241,234,.85);
   font-weight: 300;
   opacity: 0;
-  transition: opacity .4s ease;
+  transition: opacity .5s ease;
 }
 .rolodex-card.active .rolodex-card-label { opacity: 1; }
 
 @media (max-width: 768px) {
-  .rolodex-wrap { height: 480px; }
-  .rolodex-card { width: 220px; height: 300px; top: -150px; left: -110px; }
+  .rolodex-wrap { height: 520px; }
+  .rolodex-card { width: 240px; height: 340px; top: -170px; left: -120px; }
 }
 @media (max-width: 480px) {
-  .rolodex-wrap { height: 400px; }
-  .rolodex-card { width: 180px; height: 250px; top: -125px; left: -90px; }
+  .rolodex-wrap { height: 420px; }
+  .rolodex-card { width: 190px; height: 270px; top: -135px; left: -95px; }
 }
 
 /* ---------- services 3-up ---------- */
