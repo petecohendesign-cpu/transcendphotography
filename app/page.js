@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Reveal from './components/Reveal'
+import RolodexGallery from './components/RolodexGallery'
 
 const SLIDES = [
   {
@@ -73,6 +74,15 @@ export default function Home() {
 
         <div className="hscroll">Scroll</div>
       </div>
+
+      {/* Rolodex portfolio */}
+      <section>
+        <div className="wrap center reveal" style={{ padding: '90px 48px 48px' }}>
+          <div className="label" style={{ marginBottom: '16px' }}>The work</div>
+          <h2 className="h2">One eye. Three disciplines.</h2>
+        </div>
+        <RolodexGallery />
+      </section>
 
       {/* Approach */}
       <section className="section wrap approach reveal">
