@@ -66,14 +66,8 @@ export default function Home() {
               onClick={() => setIdx(i)}
               aria-label={`View ${s.title}`}
             >
-              <div className="hfilm-img">
-                <img src={s.img} alt={s.title} />
-                <div className="hfilm-scrim" />
-              </div>
-              <div className="hfilm-info">
-                <span className="hfilm-num">{s.num}</span>
-                <span className="hfilm-title">{s.label}</span>
-              </div>
+              <span className="hfilm-num">{s.num}</span>
+              <span className="hfilm-title">{s.label}</span>
             </button>
           ))}
         </div>
