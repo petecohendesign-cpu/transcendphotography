@@ -10,6 +10,24 @@ export async function generateStaticParams() {
   return slugs.map(slug => ({ slug }))
 }
 
+export async function generateMetadata({ params }) {
+  const post = getPostBySlug(params.slug)
+  if (!post) return {}
+  return {
+    title: `${post.title} | Transcend Photography`,
+    description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: 'article',
+      images: post.featuredImage ? [{ url: post.featuredImage }] : [],
+    },
+    alternates: {
+      canonical: `https://www.transcendphoto.net/blog/${params.slug}`,
+    },
+  }
+}
+
 export default function BlogPost({ params }) {
   const post = getPostBySlug(params.slug)
 
