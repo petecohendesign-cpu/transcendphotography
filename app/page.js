@@ -42,32 +42,35 @@ export default function Home() {
       <Nav variant="overlay" />
       <Reveal />
 
-      {/* Hero triptych */}
-      <div className="hero-triptych">
+      {/* Hero slideshow */}
+      <div className="hero">
         {SLIDES.map((s, i) => (
-          <div
-            key={i}
-            className={`hpanel${i === idx ? ' active' : ''}`}
-            onClick={() => setIdx(i)}
-          >
+          <div key={i} className={`hslide${i === idx ? ' active' : ''}`}>
             <img src={s.img} alt={s.title} />
-            <div className="hpanel-scrim" />
-
-            {/* Inactive label */}
-            <div className="hpanel-side-label">
-              <span className="hpanel-side-num">{s.num}</span>
-              <span className="hpanel-side-title">{s.label}</span>
-            </div>
-
-            {/* Active content */}
-            <div className="hpanel-content">
-              <div className="hlabel">{s.num} &nbsp;—&nbsp; {s.label}</div>
-              <h1 className="hhead">{s.title}</h1>
-              <p className="hsub">{s.desc}</p>
-              <a className="harrow" href={s.href} onClick={e => e.stopPropagation()}>{s.cta} &nbsp;&rarr;</a>
-            </div>
+            <div className="hscrim" />
           </div>
         ))}
+
+        {/* Hero content — updates with active slide */}
+        <div className="hcontent">
+          <p className="hsub">{SLIDES[idx].desc}</p>
+          <a className="harrow" href={SLIDES[idx].href}>{SLIDES[idx].cta} &nbsp;&rarr;</a>
+        </div>
+
+        {/* Service switcher */}
+        <div className="hservices">
+          {SLIDES.map((s, i) => (
+            <button
+              key={i}
+              className={`hservice${i === idx ? ' active' : ''}`}
+              onClick={() => setIdx(i)}
+            >
+              <span className="hservice-num">{s.num}</span>
+              <span className="hservice-name">{s.label}</span>
+            </button>
+          ))}
+        </div>
+
         <div className="hscroll">Scroll</div>
       </div>
 
