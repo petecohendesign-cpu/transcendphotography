@@ -5,46 +5,43 @@ import { useRef, useState, useEffect } from 'react'
 export default function BlogGallery({ images }) {
   const scrollContainerRef = useRef(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
-  const [canScrollRight, setCanScrollRight] = useState(true)
+  const [canScrollRight, setCanScrollRight] = useState(false)
 
   const checkScroll = () => {
-    if (scrollContainerRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current
-      setCanScrollLeft(scrollLeft > 0)
-      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10)
-    }
+    const el = scrollContainerRef.current
+    if (!el) return
+    setCanScrollLeft(el.scrollLeft > 4)
+    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 4)
   }
 
   useEffect(() => {
+    // Check after mount and after a short delay to let images size up
     checkScroll()
+    const t = setTimeout(checkScroll, 300)
     window.addEventListener('resize', checkScroll)
-    return () => window.removeEventListener('resize', checkScroll)
-  }, [])
+    return () => {
+      clearTimeout(t)
+      window.removeEventListener('resize', checkScroll)
+    }
+  }, [images])
 
   const scroll = (direction) => {
-    const container = scrollContainerRef.current
-    if (!container) return
-
-    const scrollAmount = 400
-    const targetScroll =
-      container.scrollLeft + (direction === 'left' ? -scrollAmount : scrollAmount)
-
-    container.scrollTo({
-      left: targetScroll,
+    const el = scrollContainerRef.current
+    if (!el) return
+    el.scrollTo({
+      left: el.scrollLeft + (direction === 'left' ? -420 : 420),
       behavior: 'smooth',
     })
-
-    // Update button states after scroll
-    setTimeout(checkScroll, 300)
+    setTimeout(checkScroll, 350)
   }
 
   return (
     <div className="blog-gallery-wrapper">
       <button
         className={`gallery-nav gallery-nav-left${!canScrollLeft ? ' disabled' : ''}`}
-        onClick={() => scroll('left')}
-        disabled={!canScrollLeft}
+        onClick={() => canScrollLeft && scroll('left')}
         aria-label="Scroll left"
+        aria-disabled={!canScrollLeft}
       >
         ←
       </button>
@@ -63,7 +60,7 @@ export default function BlogGallery({ images }) {
                 src={src}
                 alt={alt}
                 className="gallery-image"
-                style={{ '--image-index': i }}
+                onLoad={checkScroll}
               />
             </div>
           )
@@ -72,9 +69,9 @@ export default function BlogGallery({ images }) {
 
       <button
         className={`gallery-nav gallery-nav-right${!canScrollRight ? ' disabled' : ''}`}
-        onClick={() => scroll('right')}
-        disabled={!canScrollRight}
+        onClick={() => canScrollRight && scroll('right')}
         aria-label="Scroll right"
+        aria-disabled={!canScrollRight}
       >
         →
       </button>
