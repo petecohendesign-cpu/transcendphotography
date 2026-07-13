@@ -59,7 +59,7 @@ export default function BlogPost({ params }) {
         </div>
 
         <header style={{ paddingBottom: '60px' }}>
-          <h1 style={{ fontSize: 'clamp(36px,6vw,56px)', fontFamily: 'Cormorant Garamond, serif', fontWeight: 300, lineHeight: 1.1, marginBottom: '24px' }}>
+          <h1 style={{ fontSize: 'clamp(36px,6vw,56px)', fontFamily: 'var(--font-serif), serif', fontWeight: 300, lineHeight: 1.1, marginBottom: '24px' }}>
             {post.title}
           </h1>
           <p style={{ fontSize: '14px', color: 'var(--taupe)' }}>
@@ -85,7 +85,7 @@ export default function BlogPost({ params }) {
 
         {post.galleryImages && post.galleryImages.length > 0 && (
           <div style={{ marginBottom: '60px' }}>
-            <h2 style={{ fontSize: '28px', fontFamily: 'Cormorant Garamond, serif', fontWeight: 300, marginBottom: '24px' }}>
+            <h2 style={{ fontSize: '28px', fontFamily: 'var(--font-serif), serif', fontWeight: 300, marginBottom: '24px' }}>
               Gallery
             </h2>
             <BlogGallery
@@ -108,7 +108,7 @@ export default function BlogPost({ params }) {
         <section style={{ background: 'var(--bone-2)', padding: '80px 48px' }}>
           <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
             <div className="label reveal" style={{ marginBottom: '16px', textAlign: 'center' }}>Keep reading</div>
-            <h2 className="reveal" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 300, fontSize: 'clamp(28px,4vw,42px)', textAlign: 'center', marginBottom: '56px' }}>
+            <h2 className="reveal" style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 300, fontSize: 'clamp(28px,4vw,42px)', textAlign: 'center', marginBottom: '56px' }}>
               More from the Journal
             </h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '40px' }}>
@@ -120,7 +120,7 @@ export default function BlogPost({ params }) {
                     </div>
                   )}
                   <div className="label" style={{ fontSize: '10px', marginBottom: '8px' }}>{p.category?.toUpperCase()}</div>
-                  <h3 style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 400, fontSize: '20px', lineHeight: 1.2, marginBottom: '12px' }}>{p.title}</h3>
+                  <h3 style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 400, fontSize: '20px', lineHeight: 1.2, marginBottom: '12px' }}>{p.title}</h3>
                   <span className="arrow" style={{ fontSize: '11px' }}>Read more</span>
                 </Link>
               ))}

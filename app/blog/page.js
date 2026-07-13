@@ -36,7 +36,7 @@ export default function Blog() {
                   </Link>
                 )}
                 <div className="label" style={{ fontSize: '11px', marginBottom: '8px' }}>{post.category.toUpperCase()}</div>
-                <h2 style={{ fontSize: '24px', fontFamily: 'Cormorant Garamond, serif', fontWeight: 400, marginBottom: '8px', lineHeight: 1.2 }}>
+                <h2 style={{ fontSize: '24px', fontFamily: 'var(--font-serif), serif', fontWeight: 400, marginBottom: '8px', lineHeight: 1.2 }}>
                   <Link href={`/blog/${post.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                     {post.title}
                   </Link>

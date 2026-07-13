@@ -44,6 +44,19 @@ export default function About() {
         </div>
       </section>
 
+      <section className="section" style={{ background: 'var(--bone-2)' }}>
+        <div className="wrap reveal" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-end', justifyContent: 'space-between', gap: '40px' }}>
+          <div>
+            <div className="label" style={{ marginBottom: '24px' }}>The Journal</div>
+            <h2 className="serif" style={{ fontWeight: 300, fontSize: 'clamp(32px,4vw,54px)', lineHeight: 1.15, maxWidth: '17em' }}>
+              A decade behind the camera, <em>written down</em> — planning guides,
+              honest advice, and the stories behind the shoots.
+            </h2>
+          </div>
+          <a className="btn" href="/blog" style={{ whiteSpace: 'nowrap' }}>Read the journal &nbsp;&rarr;</a>
+        </div>
+      </section>
+
       <section className="section wrap">
         <div className="reveal center" style={{ marginBottom: '60px' }}>
           <div className="label" style={{ marginBottom: '16px' }}>What clients say</div>
@@ -51,14 +64,14 @@ export default function About() {
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '60px' }}>
           <div className="reveal">
-            <p style={{ fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic', fontWeight: 300, fontSize: '20px', lineHeight: 1.5, color: 'var(--espresso)', marginBottom: '18px' }}>
+            <p style={{ fontFamily: 'var(--font-serif), serif', fontStyle: 'italic', fontWeight: 300, fontSize: '20px', lineHeight: 1.5, color: 'var(--espresso)', marginBottom: '18px' }}>
               &ldquo;Pete will make sure your photos are the kind you want to look at time and time again — because they truly are a work of art.&rdquo;
             </p>
             <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--espresso)' }}>S &amp; M</div>
             <div style={{ fontSize: '13px', color: 'var(--taupe)' }}>Married in Connecticut</div>
           </div>
           <div className="reveal">
-            <p style={{ fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic', fontWeight: 300, fontSize: '20px', lineHeight: 1.5, color: 'var(--espresso)', marginBottom: '18px' }}>
+            <p style={{ fontFamily: 'var(--font-serif), serif', fontStyle: 'italic', fontWeight: 300, fontSize: '20px', lineHeight: 1.5, color: 'var(--espresso)', marginBottom: '18px' }}>
               &ldquo;We are filled with fond memories of how special our day was — and how easy and fun it was to shoot them with Pete.&rdquo;
             </p>
             <div style={{ fontSize: '14px', fontWeight: 500, color: 'var(--espresso)' }}>T &amp; M</div>

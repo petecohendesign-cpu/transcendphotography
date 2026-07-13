@@ -8,7 +8,6 @@ export default function QuickContact() {
         </div>
         <div className="qc-right">
           <a href="tel:2036715273" className="qc-phone">
-            <span className="qc-icon">☎</span>
             <span>(203) 671-5273</span>
           </a>
           <a href="#inquire" className="btn">Inquire Now</a>

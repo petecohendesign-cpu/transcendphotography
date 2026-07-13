@@ -60,6 +60,8 @@ export default function BlogGallery({ images }) {
                 src={src}
                 alt={alt}
                 className="gallery-image"
+                loading="lazy"
+                decoding="async"
                 onLoad={checkScroll}
               />
             </div>
