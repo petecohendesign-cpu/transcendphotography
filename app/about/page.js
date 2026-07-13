@@ -21,7 +21,7 @@ export default function About() {
       {/* Intro — portrait paired with the story */}
       <section className="section wrap split reveal" style={{ alignItems: 'center', paddingTop: '20px' }}>
         <div className="imgblk" style={{ position: 'relative', height: '620px' }}>
-          <Image src="/images/about-self-1.jpg" alt="Pete Cohen, lead photographer" fill sizes="50vw" style={{ objectFit: 'cover' }} />
+          <Image src="/images/about-self-1.jpg" alt="Pete Cohen, lead photographer" fill sizes="(max-width: 900px) 100vw, 50vw" style={{ objectFit: 'cover' }} />
         </div>
         <div>
           <div className="label" style={{ marginBottom: '24px' }}>The story</div>
@@ -40,7 +40,7 @@ export default function About() {
           <p><strong style={{ color: 'var(--espresso)', fontWeight: 500 }}>Every detail considered.</strong> From color to how you feel on the day — the small things add up to images you&rsquo;ll keep for life.</p>
         </div>
         <div className="imgblk" style={{ position: 'relative', height: '560px' }}>
-          <Image src="/images/about-self-3.jpg" alt="Pete Cohen on location" fill sizes="50vw" style={{ objectFit: 'cover' }} />
+          <Image src="/images/about-self-3.jpg" alt="Pete Cohen on location" fill sizes="(max-width: 900px) 100vw, 50vw" style={{ objectFit: 'cover' }} />
         </div>
       </section>
 

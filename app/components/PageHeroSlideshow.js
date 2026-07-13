@@ -29,8 +29,8 @@ export default function PageHeroSlideshow({ slides, label, title, interval = 550
 
   useEffect(() => {
     if (seenAll.current) return
-    if (idx + 1 >= slides.length - 1) seenAll.current = true
-    setLoadedUpTo((n) => Math.max(n, idx + 1))
+    if (idx + 2 >= slides.length - 1) seenAll.current = true
+    setLoadedUpTo((n) => Math.max(n, idx + 2))
   }, [idx, slides.length])
 
   const shouldMount = (i) => seenAll.current || i <= loadedUpTo

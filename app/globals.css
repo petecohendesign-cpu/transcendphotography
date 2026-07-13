@@ -16,7 +16,7 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body {
   font-family: var(--font-sans), 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--espresso);
@@ -132,7 +132,7 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
 
 /* ---------- home hero slideshow ---------- */
 /* ---------- hero ---------- */
-.hero { position: relative; height: 100vh; min-height: 620px; overflow: hidden; }
+.hero { position: relative; height: 100vh; height: 100svh; min-height: 620px; overflow: hidden; }
 .hslide { position: absolute; inset: 0; opacity: 0; transition: opacity 1.6s ease; }
 .hslide.active { opacity: 1; }
 .hslide img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.05); transition: transform 7s ease-out; }
@@ -217,8 +217,19 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
 .phslide img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; transform: scale(1.05); transition: transform 8s ease-out; }
 .phslide.active img { transform: scale(1.14); }
 
-/* dots for page hero */
-.phdots { position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%); display: flex; gap: 12px; z-index: 3; }
+/* dots for page hero — small visual dot, touch-friendly hit area */
+.phdots { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); display: flex; z-index: 3; }
+.phdots .hdot {
+  position: relative; width: 26px; height: 30px;
+  background: none; border: 0; cursor: pointer; padding: 0;
+}
+.phdots .hdot::before {
+  content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: 7px; height: 7px; border-radius: 50%;
+  background: rgba(245,241,234,.45); transition: background .4s, transform .4s;
+}
+.phdots .hdot.on::before { background: var(--bone); transform: translate(-50%, -50%) scale(1.35); }
+.phdots .hdot:hover::before { background: rgba(245,241,234,.85); }
 
 /* responsive hero focus */
 @media (max-width: 1200px) {
@@ -245,27 +256,6 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
   .parallax-inner { top: 0; height: 100%; transform: none !important; }
 }
 
-/* Editorial — asymmetric magazine layout. Images keep their natural ratio
-   (no cropping); offsets and varied spans create a printed-spread feel. */
-.editorial { display: grid; grid-template-columns: repeat(12, 1fr); gap: 30px; align-items: start; }
-.editorial figure { margin: 0; }
-.editorial .edimg { position: relative; overflow: hidden; border-radius: 2px; background: var(--bone-2); }
-.editorial .edimg img { display: block; width: 100%; height: auto; transition: transform 1.5s cubic-bezier(.22,1,.36,1); }
-.editorial figure:hover .edimg img { transform: scale(1.035); }
-.editorial figcaption {
-  font-family: var(--font-serif), 'Cormorant Garamond', serif; font-style: italic;
-  font-size: 15px; color: var(--taupe); margin-top: 12px; letter-spacing: .01em;
-}
-.ed-full { grid-column: 1 / -1; }
-.ed-7 { grid-column: span 7; }
-.ed-6 { grid-column: span 6; }
-.ed-5 { grid-column: span 5; }
-.ed-offset { margin-top: 72px; }
-@media (max-width: 760px) {
-  .editorial { grid-template-columns: 1fr; gap: 22px; }
-  .ed-full, .ed-7, .ed-6, .ed-5 { grid-column: 1 / -1; }
-  .ed-offset { margin-top: 0; }
-}
 .cap { position: absolute; bottom: 16px; left: 18px; font-family: var(--font-serif), 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #fff; text-shadow: 0 1px 8px rgba(0,0,0,.4); }
 
 .reveal { opacity: 0; transform: translateY(34px); transition: opacity 1.2s cubic-bezier(.22,1,.36,1), transform 1.2s cubic-bezier(.22,1,.36,1); }
@@ -288,78 +278,6 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
 .offers .offer:nth-child(4) { transition-delay: 0.24s; }
 .offers .offer:nth-child(5) { transition-delay: 0.32s; }
 .offers .offer:nth-child(6) { transition-delay: 0.4s; }
-
-/* ---------- rolodex gallery ---------- */
-.rolodex-wrap {
-  position: relative;
-  width: 100%;
-  height: 680px;
-  overflow: hidden;
-  background: var(--espresso-2);
-  user-select: none;
-}
-.rolodex-hint {
-  position: absolute;
-  bottom: 24px; left: 50%;
-  transform: translateX(-50%);
-  font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase;
-  color: rgba(245,241,234,.3);
-  z-index: 10;
-  pointer-events: none;
-}
-.rolodex-scene {
-  position: absolute; inset: 0;
-  display: flex; align-items: center; justify-content: center;
-  /* Perspective from slightly above so you see cards flipping up from behind */
-  perspective: 1100px;
-  perspective-origin: 50% 38%;
-}
-.rolodex-ring {
-  position: relative;
-  width: 0; height: 0;
-  transform-style: preserve-3d;
-}
-.rolodex-card {
-  position: absolute;
-  width: 320px;
-  height: 440px;
-  /* Center the card on the ring axis */
-  top: -220px;
-  left: -160px;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 2px;
-  /* Smooth brightness transition */
-  transition: filter .5s ease;
-  backface-visibility: hidden;
-}
-.rolodex-card img {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  display: block;
-  pointer-events: none;
-}
-.rolodex-card-label {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  padding: 50px 22px 22px;
-  background: linear-gradient(to top, rgba(10,8,6,.85), transparent);
-  font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase;
-  color: rgba(245,241,234,.85);
-  font-weight: 300;
-  opacity: 0;
-  transition: opacity .5s ease;
-}
-.rolodex-card.active .rolodex-card-label { opacity: 1; }
-
-@media (max-width: 768px) {
-  .rolodex-wrap { height: 520px; }
-  .rolodex-card { width: 240px; height: 340px; top: -170px; left: -120px; }
-}
-@media (max-width: 480px) {
-  .rolodex-wrap { height: 420px; }
-  .rolodex-card { width: 190px; height: 270px; top: -135px; left: -95px; }
-}
 
 /* ---------- services 3-up ---------- */
 .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }

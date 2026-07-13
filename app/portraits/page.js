@@ -90,14 +90,14 @@ export default function Portraits() {
 
       <section className="wrap" style={{ paddingBottom: '110px' }}>
         <div className="gal gal-2 reveal">
-          <ParallaxImage className="tall" style={{ height: '660px' }} speed={0.08} src="/images/portrait-pc-5.jpg" alt="Studio portrait" sizes="60vw" objectPosition="center 25%" />
-          <ParallaxImage style={{ height: '318px' }} speed={0.18} src="/images/portrait-pc-10.jpg" alt="Studio portrait with camera" sizes="40vw" objectPosition="center 25%" />
-          <ParallaxImage style={{ height: '318px' }} speed={0.12} src="/images/portrait-pc-7.jpg" alt="Mother and son portrait" sizes="40vw" objectPosition="center 30%" />
+          <ParallaxImage className="tall" style={{ height: '660px' }} speed={0.08} src="/images/portrait-pc-5.jpg" alt="Studio portrait" sizes="(max-width: 900px) 100vw, 60vw" objectPosition="center 25%" />
+          <ParallaxImage style={{ height: '318px' }} speed={0.18} src="/images/portrait-pc-10.jpg" alt="Studio portrait with camera" sizes="(max-width: 900px) 100vw, 40vw" objectPosition="center 25%" />
+          <ParallaxImage style={{ height: '318px' }} speed={0.12} src="/images/portrait-pc-7.jpg" alt="Mother and son portrait" sizes="(max-width: 900px) 100vw, 40vw" objectPosition="center 30%" />
         </div>
         <div className="gal gal-3 reveal" style={{ marginTop: '20px' }}>
-          <ParallaxImage style={{ height: '440px' }} speed={0.16} src="/images/portrait-pc-3.jpg" alt="Editorial portrait in a parking structure" sizes="33vw" objectPosition="center 30%" />
-          <ParallaxImage style={{ height: '440px' }} speed={0.08} src="/images/portrait-pc-11.jpg" alt="Studio portrait" sizes="33vw" objectPosition="center 25%" />
-          <ParallaxImage style={{ height: '440px' }} speed={0.16} src="/images/portrait-pc-13.jpg" alt="Editorial portrait of actor Dominic Pace at night" sizes="33vw" objectPosition="center 30%" />
+          <ParallaxImage style={{ height: '440px' }} speed={0.16} src="/images/portrait-pc-3.jpg" alt="Editorial portrait in a parking structure" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 30%" />
+          <ParallaxImage style={{ height: '440px' }} speed={0.08} src="/images/portrait-pc-11.jpg" alt="Studio portrait" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 25%" />
+          <ParallaxImage style={{ height: '440px' }} speed={0.16} src="/images/portrait-pc-13.jpg" alt="Editorial portrait of actor Dominic Pace at night" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 30%" />
         </div>
       </section>
 

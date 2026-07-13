@@ -95,7 +95,7 @@ export default function Home() {
           {CARDS.map((c, i) => (
             <a key={i} className="scard reveal" href={c.href}>
               <div className="imgblk" style={{ aspectRatio: '4 / 5', position: 'relative' }}>
-                <Image src={c.img} alt={c.title} fill sizes="33vw" style={{ objectFit: 'cover' }} />
+                <Image src={c.img} alt={c.title} fill sizes="(max-width: 900px) 100vw, 33vw" style={{ objectFit: 'cover' }} />
               </div>
               <div className="slabel">{c.num}</div>
               <div className="stitle">{c.title}</div>
@@ -126,7 +126,7 @@ export default function Home() {
       {/* About teaser */}
       <section className="section wrap split reveal">
         <div className="imgblk" style={{ height: '560px', position: 'relative' }}>
-          <Image src="/images/wedding-venue-cellar.jpg" alt="On location" fill sizes="50vw" style={{ objectFit: 'cover' }} />
+          <Image src="/images/wedding-venue-cellar.jpg" alt="On location" fill sizes="(max-width: 900px) 100vw, 50vw" style={{ objectFit: 'cover' }} />
         </div>
         <div>
           <div className="label" style={{ marginBottom: '26px' }}>Behind the lens</div>

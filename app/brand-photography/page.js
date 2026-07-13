@@ -114,7 +114,7 @@ export default function Branding() {
             ['/images/branding-pc-10.jpg', 'Brand editorial'],
           ].map(([src, cap], i) => (
             <div key={i} className="imgblk" style={{ aspectRatio: '1 / 1', position: 'relative' }}>
-              <Image src={src} alt={cap} fill sizes="33vw" style={{ objectFit: 'cover' }} />
+              <Image src={src} alt={cap} fill sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" style={{ objectFit: 'cover' }} />
             </div>
           ))}
         </div>
