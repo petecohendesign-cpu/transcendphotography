@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
 import HoneyBook from '../components/HoneyBook'
 import PageHeroSlideshow from '../components/PageHeroSlideshow'
+import ParallaxImage from '../components/ParallaxImage'
 import QuickContact from '../components/QuickContact'
 
 const OFFERS = [
@@ -55,9 +56,13 @@ export default function Portraits() {
         label="Portrait Sessions"
         title={<>Portraits that capture<br />who you really are</>}
         slides={[
-          { src: '/images/portrait-guitar.jpg', alt: 'Editorial portrait of a musician' },
-          { src: '/images/portrait-nyc.jpg',    alt: 'Editorial portrait in the city' },
-          { src: '/images/portrait-studio.jpg', alt: 'Studio portrait' },
+          { src: '/images/portrait-pc-12.jpg', alt: 'Editorial portrait of actor Dominic Pace' },
+          { src: '/images/portrait-pc-4.jpg',  alt: 'Editorial portrait' },
+          { src: '/images/portrait-pc-8.jpg',  alt: 'Portrait session' },
+          { src: '/images/portrait-pc-7.jpg',  alt: 'Editorial portrait' },
+          { src: '/images/portrait-pc-9.jpg',  alt: 'Portrait session' },
+          { src: '/images/portrait-pc-2.jpg',  alt: 'Editorial portrait' },
+          { src: '/images/portrait-pc-3.jpg',  alt: 'Portrait session' },
         ]}
       />
 
@@ -85,15 +90,14 @@ export default function Portraits() {
 
       <section className="wrap" style={{ paddingBottom: '110px' }}>
         <div className="gal gal-2 reveal">
-          <div className="imgblk tall" style={{ height: '660px' }}>
-            <img src="/images/portrait-nyc.jpg" alt="Editorial portrait in the city" />
-          </div>
-          <div className="imgblk" style={{ height: '318px' }}>
-            <img src="/images/portrait-studio.jpg" alt="Studio portrait" />
-          </div>
-          <div className="imgblk" style={{ height: '318px' }}>
-            <img src="/images/portrait-guitar.jpg" alt="Portrait of a musician" />
-          </div>
+          <ParallaxImage className="tall" style={{ height: '660px' }} speed={0.08} src="/images/portrait-pc-5.jpg" alt="Editorial portrait" sizes="60vw" />
+          <ParallaxImage style={{ height: '318px' }} speed={0.18} src="/images/portrait-pc-1.jpg" alt="Editorial portrait" sizes="40vw" />
+          <ParallaxImage style={{ height: '318px' }} speed={0.12} src="/images/portrait-pc-6.jpg" alt="Portrait session" sizes="40vw" />
+        </div>
+        <div className="gal gal-3 reveal" style={{ marginTop: '20px' }}>
+          <ParallaxImage style={{ height: '440px' }} speed={0.16} src="/images/portrait-pc-10.jpg" alt="Editorial portrait" sizes="33vw" />
+          <ParallaxImage style={{ height: '440px' }} speed={0.08} src="/images/portrait-pc-11.jpg" alt="Portrait session" sizes="33vw" />
+          <ParallaxImage style={{ height: '440px' }} speed={0.16} src="/images/portrait-pc-13.jpg" alt="Editorial portrait of actor Dominic Pace" sizes="33vw" />
         </div>
       </section>
 

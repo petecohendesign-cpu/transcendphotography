@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 
 /**
  * PageHeroSlideshow
@@ -23,7 +24,7 @@ export default function PageHeroSlideshow({ slides, label, title, interval = 550
     <header className="pagehero">
       {slides.map((s, i) => (
         <div key={i} className={`phslide${i === idx ? ' active' : ''}`}>
-          <img src={s.src} alt={s.alt} />
+          <Image src={s.src} alt={s.alt} fill sizes="100vw" priority={i === 0} style={{ objectFit: 'cover', objectPosition: s.pos || 'center 35%' }} />
         </div>
       ))}
       <div className="hscrim" />

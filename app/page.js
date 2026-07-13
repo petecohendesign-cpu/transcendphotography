@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Reveal from './components/Reveal'
@@ -46,7 +47,7 @@ export default function Home() {
       <div className="hero">
         {SLIDES.map((s, i) => (
           <div key={i} className={`hslide${i === idx ? ' active' : ''}`}>
-            <img src={s.img} alt={s.title} />
+            <Image src={s.img} alt={s.title} fill sizes="100vw" priority={i === 0} style={{ objectFit: 'cover' }} />
             <div className="hscrim" />
           </div>
         ))}
@@ -93,8 +94,8 @@ export default function Home() {
         <div className="services">
           {CARDS.map((c, i) => (
             <a key={i} className="scard reveal" href={c.href}>
-              <div className="imgblk" style={{ aspectRatio: '4 / 5' }}>
-                <img src={c.img} alt={c.title} />
+              <div className="imgblk" style={{ aspectRatio: '4 / 5', position: 'relative' }}>
+                <Image src={c.img} alt={c.title} fill sizes="33vw" style={{ objectFit: 'cover' }} />
               </div>
               <div className="slabel">{c.num}</div>
               <div className="stitle">{c.title}</div>
@@ -107,8 +108,8 @@ export default function Home() {
 
       {/* Editorial band */}
       <div className="wrap reveal">
-        <div className="imgblk" style={{ height: '600px' }}>
-          <img src="/images/wedding-flower-bridge.jpg" alt="Wedding couple on the flower bridge" />
+        <div className="imgblk" style={{ height: '600px', position: 'relative' }}>
+          <Image src="/images/wedding-flower-bridge.jpg" alt="Wedding couple on the flower bridge" fill sizes="100vw" style={{ objectFit: 'cover' }} />
         </div>
       </div>
 
@@ -124,8 +125,8 @@ export default function Home() {
 
       {/* About teaser */}
       <section className="section wrap split reveal">
-        <div className="imgblk" style={{ height: '560px' }}>
-          <img src="/images/wedding-venue-cellar.jpg" alt="On location" />
+        <div className="imgblk" style={{ height: '560px', position: 'relative' }}>
+          <Image src="/images/wedding-venue-cellar.jpg" alt="On location" fill sizes="50vw" style={{ objectFit: 'cover' }} />
         </div>
         <div>
           <div className="label" style={{ marginBottom: '26px' }}>Behind the lens</div>

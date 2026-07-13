@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
@@ -56,10 +57,17 @@ export default function Branding() {
         label="Branding & Lifestyle"
         title={<>Photography that makes<br />your brand unmistakable</>}
         slides={[
-          { src: '/images/branding-ilnido-1.jpg',    alt: 'Editorial branding photography' },
+          { src: '/images/branding-ilnido-1.jpg',   alt: 'Il Nido editorial branding' },
+          { src: '/images/branding-pc-6.jpg',        alt: 'Claudine branding session' },
+          { src: '/images/branding-pc-11.jpg',       alt: 'Il Nido Fall 2025' },
+          { src: '/images/branding-pc-2.jpg',        alt: 'Bubles gift box product photography' },
           { src: '/images/branding-claudine-1.jpg',  alt: 'Claudine Bakery' },
+          { src: '/images/branding-pc-9.jpg',        alt: 'Brand lifestyle photography' },
+          { src: '/images/branding-pc-1.jpg',        alt: 'Product photography' },
           { src: '/images/branding-bubles-1.jpg',    alt: 'Bubles product photography' },
+          { src: '/images/branding-pc-7.jpg',        alt: 'Claudine portrait session' },
           { src: '/images/branding-muha-box.jpg',    alt: 'Muha Meds packaging' },
+          { src: '/images/branding-pc-12.jpg',       alt: 'PodBox product photography' },
           { src: '/images/branding-ilnido-3.jpg',    alt: 'Il Nido detail' },
         ]}
       />
@@ -89,15 +97,25 @@ export default function Branding() {
       <section className="wrap" style={{ paddingBottom: '110px' }}>
         <div className="gal gal-3 reveal">
           {[
+            ['/images/branding-pc-11.jpg', 'Il Nido Fall 2025'],
+            ['/images/branding-pc-6.jpg', 'Claudine branding session'],
+            ['/images/branding-pc-2.jpg', 'Bubles gift box'],
+            ['/images/branding-pc-3.jpg', 'Bubles product detail'],
+            ['/images/branding-pc-8.jpg', 'Claudine portrait'],
+            ['/images/branding-pc-1.jpg', 'Product photography'],
+            ['/images/branding-pc-4.jpg', 'Bubles lifestyle'],
+            ['/images/branding-pc-9.jpg', 'Brand lifestyle'],
+            ['/images/branding-pc-7.jpg', 'Claudine editorial'],
             ['/images/branding-ilnido-2.jpg', 'Il Nido — editorial'],
-            ['/images/branding-claudine-1.jpg', 'Claudine Bakery'],
-            ['/images/branding-bubles-1.jpg', 'Bubles — product'],
+            ['/images/branding-pc-12.jpg', 'PodBox product'],
+            ['/images/branding-pc-5.jpg', 'Bubles gift set'],
             ['/images/branding-ilnido-3.jpg', 'Il Nido — detail'],
             ['/images/branding-muha-box.jpg', 'Muha Meds — packaging'],
             ['/images/branding-claudine-2.jpg', 'Claudine — interior'],
+            ['/images/branding-pc-10.jpg', 'Brand editorial'],
           ].map(([src, cap], i) => (
-            <div key={i} className="imgblk" style={{ aspectRatio: '1 / 1' }}>
-              <img src={src} alt={cap} />
+            <div key={i} className="imgblk" style={{ aspectRatio: '1 / 1', position: 'relative' }}>
+              <Image src={src} alt={cap} fill sizes="33vw" style={{ objectFit: 'cover' }} />
             </div>
           ))}
         </div>

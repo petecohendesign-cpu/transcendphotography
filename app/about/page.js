@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
@@ -10,40 +11,36 @@ export default function About() {
       <Nav variant="solid" />
       <Reveal />
 
-      <header className="section wrap center" style={{ paddingTop: '160px', paddingBottom: '90px' }}>
+      <header className="section wrap center" style={{ paddingTop: '160px', paddingBottom: '70px' }}>
         <div className="label reveal" style={{ marginBottom: '28px' }}>Behind the lens</div>
         <h1 className="serif reveal" style={{ fontWeight: 300, fontSize: 'clamp(42px,6vw,82px)', lineHeight: 1.05 }}>
           A musician&rsquo;s eye,<br />an editor&rsquo;s <em>restraint</em>
         </h1>
       </header>
 
-      <div className="wrap reveal">
-        <div className="imgblk" style={{ height: '600px' }}>
-          <img src="/images/wedding-bride-reading.jpg" alt="On location" />
+      {/* Intro — portrait paired with the story */}
+      <section className="section wrap split reveal" style={{ alignItems: 'center', paddingTop: '20px' }}>
+        <div className="imgblk" style={{ position: 'relative', height: '620px' }}>
+          <Image src="/images/about-self-1.jpg" alt="Pete Cohen, lead photographer" fill sizes="50vw" style={{ objectFit: 'cover' }} />
         </div>
-      </div>
-
-      <section className="section wrap split reveal">
         <div>
           <div className="label" style={{ marginBottom: '24px' }}>The story</div>
           <p>I grew up in New Haven, Connecticut — a pizza snob with a guitar. Music came first: I studied at Berklee and spent years touring, opening for bands like The Dillinger Escape Plan and Animals As Leaders.</p>
           <p>Photography started as a way to document those tours. Somewhere between the stage and a friend&rsquo;s wedding, I fell for capturing people in genuine moments. I shot my first wedding in 2015 and never looked back.</p>
           <p>Today I&rsquo;m based in Los Angeles, working across weddings, brands, and portraits — and still designing on the side.</p>
         </div>
+      </section>
+
+      {/* The approach — text paired with portrait (mirrored) */}
+      <section className="section wrap split reveal" style={{ alignItems: 'center' }}>
         <div>
           <div className="label" style={{ marginBottom: '24px' }}>The approach</div>
           <p><strong style={{ color: 'var(--espresso)', fontWeight: 500 }}>Documentary, with an editorial eye.</strong> I capture moments as they happen, but I&rsquo;m always composing for light, feeling, and story.</p>
           <p><strong style={{ color: 'var(--espresso)', fontWeight: 500 }}>A creative collaboration.</strong> You know your story; I bring the direction. Together we make something that feels like you.</p>
           <p><strong style={{ color: 'var(--espresso)', fontWeight: 500 }}>Every detail considered.</strong> From color to how you feel on the day — the small things add up to images you&rsquo;ll keep for life.</p>
         </div>
-      </section>
-
-      <section className="section" style={{ background: 'var(--bone-2)' }}>
-        <div className="wrap" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '40px', textAlign: 'center' }}>
-          <div className="reveal"><div className="serif" style={{ fontSize: '56px', color: 'var(--clay)', fontWeight: 300 }}>200+</div><div className="label" style={{ marginTop: '8px' }}>Weddings</div></div>
-          <div className="reveal"><div className="serif" style={{ fontSize: '56px', color: 'var(--clay)', fontWeight: 300 }}>50+</div><div className="label" style={{ marginTop: '8px' }}>Brand projects</div></div>
-          <div className="reveal"><div className="serif" style={{ fontSize: '56px', color: 'var(--clay)', fontWeight: 300 }}>300+</div><div className="label" style={{ marginTop: '8px' }}>Portrait sessions</div></div>
-          <div className="reveal"><div className="serif" style={{ fontSize: '56px', color: 'var(--clay)', fontWeight: 300 }}>10+</div><div className="label" style={{ marginTop: '8px' }}>Years experience</div></div>
+        <div className="imgblk" style={{ position: 'relative', height: '560px' }}>
+          <Image src="/images/about-self-3.jpg" alt="Pete Cohen on location" fill sizes="50vw" style={{ objectFit: 'cover' }} />
         </div>
       </section>
 
