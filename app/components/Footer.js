@@ -33,7 +33,10 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="fbottom">© {YEAR} Transcend Photography. All rights reserved.</div>
+      <div className="fbottom">
+        © {YEAR} Transcend Photography. All rights reserved.
+        <a href="/privacy" style={{ marginLeft: '18px', textDecoration: 'none', color: 'inherit', borderBottom: '1px solid rgba(245,241,234,.2)' }}>Privacy Policy</a>
+      </div>
     </footer>
   )
 }
