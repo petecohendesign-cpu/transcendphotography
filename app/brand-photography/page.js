@@ -57,9 +57,9 @@ export default function Branding() {
         label="Branding & Lifestyle"
         title={<>Photography that makes<br />your brand unmistakable</>}
         slides={[
-          { src: '/images/branding-ilnido-1.jpg',   alt: 'Il Nido editorial branding' },
+          { src: '/images/branding-pc-11.jpg',       alt: 'Il Nido pasta dish' },
           { src: '/images/branding-pc-6.jpg',        alt: 'Claudine branding session' },
-          { src: '/images/branding-pc-11.jpg',       alt: 'Il Nido Fall 2025' },
+          { src: '/images/branding-ilnido-1.jpg',   alt: 'Il Nido editorial branding' },
           { src: '/images/branding-pc-2.jpg',        alt: 'Bubles gift box product photography' },
           { src: '/images/branding-claudine-1.jpg',  alt: 'Claudine Bakery' },
           { src: '/images/branding-pc-9.jpg',        alt: 'Brand lifestyle photography' },
