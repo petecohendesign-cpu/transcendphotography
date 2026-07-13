@@ -59,11 +59,11 @@ export default function Weddings() {
           { src: '/images/wedding-pc-2.jpg',  alt: 'Bride and groom kissing on a coastal cliff at dusk' },
           { src: '/images/wedding-pc-9.jpg',  alt: 'Sparkler send-off kiss at night' },
           { src: '/images/wedding-pc-6.jpg',  alt: 'Bride and groom by the sea, veil in the wind' },
-          { src: '/images/wedding-pc-17.jpg', alt: 'Bride at an Indian wedding ceremony' },
+          { src: '/images/wedding-pc-14.jpg', alt: 'Bride and groom during their first dance' },
           { src: '/images/wedding-pc-4.jpg',  alt: 'Bride and groom kissing on the rocks by the ocean' },
           { src: '/images/wedding-pc-10.jpg', alt: 'Bride and groom running across the lawn at sunset' },
+          { src: '/images/wedding-pc-17.jpg', alt: 'Bride at an Indian wedding ceremony' },
           { src: '/images/wedding-pc-7.jpg',  alt: 'Bride and groom laughing on the beach' },
-          { src: '/images/wedding-pc-14.jpg', alt: 'Bride and groom during their first dance' },
         ]}
       />
 
@@ -93,22 +93,22 @@ export default function Weddings() {
         <div className="gal gal-2 reveal">
           <ParallaxImage className="tall" style={{ height: '660px' }} speed={0.08} src="/images/wedding-pc-12.jpg" alt="Bride and groom silhouetted in a doorway" sizes="60vw" objectPosition="center" />
           <ParallaxImage style={{ height: '318px' }} speed={0.18} src="/images/wedding-pc-1.jpg" alt="Bride and groom hands with engagement ring" sizes="40vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '318px' }} speed={0.12} src="/images/wedding-pc-5.jpg" alt="Wedding invitation suite flat lay" sizes="40vw" objectPosition="center" />
+          <ParallaxImage style={{ height: '318px' }} speed={0.12} src="/images/wedding-pc-3.jpg" alt="Groom buttoning his jacket while getting ready" sizes="40vw" objectPosition="center 25%" />
         </div>
         <div className="gal gal-3 reveal" style={{ marginTop: '20px' }}>
           <ParallaxImage style={{ height: '480px' }} speed={0.16} src="/images/wedding-pc-11.jpg" alt="Wedding dress hanging by the window" sizes="33vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '480px' }} speed={0.08} src="/images/wedding-pc-16.jpg" alt="Wedding gown with bridesmaid dresses" sizes="33vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '480px' }} speed={0.16} src="/images/wedding-pc-8.jpg" alt="Wedding rings resting on a palm leaf" sizes="33vw" objectPosition="center" />
+          <ParallaxImage style={{ height: '480px' }} speed={0.08} src="/images/wedding-pc-13.jpg" alt="Ring bearers holding a sign" sizes="33vw" objectPosition="center 30%" />
+          <ParallaxImage style={{ height: '480px' }} speed={0.16} src="/images/wedding-pc-18.jpg" alt="Winery cellar reception table" sizes="33vw" objectPosition="center" />
         </div>
         <div className="gal gal-3 reveal" style={{ marginTop: '20px' }}>
-          <ParallaxImage style={{ height: '420px' }} speed={0.14} src="/images/wedding-pc-3.jpg" alt="Groom buttoning his jacket while getting ready" sizes="33vw" objectPosition="center 25%" />
-          <ParallaxImage style={{ height: '420px' }} speed={0.2} src="/images/wedding-pc-13.jpg" alt="Ring bearers holding a sign" sizes="33vw" objectPosition="center 30%" />
-          <ParallaxImage style={{ height: '420px' }} speed={0.12} src="/images/wedding-pc-15.jpg" alt="Bride and groom kissing on a flower-lined bridge" sizes="33vw" objectPosition="center" />
+          <ParallaxImage style={{ height: '420px' }} speed={0.14} src="/images/wedding-pc-15.jpg" alt="Bride and groom kissing on a flower-lined bridge" sizes="33vw" objectPosition="center" />
+          <ParallaxImage style={{ height: '420px' }} speed={0.2} src="/images/wedding-pc-8.jpg" alt="Wedding rings resting on a palm leaf" sizes="33vw" objectPosition="center" />
+          <ParallaxImage style={{ height: '420px' }} speed={0.12} src="/images/wedding-pc-19.jpg" alt="Bride reading a letter before the ceremony" sizes="33vw" objectPosition="center" />
         </div>
         <div className="gal gal-3 reveal" style={{ marginTop: '20px' }}>
-          <ParallaxImage style={{ height: '420px' }} speed={0.16} src="/images/wedding-pc-19.jpg" alt="Bride reading a letter before the ceremony" sizes="33vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '420px' }} speed={0.1} src="/images/wedding-pc-18.jpg" alt="Winery cellar reception table" sizes="33vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '420px' }} speed={0.18} src="/images/wedding-pc-20.png" alt="Bride with flower girl in black and white" sizes="33vw" objectPosition="center 35%" />
+          <ParallaxImage style={{ height: '420px' }} speed={0.16} src="/images/wedding-pc-16.jpg" alt="Wedding gown with bridesmaid dresses" sizes="33vw" objectPosition="center" />
+          <ParallaxImage style={{ height: '420px' }} speed={0.1} src="/images/wedding-pc-20.png" alt="Bride with flower girl in black and white" sizes="33vw" objectPosition="center 35%" />
+          <ParallaxImage style={{ height: '420px' }} speed={0.18} src="/images/wedding-pc-5.jpg" alt="Wedding invitation suite flat lay" sizes="33vw" objectPosition="center" />
         </div>
       </section>
 
@@ -117,19 +117,19 @@ export default function Weddings() {
           <div className="label">Engagement sessions</div>
         </div>
         <div className="gal gal-3 reveal">
-          <ParallaxImage style={{ height: '480px' }} speed={0.16} src="/images/engagement-pc-1.jpg" alt="Engagement session" sizes="33vw" />
-          <ParallaxImage style={{ height: '480px' }} speed={0.08} src="/images/engagement-pc-5.jpg" alt="Engagement couple portrait" sizes="33vw" />
-          <ParallaxImage style={{ height: '480px' }} speed={0.16} src="/images/engagement-pc-9.jpg" alt="Engagement session golden hour" sizes="33vw" />
+          <ParallaxImage style={{ height: '480px' }} speed={0.16} src="/images/engagement-pc-5.jpg" alt="Engagement session among palm trees" sizes="33vw" objectPosition="center" />
+          <ParallaxImage style={{ height: '480px' }} speed={0.08} src="/images/engagement-pc-1.jpg" alt="Engagement session under a garden arch" sizes="33vw" objectPosition="center" />
+          <ParallaxImage style={{ height: '480px' }} speed={0.16} src="/images/engagement-pc-9.jpg" alt="Engagement session in Chinatown at night" sizes="33vw" objectPosition="center" />
         </div>
         <div className="gal gal-3 reveal" style={{ marginTop: '20px' }}>
-          <ParallaxImage style={{ height: '400px' }} speed={0.12} src="/images/engagement-pc-2.jpg" alt="Engagement candid moment" sizes="33vw" />
-          <ParallaxImage style={{ height: '400px' }} speed={0.2} src="/images/engagement-pc-6.jpg" alt="Engagement romantic moment" sizes="33vw" />
-          <ParallaxImage style={{ height: '400px' }} speed={0.12} src="/images/engagement-pc-10.jpg" alt="Engagement session" sizes="33vw" />
+          <ParallaxImage style={{ height: '400px' }} speed={0.12} src="/images/engagement-pc-10.jpg" alt="Engagement session by a red door" sizes="33vw" objectPosition="center" />
+          <ParallaxImage style={{ height: '400px' }} speed={0.2} src="/images/engagement-pc-13.jpg" alt="Engagement session dancing on the beach" sizes="33vw" objectPosition="center" />
+          <ParallaxImage style={{ height: '400px' }} speed={0.12} src="/images/engagement-pc-6.jpg" alt="Engagement session under a grand archway" sizes="33vw" objectPosition="center" />
         </div>
         <div className="gal gal-3 reveal" style={{ marginTop: '20px' }}>
-          <ParallaxImage style={{ height: '400px' }} speed={0.18} src="/images/engagement-pc-3.jpg" alt="Engagement couple" sizes="33vw" />
-          <ParallaxImage style={{ height: '400px' }} speed={0.1} src="/images/engagement-pc-11.jpg" alt="Engagement session" sizes="33vw" />
-          <ParallaxImage style={{ height: '400px' }} speed={0.16} src="/images/engagement-pc-13.jpg" alt="Engagement portrait" sizes="33vw" />
+          <ParallaxImage style={{ height: '400px' }} speed={0.18} src="/images/engagement-pc-2.jpg" alt="Engagement session in a courtyard" sizes="33vw" objectPosition="center" />
+          <ParallaxImage style={{ height: '400px' }} speed={0.1} src="/images/engagement-pc-3.jpg" alt="Engagement session in a garden pavilion" sizes="33vw" objectPosition="center" />
+          <ParallaxImage style={{ height: '400px' }} speed={0.16} src="/images/engagement-pc-11.jpg" alt="Engagement couple embracing" sizes="33vw" objectPosition="center 30%" />
         </div>
       </section>
 

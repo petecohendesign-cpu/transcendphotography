@@ -27,20 +27,20 @@ const STEPS = [
 const TIERS = [
   {
     name: 'Half-Day',
-    price: '$2,800',
+    price: '$1,500',
     note: 'Up to 4 hours',
     items: ['Pre-shoot creative planning', 'One location', '30 edited high-res images', 'Social-ready crops included', 'Commercial usage license'],
   },
   {
     name: 'Full-Day',
-    price: '$4,800',
+    price: '$2,800',
     note: 'Most popular',
     feature: true,
     items: ['Up to 8 hours of production', 'Multiple setups & looks', '70+ edited high-res images', 'Product, lifestyle & team coverage', 'Extended commercial license'],
   },
   {
     name: 'Retainer',
-    price: '$3,500',
+    price: '$2,000',
     note: 'Per month',
     perMonth: true,
     items: ['Monthly content shoot', 'Steady, on-brand library', 'Priority scheduling', 'Sized for feed, stories & web', 'Quarterly creative planning'],
@@ -68,7 +68,6 @@ export default function Branding() {
           { src: '/images/branding-pc-7.jpg',        alt: 'Claudine portrait session' },
           { src: '/images/branding-muha-box.jpg',    alt: 'Muha Meds packaging' },
           { src: '/images/branding-pc-12.jpg',       alt: 'PodBox product photography' },
-          { src: '/images/branding-ilnido-3.jpg',    alt: 'Il Nido detail' },
         ]}
       />
 
