@@ -66,7 +66,6 @@ export default function Branding() {
           { src: '/images/branding-pc-1.jpg',        alt: 'Product photography' },
           { src: '/images/branding-bubles-1.jpg',    alt: 'Bubles product photography' },
           { src: '/images/branding-pc-7.jpg',        alt: 'Claudine portrait session' },
-          { src: '/images/branding-muha-box.jpg',    alt: 'Muha Meds packaging' },
           { src: '/images/branding-pc-12.jpg',       alt: 'PodBox product photography' },
         ]}
       />
@@ -109,7 +108,6 @@ export default function Branding() {
             ['/images/branding-pc-12.jpg', 'PodBox product'],
             ['/images/branding-pc-5.jpg', 'Bubles gift set'],
             ['/images/branding-ilnido-3.jpg', 'Il Nido — detail'],
-            ['/images/branding-muha-box.jpg', 'Muha Meds — packaging'],
             ['/images/branding-claudine-2.jpg', 'Claudine — interior'],
             ['/images/branding-pc-10.jpg', 'Brand editorial'],
           ].map(([src, cap], i) => (

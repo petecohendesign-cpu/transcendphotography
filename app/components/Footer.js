@@ -24,7 +24,7 @@ export default function Footer() {
             <div className="fhead">Explore</div>
             <a className="nlink" href="/about">About</a>
             <a className="nlink" href="/blog">Journal</a>
-            <a className="nlink" href="/for-couples#inquire">Contact</a>
+            <a className="nlink" href="/contact">Contact</a>
           </div>
           <div className="fcol">
             <div className="fhead">Follow</div>

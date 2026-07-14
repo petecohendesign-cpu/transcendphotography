@@ -56,7 +56,7 @@ export default function Nav({ variant = 'overlay' }) {
         </div>
         <div className="navright">
           <a href={`tel:${CONTACT.phone.replace(/\D/g, '')}`} className="navphone">{CONTACT.phone}</a>
-          <a href="/for-couples#inquire" className="btn btn-nav">Get Started</a>
+          <a href="/contact" className="btn btn-nav">Get Started</a>
         </div>
         <button className="navtoggle" aria-label="Open menu" onClick={() => setOpen(o => !o)}>
           <span /><span /><span />
@@ -67,7 +67,7 @@ export default function Nav({ variant = 'overlay' }) {
           <a key={i} href={l.href} onClick={() => setOpen(false)}>{l.label}</a>
         ))}
         <a href={`tel:${CONTACT.phone.replace(/\D/g, '')}`} className="mm-phone">{CONTACT.phone}</a>
-        <a href="/for-couples#inquire" className="mm-cta" onClick={() => setOpen(false)}>Get Started</a>
+        <a href="/contact" className="mm-cta" onClick={() => setOpen(false)}>Get Started</a>
       </div>
     </>
   )

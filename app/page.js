@@ -156,7 +156,7 @@ export default function Home() {
         <div className="label reveal" style={{ marginBottom: '30px' }}>Now booking 2026 &amp; 2027</div>
         <h2 className="reveal">Let&rsquo;s create something<br /><em>worth keeping</em></h2>
         <div className="reveal" style={{ marginTop: '44px' }}>
-          <a className="btn btn-light" href="/for-couples">Begin an inquiry</a>
+          <a className="btn btn-light" href="/contact">Begin an inquiry</a>
         </div>
       </section>
 
