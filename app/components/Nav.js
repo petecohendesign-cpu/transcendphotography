@@ -7,6 +7,7 @@ const LINKS = [
   { href: '/for-couples', label: 'Weddings' },
   { href: '/portraits', label: 'Portraits' },
   { href: '/about', label: 'About' },
+  { href: 'https://transcendphoto.pic-time.com/portfolio', label: 'Galleries', external: true },
 ]
 
 const CONTACT = {
@@ -51,7 +52,12 @@ export default function Nav({ variant = 'overlay' }) {
         </a>
         <div className="navlinks">
           {LINKS.map((l, i) => (
-            <a key={i} className="nlink" href={l.href}>{l.label}</a>
+            <a
+              key={i}
+              className="nlink"
+              href={l.href}
+              {...(l.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+            >{l.label}</a>
           ))}
         </div>
         <div className="navright">
@@ -64,7 +70,12 @@ export default function Nav({ variant = 'overlay' }) {
       </nav>
       <div className={`mobilemenu${open ? ' open' : ''}`}>
         {LINKS.map((l, i) => (
-          <a key={i} href={l.href} onClick={() => setOpen(false)}>{l.label}</a>
+          <a
+            key={i}
+            href={l.href}
+            onClick={() => setOpen(false)}
+            {...(l.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+          >{l.label}</a>
         ))}
         <a href={`tel:${CONTACT.phone.replace(/\D/g, '')}`} className="mm-phone">{CONTACT.phone}</a>
         <a href="/contact" className="mm-cta" onClick={() => setOpen(false)}>Get Started</a>

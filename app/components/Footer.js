@@ -24,6 +24,7 @@ export default function Footer() {
             <div className="fhead">Explore</div>
             <a className="nlink" href="/about">About</a>
             <a className="nlink" href="/blog">Journal</a>
+            <a className="nlink" href="https://transcendphoto.pic-time.com/portfolio" target="_blank" rel="noopener noreferrer">Client Galleries</a>
             <a className="nlink" href="/contact">Contact</a>
           </div>
           <div className="fcol">
