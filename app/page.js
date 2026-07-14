@@ -15,19 +15,19 @@ const SLIDES = [
   {
     num: '02', title: 'Branding & Lifestyle', label: 'Branding & Lifestyle',
     desc: 'Considered visual stories for restaurants, makers, and modern brands.',
-    cta: 'Explore branding', href: '/brand-photography', img: '/images/branding-ilnido-1.jpg',
+    cta: 'Explore branding', href: '/brand-photography', img: '/images/branding-pc-11.jpg',
   },
   {
     num: '03', title: 'Portrait Sessions', label: 'Portrait Sessions',
     desc: 'Intimate, editorial portraiture for individuals and creatives.',
-    cta: 'Explore portraits', href: '/portraits', img: '/images/portrait-guitar.jpg',
+    cta: 'Explore portraits', href: '/portraits', img: '/images/portrait-pc-11.jpg',
   },
 ]
 
 const CARDS = [
   { num: '01', title: 'Weddings & Couples', desc: 'Documentary & editorial wedding coverage.', img: '/images/wedding-groomsmen-formal.jpg', href: '/for-couples' },
-  { num: '02', title: 'Branding & Lifestyle', desc: 'Product, food & commercial storytelling.', img: '/images/branding-bubles-1.jpg', href: '/brand-photography' },
-  { num: '03', title: 'Portrait Sessions', desc: 'Personal, lifestyle & creative portraits.', img: '/images/portrait-nyc.jpg', href: '/portraits' },
+  { num: '02', title: 'Branding & Lifestyle', desc: 'Product, food & commercial storytelling.', img: '/images/branding-pc-1.jpg', href: '/brand-photography' },
+  { num: '03', title: 'Portrait Sessions', desc: 'Personal, lifestyle & creative portraits.', img: '/images/portrait-pc-4.jpg', href: '/portraits' },
 ]
 
 export default function Home() {
