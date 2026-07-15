@@ -8,14 +8,14 @@ import Reveal from './components/Reveal'
 
 const SLIDES = [
   {
-    num: '01', title: 'Weddings & Couples', label: 'Weddings & Couples',
-    desc: 'Full-day documentary coverage for the adventurous couple.',
-    cta: 'Explore weddings', href: '/for-couples', img: '/images/wedding-first-dance-sparklers.jpg',
-  },
-  {
-    num: '02', title: 'Branding & Lifestyle', label: 'Branding & Lifestyle',
+    num: '01', title: 'Branding & Lifestyle', label: 'Branding & Lifestyle',
     desc: 'Considered visual stories for restaurants, makers, and modern brands.',
     cta: 'Explore branding', href: '/brand-photography', img: '/images/branding-pc-11.jpg',
+  },
+  {
+    num: '02', title: 'Weddings & Couples', label: 'Weddings & Couples',
+    desc: 'Full-day documentary coverage for the adventurous couple.',
+    cta: 'Explore weddings', href: '/for-couples', img: '/images/wedding-first-dance-sparklers.jpg',
   },
   {
     num: '03', title: 'Portrait Sessions', label: 'Portrait Sessions',
