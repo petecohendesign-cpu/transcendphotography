@@ -124,7 +124,7 @@ export default function Weddings() {
         <div className="gal gal-3 reveal" style={{ marginTop: '20px' }}>
           <ParallaxImage style={{ height: '400px' }} speed={0.12} src="/images/engagement-pc-8.jpg" alt="Engagement session in an arched colonnade" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 42%" />
           <ParallaxImage style={{ height: '400px' }} speed={0.2} src="/images/engagement-pc-13.jpg" alt="Engagement session dancing on the beach" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '400px' }} speed={0.12} src="/images/engagement-pc-6.jpg" alt="Engagement session under a grand archway" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 72%" />
+          <ParallaxImage style={{ height: '400px' }} speed={0.12} src="/images/engagement-pc-6.jpg" alt="Engagement session under a grand archway" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 90%" />
         </div>
         <div className="gal gal-3 reveal" style={{ marginTop: '20px' }}>
           <ParallaxImage style={{ height: '400px' }} speed={0.18} src="/images/engagement-pc-2.jpg" alt="Engagement session in a courtyard" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center" />
