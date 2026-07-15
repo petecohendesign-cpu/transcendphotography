@@ -20,7 +20,7 @@ const SLIDES = [
   {
     num: '03', title: 'Portrait Sessions', label: 'Portrait Sessions',
     desc: 'Intimate, editorial portraiture for individuals and creatives.',
-    cta: 'Explore portraits', href: '/portraits', img: '/images/portrait-pc-11.jpg',
+    cta: 'Explore portraits', href: '/portraits', img: '/images/portrait-pc-11.jpg', pos: 'center 18%',
   },
 ]
 
@@ -47,7 +47,7 @@ export default function Home() {
       <div className="hero">
         {SLIDES.map((s, i) => (
           <div key={i} className={`hslide${i === idx ? ' active' : ''}`}>
-            <Image src={s.img} alt={s.title} fill sizes="100vw" priority={i === 0} style={{ objectFit: 'cover' }} />
+            <Image src={s.img} alt={s.title} fill sizes="100vw" priority={i === 0} style={{ objectFit: 'cover', objectPosition: s.pos || 'center' }} />
             <div className="hscrim" />
           </div>
         ))}
