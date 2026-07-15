@@ -27,20 +27,20 @@ const STEPS = [
 const TIERS = [
   {
     name: 'The Elopement',
-    price: '$4,500',
+    price: '$3,500',
     note: 'Intimate & elopements',
     items: ['Up to 4 hours of coverage', 'Single photographer', 'Private online gallery', 'High-resolution downloads', 'Print release'],
   },
   {
     name: 'The Celebration',
-    price: '$8,500',
+    price: '$6,500',
     note: 'Most requested',
     feature: true,
     items: ['Up to 8 hours of coverage', 'Second shooter included', 'Engagement session', 'Sneak-peek gallery in 72 hours', 'Full gallery, 600+ edited images'],
   },
   {
     name: 'The Full Story',
-    price: '$14,000',
+    price: '$10,500',
     note: 'The complete experience',
     items: ['Up to 12 hours of coverage', 'Second shooter & assistant', 'Engagement session + 35mm film', 'Cinematic highlight film', 'Heirloom fine-art album'],
   },
