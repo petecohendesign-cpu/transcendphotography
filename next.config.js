@@ -7,6 +7,16 @@ const nextConfig = {
     // Optimized variants are immutable — cache them for a year on the CDN
     minimumCacheTTL: 31536000,
   },
+  async redirects() {
+    return [
+      // Old Squarespace-era URLs still indexed by Google -> new homes (301)
+      { source: '/about-transcend-photography', destination: '/about', permanent: true },
+      { source: '/home', destination: '/', permanent: true },
+      { source: '/weddings', destination: '/for-couples', permanent: true },
+      { source: '/branding', destination: '/brand-photography', permanent: true },
+      { source: '/portrait-photography', destination: '/portraits', permanent: true },
+    ]
+  },
   async headers() {
     return [
       {
