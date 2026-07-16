@@ -72,8 +72,8 @@ export default function Weddings() {
       <section className="section wrap approach reveal">
         <div className="label">For the two of you</div>
         <p className="serif">
-          A wedding moves fast. My work is to slow it down, to hold the glances,
-          the nerves, the joy, in images that still feel <em>alive</em> decades from now.
+          Your day will go by in a blur. My job is to catch the parts you&rsquo;ll want
+          to feel again: the nerves, the laughter, the way it all felt <em>real</em>.
         </p>
       </section>
 
