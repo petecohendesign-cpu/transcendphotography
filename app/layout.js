@@ -58,7 +58,7 @@ const businessSchema = {
   founder: { '@type': 'Person', name: 'Pete Cohen' },
   knowsAbout: ['Wedding Photography', 'Brand Photography', 'Portrait Photography'],
   sameAs: [
-    'https://instagram.com/transcendwedding',
+    'https://instagram.com/transcendphoto',
     'https://facebook.com/transcendphoto',
   ],
 }

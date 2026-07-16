@@ -51,7 +51,7 @@ export default function Contact() {
         <div style={{ display: 'flex', gap: '18px 44px', justifyContent: 'center', flexWrap: 'wrap' }}>
           <a href="tel:2036715273" className="arrow">(203) 671-5273</a>
           <a href="mailto:pete@transcendphoto.net" className="arrow">pete@transcendphoto.net</a>
-          <a href="https://instagram.com/transcendwedding" target="_blank" rel="noopener noreferrer" className="arrow">Instagram</a>
+          <a href="https://instagram.com/transcendphoto" target="_blank" rel="noopener noreferrer" className="arrow">Instagram</a>
         </div>
       </section>
 

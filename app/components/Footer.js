@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
           <div className="fcol">
             <div className="fhead">Follow</div>
-            <a className="nlink" href="https://instagram.com/transcendwedding" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a className="nlink" href="https://instagram.com/transcendphoto" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a className="nlink" href="https://facebook.com/transcendphoto" target="_blank" rel="noopener noreferrer">Facebook</a>
           </div>
         </div>
