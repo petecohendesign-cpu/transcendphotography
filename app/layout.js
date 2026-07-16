@@ -18,13 +18,16 @@ const jost = Jost({
 
 export const metadata = {
   metadataBase: new URL('https://www.transcendphoto.net'),
-  title: 'Transcend Photography, Weddings, Branding & Portraits in Los Angeles',
+  title: 'Transcend Photography | LA Wedding, Brand & Portrait Photographer',
   description:
     'Documentary and editorial photography for adventurous couples, considered brands, and creative people. Los Angeles based, available worldwide.',
+  alternates: { canonical: '/' },
   openGraph: {
-    title: 'Transcend Photography',
-    description: 'Timeless imagery for life’s most genuine moments.',
+    title: 'Transcend Photography | Los Angeles Wedding, Brand & Portrait Photographer',
+    description: 'Timeless imagery for life’s most genuine moments. Los Angeles based, available worldwide.',
     type: 'website',
+    url: 'https://www.transcendphoto.net',
+    siteName: 'Transcend Photography',
   },
 }
 
