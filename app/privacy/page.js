@@ -32,8 +32,8 @@ export default function Privacy() {
             Transcend Photography (&ldquo;we,&rdquo; &ldquo;us&rdquo;) is a photography studio based in
             Los Angeles, California. This policy explains what information we collect through
             www.transcendphoto.net, how we use it, and the choices you have. The short version:
-            we collect only what you choose to send us, we never sell it, and we don&rsquo;t run
-            advertising or tracking cookies on this site.
+            we collect only what you choose to send us plus basic anonymous visit statistics,
+            we never sell any of it, and we don&rsquo;t run advertising or cross-site tracking.
           </p>
         </div>
 
@@ -60,8 +60,19 @@ export default function Privacy() {
           <p>
             This site is hosted on Vercel, which processes standard technical data (such as IP
             addresses and browser information) as part of serving the site securely and reliably.
-            We do not use advertising cookies, social-media pixels, or cross-site tracking, and we
-            do not build profiles of visitors.
+          </p>
+          <p>
+            We use Google Analytics to understand how visitors use the site in aggregate, which
+            pages are viewed, roughly where visitors come from, and what devices they use. This
+            involves cookies and is subject to{' '}
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>
+              Google&rsquo;s privacy policy
+            </a>. We use this data only to improve the site. We do not use advertising cookies,
+            social-media pixels, or cross-site tracking, and we do not build profiles of
+            individual visitors. You can opt out of Google Analytics with{' '}
+            <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>
+              Google&rsquo;s browser add-on
+            </a>.
           </p>
         </div>
 
