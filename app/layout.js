@@ -18,7 +18,7 @@ const jost = Jost({
 
 export const metadata = {
   metadataBase: new URL('https://www.transcendphoto.net'),
-  title: 'Transcend Photography | LA Wedding, Brand & Portrait Photographer',
+  title: 'Transcend Photography | LA Wedding, Brand & Portrait Photos',
   description:
     'Documentary and editorial photography for adventurous couples, considered brands, and creative people. Los Angeles based, available worldwide.',
   alternates: { canonical: '/' },
