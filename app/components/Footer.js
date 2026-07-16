@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="finner">
         <div className="fbrand">
           <div className="fwm">TRANSCEND</div>
-          <div className="ftag">Weddings, branding &amp; portraits — Los Angeles, available worldwide.</div>
+          <div className="ftag">Weddings, branding &amp; portraits, Los Angeles, available worldwide.</div>
           <div className="fcontact">
             <a href="mailto:pete@transcendphoto.net">pete@transcendphoto.net</a>
             &nbsp;·&nbsp;

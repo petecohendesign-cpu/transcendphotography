@@ -12,7 +12,7 @@ const OFFERS = [
   ['Product photography', 'Clean, considered product imagery and styled compositions that sell.'],
   ['Food & hospitality', 'Editorial restaurant and menu photography that makes people hungry.'],
   ['Lifestyle & team', 'Authentic images of your people, space, and product in motion.'],
-  ['Location scouting', 'Help finding the right setting — or we shoot on yours.'],
+  ['Location scouting', 'Help finding the right setting, or we shoot on yours.'],
   ['Retainer packages', 'A steady stream of fresh, on-brand content for brands that move quickly.'],
   ['Social-ready edits', 'Deliverables sized and sequenced for the feed, stories, and reels.'],
 ]
@@ -75,8 +75,7 @@ export default function Branding() {
       <section className="section wrap approach reveal">
         <div className="label">For brands</div>
         <p className="serif">
-          Cinematic, considered imagery for restaurants, makers, and modern brands —
-          built to <em>look like you</em>, not like everyone else.
+          Cinematic, considered imagery for restaurants, makers, and modern brands, built to <em>look like you</em>, not like everyone else.
         </p>
       </section>
 
@@ -104,11 +103,11 @@ export default function Branding() {
             ['/images/branding-pc-4.jpg', 'Bubles lifestyle'],
             ['/images/branding-pc-9.jpg', 'Brand lifestyle'],
             ['/images/branding-pc-7.jpg', 'Claudine editorial'],
-            ['/images/branding-ilnido-2.jpg', 'Il Nido — editorial'],
+            ['/images/branding-ilnido-2.jpg', 'Il Nido, editorial'],
             ['/images/branding-pc-12.jpg', 'PodBox product'],
             ['/images/branding-pc-5.jpg', 'Bubles gift set'],
-            ['/images/branding-ilnido-3.jpg', 'Il Nido — detail'],
-            ['/images/branding-claudine-2.jpg', 'Claudine — interior'],
+            ['/images/branding-ilnido-3.jpg', 'Il Nido, detail'],
+            ['/images/branding-claudine-2.jpg', 'Claudine, interior'],
             ['/images/branding-pc-10.jpg', 'Brand editorial'],
           ].map(([src, cap], i) => (
             <div key={i} className="imgblk" style={{ aspectRatio: '1 / 1', position: 'relative' }}>
@@ -150,7 +149,7 @@ export default function Branding() {
           ))}
         </div>
         <p className="pricing-note">
-          Every brand brief is different — final pricing reflects scope, deliverables, and
+          Every brand brief is different, final pricing reflects scope, deliverables, and
           usage. Reach out for a tailored proposal.
         </p>
       </section>

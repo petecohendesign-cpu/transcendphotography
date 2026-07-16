@@ -9,7 +9,7 @@ import ParallaxImage from '../components/ParallaxImage'
 import QuickContact from '../components/QuickContact'
 
 const OFFERS = [
-  ['All-day coverage', 'From getting ready to the last dance — every moment, captured with intention.'],
+  ['All-day coverage', 'From getting ready to the last dance, every moment, captured with intention.'],
   ['Engagement sessions', 'A relaxed way to add depth to your story and get comfortable on camera.'],
   ['Highlight films', 'A cinematic edit of your best moments, made to share and revisit.'],
   ['Custom collections', 'Packages shaped around your timeline, vision, and budget.'],
@@ -72,8 +72,8 @@ export default function Weddings() {
       <section className="section wrap approach reveal">
         <div className="label">For the two of you</div>
         <p className="serif">
-          A wedding moves fast. My work is to slow it down — to hold the glances,
-          the nerves, the joy — in images that still feel <em>alive</em> decades from now.
+          A wedding moves fast. My work is to slow it down, to hold the glances,
+          the nerves, the joy, in images that still feel <em>alive</em> decades from now.
         </p>
       </section>
 
@@ -165,7 +165,7 @@ export default function Weddings() {
           ))}
         </div>
         <p className="pricing-note">
-          Every wedding is unique — collections are a starting point and can be tailored to
+          Every wedding is unique, collections are a starting point and can be tailored to
           your timeline and vision. Custom quotes available on request.
         </p>
       </section>
@@ -173,7 +173,7 @@ export default function Weddings() {
       <section className="section quote">
         <div className="mark reveal">&ldquo;</div>
         <p className="reveal">
-          We are filled with fond memories of how special our day was — and how easy
+          We are filled with fond memories of how special our day was, and how easy
           and fun it was to shoot them with Pete.
         </p>
         <div className="label reveal">T &amp; M</div>

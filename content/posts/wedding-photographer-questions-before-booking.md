@@ -112,7 +112,7 @@ The photographer's personality and approach to directing couples and guests can 
 
 Final Thoughts
 
-Choosing a wedding photographer is about more than just stunning images—it’s about finding someone who understands your vision, makes you feel comfortable, and delivers high-quality results. By asking these 11 essential questions, you can confidently book the perfect photographer for your special day.
+Choosing a wedding photographer is about more than just stunning images, it’s about finding someone who understands your vision, makes you feel comfortable, and delivers high-quality results. By asking these 11 essential questions, you can confidently book the perfect photographer for your special day.
 
 If you’re looking for a wedding photographer in Los Angeles and beyond, I’d love to chat about capturing your love story! Contact me today to discuss your wedding photography needs.
 

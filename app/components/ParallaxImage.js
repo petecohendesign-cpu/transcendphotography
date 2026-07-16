@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 
 /**
- * Shared parallax controller — every ParallaxImage registers with one global
+ * Shared parallax controller, every ParallaxImage registers with one global
  * scroll listener, one IntersectionObserver, and one requestAnimationFrame
  * loop. This keeps a gallery of many images cheap (no per-image listeners).
  */
@@ -65,7 +65,7 @@ function unregister(el) {
 }
 
 /**
- * ParallaxImage — an <Image> inside an oversized inner wrapper that drifts
+ * ParallaxImage, an <Image> inside an oversized inner wrapper that drifts
  * vertically as it scrolls through the viewport, creating depth. The container
  * keeps the normal `.imgblk` look. Honors prefers-reduced-motion.
  *

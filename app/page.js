@@ -52,7 +52,7 @@ export default function Home() {
           </div>
         ))}
 
-        {/* Hero content — updates with active slide */}
+        {/* Hero content, updates with active slide */}
         <div className="hcontent">
           <p className="hsub">{SLIDES[idx].desc}</p>
           <a className="harrow" href={SLIDES[idx].href}>{SLIDES[idx].cta} &nbsp;&rarr;</a>
@@ -79,7 +79,7 @@ export default function Home() {
       <section className="section wrap approach reveal">
         <div className="label">The approach</div>
         <p className="serif">
-          I photograph the way moments actually <em>feel</em> — unhurried, honest,
+          I photograph the way moments actually <em>feel</em>, unhurried, honest,
           a little cinematic. Whatever I&rsquo;m pointing the camera at, the result is
           something you&rsquo;ll return to for decades.
         </p>
@@ -118,7 +118,7 @@ export default function Home() {
         <div className="mark reveal">&ldquo;</div>
         <p className="reveal">
           Pete will make sure your photos are the kind you want to look at time and
-          time again — because they truly are a work of art.
+          time again, because they truly are a work of art.
         </p>
         <div className="label reveal">S &amp; M &nbsp;·&nbsp; Married in Connecticut</div>
       </section>
@@ -132,7 +132,7 @@ export default function Home() {
           <div className="label" style={{ marginBottom: '26px' }}>Behind the lens</div>
           <h2>A musician&rsquo;s eye,<br />an editor&rsquo;s <em>restraint</em></h2>
           <p>Berklee-trained musician turned photographer and designer. A decade behind the camera across two coasts, from intimate elopements to two-day celebrations of 200.</p>
-          <p>Every frame is approached like a creative direction — composed, intentional, and unmistakably yours.</p>
+          <p>Every frame is approached like a creative direction, composed, intentional, and unmistakably yours.</p>
           <a className="arrow" href="/about" style={{ marginTop: '16px', display: 'inline-block' }}>Read the full story</a>
         </div>
       </section>

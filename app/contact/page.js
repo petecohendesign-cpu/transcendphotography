@@ -3,7 +3,7 @@ import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
 
 export const metadata = {
-  title: 'Contact — Transcend Photography',
+  title: 'Contact, Transcend Photography',
   description:
     'Start an inquiry for wedding, branding, or portrait photography in Los Angeles. Call, email, or tell me about your project.',
   alternates: { canonical: '/contact' },
@@ -42,8 +42,7 @@ export default function Contact() {
           Let&rsquo;s make something<br /><em>worth keeping</em>
         </h1>
         <p className="reveal" style={{ marginTop: '26px', maxWidth: '520px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--taupe)' }}>
-          Tell me what you&rsquo;re dreaming up. Pick the path that fits, or just call —
-          I&rsquo;m happy to talk it through.
+          Tell me what you&rsquo;re dreaming up. Pick the path that fits, or just call, I&rsquo;m happy to talk it through.
         </p>
       </header>
 

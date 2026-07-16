@@ -18,7 +18,7 @@ const jost = Jost({
 
 export const metadata = {
   metadataBase: new URL('https://www.transcendphoto.net'),
-  title: 'Transcend Photography — Weddings, Branding & Portraits in Los Angeles',
+  title: 'Transcend Photography, Weddings, Branding & Portraits in Los Angeles',
   description:
     'Documentary and editorial photography for adventurous couples, considered brands, and creative people. Los Angeles based, available worldwide.',
   openGraph: {

@@ -62,7 +62,7 @@ Schedule time for bridal party photos
 
 Include moments for candid, natural shots
 
-If you’re planning an outdoor ceremony or portraits in Los Angeles, timing is crucial for the best natural lighting. Golden hour photos — usually the hour before sunset — create warm, cinematic images that last a lifetime.
+If you’re planning an outdoor ceremony or portraits in Los Angeles, timing is crucial for the best natural lighting. Golden hour photos, usually the hour before sunset, create warm, cinematic images that last a lifetime.
 
 5. Be Flexible, But Stick to Structure
 
@@ -78,7 +78,7 @@ Being too rigid can create stress, while too loose of a schedule can leave impor
 
 6. Review Your Timeline With Your Photographer
 
-Your photographer isn’t just there to take pictures — we’re partners in your day’s flow. Reviewing your timeline with your photographer ensures:
+Your photographer isn’t just there to take pictures, we’re partners in your day’s flow. Reviewing your timeline with your photographer ensures:
 
 All must-have shots are included
 

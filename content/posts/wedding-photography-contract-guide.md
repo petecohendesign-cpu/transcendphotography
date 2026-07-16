@@ -10,7 +10,7 @@ So you've started to plan your wedding. One of the most exciting parts of the pl
 
 A wedding photography contract isn't just a formality. It's a written, legally binding agreement that defines every aspect of your working relationship with your photographer. From the services you'll receive to how and when your photos will be delivered, a contract protects both you and the photographer, ensuring there are no surprises on or after your wedding day.
 
-In this article, we’ll break down why every couple needs a contract, what key clauses to look for, and how it safeguards your wedding memories — so you can focus on celebrating, not stressing.
+In this article, we’ll break down why every couple needs a contract, what key clauses to look for, and how it safeguards your wedding memories, so you can focus on celebrating, not stressing.
 
 What Is a Wedding Photography Contract?
 

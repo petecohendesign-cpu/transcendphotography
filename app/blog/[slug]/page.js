@@ -71,7 +71,7 @@ export default function BlogPost({ params }) {
           <div style={{ marginBottom: '60px' }}>
             <img
               src={post.featuredImage}
-              alt={`${post.title} — Pete Cohen Photography, Los Angeles`}
+              alt={`${post.title}, Pete Cohen Photography, Los Angeles`}
               style={{ width: '100%', borderRadius: '2px' }}
             />
           </div>
@@ -91,7 +91,7 @@ export default function BlogPost({ params }) {
             <BlogGallery
               images={post.galleryImages.map((src, i) => ({
                 src,
-                alt: `${post.title} — photo ${i + 1} by Pete Cohen, Los Angeles photographer`,
+                alt: `${post.title}, photo ${i + 1} by Pete Cohen, Los Angeles photographer`,
               }))}
             />
           </div>

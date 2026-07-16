@@ -12,9 +12,9 @@ const OFFERS = [
   ['Personal branding', 'Headshots and brand portraits for creatives, founders, and professionals.'],
   ['Lifestyle portraits', 'Natural, candid sessions in the places that mean something to you.'],
   ['Musicians & artists', 'Editorial portraits for press kits, releases, and the work itself.'],
-  ['Families & couples', 'Warm, genuine portraits — no stiff poses, just you.'],
+  ['Families & couples', 'Warm, genuine portraits, no stiff poses, just you.'],
   ['Studio or location', 'Clean studio light or out in the world, whichever suits the story.'],
-  ['Mini sessions', 'Short, focused sittings — a relaxed way to start.'],
+  ['Mini sessions', 'Short, focused sittings, a relaxed way to start.'],
 ]
 
 const STEPS = [
@@ -71,7 +71,7 @@ export default function Portraits() {
       <section className="section wrap approach reveal">
         <div className="label">For individuals & creatives</div>
         <p className="serif">
-          Intimate, editorial portraiture — the kind that captures presence, not just
+          Intimate, editorial portraiture, the kind that captures presence, not just
           a likeness. Honest, considered, and unmistakably <em>yours</em>.
         </p>
       </section>

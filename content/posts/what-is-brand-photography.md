@@ -34,7 +34,7 @@ Why Does Brand Photography Matter?
 
 1. First Impressions Count
 
-You’ve heard the saying—you only get one chance at a first impression. When a potential client lands on your website or Instagram profile, your images immediately communicate your professionalism and personality. Grainy, outdated, or mismatched photos can turn someone away before they ever read about your services.
+You’ve heard the saying, you only get one chance at a first impression. When a potential client lands on your website or Instagram profile, your images immediately communicate your professionalism and personality. Grainy, outdated, or mismatched photos can turn someone away before they ever read about your services.
 
 2. Builds Trust and Connection
 

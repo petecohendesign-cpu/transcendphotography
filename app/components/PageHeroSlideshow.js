@@ -13,7 +13,7 @@ import Image from 'next/image'
  *
  * Performance: slides are stacked full-screen, so the browser would download
  * every image immediately. Instead we only mount the images the visitor has
- * seen plus the next one in line — the rest stay empty until needed.
+ * seen plus the next one in line, the rest stay empty until needed.
  */
 export default function PageHeroSlideshow({ slides, label, title, interval = 5500 }) {
   const [idx, setIdx] = useState(0)

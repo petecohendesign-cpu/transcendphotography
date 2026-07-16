@@ -6,7 +6,7 @@ excerpt: "As I’ve been getting more involved with my local chamber of commerce
 featuredImage: "/blog-images/van-nuys-gutters-ribbon-cutting-featured.jpg"
 ---
 
-As I’ve been getting more involved with my local chamber of commerce, I’ve had the opportunity to connect with some incredible local businesses. Recently, I photographed the ribbon cutting for The Brothers That Just Do Gutters in Van Nuys, CA—a growing business bringing top-notch gutter solutions to Los Angeles homeowners.
+As I’ve been getting more involved with my local chamber of commerce, I’ve had the opportunity to connect with some incredible local businesses. Recently, I photographed the ribbon cutting for The Brothers That Just Do Gutters in Van Nuys, CA, a growing business bringing top-notch gutter solutions to Los Angeles homeowners.
 
 Celebrating a New Local Business
 
@@ -20,7 +20,7 @@ One of the highlights of the event was the gutter demo they set up in the back o
 
 Building Local Connections
 
-Events like this are exactly why I wanted to get more involved with the chamber of commerce. Not only do they give me the chance to meet and support other local businesses, but they also allow me to capture moments that highlight community spirit and growth. Photographing this ribbon cutting wasn’t just about documenting the day—it was about being part of a network that celebrates small business success.
+Events like this are exactly why I wanted to get more involved with the chamber of commerce. Not only do they give me the chance to meet and support other local businesses, but they also allow me to capture moments that highlight community spirit and growth. Photographing this ribbon cutting wasn’t just about documenting the day, it was about being part of a network that celebrates small business success.
 
 Thank You
 

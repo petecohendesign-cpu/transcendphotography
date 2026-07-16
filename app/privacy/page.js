@@ -2,7 +2,7 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
 export const metadata = {
-  title: 'Privacy Policy — Transcend Photography',
+  title: 'Privacy Policy, Transcend Photography',
   description:
     'How Transcend Photography collects, uses, and protects your personal information.',
   alternates: { canonical: '/privacy' },
@@ -41,7 +41,7 @@ export default function Privacy() {
           <h2 style={H}>Information you give us</h2>
           <p>
             When you submit an inquiry through our contact forms, we receive the details you
-            provide — typically your name, email address, phone number, event date, and anything
+            provide, typically your name, email address, phone number, event date, and anything
             you write in your message. We use this information solely to respond to your inquiry,
             plan and deliver photography services, and communicate with you about your booking.
           </p>
@@ -79,8 +79,8 @@ export default function Privacy() {
           <h2 style={H}>How we share information</h2>
           <p>
             We never sell your personal information. We share it only with the service providers
-            that make our business run — HoneyBook (client management), Google Workspace (email),
-            and Vercel (website hosting) — each of which processes it under their own privacy and
+            that make our business run, HoneyBook (client management), Google Workspace (email),
+            and Vercel (website hosting), each of which processes it under their own privacy and
             security commitments, and only as needed to serve you.
           </p>
         </div>
