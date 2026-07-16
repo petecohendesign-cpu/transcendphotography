@@ -29,12 +29,50 @@ export const metadata = {
     url: 'https://www.transcendphoto.net',
     siteName: 'Transcend Photography',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Transcend Photography',
+    description: 'Los Angeles wedding, brand & portrait photography.',
+  },
+}
+
+const businessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  '@id': 'https://www.transcendphoto.net/#business',
+  name: 'Transcend Photography',
+  description:
+    'Documentary and editorial wedding, brand, and portrait photography based in Los Angeles, available worldwide.',
+  url: 'https://www.transcendphoto.net',
+  image: 'https://www.transcendphoto.net/images/logo.png',
+  telephone: '+1-203-671-5273',
+  email: 'pete@transcendphoto.net',
+  priceRange: '$$-$$$',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Los Angeles',
+    addressRegion: 'CA',
+    addressCountry: 'US',
+  },
+  areaServed: ['Los Angeles', 'Southern California', 'Worldwide'],
+  founder: { '@type': 'Person', name: 'Pete Cohen' },
+  knowsAbout: ['Wedding Photography', 'Brand Photography', 'Portrait Photography'],
+  sameAs: [
+    'https://instagram.com/transcendwedding',
+    'https://facebook.com/transcendphoto',
+  ],
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${jost.variable}`}>
-      <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
+        />
+        {children}
+      </body>
     </html>
   )
 }
