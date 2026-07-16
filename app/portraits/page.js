@@ -6,6 +6,7 @@ import Reveal from '../components/Reveal'
 import HoneyBook from '../components/HoneyBook'
 import PageHeroSlideshow from '../components/PageHeroSlideshow'
 import ParallaxImage from '../components/ParallaxImage'
+import LivingTile from '../components/LivingTile'
 import QuickContact from '../components/QuickContact'
 
 const OFFERS = [
@@ -98,6 +99,27 @@ export default function Portraits() {
           <ParallaxImage style={{ height: '440px' }} speed={0.16} src="/images/portrait-pc-3.jpg" alt="Editorial portrait in a parking structure" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 30%" />
           <ParallaxImage style={{ height: '440px' }} speed={0.08} src="/images/portrait-pc-11.jpg" alt="Studio portrait" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 25%" />
           <ParallaxImage style={{ height: '440px' }} speed={0.16} src="/images/portrait-pc-13.jpg" alt="Editorial portrait of actor Dominic Pace at night" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 30%" />
+        </div>
+        <div className="reveal" style={{ marginTop: '20px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '22px' }}>
+          <LivingTile
+            height="400px"
+            sizes="(max-width: 900px) 100vw, 50vw"
+            delay={600}
+            slides={[
+              { src: '/images/portrait-pc-16.jpg', alt: 'Family portrait with newborn, black and white', pos: 'center 35%' },
+              { src: '/images/portrait-pc-14.jpg', alt: 'Graduation portrait at UCLA', pos: 'center 25%' },
+              { src: '/images/portrait-pc-17.jpg', alt: 'Mother and child walking a garden path' },
+            ]}
+          />
+          <LivingTile
+            height="400px"
+            sizes="(max-width: 900px) 100vw, 50vw"
+            delay={3000}
+            slides={[
+              { src: '/images/portrait-pc-18.jpg', alt: 'Family of four at golden hour', pos: 'center 35%' },
+              { src: '/images/portrait-pc-15.jpg', alt: 'Graduate holding her tassel' },
+            ]}
+          />
         </div>
       </section>
 

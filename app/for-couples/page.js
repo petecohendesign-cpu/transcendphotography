@@ -6,6 +6,7 @@ import Reveal from '../components/Reveal'
 import HoneyBook from '../components/HoneyBook'
 import PageHeroSlideshow from '../components/PageHeroSlideshow'
 import ParallaxImage from '../components/ParallaxImage'
+import LivingTile from '../components/LivingTile'
 import QuickContact from '../components/QuickContact'
 
 const OFFERS = [
@@ -95,20 +96,43 @@ export default function Weddings() {
           <ParallaxImage style={{ height: '318px' }} speed={0.18} src="/images/wedding-pc-1.jpg" alt="Bride and groom hands with engagement ring" sizes="(max-width: 900px) 100vw, 40vw" objectPosition="center" />
           <ParallaxImage style={{ height: '318px' }} speed={0.12} src="/images/wedding-pc-13.jpg" alt="Ring bearers holding a sign" sizes="(max-width: 900px) 100vw, 40vw" objectPosition="center 35%" />
         </div>
-        <div className="gal gal-3 reveal" style={{ marginTop: '20px' }}>
-          <ParallaxImage style={{ height: '480px' }} speed={0.16} src="/images/wedding-pc-11.jpg" alt="Wedding dress hanging by the window" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '480px' }} speed={0.08} src="/images/wedding-pc-3.jpg" alt="Groom buttoning his jacket while getting ready" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 20%" />
-          <ParallaxImage style={{ height: '480px' }} speed={0.16} src="/images/wedding-pc-18.jpg" alt="Winery cellar reception table" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center" />
-        </div>
-        <div className="gal gal-3 reveal" style={{ marginTop: '20px' }}>
-          <ParallaxImage style={{ height: '420px' }} speed={0.14} src="/images/wedding-pc-15.jpg" alt="Bride and groom kissing on a flower-lined bridge" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '420px' }} speed={0.2} src="/images/wedding-pc-8.jpg" alt="Wedding rings resting on a palm leaf" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '420px' }} speed={0.12} src="/images/wedding-pc-19.jpg" alt="Bride reading a letter before the ceremony" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="72% center" />
-        </div>
-        <div className="gal gal-3 reveal" style={{ marginTop: '20px' }}>
-          <ParallaxImage style={{ height: '420px' }} speed={0.16} src="/images/wedding-pc-16.jpg" alt="Wedding gown with bridesmaid dresses" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '420px' }} speed={0.1} src="/images/wedding-pc-20.png" alt="Bride with flower girl in black and white" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 35%" />
-          <ParallaxImage style={{ height: '420px' }} speed={0.18} src="/images/wedding-pc-5.jpg" alt="Wedding invitation suite flat lay" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center" />
+        <div className="gal gal-2 reveal" style={{ marginTop: '20px' }}>
+          <LivingTile
+            className="tall"
+            height="660px"
+            sizes="(max-width: 900px) 100vw, 60vw"
+            delay={0}
+            slides={[
+              { src: '/images/wedding-pc-11.jpg', alt: 'Wedding dress hanging by the window', pos: 'center' },
+              { src: '/images/wedding-pc-8.jpg', alt: 'Wedding rings resting on a palm leaf', pos: 'center' },
+              { src: '/images/wedding-pc-16.jpg', alt: 'Wedding gown with bridesmaid dresses', pos: 'center' },
+              { src: '/images/wedding-pc-3.jpg', alt: 'Groom buttoning his jacket while getting ready', pos: 'center 25%' },
+              { src: '/images/wedding-pc-20.png', alt: 'Bride with flower girl in black and white', pos: 'center 35%' },
+            ]}
+          />
+          <LivingTile
+            height="318px"
+            sizes="(max-width: 900px) 100vw, 40vw"
+            delay={1700}
+            slides={[
+              { src: '/images/wedding-pc-15.jpg', alt: 'Bride and groom kissing on a flower-lined bridge' },
+              { src: '/images/wedding-pc-21.jpg', alt: 'Groom straightening his tie, black and white', pos: 'center 30%' },
+              { src: '/images/wedding-pc-26.jpg', alt: 'Bride and groom in a vineyard' },
+              { src: '/images/wedding-pc-19.jpg', alt: 'Bride reading a letter before the ceremony', pos: '72% center' },
+            ]}
+          />
+          <LivingTile
+            height="318px"
+            sizes="(max-width: 900px) 100vw, 40vw"
+            delay={3400}
+            slides={[
+              { src: '/images/wedding-pc-23.jpg', alt: 'Sparkler send-off, bride and groom walking through the crowd', pos: 'center 30%' },
+              { src: '/images/wedding-pc-22.jpg', alt: 'Bridal details, shoes, rings, and invitation', pos: 'center' },
+              { src: '/images/wedding-pc-24.jpg', alt: 'Bride and bridesmaids from behind with bouquets' },
+              { src: '/images/wedding-pc-18.jpg', alt: 'Winery cellar reception table', pos: 'center' },
+              { src: '/images/wedding-pc-5.jpg', alt: 'Wedding invitation suite flat lay', pos: 'center' },
+            ]}
+          />
         </div>
       </section>
 
@@ -121,15 +145,39 @@ export default function Weddings() {
           <ParallaxImage style={{ height: '480px' }} speed={0.08} src="/images/engagement-pc-1.jpg" alt="Engagement session under a garden arch" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center" />
           <ParallaxImage style={{ height: '480px' }} speed={0.16} src="/images/engagement-pc-9.jpg" alt="Engagement session in Chinatown at night" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="22% center" />
         </div>
-        <div className="gal gal-3 reveal" style={{ marginTop: '20px' }}>
-          <ParallaxImage style={{ height: '400px' }} speed={0.12} src="/images/engagement-pc-8.jpg" alt="Engagement session in an arched colonnade" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 42%" />
-          <ParallaxImage style={{ height: '400px' }} speed={0.2} src="/images/engagement-pc-13.jpg" alt="Engagement session dancing on the beach" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '400px' }} speed={0.12} src="/images/engagement-pc-6.jpg" alt="Engagement session under a grand archway" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 90%" />
-        </div>
-        <div className="gal gal-3 reveal" style={{ marginTop: '20px' }}>
-          <ParallaxImage style={{ height: '400px' }} speed={0.18} src="/images/engagement-pc-2.jpg" alt="Engagement session in a courtyard" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '400px' }} speed={0.1} src="/images/engagement-pc-3.jpg" alt="Engagement session in a garden pavilion" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '400px' }} speed={0.16} src="/images/engagement-pc-11.jpg" alt="Engagement couple embracing" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 30%" />
+        <div className="gal gal-2 reveal" style={{ marginTop: '20px' }}>
+          <LivingTile
+            className="tall"
+            height="660px"
+            sizes="(max-width: 900px) 100vw, 60vw"
+            delay={800}
+            slides={[
+              { src: '/images/engagement-pc-8.jpg', alt: 'Engagement session in an arched colonnade', pos: 'center 42%' },
+              { src: '/images/engagement-pc-2.jpg', alt: 'Engagement session in a courtyard' },
+              { src: '/images/engagement-pc-7.jpg', alt: 'Engagement session at Pasadena City Hall', pos: 'center 60%' },
+              { src: '/images/engagement-pc-4.jpg', alt: 'Engagement session on a palm-lined street', pos: 'center 60%' },
+              { src: '/images/engagement-pc-6.jpg', alt: 'Engagement session under a grand archway', pos: 'center 90%' },
+              { src: '/images/engagement-pc-11.jpg', alt: 'Engagement couple embracing', pos: 'center 30%' },
+            ]}
+          />
+          <LivingTile
+            height="318px"
+            sizes="(max-width: 900px) 100vw, 40vw"
+            delay={2500}
+            slides={[
+              { src: '/images/engagement-pc-13.jpg', alt: 'Engagement session dancing on the beach' },
+              { src: '/images/engagement-pc-12.jpg', alt: 'Engagement session by the lake at sunset', pos: 'center 40%' },
+            ]}
+          />
+          <LivingTile
+            height="318px"
+            sizes="(max-width: 900px) 100vw, 40vw"
+            delay={4200}
+            slides={[
+              { src: '/images/engagement-pc-3.jpg', alt: 'Engagement session in a garden pavilion' },
+              { src: '/images/engagement-pc-14.jpg', alt: 'Engagement couple dip on the beach at sunset', pos: 'center 40%' },
+            ]}
+          />
         </div>
       </section>
 

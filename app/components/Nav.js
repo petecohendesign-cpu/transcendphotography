@@ -7,7 +7,6 @@ const LINKS = [
   { href: '/for-couples', label: 'Weddings' },
   { href: '/portraits', label: 'Portraits' },
   { href: '/about', label: 'About' },
-  { href: 'https://transcendphoto.pic-time.com/portfolio', label: 'Galleries', external: true },
 ]
 
 const CONTACT = {

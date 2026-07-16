@@ -231,6 +231,15 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
 .phdots .hdot.on::before { background: var(--bone); transform: translate(-50%, -50%) scale(1.35); }
 .phdots .hdot:hover::before { background: rgba(245,241,234,.85); }
 
+/* ---------- living tile (gallery tile that cycles its own photos) ---------- */
+.living-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1.4s cubic-bezier(.4,0,.2,1); }
+.living-slide.active { opacity: 1; }
+.imgblk.living:hover .living-slide.active img { transform: scale(1.04); }
+.living-slide img { transition: transform 1.4s cubic-bezier(.22,1,.36,1); }
+@media (prefers-reduced-motion: reduce) {
+  .living-slide { transition: none; }
+}
+
 /* responsive hero focus */
 @media (max-width: 1200px) {
   .phslide img { object-position: center 45%; }
