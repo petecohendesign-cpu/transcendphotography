@@ -14,7 +14,7 @@ export default function About() {
       <header className="section wrap center" style={{ paddingTop: '160px', paddingBottom: '70px' }}>
         <div className="label reveal" style={{ marginBottom: '28px' }}>Behind the lens</div>
         <h1 className="serif reveal" style={{ fontWeight: 300, fontSize: 'clamp(42px,6vw,82px)', lineHeight: 1.05 }}>
-          A musician&rsquo;s eye,<br />an editor&rsquo;s <em>restraint</em>
+          Every good story<br />deserves a <em>photographer</em>
         </h1>
       </header>
 
@@ -25,9 +25,9 @@ export default function About() {
         </div>
         <div>
           <div className="label" style={{ marginBottom: '24px' }}>The story</div>
-          <p>I grew up in New Haven, Connecticut, a pizza snob with a guitar. Music came first: I studied at Berklee and spent years touring, opening for bands like The Dillinger Escape Plan and Animals As Leaders.</p>
-          <p>Photography started as a way to document those tours. Somewhere between the stage and a friend&rsquo;s wedding, I fell for capturing people in genuine moments. I shot my first wedding in 2015 and never looked back.</p>
-          <p>Today I&rsquo;m based in Los Angeles, working across weddings, brands, and portraits, and still designing on the side.</p>
+          <p>I&rsquo;m Pete, a Los Angeles photographer working across weddings, brands, and portraits. For the last decade, my job has been the same in every setting: notice the real moment, and be ready for it.</p>
+          <p>I came to photography sideways, through years as a touring musician and a career in design, and both still shape how I shoot. But the day I photographed my first wedding in 2015, everything else became background.</p>
+          <p>Since then it&rsquo;s been hundreds of weddings, sessions, and shoots across two coasts, and I still get the same jolt every time a moment comes together in the frame.</p>
         </div>
       </section>
 
@@ -49,7 +49,7 @@ export default function About() {
           <div>
             <div className="label" style={{ marginBottom: '24px' }}>The Journal</div>
             <h2 className="serif" style={{ fontWeight: 300, fontSize: 'clamp(32px,4vw,54px)', lineHeight: 1.15, maxWidth: '17em' }}>
-              A decade behind the camera, <em>written down</em>, planning guides,
+              A decade behind the camera, <em>written down</em>: planning guides,
               honest advice, and the stories behind the shoots.
             </h2>
           </div>

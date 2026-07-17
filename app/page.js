@@ -130,8 +130,8 @@ export default function Home() {
         </div>
         <div>
           <div className="label" style={{ marginBottom: '26px' }}>Behind the lens</div>
-          <h2>A musician&rsquo;s eye,<br />an editor&rsquo;s <em>restraint</em></h2>
-          <p>Berklee-trained musician turned photographer and designer. A decade behind the camera across two coasts, from intimate elopements to two-day celebrations of 200.</p>
+          <h2>Every good story<br />deserves a <em>photographer</em></h2>
+          <p>I&rsquo;m Pete, a Los Angeles photographer with a decade behind the camera across two coasts, from intimate elopements to brand shoots to two-day celebrations of 200.</p>
           <p>Every frame is approached like a creative direction, composed, intentional, and unmistakably yours.</p>
           <a className="arrow" href="/about" style={{ marginTop: '16px', display: 'inline-block' }}>Read the full story</a>
         </div>
