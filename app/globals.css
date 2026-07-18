@@ -231,6 +231,19 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
 .phdots .hdot.on::before { background: var(--bone); transform: translate(-50%, -50%) scale(1.35); }
 .phdots .hdot:hover::before { background: rgba(245,241,234,.85); }
 
+/* ---------- editorial rows (native aspect ratios, zero cropping) ----------
+   Each row is a flex line; every item's flex-grow equals its aspect ratio
+   (with basis 0), which makes all items in a row share the same height while
+   keeping their true proportions. Nothing is ever cropped. */
+.edrow { display: flex; gap: 22px; margin-top: 22px; }
+.edrow > * { min-width: 0; }
+.edrow:first-child { margin-top: 0; }
+.nframe { will-change: transform; }
+@media (max-width: 760px) {
+  .edrow { flex-direction: column; }
+  .edrow > * { flex: none !important; width: 100%; }
+}
+
 /* ---------- living tile (gallery tile that cycles its own photos) ---------- */
 .living-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1.4s cubic-bezier(.4,0,.2,1); }
 .living-slide.active { opacity: 1; }

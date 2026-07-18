@@ -7,6 +7,7 @@ import HoneyBook from '../components/HoneyBook'
 import PageHeroSlideshow from '../components/PageHeroSlideshow'
 import ParallaxImage from '../components/ParallaxImage'
 import LivingTile from '../components/LivingTile'
+import NativeFrame from '../components/NativeFrame'
 import QuickContact from '../components/QuickContact'
 
 const OFFERS = [
@@ -62,7 +63,7 @@ export default function Weddings() {
           { src: '/images/wedding-pc-6.jpg',  alt: 'Bride and groom by the sea, veil in the wind' },
           { src: '/images/wedding-pc-14.jpg', alt: 'Bride and groom during their first dance' },
           { src: '/images/wedding-pc-4.jpg',  alt: 'Bride and groom kissing on the rocks by the ocean' },
-          { src: '/images/wedding-pc-10.jpg', alt: 'Bride and groom running across the lawn at sunset' },
+          { src: '/images/wedding-pc-26.jpg', alt: 'Bride and groom in a vineyard at golden hour' },
           { src: '/images/wedding-pc-17.jpg', alt: 'Bride at an Indian wedding ceremony' },
           { src: '/images/wedding-pc-7.jpg',  alt: 'Bride and groom laughing on the beach' },
         ]}
@@ -91,48 +92,49 @@ export default function Weddings() {
       </section>
 
       <section className="wrap" style={{ paddingBottom: '60px' }}>
-        <div className="gal gal-2 reveal">
-          <ParallaxImage className="tall" style={{ height: '660px' }} speed={0.08} src="/images/wedding-pc-12.jpg" alt="Bride and groom silhouetted in a doorway" sizes="(max-width: 900px) 100vw, 60vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '318px' }} speed={0.18} src="/images/wedding-pc-1.jpg" alt="Bride and groom hands with engagement ring" sizes="(max-width: 900px) 100vw, 40vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '318px' }} speed={0.12} src="/images/wedding-pc-13.jpg" alt="Ring bearers holding a sign" sizes="(max-width: 900px) 100vw, 40vw" objectPosition="center 35%" />
-        </div>
-        <div className="gal gal-2 reveal" style={{ marginTop: '20px' }}>
+        {/* Editorial rows: every image at its native aspect ratio, zero cropping.
+            flex-grow = aspect ratio, so items in a row share one height. */}
+        <div className="edrow reveal">
+          <NativeFrame src="/images/wedding-pc-12.jpg" alt="Bride and groom silhouetted in a doorway" w={1000} h={1498} drift={14} style={{ flex: '0.668 1 0%' }} />
           <LivingTile
-            className="tall"
-            height="660px"
-            sizes="(max-width: 900px) 100vw, 60vw"
+            aspect="3 / 2"
+            style={{ flex: '1.5 1 0%' }}
+            sizes="(max-width: 760px) 100vw, 65vw"
             delay={0}
             slides={[
-              { src: '/images/wedding-pc-11.jpg', alt: 'Wedding dress hanging by the window', pos: 'center' },
-              { src: '/images/wedding-pc-8.jpg', alt: 'Wedding rings resting on a palm leaf', pos: 'center' },
-              { src: '/images/wedding-pc-16.jpg', alt: 'Wedding gown with bridesmaid dresses', pos: 'center' },
-              { src: '/images/wedding-pc-3.jpg', alt: 'Groom buttoning his jacket while getting ready', pos: 'center 25%' },
-              { src: '/images/wedding-pc-20.png', alt: 'Bride with flower girl in black and white', pos: 'center 35%' },
-            ]}
-          />
-          <LivingTile
-            height="318px"
-            sizes="(max-width: 900px) 100vw, 40vw"
-            delay={1700}
-            slides={[
               { src: '/images/wedding-pc-15.jpg', alt: 'Bride and groom kissing on a flower-lined bridge' },
-              { src: '/images/wedding-pc-21.jpg', alt: 'Groom straightening his tie, black and white', pos: 'center 30%' },
-              { src: '/images/wedding-pc-26.jpg', alt: 'Bride and groom in a vineyard' },
-              { src: '/images/wedding-pc-19.jpg', alt: 'Bride reading a letter before the ceremony', pos: '72% center' },
+              { src: '/images/wedding-pc-21.jpg', alt: 'Groom straightening his tie, black and white' },
+              { src: '/images/wedding-pc-19.jpg', alt: 'Bride reading a letter before the ceremony' },
+              { src: '/images/wedding-pc-5.jpg', alt: 'Wedding invitation suite flat lay' },
             ]}
           />
+        </div>
+        <div className="edrow reveal">
+          <NativeFrame src="/images/wedding-pc-1.jpg" alt="Bride and groom hands with engagement ring" w={1000} h={667} drift={12} style={{ flex: '1.5 1 0%' }} />
+          <NativeFrame src="/images/wedding-pc-13.jpg" alt="Ring bearers holding a sign" w={1500} h={1001} drift={20} style={{ flex: '1.499 1 0%' }} />
+        </div>
+        <div className="edrow reveal">
           <LivingTile
-            height="318px"
-            sizes="(max-width: 900px) 100vw, 40vw"
-            delay={3400}
+            aspect="2 / 3"
+            style={{ flex: '0.667 1 0%' }}
+            sizes="(max-width: 760px) 100vw, 35vw"
+            delay={2600}
             slides={[
-              { src: '/images/wedding-pc-23.jpg', alt: 'Sparkler send-off, bride and groom walking through the crowd', pos: 'center 30%' },
-              { src: '/images/wedding-pc-22.jpg', alt: 'Bridal details, shoes, rings, and invitation', pos: 'center' },
-              { src: '/images/wedding-pc-24.jpg', alt: 'Bride and bridesmaids from behind with bouquets' },
-              { src: '/images/wedding-pc-18.jpg', alt: 'Winery cellar reception table', pos: 'center' },
-              { src: '/images/wedding-pc-5.jpg', alt: 'Wedding invitation suite flat lay', pos: 'center' },
+              { src: '/images/wedding-pc-11.jpg', alt: 'Wedding dress hanging by the window' },
+              { src: '/images/wedding-pc-8.jpg', alt: 'Wedding rings resting on a palm leaf' },
+              { src: '/images/wedding-pc-16.jpg', alt: 'Wedding gown with bridesmaid dresses' },
+              { src: '/images/wedding-pc-3.jpg', alt: 'Groom buttoning his jacket while getting ready' },
             ]}
           />
+          <NativeFrame src="/images/wedding-pc-23.jpg" alt="Sparkler send-off, bride and groom walking through the crowd" w={2000} h={1335} drift={16} style={{ flex: '1.498 1 0%' }} />
+        </div>
+        <div className="edrow reveal">
+          <NativeFrame src="/images/wedding-pc-22.jpg" alt="Bridal details, shoes, rings, and invitation" w={2400} h={1600} drift={12} style={{ flex: '1.5 1 0%' }} />
+          <NativeFrame src="/images/wedding-pc-20.png" alt="Bride with flower girl in black and white" w={1000} h={1250} drift={18} style={{ flex: '0.8 1 0%' }} />
+        </div>
+        <div className="edrow reveal">
+          <NativeFrame src="/images/wedding-pc-24.jpg" alt="Bride and bridesmaids from behind with bouquets" w={1500} h={1001} drift={14} style={{ flex: '1.499 1 0%' }} />
+          <NativeFrame src="/images/wedding-pc-18.jpg" alt="Winery cellar reception table" w={2400} h={1602} drift={10} style={{ flex: '1.498 1 0%' }} />
         </div>
       </section>
 

@@ -21,10 +21,12 @@ import Image from 'next/image'
 export default function LivingTile({
   slides,
   height,
+  aspect, // e.g. '3 / 2' — use instead of height; stack same-ratio images for zero crop
   className = '',
   sizes = '(max-width: 900px) 100vw, 33vw',
   interval = 5200,
   delay = 0,
+  style = {},
 }) {
   const [idx, setIdx] = useState(0)
   const [loadedUpTo, setLoadedUpTo] = useState(1)
@@ -49,7 +51,10 @@ export default function LivingTile({
   const shouldMount = (i) => seenAll.current || i <= loadedUpTo
 
   return (
-    <div className={`imgblk living ${className}`.trim()} style={{ position: 'relative', height }}>
+    <div
+      className={`imgblk living ${className}`.trim()}
+      style={{ position: 'relative', ...(aspect ? { aspectRatio: aspect } : { height }), ...style }}
+    >
       {slides.map((s, i) => (
         <div key={i} className={`living-slide${i === idx ? ' active' : ''}`}>
           {shouldMount(i) && (
