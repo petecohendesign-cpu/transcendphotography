@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Reveal from './components/Reveal'
+import IntroLoader from './components/IntroLoader'
 
 const SLIDES = [
   {
@@ -40,6 +41,7 @@ export default function Home() {
 
   return (
     <>
+      <IntroLoader />
       <Nav variant="overlay" />
       <Reveal />
 
