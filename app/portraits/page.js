@@ -5,8 +5,8 @@ import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
 import HoneyBook from '../components/HoneyBook'
 import PageHeroSlideshow from '../components/PageHeroSlideshow'
-import ParallaxImage from '../components/ParallaxImage'
 import LivingTile from '../components/LivingTile'
+import NativeFrame from '../components/NativeFrame'
 import QuickContact from '../components/QuickContact'
 
 const OFFERS = [
@@ -90,36 +90,41 @@ export default function Portraits() {
       </section>
 
       <section className="wrap" style={{ paddingBottom: '110px' }}>
-        <div className="gal gal-2 reveal">
-          <ParallaxImage className="tall" style={{ height: '660px' }} speed={0.08} src="/images/portrait-pc-5.jpg" alt="Studio portrait" sizes="(max-width: 900px) 100vw, 60vw" objectPosition="center 25%" />
-          <ParallaxImage style={{ height: '318px' }} speed={0.18} src="/images/portrait-pc-10.jpg" alt="Studio portrait with camera" sizes="(max-width: 900px) 100vw, 40vw" objectPosition="center 25%" />
-          <ParallaxImage style={{ height: '318px' }} speed={0.12} src="/images/portrait-pc-7.jpg" alt="Mother and son portrait" sizes="(max-width: 900px) 100vw, 40vw" objectPosition="center 30%" />
-        </div>
-        <div className="gal gal-3 reveal" style={{ marginTop: '20px' }}>
-          <ParallaxImage style={{ height: '440px' }} speed={0.16} src="/images/portrait-pc-3.jpg" alt="Editorial portrait in a parking structure" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 30%" />
-          <ParallaxImage style={{ height: '440px' }} speed={0.08} src="/images/portrait-pc-11.jpg" alt="Studio portrait" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 25%" />
-          <ParallaxImage style={{ height: '440px' }} speed={0.16} src="/images/portrait-pc-13.jpg" alt="Editorial portrait of actor Dominic Pace at night" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 30%" />
-        </div>
-        <div className="reveal" style={{ marginTop: '20px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '22px' }}>
+        {/* Editorial rows: every image at its native aspect ratio, zero cropping. */}
+        <div className="edrow reveal">
+          <NativeFrame src="/images/portrait-pc-5.jpg" alt="Studio portrait" w={1602} h={2400} drift={14} style={{ flex: '0.667 1 0%' }} />
           <LivingTile
-            height="400px"
-            sizes="(max-width: 900px) 100vw, 50vw"
-            delay={600}
+            aspect="3 / 2"
+            style={{ flex: '1.5 1 0%' }}
+            sizes="(max-width: 760px) 100vw, 65vw"
+            delay={0}
             slides={[
-              { src: '/images/portrait-pc-16.jpg', alt: 'Family portrait with newborn, black and white', pos: 'center 35%' },
-              { src: '/images/portrait-pc-14.jpg', alt: 'Graduation portrait at UCLA', pos: 'center 25%' },
-              { src: '/images/portrait-pc-17.jpg', alt: 'Mother and child walking a garden path' },
+              { src: '/images/portrait-pc-10.jpg', alt: 'Studio portrait with camera' },
+              { src: '/images/portrait-pc-3.jpg', alt: 'Editorial portrait in a parking structure' },
             ]}
           />
+        </div>
+        <div className="edrow reveal">
+          <NativeFrame src="/images/portrait-pc-7.jpg" alt="Mother and son portrait" w={2400} h={1602} drift={16} style={{ flex: '1.498 1 0%' }} />
+          <NativeFrame src="/images/portrait-pc-11.jpg" alt="Studio portrait" w={2400} h={1602} drift={10} style={{ flex: '1.498 1 0%' }} />
+        </div>
+        <div className="edrow reveal">
+          <NativeFrame src="/images/portrait-pc-16.jpg" alt="Family portrait with newborn, black and white" w={2000} h={1335} drift={12} style={{ flex: '1.498 1 0%' }} />
           <LivingTile
-            height="400px"
-            sizes="(max-width: 900px) 100vw, 50vw"
-            delay={3000}
+            aspect="3 / 2"
+            style={{ flex: '1.5 1 0%' }}
+            sizes="(max-width: 760px) 100vw, 50vw"
+            delay={2600}
             slides={[
-              { src: '/images/portrait-pc-18.jpg', alt: 'Family of four at golden hour', pos: 'center 35%' },
+              { src: '/images/portrait-pc-14.jpg', alt: 'Graduation portrait at UCLA' },
+              { src: '/images/portrait-pc-18.jpg', alt: 'Family of four at golden hour' },
               { src: '/images/portrait-pc-15.jpg', alt: 'Graduate holding her tassel' },
             ]}
           />
+        </div>
+        <div className="edrow reveal">
+          <NativeFrame src="/images/portrait-pc-17.jpg" alt="Mother and child walking a garden path" w={2000} h={1461} drift={16} style={{ flex: '1.369 1 0%' }} />
+          <NativeFrame src="/images/portrait-pc-13.jpg" alt="Editorial portrait of actor Dominic Pace at night" w={2400} h={1600} drift={12} style={{ flex: '1.5 1 0%' }} />
         </div>
       </section>
 
