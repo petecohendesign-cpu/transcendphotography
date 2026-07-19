@@ -297,6 +297,33 @@ html.intro-lock { overflow: hidden; }
   .intro { display: none; }
 }
 
+/* ---------- homepage category showcase (side-scrolling images + quote) ---------- */
+.scrollrow {
+  display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory;
+  padding-bottom: 10px; scroll-padding: 0 48px;
+  -webkit-overflow-scrolling: touch;
+}
+.scrollrow::-webkit-scrollbar { height: 4px; }
+.scrollrow::-webkit-scrollbar-thumb { background: var(--hairline); border-radius: 4px; }
+.scrollcard {
+  flex: 0 0 auto; width: min(72%, 600px); aspect-ratio: 3 / 2;
+  scroll-snap-align: center; position: relative; overflow: hidden;
+  border-radius: 2px; background: var(--bone-2);
+}
+.scrollcard img { transition: transform 1.4s cubic-bezier(.22,1,.36,1); }
+.scrollcard:hover img { transform: scale(1.04); }
+.miniquote {
+  max-width: 660px; margin: 46px auto 0; text-align: center;
+}
+.miniquote p {
+  font-family: var(--font-serif), serif; font-style: italic; font-weight: 300;
+  font-size: clamp(20px, 2.4vw, 27px); line-height: 1.45; color: var(--espresso);
+}
+.miniquote cite {
+  display: block; font-style: normal; font-size: 13px; letter-spacing: 0.04em;
+  color: var(--taupe); margin-top: 16px;
+}
+
 /* ---------- editorial rows (native aspect ratios, zero cropping) ----------
    Each row is a flex line; every item's flex-grow equals its aspect ratio
    (with basis 0), which makes all items in a row share the same height while

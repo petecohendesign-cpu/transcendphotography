@@ -125,6 +125,38 @@ export default function Home() {
         <div className="label reveal">S &amp; M &nbsp;·&nbsp; Married in Connecticut</div>
       </section>
 
+      {/* Branding showcase */}
+      <section className="section wrap">
+        <div className="reveal center" style={{ marginBottom: '44px' }}>
+          <div className="label" style={{ marginBottom: '16px' }}>Branding &amp; Lifestyle</div>
+          <h2 className="h2">Brands, told visually</h2>
+        </div>
+        <div className="scrollrow reveal">
+          <div className="scrollcard"><Image src="/images/branding-pc-2.jpg" alt="Bubles gift box product photography" fill sizes="(max-width: 900px) 78vw, 600px" style={{ objectFit: 'cover' }} /></div>
+          <div className="scrollcard"><Image src="/images/branding-pc-4.jpg" alt="Bubles lifestyle product photography" fill sizes="(max-width: 900px) 78vw, 600px" style={{ objectFit: 'cover' }} /></div>
+        </div>
+        <div className="miniquote reveal">
+          <p>&ldquo;Pete is exceptional! We collaborated on a &lsquo;Wedding Vibes&rsquo; photo shoot style, and he delivered! Cheers to amazing!&rdquo;</p>
+          <cite>Maya Camara &nbsp;·&nbsp; Bubles Champagne</cite>
+        </div>
+      </section>
+
+      {/* Portrait showcase */}
+      <section className="section wrap" style={{ paddingTop: 0 }}>
+        <div className="reveal center" style={{ marginBottom: '44px' }}>
+          <div className="label" style={{ marginBottom: '16px' }}>Portrait Sessions</div>
+          <h2 className="h2">People, as they really are</h2>
+        </div>
+        <div className="scrollrow reveal">
+          <div className="scrollcard"><Image src="/images/portrait-pc-18.jpg" alt="Family portrait at golden hour" fill sizes="(max-width: 900px) 78vw, 600px" style={{ objectFit: 'cover' }} /></div>
+          <div className="scrollcard"><Image src="/images/portrait-pc-17.jpg" alt="Mother and child walking a garden path" fill sizes="(max-width: 900px) 78vw, 600px" style={{ objectFit: 'cover' }} /></div>
+        </div>
+        <div className="miniquote reveal">
+          <p>&ldquo;He took the chaotic nature of wrangling 2 young kids for pictures and made it relaxed and easy. The pictures he sent us went above and beyond our expectations. They felt cinematic and just captured the love of my little fam.&rdquo;</p>
+          <cite>Karen Fadul &nbsp;·&nbsp; Family session</cite>
+        </div>
+      </section>
+
       {/* About teaser */}
       <section className="section wrap split reveal">
         <div className="imgblk" style={{ height: '560px', position: 'relative' }}>
