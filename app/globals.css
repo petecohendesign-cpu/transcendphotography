@@ -149,17 +149,17 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
 .harrow { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--bone); text-decoration: none; border-bottom: 1px solid rgba(245,241,234,.4); padding-bottom: 5px; transition: border-color .4s, color .4s; }
 .harrow:hover { border-color: #f0d9c2; color: #f0d9c2; }
 
-/* right-side service switcher */
+/* left-side service switcher */
 .hservices {
-  position: absolute; right: 52px; top: 50%;
+  position: absolute; left: 52px; top: 46%;
   transform: translateY(-50%);
   display: flex; flex-direction: column; gap: 6px;
   z-index: 3;
-  text-align: right;
+  text-align: left;
 }
 .hservice {
   background: none; border: none; padding: 10px 0; cursor: pointer;
-  display: flex; flex-direction: column; align-items: flex-end; gap: 4px;
+  display: flex; flex-direction: column; align-items: flex-start; gap: 4px;
   transition: opacity .5s ease;
 }
 .hservice-num {
@@ -192,14 +192,14 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
 .hscroll { position: absolute; left: 50%; transform: translateX(-50%); bottom: 34px; color: var(--bone); font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; opacity: .4; z-index: 3; }
 
 @media (max-width: 768px) {
-  .hservices { right: 24px; gap: 4px; }
+  .hservices { left: 24px; gap: 4px; }
   .hservice-name { font-size: clamp(18px, 4vw, 26px) !important; }
   .hservice.active .hservice-name { font-size: clamp(22px, 5vw, 32px) !important; }
   .hcontent { left: 24px; bottom: 70px; }
   .hsub { font-size: 13px; }
 }
 @media (max-width: 480px) {
-  .hservices { right: 18px; }
+  .hservices { left: 18px; }
   .hcontent { left: 18px; bottom: 60px; max-width: 200px; }
 }
 
