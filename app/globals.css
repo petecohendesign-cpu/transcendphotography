@@ -315,6 +315,8 @@ html.intro-lock { overflow: hidden; }
 .miniquote {
   max-width: 660px; margin: 46px auto 0; text-align: center;
 }
+.stars { display: flex; gap: 6px; justify-content: center; margin-bottom: 20px; }
+.stars svg { fill: var(--clay); display: block; }
 .miniquote p {
   font-family: var(--font-serif), serif; font-style: italic; font-weight: 300;
   font-size: clamp(20px, 2.4vw, 27px); line-height: 1.45; color: var(--espresso);

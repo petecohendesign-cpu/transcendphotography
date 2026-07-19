@@ -6,6 +6,7 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Reveal from './components/Reveal'
 import IntroLoader from './components/IntroLoader'
+import Stars from './components/Stars'
 
 const SLIDES = [
   {
@@ -136,6 +137,7 @@ export default function Home() {
           <div className="scrollcard"><Image src="/images/branding-pc-4.jpg" alt="Bubles lifestyle product photography" fill sizes="(max-width: 900px) 78vw, 600px" style={{ objectFit: 'cover' }} /></div>
         </div>
         <div className="miniquote reveal">
+          <Stars />
           <p>&ldquo;Pete is exceptional! We collaborated on a &lsquo;Wedding Vibes&rsquo; photo shoot style, and he delivered! Cheers to amazing!&rdquo;</p>
           <cite>Maya Camara &nbsp;·&nbsp; Bubles Champagne</cite>
         </div>
@@ -152,6 +154,7 @@ export default function Home() {
           <div className="scrollcard"><Image src="/images/portrait-pc-17.jpg" alt="Mother and child walking a garden path" fill sizes="(max-width: 900px) 78vw, 600px" style={{ objectFit: 'cover' }} /></div>
         </div>
         <div className="miniquote reveal">
+          <Stars />
           <p>&ldquo;He took the chaotic nature of wrangling 2 young kids for pictures and made it relaxed and easy. The pictures he sent us went above and beyond our expectations. They felt cinematic and just captured the love of my little fam.&rdquo;</p>
           <cite>Karen Fadul &nbsp;·&nbsp; Family session</cite>
         </div>
