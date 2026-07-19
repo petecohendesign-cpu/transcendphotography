@@ -123,6 +123,7 @@ export default function Home() {
           Pete will make sure your photos are the kind you want to look at time and
           time again, because they truly are a work of art.
         </p>
+        <div className="reveal"><Stars /></div>
         <div className="label reveal">S &amp; M &nbsp;·&nbsp; Married in Connecticut</div>
       </section>
 

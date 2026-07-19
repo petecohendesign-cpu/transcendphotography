@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
+import Stars from '../components/Stars'
 
 export default function About() {
   return (
@@ -64,6 +65,7 @@ export default function About() {
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '60px' }}>
           <div className="reveal">
+            <Stars align="left" />
             <p style={{ fontFamily: 'var(--font-serif), serif', fontStyle: 'italic', fontWeight: 300, fontSize: '20px', lineHeight: 1.5, color: 'var(--espresso)', marginBottom: '18px' }}>
               &ldquo;Pete will make sure your photos are the kind you want to look at time and time again, because they truly are a work of art.&rdquo;
             </p>
@@ -71,6 +73,7 @@ export default function About() {
             <div style={{ fontSize: '13px', color: 'var(--taupe)' }}>Married in Connecticut</div>
           </div>
           <div className="reveal">
+            <Stars align="left" />
             <p style={{ fontFamily: 'var(--font-serif), serif', fontStyle: 'italic', fontWeight: 300, fontSize: '20px', lineHeight: 1.5, color: 'var(--espresso)', marginBottom: '18px' }}>
               &ldquo;We are filled with fond memories of how special our day was, and how easy and fun it was to shoot them with Pete.&rdquo;
             </p>
