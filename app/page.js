@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Reveal from './components/Reveal'
 import IntroLoader from './components/IntroLoader'
 import Stars from './components/Stars'
+import PhotoCarousel from './components/PhotoCarousel'
 
 const SLIDES = [
   {
@@ -109,55 +110,65 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Editorial band */}
-      <div className="wrap reveal">
-        <div className="imgblk" style={{ height: '600px', position: 'relative' }}>
-          <Image src="/images/wedding-flower-bridge.jpg" alt="Wedding couple on the flower bridge" fill sizes="100vw" style={{ objectFit: 'cover' }} />
-        </div>
-      </div>
-
-      {/* Quote */}
-      <section className="section quote">
-        <div className="mark reveal">&ldquo;</div>
-        <p className="reveal">
-          Pete will make sure your photos are the kind you want to look at time and
-          time again, because they truly are a work of art.
-        </p>
-        <div className="reveal"><Stars /></div>
-        <div className="label reveal">S &amp; M &nbsp;·&nbsp; Married in Connecticut</div>
-      </section>
-
-      {/* Branding showcase */}
+      {/* Category trio: three equal carousels, each independently scrollable */}
       <section className="section wrap">
-        <div className="reveal center" style={{ marginBottom: '44px' }}>
-          <div className="label" style={{ marginBottom: '16px' }}>Branding &amp; Lifestyle</div>
-          <h2 className="h2">Brands, told visually</h2>
+        <div className="reveal center" style={{ marginBottom: '56px' }}>
+          <div className="label" style={{ marginBottom: '16px' }}>Recent work</div>
+          <h2 className="h2">A look at each</h2>
         </div>
-        <div className="scrollrow reveal">
-          <div className="scrollcard"><Image src="/images/branding-pc-2.jpg" alt="Bubles gift box product photography" fill sizes="(max-width: 900px) 78vw, 600px" style={{ objectFit: 'cover' }} /></div>
-          <div className="scrollcard"><Image src="/images/branding-pc-4.jpg" alt="Bubles lifestyle product photography" fill sizes="(max-width: 900px) 78vw, 600px" style={{ objectFit: 'cover' }} /></div>
-        </div>
-        <div className="miniquote reveal">
-          <Stars />
-          <p>&ldquo;Pete is exceptional! We collaborated on a &lsquo;Wedding Vibes&rsquo; photo shoot style, and he delivered! Cheers to amazing!&rdquo;</p>
-          <cite>Maya Camara &nbsp;·&nbsp; Bubles Champagne</cite>
-        </div>
-      </section>
+        <div className="tricar reveal">
 
-      {/* Portrait showcase */}
-      <section className="section wrap" style={{ paddingTop: 0 }}>
-        <div className="reveal center" style={{ marginBottom: '44px' }}>
-          <div className="label" style={{ marginBottom: '16px' }}>Portrait Sessions</div>
-          <h2 className="h2">People, as they really are</h2>
-        </div>
-        <div className="scrollrow reveal">
-          <div className="scrollcard"><Image src="/images/portrait-pc-18.jpg" alt="Family portrait at golden hour" fill sizes="(max-width: 900px) 78vw, 600px" style={{ objectFit: 'cover' }} /></div>
-          <div className="scrollcard"><Image src="/images/portrait-pc-17.jpg" alt="Mother and child walking a garden path" fill sizes="(max-width: 900px) 78vw, 600px" style={{ objectFit: 'cover' }} /></div>
-        </div>
-        <div className="miniquote reveal">
-          <Stars />
-          <p>&ldquo;He took the chaotic nature of wrangling 2 young kids for pictures and made it relaxed and easy. The pictures he sent us went above and beyond our expectations. They felt cinematic and just captured the love of my little fam.&rdquo;</p>
-          <cite>Karen Fadul &nbsp;·&nbsp; Family session</cite>
+          <div className="tricol">
+            <PhotoCarousel
+              images={[
+                { src: '/images/wedding-flower-bridge.jpg', alt: 'Wedding couple on the flower bridge' },
+                { src: '/images/wedding-pc-15.jpg', alt: 'Bride and groom kissing on a flower-lined bridge' },
+                { src: '/images/wedding-pc-23.jpg', alt: 'Sparkler send-off' },
+                { src: '/images/wedding-pc-1.jpg', alt: 'Bride and groom hands with engagement ring' },
+                { src: '/images/wedding-pc-13.jpg', alt: 'Ring bearers holding a sign' },
+              ]}
+            />
+            <div className="label">Weddings &amp; Couples</div>
+            <Stars align="left" />
+            <p className="tricol-quote">&ldquo;Pete will make sure your photos are the kind you want to look at time and time again, because they truly are a work of art.&rdquo;</p>
+            <cite className="tricol-cite">S &amp; M &nbsp;·&nbsp; Married in Connecticut</cite>
+            <a className="nlink tricol-link" href="/for-couples">Explore weddings</a>
+          </div>
+
+          <div className="tricol">
+            <PhotoCarousel
+              images={[
+                { src: '/images/branding-pc-2.jpg', alt: 'Bubles gift box product photography' },
+                { src: '/images/branding-pc-4.jpg', alt: 'Bubles lifestyle product photography' },
+                { src: '/images/branding-pc-6.jpg', alt: 'Claudine branding session' },
+                { src: '/images/branding-mediamonks-neon.jpg', alt: 'MediaMonks office neon sign' },
+                { src: '/images/branding-pc-12.jpg', alt: 'PodBox product photography' },
+              ]}
+            />
+            <div className="label">Branding &amp; Lifestyle</div>
+            <Stars align="left" />
+            <p className="tricol-quote">&ldquo;Pete is exceptional! We collaborated on a &lsquo;Wedding Vibes&rsquo; photo shoot style, and he delivered! Cheers to amazing!&rdquo;</p>
+            <cite className="tricol-cite">Maya Camara &nbsp;·&nbsp; Bubles Champagne</cite>
+            <a className="nlink tricol-link" href="/brand-photography">Explore branding</a>
+          </div>
+
+          <div className="tricol">
+            <PhotoCarousel
+              images={[
+                { src: '/images/portrait-pc-18.jpg', alt: 'Family portrait at golden hour' },
+                { src: '/images/portrait-pc-12.jpg', alt: 'Editorial portrait of actor Dominic Pace' },
+                { src: '/images/portrait-pc-8.jpg', alt: 'Father and child portrait' },
+                { src: '/images/portrait-pc-3.jpg', alt: 'Editorial portrait in a parking structure' },
+                { src: '/images/portrait-pc-11.jpg', alt: 'Studio portrait' },
+              ]}
+            />
+            <div className="label">Portrait Sessions</div>
+            <Stars align="left" />
+            <p className="tricol-quote">&ldquo;He took the chaotic nature of wrangling 2 young kids for pictures and made it relaxed and easy. The pictures went above and beyond our expectations.&rdquo;</p>
+            <cite className="tricol-cite">Karen Fadul &nbsp;·&nbsp; Family session</cite>
+            <a className="nlink tricol-link" href="/portraits">Explore portraits</a>
+          </div>
+
         </div>
       </section>
 
