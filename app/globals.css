@@ -297,43 +297,56 @@ html.intro-lock { overflow: hidden; }
   .intro { display: none; }
 }
 
-/* ---------- homepage category trio (three equal carousels) ---------- */
-.tricar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; align-items: start; }
-.tricol { display: flex; flex-direction: column; }
-.tricol .label { margin: 22px 0 12px; }
-.tricol-quote {
-  font-family: var(--font-serif), serif; font-style: italic; font-weight: 300;
-  font-size: 17px; line-height: 1.5; color: var(--espresso); margin-top: 4px;
+/* ---------- homepage category carousel (one category per full-width slide) ---------- */
+.catcar {
+  display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+  scrollbar-width: none; -ms-overflow-style: none; -webkit-overflow-scrolling: touch;
 }
-.tricol-cite { display: block; font-style: normal; font-size: 12.5px; color: var(--taupe); margin-top: 12px; }
-.tricol-link { margin-top: 18px; align-self: flex-start; }
-
-/* carousel frame: 3:2, matched to the photos so nothing crops */
-.pcar {
+.catcar::-webkit-scrollbar { display: none; }
+.catslide { flex: 0 0 100%; scroll-snap-align: start; }
+.catsplit {
+  display: grid; grid-template-columns: 1.18fr 1fr; gap: 56px; align-items: center;
+  padding: 0 48px;
+}
+.catphoto {
   position: relative; aspect-ratio: 3 / 2; overflow: hidden;
   border-radius: 2px; background: var(--bone-2);
 }
-.pcar-slide { position: absolute; inset: 0; opacity: 0; transition: opacity .7s cubic-bezier(.4,0,.2,1); }
-.pcar-slide.active { opacity: 1; }
-.pcar-btn {
-  position: absolute; top: 50%; transform: translateY(-50%); z-index: 3;
-  width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;
-  background: rgba(20,16,12,.34); color: var(--bone); border: 0; border-radius: 50%;
-  cursor: pointer; opacity: 0; transition: opacity .35s, background .35s;
-  backdrop-filter: blur(3px);
+.catphoto img { transition: transform 1.5s cubic-bezier(.22,1,.36,1); }
+.catphoto:hover img { transform: scale(1.03); }
+.cattext .label { margin-bottom: 18px; }
+.catquote {
+  font-family: var(--font-serif), serif; font-style: italic; font-weight: 300;
+  font-size: clamp(19px, 1.7vw, 24px); line-height: 1.5; color: var(--espresso);
 }
-.pcar:hover .pcar-btn, .pcar-btn:focus-visible { opacity: 1; }
-.pcar-btn:hover { background: rgba(20,16,12,.6); }
-.pcar-prev { left: 10px; }
-.pcar-next { right: 10px; }
-.pcar-count {
-  position: absolute; bottom: 10px; right: 12px; z-index: 3;
-  font-size: 11px; letter-spacing: .12em; color: rgba(245,241,234,.9);
-  text-shadow: 0 1px 8px rgba(0,0,0,.5);
+.catcite { display: block; font-style: normal; font-size: 13px; color: var(--taupe); margin-top: 16px; }
+.catlink { margin-top: 26px; display: inline-block; }
+
+.catnav {
+  display: flex; align-items: center; justify-content: center; gap: 26px;
+  margin-top: 48px;
 }
+.catarrow {
+  width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
+  background: none; border: 1px solid var(--hairline); border-radius: 50%;
+  color: var(--espresso); cursor: pointer; transition: border-color .35s, color .35s;
+}
+.catarrow:hover { border-color: var(--clay); color: var(--clay); }
+.cattabs { display: flex; gap: 26px; }
+.cattabs button {
+  background: none; border: 0; cursor: pointer; padding: 4px 0;
+  font-family: var(--font-sans), sans-serif; font-size: 11px; letter-spacing: .2em;
+  text-transform: uppercase; color: var(--taupe);
+  border-bottom: 1px solid transparent; transition: color .35s, border-color .35s;
+}
+.cattabs button.on { color: var(--clay); border-bottom-color: var(--clay); }
+.cattabs button:hover { color: var(--espresso); }
+
 @media (max-width: 900px) {
-  .tricar { grid-template-columns: 1fr; gap: 54px; }
-  .pcar-btn { opacity: 1; }
+  .catsplit { grid-template-columns: 1fr; gap: 30px; padding: 0 22px; }
+  .cattabs { gap: 16px; }
+  .cattabs button { font-size: 10px; letter-spacing: .14em; }
+  .catnav { gap: 16px; }
 }
 
 .miniquote {
