@@ -322,31 +322,39 @@ html.intro-lock { overflow: hidden; }
 .catcite { display: block; font-style: normal; font-size: 13px; color: var(--taupe); margin-top: 16px; }
 .catlink { margin-top: 26px; display: inline-block; }
 
-.catnav {
-  display: flex; align-items: center; justify-content: center; gap: 26px;
-  margin-top: 48px;
-}
+.catcar-wrap { position: relative; }
+
+/* edge arrows, sitting over the carousel and vertically centred on the photo */
 .catarrow {
-  width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
-  background: none; border: 1px solid var(--hairline); border-radius: 50%;
-  color: var(--espresso); cursor: pointer; transition: border-color .35s, color .35s;
+  position: absolute; top: 50%; transform: translateY(-50%); z-index: 4;
+  width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;
+  background: rgba(245,241,234,.86); border: 1px solid var(--hairline); border-radius: 50%;
+  color: var(--espresso); cursor: pointer;
+  transition: background .35s, border-color .35s, color .35s, opacity .35s;
+  backdrop-filter: blur(4px);
 }
-.catarrow:hover { border-color: var(--clay); color: var(--clay); }
-.cattabs { display: flex; gap: 26px; }
-.cattabs button {
-  background: none; border: 0; cursor: pointer; padding: 4px 0;
-  font-family: var(--font-sans), sans-serif; font-size: 11px; letter-spacing: .2em;
-  text-transform: uppercase; color: var(--taupe);
-  border-bottom: 1px solid transparent; transition: color .35s, border-color .35s;
+.catarrow:hover { background: var(--bone); border-color: var(--clay); color: var(--clay); }
+.catarrow-prev { left: 16px; }
+.catarrow-next { right: 16px; }
+
+.catdots { display: flex; justify-content: center; gap: 0; margin-top: 40px; }
+.catdot {
+  position: relative; width: 26px; height: 26px;
+  background: none; border: 0; cursor: pointer; padding: 0;
 }
-.cattabs button.on { color: var(--clay); border-bottom-color: var(--clay); }
-.cattabs button:hover { color: var(--espresso); }
+.catdot::before {
+  content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: 7px; height: 7px; border-radius: 50%;
+  background: rgba(43,38,32,.22); transition: background .4s, transform .4s;
+}
+.catdot.on::before { background: var(--clay); transform: translate(-50%, -50%) scale(1.3); }
+.catdot:hover::before { background: rgba(43,38,32,.45); }
 
 @media (max-width: 900px) {
   .catsplit { grid-template-columns: 1fr; gap: 30px; padding: 0 22px; }
-  .cattabs { gap: 16px; }
-  .cattabs button { font-size: 10px; letter-spacing: .14em; }
-  .catnav { gap: 16px; }
+  .catarrow { width: 38px; height: 38px; top: 27%; }
+  .catarrow-prev { left: 10px; }
+  .catarrow-next { right: 10px; }
 }
 
 .miniquote {
