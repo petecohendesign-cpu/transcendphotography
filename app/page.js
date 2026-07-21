@@ -112,8 +112,8 @@ export default function Home() {
       {/* Category carousel: one full-width slide per category, scroll left/right */}
       <section className="section" style={{ paddingLeft: 0, paddingRight: 0 }}>
         <div className="reveal center wrap" style={{ marginBottom: '56px' }}>
-          <div className="label" style={{ marginBottom: '16px' }}>Recent work</div>
-          <h2 className="h2">A look at each</h2>
+          <div className="label" style={{ marginBottom: '16px' }}>In their words</div>
+          <h2 className="h2">The work, and the words that followed</h2>
         </div>
         <div className="reveal">
           <CategoryCarousel
