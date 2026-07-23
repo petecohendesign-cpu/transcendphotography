@@ -11,19 +11,19 @@ import CategoryCarousel from './components/CategoryCarousel'
 const SLIDES = [
   {
     num: '01', title: 'Branding & Lifestyle', label: 'Branding & Lifestyle',
-    desc: 'Considered visual stories for restaurants, makers, and modern brands.',
+    desc: 'Visual stories for restaurants and modern brands.',
     cta: 'Explore branding', href: '/brand-photography',
     img: '/images/branding-mediamonks-mural-lg.jpg', imgMobile: '/images/hero-m-branding-mural.jpg',
   },
   {
     num: '02', title: 'Weddings & Couples', label: 'Weddings & Couples',
-    desc: 'Full-day documentary coverage for the adventurous couple.',
+    desc: 'Documentary coverage for the adventurous couple.',
     cta: 'Explore weddings', href: '/for-couples',
     img: '/images/wedding-hero-veil-v2.jpg', imgMobile: '/images/hero-m-wedding-v2.jpg',
   },
   {
     num: '03', title: 'Portrait Sessions', label: 'Portrait Sessions',
-    desc: 'Intimate, editorial portraiture for individuals and creatives.',
+    desc: 'Editorial portraiture for individuals and creatives.',
     cta: 'Explore portraits', href: '/portraits', pos: 'center 18%',
     img: '/images/portrait-pc-11-lg.jpg', imgMobile: '/images/hero-m-portrait.jpg',
   },

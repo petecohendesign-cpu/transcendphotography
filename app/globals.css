@@ -214,6 +214,7 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
   font-weight: 300; font-style: italic; line-height: 1.04;
   font-size: 26px; color: rgba(245,241,234,.32);
   text-shadow: 0 1px 12px rgba(0,0,0,.5);
+  white-space: nowrap;
   transform-origin: left center;
   transition: color .55s cubic-bezier(.22,1,.36,1),
               font-size .55s cubic-bezier(.22,1,.36,1);
@@ -229,7 +230,7 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
 .hm-text { padding-left: 34px; margin-top: 8px; margin-bottom: 6px; }
 .hm-desc {
   font-size: 15px; font-weight: 300; line-height: 1.55;
-  color: rgba(245,241,234,.85); max-width: 34ch;
+  color: rgba(245,241,234,.85); white-space: nowrap;
   text-shadow: 0 1px 10px rgba(0,0,0,.5);
   animation: hmUp .6s cubic-bezier(.22,1,.36,1) both;
 }
@@ -247,12 +248,11 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
   .hm-opt-name { font-size: 22px; }
   .hm-row.active .hm-opt-name { font-size: clamp(38px, 11vw, 58px); }
   .hm-text { padding-left: 32px; }
-  .hm-desc { font-size: 14px; max-width: 30ch; }
+  .hm-desc { font-size: 14px; }
   .hm-cta { margin-top: 22px; }
 }
 @media (max-width: 480px) {
   .hmobile { left: 22px; right: 22px; bottom: 66px; }
-  .hm-desc { max-width: none; }
 }
 @keyframes hmUp {
   from { opacity: 0; transform: translateY(22px); }
