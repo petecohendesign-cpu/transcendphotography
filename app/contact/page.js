@@ -37,15 +37,21 @@ export default function Contact() {
       <Nav variant="solid" />
       <Reveal />
 
-      <header className="section wrap center" style={{ paddingTop: '160px', paddingBottom: '60px' }}>
-        <div className="label reveal" style={{ marginBottom: '28px' }}>Contact</div>
-        <h1 className="serif reveal" style={{ fontWeight: 300, fontSize: 'clamp(42px,6vw,78px)', lineHeight: 1.05 }}>
-          Let&rsquo;s make something<br /><em>worth keeping</em>
-        </h1>
-        <p className="reveal" style={{ marginTop: '26px', maxWidth: '520px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--taupe)' }}>
-          Tell me what you&rsquo;re dreaming up. Pick the path that fits, or just call, I&rsquo;m happy to talk it through.
-        </p>
-      </header>
+      {/* HoneyBook inquiry form, top of page */}
+      <section className="wrap" style={{ paddingTop: '150px', paddingBottom: '90px' }} id="inquire">
+        <header className="reveal center" style={{ marginBottom: '48px' }}>
+          <div className="label" style={{ marginBottom: '24px' }}>Contact</div>
+          <h1 className="serif" style={{ fontWeight: 300, fontSize: 'clamp(42px,6vw,72px)', lineHeight: 1.05 }}>
+            Let&rsquo;s make something<br /><em>worth keeping</em>
+          </h1>
+          <p style={{ marginTop: '26px', maxWidth: '520px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--taupe)' }}>
+            Tell me what you&rsquo;re dreaming up. Pick the path that fits, or just call, I&rsquo;m happy to talk it through.
+          </p>
+        </header>
+        <div className="reveal" style={{ maxWidth: '760px', margin: '0 auto' }}>
+          <HoneyBookForm />
+        </div>
+      </section>
 
       {/* Direct lines */}
       <section className="wrap center reveal" style={{ paddingBottom: '70px' }}>
@@ -71,17 +77,6 @@ export default function Contact() {
               <span className="nlink" style={{ marginTop: '14px' }}>Inquire &rarr;</span>
             </a>
           ))}
-        </div>
-      </section>
-
-      {/* HoneyBook inquiry form */}
-      <section className="wrap" style={{ paddingBottom: '130px' }} id="inquire">
-        <div className="reveal center" style={{ marginBottom: '48px' }}>
-          <div className="label" style={{ marginBottom: '16px' }}>Tell me more</div>
-          <h2 className="h2">Send an inquiry</h2>
-        </div>
-        <div className="reveal" style={{ maxWidth: '760px', margin: '0 auto' }}>
-          <HoneyBookForm />
         </div>
       </section>
 
