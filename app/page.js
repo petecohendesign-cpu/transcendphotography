@@ -89,18 +89,19 @@ export default function Home() {
 
         {/* Mobile-only hero text: focused on the active slide, re-animates on change */}
         <div className="hmobile">
-          <div className="hm-bars">
+          <div className="hm-switch">
             {SLIDES.map((s, i) => (
               <button
                 key={i}
-                className={`hm-bar${i === idx ? ' active' : ''}`}
+                className={`hm-opt${i === idx ? ' active' : ''}`}
                 onClick={() => setIdx(i)}
-                aria-label={s.label}
-              />
+              >
+                <span className="hm-opt-num">{s.num}</span>
+                <span className="hm-opt-name">{s.label}</span>
+              </button>
             ))}
           </div>
           <div className="hm-text" key={idx}>
-            <h2 className="hm-title">{SLIDES[idx].label}</h2>
             <p className="hm-desc">{SLIDES[idx].desc}</p>
             <a className="hm-cta" href={SLIDES[idx].href}>{SLIDES[idx].cta} &nbsp;&rarr;</a>
           </div>

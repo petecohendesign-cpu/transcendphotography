@@ -202,21 +202,30 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
     position: absolute; left: 24px; right: 24px; bottom: 72px;
     z-index: 3; color: var(--bone);
   }
-  .hm-bars { display: flex; gap: 9px; margin-bottom: 22px; }
-  .hm-bar {
-    width: 22px; height: 2px; padding: 0; border: none; cursor: pointer;
-    background: rgba(245,241,234,.3);
-    transition: width .55s cubic-bezier(.22,1,.36,1), background .55s;
+  /* all three options stay visible; active one is large + bright */
+  .hm-switch { display: flex; flex-direction: column; gap: 2px; margin-bottom: 18px; }
+  .hm-opt {
+    background: none; border: none; padding: 4px 0; cursor: pointer;
+    display: flex; align-items: baseline; gap: 10px; text-align: left;
   }
-  .hm-bar.active { width: 42px; background: #f0d9c2; }
-
-  .hm-title {
+  .hm-opt-num {
+    font-size: 10px; letter-spacing: 0.28em;
+    color: rgba(245,241,234,.3); transition: color .5s;
+  }
+  .hm-opt-name {
     font-family: var(--font-serif), 'Cormorant Garamond', serif;
-    font-weight: 300; font-style: italic;
-    font-size: clamp(36px, 11vw, 56px); line-height: 1.02;
-    letter-spacing: -0.005em; margin-bottom: 14px;
+    font-weight: 300; font-style: italic; line-height: 1.04;
+    font-size: 22px; color: rgba(245,241,234,.42);
+    text-shadow: 0 1px 12px rgba(0,0,0,.5);
+    transition: color .5s, font-size .5s;
+  }
+  .hm-opt.active .hm-opt-num { color: rgba(240,217,194,.75); }
+  .hm-opt.active .hm-opt-name {
+    font-size: clamp(34px, 10vw, 52px);
+    color: rgba(245,241,234,.98); letter-spacing: -0.005em;
     text-shadow: 0 2px 22px rgba(0,0,0,.6), 0 1px 4px rgba(0,0,0,.35);
   }
+
   .hm-desc {
     font-size: 14px; font-weight: 300; line-height: 1.55;
     color: rgba(245,241,234,.85); max-width: 30ch; margin-bottom: 22px;
@@ -230,10 +239,9 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
   }
 
   /* staggered entrance; replays on each slide because .hm-text is keyed */
-  .hm-title, .hm-desc, .hm-cta { animation: hmUp .7s cubic-bezier(.22,1,.36,1) both; }
-  .hm-title { animation-delay: .04s; }
-  .hm-desc  { animation-delay: .15s; }
-  .hm-cta   { animation-delay: .26s; }
+  .hm-desc, .hm-cta { animation: hmUp .7s cubic-bezier(.22,1,.36,1) both; }
+  .hm-desc { animation-delay: .06s; }
+  .hm-cta  { animation-delay: .18s; }
 }
 @media (max-width: 480px) {
   .hmobile { left: 22px; right: 22px; bottom: 66px; }
@@ -244,8 +252,8 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
   to   { opacity: 1; transform: none; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .hm-title, .hm-desc, .hm-cta { animation: none; }
-  .hm-bar { transition: none; }
+  .hm-desc, .hm-cta { animation: none; }
+  .hm-opt-name, .hm-opt-num { transition: none; }
 }
 
 
