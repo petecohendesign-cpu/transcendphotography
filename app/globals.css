@@ -666,7 +666,10 @@ a:hover .blog-card-img { transform: scale(1.05); }
 /* ---------- footer ---------- */
 footer { background: var(--espresso-2); color: #a89e90; padding: 74px 48px 34px; }
 footer .finner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 48px; }
-footer .fwm { font-size: 14px; letter-spacing: 0.34em; color: var(--bone); }
+footer .fbrandlink { display: inline-flex; align-items: center; gap: 14px; text-decoration: none; }
+footer .flogo { height: 38px; width: 38px; filter: invert(1) brightness(2); }
+footer .fwm1 { display: block; font-size: 15px; letter-spacing: 0.34em; color: var(--bone); }
+footer .fwm2 { display: block; font-size: 8px; letter-spacing: 0.46em; color: #e7d8c8; margin-top: 4px; }
 footer .ftag { font-family: var(--font-serif), serif; font-style: italic; font-size: 16px; color: #c4b8a8; margin-top: 14px; max-width: 300px; line-height: 1.5; }
 footer .fcontact { font-size: 11px; letter-spacing: 0.14em; margin-top: 18px; }
 footer .fcontact a { text-decoration: none; transition: color .4s; }

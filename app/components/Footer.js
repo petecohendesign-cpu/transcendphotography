@@ -5,7 +5,13 @@ export default function Footer() {
     <footer>
       <div className="finner">
         <div className="fbrand">
-          <div className="fwm">TRANSCEND</div>
+          <a className="fbrandlink" href="/">
+            <img className="flogo" src="/images/logo.png" alt="Transcend Photography" />
+            <span style={{ lineHeight: 1 }}>
+              <span className="fwm1">TRANSCEND</span>
+              <span className="fwm2">PHOTOGRAPHY</span>
+            </span>
+          </a>
           <div className="ftag">Weddings, branding &amp; portraits, Los Angeles, available worldwide.</div>
           <div className="fcontact">
             <a href="mailto:pete@transcendphoto.net">pete@transcendphoto.net</a>
