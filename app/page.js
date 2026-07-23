@@ -13,7 +13,7 @@ const SLIDES = [
     num: '01', title: 'Branding & Lifestyle', label: 'Branding & Lifestyle',
     desc: 'Considered visual stories for restaurants, makers, and modern brands.',
     cta: 'Explore branding', href: '/brand-photography',
-    img: '/images/branding-mediamonks-neon.jpg', imgMobile: '/images/hero-m-branding.jpg',
+    img: '/images/branding-mediamonks-mural.jpg', imgMobile: '/images/hero-m-branding.jpg',
   },
   {
     num: '02', title: 'Weddings & Couples', label: 'Weddings & Couples',
