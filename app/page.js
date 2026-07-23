@@ -143,8 +143,8 @@ export default function Home() {
               {
                 short: 'Branding',
                 label: 'Branding & Lifestyle',
-                src: '/images/branding-pc-2.jpg',
-                alt: 'Bubles gift box product photography',
+                src: '/images/branding-bubles-giftbox.jpg',
+                alt: 'Bubles Champagne gift box, styled and shot on location',
                 quote: '“Pete is exceptional! We collaborated on a ‘Wedding Vibes’ photo shoot style, and he delivered! Cheers to amazing!”',
                 cite: 'Maya Camara  ·  Bubles Champagne',
                 href: '/brand-photography',
