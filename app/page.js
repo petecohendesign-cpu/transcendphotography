@@ -168,7 +168,7 @@ export default function Home() {
       {/* About teaser */}
       <section className="section wrap split reveal">
         <div className="imgblk" style={{ height: '560px', position: 'relative' }}>
-          <Image src="/images/wedding-venue-cellar.jpg" alt="On location" fill sizes="(max-width: 900px) 100vw, 50vw" style={{ objectFit: 'cover' }} />
+          <Image src="/images/branding-pc-11.jpg" alt="Il Nido pasta dish" fill sizes="(max-width: 900px) 100vw, 50vw" style={{ objectFit: 'cover' }} />
         </div>
         <div>
           <div className="label" style={{ marginBottom: '26px' }}>Behind the lens</div>
