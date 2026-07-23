@@ -1,6 +1,7 @@
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
+import HoneyBookForm from '../components/HoneyBookForm'
 
 export const metadata = {
   title: 'Contact, Transcend Photography',
@@ -70,6 +71,17 @@ export default function Contact() {
               <span className="nlink" style={{ marginTop: '14px' }}>Inquire &rarr;</span>
             </a>
           ))}
+        </div>
+      </section>
+
+      {/* HoneyBook inquiry form */}
+      <section className="wrap" style={{ paddingBottom: '130px' }} id="inquire">
+        <div className="reveal center" style={{ marginBottom: '48px' }}>
+          <div className="label" style={{ marginBottom: '16px' }}>Tell me more</div>
+          <h2 className="h2">Send an inquiry</h2>
+        </div>
+        <div className="reveal" style={{ maxWidth: '760px', margin: '0 auto' }}>
+          <HoneyBookForm />
         </div>
       </section>
 
