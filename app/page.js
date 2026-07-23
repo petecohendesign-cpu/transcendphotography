@@ -12,17 +12,20 @@ const SLIDES = [
   {
     num: '01', title: 'Branding & Lifestyle', label: 'Branding & Lifestyle',
     desc: 'Considered visual stories for restaurants, makers, and modern brands.',
-    cta: 'Explore branding', href: '/brand-photography', img: '/images/branding-mediamonks-neon.jpg',
+    cta: 'Explore branding', href: '/brand-photography',
+    img: '/images/branding-mediamonks-neon.jpg', imgMobile: '/images/hero-m-branding.jpg',
   },
   {
     num: '02', title: 'Weddings & Couples', label: 'Weddings & Couples',
     desc: 'Full-day documentary coverage for the adventurous couple.',
-    cta: 'Explore weddings', href: '/for-couples', img: '/images/wedding-hero-veil.jpg',
+    cta: 'Explore weddings', href: '/for-couples',
+    img: '/images/wedding-hero-veil.jpg', imgMobile: '/images/hero-m-wedding.jpg',
   },
   {
     num: '03', title: 'Portrait Sessions', label: 'Portrait Sessions',
     desc: 'Intimate, editorial portraiture for individuals and creatives.',
-    cta: 'Explore portraits', href: '/portraits', img: '/images/portrait-pc-11.jpg', pos: 'center 18%',
+    cta: 'Explore portraits', href: '/portraits', pos: 'center 18%',
+    img: '/images/portrait-pc-11.jpg', imgMobile: '/images/hero-m-portrait.jpg',
   },
 ]
 
@@ -50,7 +53,16 @@ export default function Home() {
       <div className="hero">
         {SLIDES.map((s, i) => (
           <div key={i} className={`hslide${i === idx ? ' active' : ''}`}>
-            <Image src={s.img} alt={s.title} fill sizes="100vw" priority={i === 0} style={{ objectFit: 'cover', objectPosition: s.pos || 'center' }} />
+            <picture>
+              <source media="(max-width: 768px)" srcSet={s.imgMobile} />
+              <img
+                src={s.img}
+                alt={s.title}
+                loading="eager"
+                fetchPriority={i === 0 ? 'high' : 'auto'}
+                style={{ objectPosition: s.pos || 'center' }}
+              />
+            </picture>
             <div className="hscrim" />
           </div>
         ))}
