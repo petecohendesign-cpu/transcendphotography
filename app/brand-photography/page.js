@@ -57,10 +57,11 @@ export default function Branding() {
         label="Branding & Lifestyle"
         title={<>Photography that makes<br />your brand unmistakable</>}
         slides={[
+          { src: '/images/branding-pc-11.jpg',       alt: 'Il Nido pasta dish' },
+          { src: '/images/branding-mediamonks-building.jpg', alt: 'MediaMonks office building exterior' },
           { src: '/images/branding-mediamonks-neon.jpg',  alt: 'MediaMonks office neon sign' },
           { src: '/images/branding-pc-6.jpg',        alt: 'Claudine branding session' },
           { src: '/images/branding-mediamonks-mural.jpg', alt: 'MediaMonks office lightning mural staircase' },
-          { src: '/images/branding-pc-11.jpg',       alt: 'Il Nido pasta dish' },
           { src: '/images/branding-pc-2.jpg',        alt: 'Bubles gift box product photography' },
           { src: '/images/branding-claudine-1.jpg',  alt: 'Claudine Bakery' },
           { src: '/images/branding-pc-9.jpg',        alt: 'Brand lifestyle photography' },
