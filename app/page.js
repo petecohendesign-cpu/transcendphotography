@@ -91,19 +91,19 @@ export default function Home() {
         <div className="hmobile">
           <div className="hm-switch">
             {SLIDES.map((s, i) => (
-              <button
-                key={i}
-                className={`hm-opt${i === idx ? ' active' : ''}`}
-                onClick={() => setIdx(i)}
-              >
-                <span className="hm-opt-num">{s.num}</span>
-                <span className="hm-opt-name">{s.label}</span>
-              </button>
+              <div key={i} className={`hm-row${i === idx ? ' active' : ''}`}>
+                <button className="hm-opt" onClick={() => setIdx(i)}>
+                  <span className="hm-opt-num">{s.num}</span>
+                  <span className="hm-opt-name">{s.label}</span>
+                </button>
+                {i === idx && (
+                  <div className="hm-text">
+                    <p className="hm-desc">{s.desc}</p>
+                    <a className="hm-cta" href={s.href}>{s.cta} &nbsp;&rarr;</a>
+                  </div>
+                )}
+              </div>
             ))}
-          </div>
-          <div className="hm-text" key={idx}>
-            <p className="hm-desc">{SLIDES[idx].desc}</p>
-            <a className="hm-cta" href={SLIDES[idx].href}>{SLIDES[idx].cta} &nbsp;&rarr;</a>
           </div>
         </div>
 

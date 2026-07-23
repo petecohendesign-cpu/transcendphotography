@@ -202,8 +202,10 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
     position: absolute; left: 24px; right: 24px; bottom: 72px;
     z-index: 3; color: var(--bone);
   }
-  /* all three options stay visible; active one is large + bright */
-  .hm-switch { display: flex; flex-direction: column; gap: 2px; margin-bottom: 18px; }
+  /* all three options stay visible; active one is large + bright, with
+     its description tucked directly beneath its own title */
+  .hm-switch { display: flex; flex-direction: column; gap: 6px; }
+  .hm-row { display: flex; flex-direction: column; }
   .hm-opt {
     background: none; border: none; padding: 4px 0; cursor: pointer;
     display: flex; align-items: baseline; gap: 10px; text-align: left;
@@ -226,9 +228,10 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
     text-shadow: 0 2px 22px rgba(0,0,0,.6), 0 1px 4px rgba(0,0,0,.35);
   }
 
+  .hm-text { padding-left: 32px; margin-top: 8px; margin-bottom: 6px; }
   .hm-desc {
     font-size: 14px; font-weight: 300; line-height: 1.55;
-    color: rgba(245,241,234,.85); max-width: 30ch; margin-bottom: 22px;
+    color: rgba(245,241,234,.85); max-width: 30ch; margin-bottom: 18px;
     text-shadow: 0 1px 10px rgba(0,0,0,.5);
   }
   .hm-cta {
