@@ -191,16 +191,61 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
 .hdots { display: none; }
 .hscroll { position: absolute; left: 50%; transform: translateX(-50%); bottom: 34px; color: var(--bone); font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; opacity: .4; z-index: 3; }
 
+/* ---- mobile hero text (vertical/phone) ---- */
+.hmobile { display: none; }
 @media (max-width: 768px) {
-  .hservices { left: 24px; gap: 4px; }
-  .hservice-name { font-size: clamp(18px, 4vw, 26px) !important; }
-  .hservice.active .hservice-name { font-size: clamp(22px, 5vw, 32px) !important; }
-  .hcontent { left: 24px; bottom: 70px; }
-  .hsub { font-size: 13px; }
+  /* swap the desktop switcher + content for the focused mobile block */
+  .hservices, .hcontent { display: none; }
+
+  .hmobile {
+    display: block;
+    position: absolute; left: 24px; right: 24px; bottom: 72px;
+    z-index: 3; color: var(--bone);
+  }
+  .hm-bars { display: flex; gap: 9px; margin-bottom: 22px; }
+  .hm-bar {
+    width: 22px; height: 2px; padding: 0; border: none; cursor: pointer;
+    background: rgba(245,241,234,.3);
+    transition: width .55s cubic-bezier(.22,1,.36,1), background .55s;
+  }
+  .hm-bar.active { width: 42px; background: #f0d9c2; }
+
+  .hm-title {
+    font-family: var(--font-serif), 'Cormorant Garamond', serif;
+    font-weight: 300; font-style: italic;
+    font-size: clamp(36px, 11vw, 56px); line-height: 1.02;
+    letter-spacing: -0.005em; margin-bottom: 14px;
+    text-shadow: 0 2px 22px rgba(0,0,0,.6), 0 1px 4px rgba(0,0,0,.35);
+  }
+  .hm-desc {
+    font-size: 14px; font-weight: 300; line-height: 1.55;
+    color: rgba(245,241,234,.85); max-width: 30ch; margin-bottom: 22px;
+    text-shadow: 0 1px 10px rgba(0,0,0,.5);
+  }
+  .hm-cta {
+    display: inline-block;
+    font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--bone); text-decoration: none;
+    border-bottom: 1px solid rgba(245,241,234,.45); padding-bottom: 5px;
+  }
+
+  /* staggered entrance; replays on each slide because .hm-text is keyed */
+  .hm-title, .hm-desc, .hm-cta { animation: hmUp .7s cubic-bezier(.22,1,.36,1) both; }
+  .hm-title { animation-delay: .04s; }
+  .hm-desc  { animation-delay: .15s; }
+  .hm-cta   { animation-delay: .26s; }
 }
 @media (max-width: 480px) {
-  .hservices { left: 18px; }
-  .hcontent { left: 18px; bottom: 60px; max-width: 200px; }
+  .hmobile { left: 22px; right: 22px; bottom: 66px; }
+  .hm-desc { max-width: none; }
+}
+@keyframes hmUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hm-title, .hm-desc, .hm-cta { animation: none; }
+  .hm-bar { transition: none; }
 }
 
 
