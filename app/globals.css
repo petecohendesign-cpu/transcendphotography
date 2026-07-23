@@ -217,34 +217,37 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
   .hm-opt-name {
     font-family: var(--font-serif), 'Cormorant Garamond', serif;
     font-weight: 300; font-style: italic; line-height: 1.04;
-    font-size: 22px; color: rgba(245,241,234,.42);
+    font-size: 22px; color: rgba(245,241,234,.34);
     text-shadow: 0 1px 12px rgba(0,0,0,.5);
-    transition: color .5s, font-size .5s;
+    transform-origin: left center;
+    transition: color .55s cubic-bezier(.22,1,.36,1),
+                font-size .55s cubic-bezier(.22,1,.36,1);
   }
-  .hm-opt.active .hm-opt-num { color: rgba(240,217,194,.75); }
+  .hm-opt.active .hm-opt-num { color: rgba(240,217,194,.8); }
   .hm-opt.active .hm-opt-name {
     font-size: clamp(34px, 10vw, 52px);
-    color: rgba(245,241,234,.98); letter-spacing: -0.005em;
+    color: rgba(245,241,234,1); letter-spacing: -0.005em;
     text-shadow: 0 2px 22px rgba(0,0,0,.6), 0 1px 4px rgba(0,0,0,.35);
+    animation: hmGrow .6s cubic-bezier(.22,1,.36,1);
   }
 
   .hm-text { padding-left: 32px; margin-top: 8px; margin-bottom: 6px; }
   .hm-desc {
     font-size: 14px; font-weight: 300; line-height: 1.55;
-    color: rgba(245,241,234,.85); max-width: 30ch; margin-bottom: 18px;
+    color: rgba(245,241,234,.85); max-width: 30ch;
     text-shadow: 0 1px 10px rgba(0,0,0,.5);
   }
+  /* single CTA below the whole list; re-animates every cycle (keyed) */
   .hm-cta {
-    display: inline-block;
+    display: inline-block; margin-top: 22px;
     font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
     color: var(--bone); text-decoration: none;
     border-bottom: 1px solid rgba(245,241,234,.45); padding-bottom: 5px;
   }
 
-  /* staggered entrance; replays on each slide because .hm-text is keyed */
-  .hm-desc, .hm-cta { animation: hmUp .7s cubic-bezier(.22,1,.36,1) both; }
-  .hm-desc { animation-delay: .06s; }
-  .hm-cta  { animation-delay: .18s; }
+  /* description fades in with its category; CTA re-animates on cycle */
+  .hm-desc { animation: hmUp .6s cubic-bezier(.22,1,.36,1) both; }
+  .hm-cta  { animation: hmUp .6s cubic-bezier(.22,1,.36,1) both .12s; }
 }
 @media (max-width: 480px) {
   .hmobile { left: 22px; right: 22px; bottom: 66px; }
@@ -254,8 +257,13 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
   from { opacity: 0; transform: translateY(22px); }
   to   { opacity: 1; transform: none; }
 }
+@keyframes hmGrow {
+  from { opacity: 0.34; transform: scale(0.7); }
+  to   { opacity: 1; transform: scale(1); }
+}
 @media (prefers-reduced-motion: reduce) {
   .hm-desc, .hm-cta { animation: none; }
+  .hm-opt.active .hm-opt-name { animation: none; }
   .hm-opt-name, .hm-opt-num { transition: none; }
 }
 

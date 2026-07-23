@@ -99,12 +99,14 @@ export default function Home() {
                 {i === idx && (
                   <div className="hm-text">
                     <p className="hm-desc">{s.desc}</p>
-                    <a className="hm-cta" href={s.href}>{s.cta} &nbsp;&rarr;</a>
                   </div>
                 )}
               </div>
             ))}
           </div>
+          <a className="hm-cta" href={SLIDES[idx].href} key={idx}>
+            {SLIDES[idx].cta} &nbsp;&rarr;
+          </a>
         </div>
 
         <div className="hscroll">Scroll</div>
