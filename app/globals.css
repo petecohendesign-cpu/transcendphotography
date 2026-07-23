@@ -191,63 +191,64 @@ nav.menu-open .navtoggle span:nth-child(3) { transform: translateY(-6.5px) rotat
 .hdots { display: none; }
 .hscroll { position: absolute; left: 50%; transform: translateX(-50%); bottom: 34px; color: var(--bone); font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; opacity: .4; z-index: 3; }
 
-/* ---- mobile hero text (vertical/phone) ---- */
-.hmobile { display: none; }
+/* ---- hero text accordion (all sizes): category list with the active
+   title enlarged and its subtitle tucked directly beneath it ---- */
+.hservices, .hcontent { display: none; } /* replaced by the accordion */
+
+.hmobile {
+  position: absolute; left: 52px; bottom: 84px; max-width: 460px;
+  z-index: 3; color: var(--bone);
+}
+.hm-switch { display: flex; flex-direction: column; gap: 6px; }
+.hm-row { display: flex; flex-direction: column; }
+.hm-opt {
+  background: none; border: none; padding: 5px 0; cursor: pointer;
+  display: flex; align-items: baseline; gap: 12px; text-align: left;
+}
+.hm-opt-num {
+  font-size: 11px; letter-spacing: 0.3em;
+  color: rgba(245,241,234,.3); transition: color .5s;
+}
+.hm-opt-name {
+  font-family: var(--font-serif), 'Cormorant Garamond', serif;
+  font-weight: 300; font-style: italic; line-height: 1.04;
+  font-size: 26px; color: rgba(245,241,234,.32);
+  text-shadow: 0 1px 12px rgba(0,0,0,.5);
+  transform-origin: left center;
+  transition: color .55s cubic-bezier(.22,1,.36,1),
+              font-size .55s cubic-bezier(.22,1,.36,1);
+}
+.hm-opt.active .hm-opt-num { color: rgba(240,217,194,.8); }
+.hm-opt.active .hm-opt-name {
+  font-size: clamp(40px, 4vw, 60px);
+  color: rgba(245,241,234,1); letter-spacing: -0.005em;
+  text-shadow: 0 2px 22px rgba(0,0,0,.6), 0 1px 4px rgba(0,0,0,.35);
+  animation: hmGrow .6s cubic-bezier(.22,1,.36,1);
+}
+
+.hm-text { padding-left: 34px; margin-top: 8px; margin-bottom: 6px; }
+.hm-desc {
+  font-size: 15px; font-weight: 300; line-height: 1.55;
+  color: rgba(245,241,234,.85); max-width: 34ch;
+  text-shadow: 0 1px 10px rgba(0,0,0,.5);
+  animation: hmUp .6s cubic-bezier(.22,1,.36,1) both;
+}
+/* single CTA below the whole list; re-animates every cycle (keyed) */
+.hm-cta {
+  display: inline-block; margin-top: 24px;
+  font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--bone); text-decoration: none;
+  border-bottom: 1px solid rgba(245,241,234,.45); padding-bottom: 5px;
+  animation: hmUp .6s cubic-bezier(.22,1,.36,1) both .12s;
+}
+
 @media (max-width: 768px) {
-  /* swap the desktop switcher + content for the focused mobile block */
-  .hservices, .hcontent { display: none; }
-
-  .hmobile {
-    display: block;
-    position: absolute; left: 24px; right: 24px; bottom: 72px;
-    z-index: 3; color: var(--bone);
-  }
-  /* all three options stay visible; active one is large + bright, with
-     its description tucked directly beneath its own title */
-  .hm-switch { display: flex; flex-direction: column; gap: 6px; }
-  .hm-row { display: flex; flex-direction: column; }
-  .hm-opt {
-    background: none; border: none; padding: 4px 0; cursor: pointer;
-    display: flex; align-items: baseline; gap: 10px; text-align: left;
-  }
-  .hm-opt-num {
-    font-size: 10px; letter-spacing: 0.28em;
-    color: rgba(245,241,234,.3); transition: color .5s;
-  }
-  .hm-opt-name {
-    font-family: var(--font-serif), 'Cormorant Garamond', serif;
-    font-weight: 300; font-style: italic; line-height: 1.04;
-    font-size: 22px; color: rgba(245,241,234,.34);
-    text-shadow: 0 1px 12px rgba(0,0,0,.5);
-    transform-origin: left center;
-    transition: color .55s cubic-bezier(.22,1,.36,1),
-                font-size .55s cubic-bezier(.22,1,.36,1);
-  }
-  .hm-opt.active .hm-opt-num { color: rgba(240,217,194,.8); }
-  .hm-opt.active .hm-opt-name {
-    font-size: clamp(34px, 10vw, 52px);
-    color: rgba(245,241,234,1); letter-spacing: -0.005em;
-    text-shadow: 0 2px 22px rgba(0,0,0,.6), 0 1px 4px rgba(0,0,0,.35);
-    animation: hmGrow .6s cubic-bezier(.22,1,.36,1);
-  }
-
-  .hm-text { padding-left: 32px; margin-top: 8px; margin-bottom: 6px; }
-  .hm-desc {
-    font-size: 14px; font-weight: 300; line-height: 1.55;
-    color: rgba(245,241,234,.85); max-width: 30ch;
-    text-shadow: 0 1px 10px rgba(0,0,0,.5);
-  }
-  /* single CTA below the whole list; re-animates every cycle (keyed) */
-  .hm-cta {
-    display: inline-block; margin-top: 22px;
-    font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
-    color: var(--bone); text-decoration: none;
-    border-bottom: 1px solid rgba(245,241,234,.45); padding-bottom: 5px;
-  }
-
-  /* description fades in with its category; CTA re-animates on cycle */
-  .hm-desc { animation: hmUp .6s cubic-bezier(.22,1,.36,1) both; }
-  .hm-cta  { animation: hmUp .6s cubic-bezier(.22,1,.36,1) both .12s; }
+  .hmobile { left: 24px; right: 24px; bottom: 72px; max-width: none; }
+  .hm-opt-name { font-size: 22px; }
+  .hm-opt.active .hm-opt-name { font-size: clamp(34px, 10vw, 52px); }
+  .hm-text { padding-left: 32px; }
+  .hm-desc { font-size: 14px; max-width: 30ch; }
+  .hm-cta { margin-top: 22px; }
 }
 @media (max-width: 480px) {
   .hmobile { left: 22px; right: 22px; bottom: 66px; }

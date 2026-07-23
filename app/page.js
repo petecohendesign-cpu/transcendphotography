@@ -67,27 +67,8 @@ export default function Home() {
           </div>
         ))}
 
-        {/* Hero content, updates with active slide */}
-        <div className="hcontent">
-          <p className="hsub">{SLIDES[idx].desc}</p>
-          <a className="harrow" href={SLIDES[idx].href}>{SLIDES[idx].cta} &nbsp;&rarr;</a>
-        </div>
-
-        {/* Service switcher */}
-        <div className="hservices">
-          {SLIDES.map((s, i) => (
-            <button
-              key={i}
-              className={`hservice${i === idx ? ' active' : ''}`}
-              onClick={() => setIdx(i)}
-            >
-              <span className="hservice-num">{s.num}</span>
-              <span className="hservice-name">{s.label}</span>
-            </button>
-          ))}
-        </div>
-
-        {/* Mobile-only hero text: focused on the active slide, re-animates on change */}
+        {/* Hero text: category list with the active title enlarged and its
+            subtitle tucked beneath, plus a single CTA. Used at all sizes. */}
         <div className="hmobile">
           <div className="hm-switch">
             {SLIDES.map((s, i) => (
