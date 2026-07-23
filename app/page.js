@@ -19,7 +19,7 @@ const SLIDES = [
     num: '02', title: 'Weddings & Couples', label: 'Weddings & Couples',
     desc: 'Full-day documentary coverage for the adventurous couple.',
     cta: 'Explore weddings', href: '/for-couples',
-    img: '/images/wedding-hero-veil.jpg', imgMobile: '/images/hero-m-wedding.jpg',
+    img: '/images/wedding-hero-veil.jpg', imgMobile: '/images/hero-m-wedding-v2.jpg',
   },
   {
     num: '03', title: 'Portrait Sessions', label: 'Portrait Sessions',
