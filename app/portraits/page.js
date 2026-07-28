@@ -126,6 +126,22 @@ export default function Portraits() {
           <NativeFrame src="/images/portrait-pc-17.jpg" alt="Mother and child walking a garden path" w={2000} h={1461} drift={16} style={{ flex: '1.369 1 0%' }} />
           <NativeFrame src="/images/portrait-pc-13.jpg" alt="Editorial portrait of actor Dominic Pace at night" w={2400} h={1600} drift={12} style={{ flex: '1.5 1 0%' }} />
         </div>
+        <div className="edrow reveal">
+          <NativeFrame src="/images/portrait-christine.jpg" alt="Dramatic editorial portrait" w={1500} h={1001} drift={14} style={{ flex: '1.499 1 0%' }} />
+          <NativeFrame src="/images/portrait-danilo.jpg" alt="Studio portrait of a man" w={1200} h={1200} drift={10} style={{ flex: '1 1 0%' }} />
+        </div>
+        <div className="edrow reveal">
+          <NativeFrame src="/images/portrait-heather.jpg" alt="Night portrait with city bokeh" w={1500} h={1001} drift={16} style={{ flex: '1.499 1 0%' }} />
+          <NativeFrame src="/images/portrait-james.jpg" alt="Cinematic portrait under string lights" w={1500} h={1001} drift={12} style={{ flex: '1.499 1 0%' }} />
+        </div>
+        <div className="edrow reveal">
+          <NativeFrame src="/images/portrait-family-2.jpg" alt="Family portrait with dog on the waterfront" w={1500} h={1001} drift={12} style={{ flex: '1.499 1 0%' }} />
+          <NativeFrame src="/images/portrait-udins.jpg" alt="Family portrait, father with child on his shoulders" w={1439} h={1439} drift={14} style={{ flex: '1 1 0%' }} />
+        </div>
+        <div className="edrow reveal">
+          <NativeFrame src="/images/portrait-couple.jpg" alt="Couple portrait at golden hour" w={1200} h={1200} drift={10} style={{ flex: '1 1 0%' }} />
+          <NativeFrame src="/images/portrait-danilo-bw.jpg" alt="Black and white studio portrait" w={1500} h={844} drift={16} style={{ flex: '1.777 1 0%' }} />
+        </div>
       </section>
 
       <section className="section" style={{ background: 'var(--bone-2)' }}>
