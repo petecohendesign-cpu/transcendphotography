@@ -2,17 +2,11 @@
 title: "A Sweet Session at Claudine’s Bakery in Encino"
 date: "2025-08-28"
 category: "portrait"
-excerpt: "Earlier this year, I got to spend some time at  Claudine’s Bakery in Encino  ,  and it was such a fun session to photograph. From the second I walked..."
+excerpt: "A brand and food photography session at Claudine's Bakery in Encino: new menu items, pastries, and the warm atmosphere of a beloved local cafe."
 featuredImage: "/blog-images/branding-photography-claudine-bakery-featured.jpg"
 ---
 
-Earlier this year, I got to spend some time at
-
-Claudine’s Bakery in Encino
-
-,
-
-and it was such a fun session to photograph. From the second I walked in, the place smelled like heaven with fresh pastries coming out of the oven and people enjoying coffee and conversation. You can totally feel the community that Lea, the owner, has built here.
+Earlier this year, I got to spend some time at Claudine’s Bakery in Encino, and it was such a fun session to photograph. From the second I walked in, the place smelled like heaven with fresh pastries coming out of the oven and people enjoying coffee and conversation. You can totally feel the community that Lea, the owner, has built here.
 
 Lea asked me to photograph two new dishes and a drink they were introducing, along with some atmosphere photos of the space, both inside and outside. For the food, I used my Sony A7RV along with a Godox light tent to create clean, high-quality images on a white background, just the way they wanted. This setup allowed the dishes to really shine and gave the bakery images they could use for their website, menus, and marketing.
 

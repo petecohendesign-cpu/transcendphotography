@@ -2,7 +2,7 @@
 title: "A Sunny Engagement Session at Pasadena City Hall"
 date: "2025-07-12"
 category: "wedding"
-excerpt: "If you’re looking for one of the best engagement photo locations in Los Angeles, Pasadena City Hall always delivers. Between the arches, courtyards, a..."
+excerpt: "A sunny engagement session at Pasadena City Hall, one of the best engagement photo locations in Los Angeles, with arches, courtyards, and classic California light."
 featuredImage: "/blog-images/pasadena-city-hall-engagement-los-angeles-featured.jpg"
 ---
 
