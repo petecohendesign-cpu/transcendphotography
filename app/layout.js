@@ -1,6 +1,7 @@
 import './globals.css'
 import { Cormorant_Garamond, Jost } from 'next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import AnalyticsEvents from './components/AnalyticsEvents'
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -73,6 +74,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
         />
         {children}
+        <AnalyticsEvents />
         <GoogleAnalytics gaId="G-3QB4T06LDG" />
       </body>
     </html>
