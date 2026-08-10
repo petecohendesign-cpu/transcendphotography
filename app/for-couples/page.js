@@ -48,9 +48,28 @@ const TIERS = [
   },
 ]
 
+const FAQ = [
+  ['How much does a wedding photographer cost in Los Angeles?', 'Most LA couples invest between $3,000 and $6,500 for wedding photography. My collections start at $3,500 for elopements and $6,500 for full-day coverage, with custom quotes available.'],
+  ['What areas of Los Angeles do you photograph?', "I'm based in Los Angeles and photograph weddings across Southern California, including Malibu, Pasadena, Santa Monica, Downtown LA, Pacific Palisades, and Palos Verdes. I also travel for destination weddings worldwide."],
+  ['Do you offer engagement sessions?', "Yes. Engagement sessions are included in my Celebration and Full Story collections and can be added to any package. They're a relaxed way to get comfortable on camera before the wedding day."],
+  ['How many photos will we receive, and when?', 'A full wedding gallery typically includes 600+ edited, high-resolution images in a private online gallery, with a sneak-peek selection delivered within 72 hours.'],
+  ['Do you shoot film?', '35mm film is available as an add-on, blending analog grain and timeless texture alongside full digital coverage.'],
+]
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ.map(([q, a]) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
+
 export default function Weddings() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Nav variant="overlay" />
       <Reveal />
 
@@ -227,6 +246,31 @@ export default function Weddings() {
           and fun it was to shoot them with Pete.
         </p>
         <div className="label reveal">T &amp; M</div>
+      </section>
+
+      {/* Local SEO content + FAQ */}
+      <section className="section wrap reveal">
+        <div className="center" style={{ marginBottom: '36px' }}>
+          <div className="label" style={{ marginBottom: '16px' }}>Los Angeles wedding photography</div>
+          <h2 className="h2">Documentary wedding photography across LA</h2>
+        </div>
+        <div style={{ maxWidth: '760px', margin: '0 auto', color: 'var(--taupe)', lineHeight: 1.75 }}>
+          <p style={{ marginBottom: '18px' }}>
+            As a Los Angeles wedding photographer, I document weddings and elopements across Southern California, from Malibu and Pacific Palisades to Pasadena, Downtown LA, Palos Verdes, and the wine country beyond. My approach is documentary with an editorial eye: unposed moments, honest emotion, and a few intentional portraits, so your gallery feels like your day actually felt.
+          </p>
+          <p>
+            Whether you&rsquo;re planning an intimate elopement or a full celebration of 200, I&rsquo;d love to hear about it. Curious about pricing? See my guide to <a href="/blog/wedding-photographer-cost-los-angeles">how much a wedding photographer costs in Los Angeles</a>, or explore <a href="/blog/best-engagement-photo-locations-los-angeles">the best engagement photo locations in LA</a>.
+          </p>
+        </div>
+        <div style={{ maxWidth: '760px', margin: '52px auto 0' }}>
+          <h2 className="h2" style={{ textAlign: 'center', marginBottom: '30px' }}>Common questions</h2>
+          {FAQ.map(([q, a], i) => (
+            <div key={i} style={{ borderTop: '1px solid var(--hairline)', padding: '22px 0' }}>
+              <h3 style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 400, fontSize: '20px', marginBottom: '10px', color: 'var(--espresso)' }}>{q}</h3>
+              <p style={{ color: 'var(--taupe)', lineHeight: 1.7 }}>{a}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className="section wrap" id="inquire">

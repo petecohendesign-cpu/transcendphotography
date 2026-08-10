@@ -47,9 +47,28 @@ const TIERS = [
   },
 ]
 
+const FAQ = [
+  ['How much does brand photography cost in Los Angeles?', 'My brand sessions start at $1,500 for a half-day and $2,800 for a full day, with monthly content retainers from $2,000. Every project gets a custom quote based on your shot list and usage.'],
+  ['What kinds of businesses do you photograph?', 'Restaurants and hospitality, product and e-commerce brands, makers, creative agencies, and personal brands, anyone who needs considered, on-brand imagery that actually sells.'],
+  ['What areas of Los Angeles do you serve?', "I'm based in Encino and photograph brands across Los Angeles, from Santa Monica and West Hollywood to Downtown LA, Studio City, and the greater San Fernando Valley."],
+  ['Can I use the photos for ads and commercial use?', 'Yes. Every brand shoot includes a commercial usage license, with extended licensing available for larger campaigns.'],
+  ['Do you offer ongoing content for social media?', 'Yes. My monthly retainer delivers a steady, on-brand library sized for feed, stories, reels, and web, so you always have fresh content ready to post.'],
+]
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ.map(([q, a]) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
+
 export default function Branding() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Nav variant="overlay" />
       <Reveal />
 
@@ -152,6 +171,31 @@ export default function Branding() {
           Every brand brief is different, final pricing reflects scope, deliverables, and
           usage. Reach out for a tailored proposal.
         </p>
+      </section>
+
+      {/* Local SEO content + FAQ */}
+      <section className="section wrap reveal">
+        <div className="center" style={{ marginBottom: '36px' }}>
+          <div className="label" style={{ marginBottom: '16px' }}>Los Angeles brand photography</div>
+          <h2 className="h2">Brand, product &amp; food photography in LA</h2>
+        </div>
+        <div style={{ maxWidth: '760px', margin: '0 auto', color: 'var(--taupe)', lineHeight: 1.75 }}>
+          <p style={{ marginBottom: '18px' }}>
+            I&rsquo;m a Los Angeles brand and product photographer based in Encino, creating considered visual stories for restaurants, makers, and modern brands across LA, from Santa Monica and West Hollywood to Downtown and the Valley. The goal is always the same: imagery that looks like you, not like everyone else, and that actually moves your business.
+          </p>
+          <p>
+            From product and food photography to lifestyle and team imagery, I build content that works across your website, ads, and social feed. Curious what goes into it? Read <a href="/blog/what-is-brand-photography">what brand photography is and why it matters</a>, or see a recent <a href="/blog/los-angeles-lifestyle-branding-shoot-bubles">lifestyle branding shoot</a>.
+          </p>
+        </div>
+        <div style={{ maxWidth: '760px', margin: '52px auto 0' }}>
+          <h2 className="h2" style={{ textAlign: 'center', marginBottom: '30px' }}>Common questions</h2>
+          {FAQ.map(([q, a], i) => (
+            <div key={i} style={{ borderTop: '1px solid var(--hairline)', padding: '22px 0' }}>
+              <h3 style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 400, fontSize: '20px', marginBottom: '10px', color: 'var(--espresso)' }}>{q}</h3>
+              <p style={{ color: 'var(--taupe)', lineHeight: 1.7 }}>{a}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className="section wrap" id="inquire">

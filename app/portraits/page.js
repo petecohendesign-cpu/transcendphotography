@@ -47,9 +47,28 @@ const TIERS = [
   },
 ]
 
+const FAQ = [
+  ['How much do portrait sessions cost in Los Angeles?', 'Sessions start at $650 for a 45-minute Mini, $1,200 for the 90-minute Signature, and $2,500 for a half-day Editorial session with full creative direction.'],
+  ['What types of portraits do you photograph?', 'Professional headshots, personal branding portraits, actors and creatives, families, couples, and personal editorial work, all with a relaxed, documentary approach.'],
+  ['Do sessions take place in a studio or on location?', 'Both. I shoot in-studio and on location across Los Angeles, and we choose the setting that fits your style and the mood you want.'],
+  ['Do you help with wardrobe and styling?', 'Yes. Signature and Editorial sessions include wardrobe and styling guidance, and Editorial sessions can add hair and makeup coordination.'],
+  ['Do you photograph families?', 'Absolutely. Family sessions are relaxed and unposed, focused on real connection and natural moments rather than stiff, formal poses.'],
+]
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ.map(([q, a]) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
+
 export default function Portraits() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Nav variant="overlay" />
       <Reveal />
 
@@ -179,6 +198,31 @@ export default function Portraits() {
           Additional edited images and prints available à la carte. Commercial and press
           usage quoted separately.
         </p>
+      </section>
+
+      {/* Local SEO content + FAQ */}
+      <section className="section wrap reveal">
+        <div className="center" style={{ marginBottom: '36px' }}>
+          <div className="label" style={{ marginBottom: '16px' }}>Los Angeles portrait photography</div>
+          <h2 className="h2">Portrait photography across LA</h2>
+        </div>
+        <div style={{ maxWidth: '760px', margin: '0 auto', color: 'var(--taupe)', lineHeight: 1.75 }}>
+          <p style={{ marginBottom: '18px' }}>
+            As a Los Angeles portrait photographer, I create relaxed, editorial portraits for professionals, creatives, actors, families, and anyone who wants images that feel like themselves. Sessions happen in-studio or on location across LA, with a documentary eye that keeps things natural rather than stiff or overly posed.
+          </p>
+          <p>
+            Whether you need a standout headshot, a personal branding set, or a family session to remember, I&rsquo;d love to help. See a recent <a href="/blog/mothers-day-los-angeles-family-portraits">family portrait session in LA</a> for a feel of the experience.
+          </p>
+        </div>
+        <div style={{ maxWidth: '760px', margin: '52px auto 0' }}>
+          <h2 className="h2" style={{ textAlign: 'center', marginBottom: '30px' }}>Common questions</h2>
+          {FAQ.map(([q, a], i) => (
+            <div key={i} style={{ borderTop: '1px solid var(--hairline)', padding: '22px 0' }}>
+              <h3 style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 400, fontSize: '20px', marginBottom: '10px', color: 'var(--espresso)' }}>{q}</h3>
+              <p style={{ color: 'var(--taupe)', lineHeight: 1.7 }}>{a}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className="section wrap" id="inquire">
