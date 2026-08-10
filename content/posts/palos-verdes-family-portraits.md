@@ -3,6 +3,7 @@ title: "Fadul Family Portraits"
 date: "2024-04-26"
 category: "portrait"
 excerpt: "A relaxed family portrait session in Los Angeles for a close friend, capturing meaningful, natural moments and lasting memories."
+featuredImage: "/blog-images/palos-verdes-family-portraits-featured.jpg"
 picTimeId: "6662914c0980e50a78c9cebb"
 picTimeGallery: "-fadulsfamilyshoot"
 ---

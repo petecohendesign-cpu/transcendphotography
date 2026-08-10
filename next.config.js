@@ -32,6 +32,8 @@ const nextConfig = {
       { source: '/blog/james-and-bria-engagement-party-hotel-hoxton', destination: '/for-couples', permanent: true },
       { source: '/blog/wedding-photography-secrets-5-ways-to-get-stunning-photos-on-your-big-day', destination: '/blog/wedding-photography-tips-free-guide-download', permanent: true },
       { source: '/blog/2024/11/6/revisiting-a-fusion-of-traditions-capturing-a-two-day-catholic-and-indian-wedding-celebration', destination: '/for-couples', permanent: true },
+      // Renamed to fix a typo'd slug (famly -> clean location slug)
+      { source: '/blog/famly-session-palos-verdes', destination: '/blog/palos-verdes-family-portraits', permanent: true },
       // Old Squarespace tag pages and dated permalinks -> blog index
       { source: '/blog/tag/:tag*', destination: '/blog', permanent: true },
       { source: '/blog/:year(\\d{4})/:month/:day/:rest*', destination: '/blog', permanent: true },

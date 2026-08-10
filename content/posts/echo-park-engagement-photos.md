@@ -3,6 +3,7 @@ title: "An Echo Park Lake Engagement Session: Jenn & Ben"
 date: "2025-02-02"
 category: "portrait"
 excerpt: "Jenn and Ben's golden-hour engagement session at Echo Park Lake in LA, swan boats, palm-lined paths, and downtown views, and why Echo Park is a perfect engagement photo spot."
+featuredImage: "/blog-images/echo-park-engagement-photos-featured.jpg"
 picTimeId: "67a2848e51e9830b44b17ed8"
 picTimeGallery: "-jennandben"
 ---
