@@ -18,6 +18,8 @@ Sessions like this remind me that you don’t need dramatic lighting or fancy lo
 
 If you’re newly engaged and thinking about where to take your engagement photos in Los Angeles, Pasadena City Hall is one of the best spots out there. It offers a mix of romance, architecture, and California light that just works. Whether you’re counting down the days until your wedding or simply want to capture this season of your relationship, a session like this is a great way to mark the moment.
 
+Still deciding where to shoot? Browse my guide to the [best engagement photo locations in Los Angeles](/blog/best-engagement-photo-locations-los-angeles), or see a completely different vibe in [Jenn and Ben's Echo Park Lake session](/blog/echo-park-engagement-photos).
+
 
 ---
 

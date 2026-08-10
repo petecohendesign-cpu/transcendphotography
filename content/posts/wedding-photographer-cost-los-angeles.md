@@ -91,7 +91,7 @@ In LA, the average sits in the $3,000–$5,000 range for an experienced mid-rang
 
 ### Why do wedding photographers cost so much?
 
-A photographer's rate covers far more than the hours on your wedding day. It includes years of experience, professional gear and backups, many hours of editing, gallery delivery, and support from your first inquiry through your final album.
+A photographer's rate covers far more than the hours on your wedding day. It includes years of experience, professional gear and backups, many hours of editing, gallery delivery, and support from your first inquiry through your final album. For a deeper breakdown, read [why wedding photography is so expensive](/blog/wedding-photography-understanding-the-costs).
 
 ### What is the difference between a $2,000 and a $6,000 wedding photographer?
 

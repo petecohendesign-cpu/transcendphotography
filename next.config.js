@@ -27,7 +27,7 @@ const nextConfig = {
       { source: '/mothers-day-minis', destination: '/blog/mothers-day-portrait-sessions-for-all-ages', permanent: true },
 
       // Old blog permalinks (renamed slugs / dated Squarespace URLs) -> nearest live content
-      { source: '/blog/best-places-for-engagement-portraits-in-los-angeles', destination: '/for-couples', permanent: true },
+      { source: '/blog/best-places-for-engagement-portraits-in-los-angeles', destination: '/blog/best-engagement-photo-locations-los-angeles', permanent: true },
       { source: '/blog/hyatt-regency-boston-harbor-waterfront-wedding-photography', destination: '/for-couples', permanent: true },
       { source: '/blog/james-and-bria-engagement-party-hotel-hoxton', destination: '/for-couples', permanent: true },
       { source: '/blog/wedding-photography-secrets-5-ways-to-get-stunning-photos-on-your-big-day', destination: '/blog/wedding-photography-tips-free-guide-download', permanent: true },

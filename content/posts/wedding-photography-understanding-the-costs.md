@@ -60,4 +60,4 @@ The flowers are gone in a week. The cake is eaten the same night. The dress goes
 
 Wedding photography costs reflect the time, skill, equipment, and responsibility involved in capturing one of the most important days of your life. When you hire the right photographer, you're not just paying for photos, you're investing in the way you'll remember your wedding.
 
-Want to talk through options for your day? [Reach out here](/for-couples).
+For actual numbers, see my guide to [how much a wedding photographer costs in Los Angeles](/blog/wedding-photographer-cost-los-angeles). Want to talk through options for your day? [Reach out here](/for-couples).
