@@ -14,18 +14,21 @@ const SLIDES = [
     desc: 'Visual stories for restaurants and modern brands.',
     cta: 'Explore branding', href: '/brand-photography',
     img: '/images/branding-mediamonks-mural-lg.jpg', imgMobile: '/images/hero-m-branding-mural.jpg',
+    alt: 'Los Angeles brand photography, lightning-bolt mural on a creative office staircase',
   },
   {
     num: '02', title: 'Weddings & Couples', label: 'Weddings & Couples',
     desc: 'Documentary coverage for the adventurous couple.',
     cta: 'Explore weddings', href: '/for-couples',
     img: '/images/wedding-hero-veil-v2.jpg', imgMobile: '/images/hero-m-wedding-v2.jpg',
+    alt: 'Los Angeles wedding photography, bride and groom by the ocean with veil in the wind',
   },
   {
     num: '03', title: 'Portrait Sessions', label: 'Portrait Sessions',
     desc: 'Editorial portraiture for individuals and creatives.',
     cta: 'Explore portraits', href: '/portraits', pos: 'center 18%',
     img: '/images/portrait-pc-11-lg.jpg', imgMobile: '/images/hero-m-portrait.jpg',
+    alt: 'Los Angeles portrait photography, editorial portrait of a man in a studio',
   },
 ]
 
@@ -54,10 +57,16 @@ export default function Home() {
         {SLIDES.map((s, i) => (
           <div key={i} className={`hslide${i === idx ? ' active' : ''}`}>
             <picture>
+              {/* Mobile, art-directed crop, modern formats first */}
+              <source media="(max-width: 768px)" type="image/avif" srcSet={s.imgMobile.replace(/\.jpg$/, '.avif')} />
+              <source media="(max-width: 768px)" type="image/webp" srcSet={s.imgMobile.replace(/\.jpg$/, '.webp')} />
               <source media="(max-width: 768px)" srcSet={s.imgMobile} />
+              {/* Desktop, modern formats with JPEG fallback */}
+              <source type="image/avif" srcSet={s.img.replace(/\.jpg$/, '.avif')} />
+              <source type="image/webp" srcSet={s.img.replace(/\.jpg$/, '.webp')} />
               <img
                 src={s.img}
-                alt={s.title}
+                alt={s.alt || s.title}
                 loading="eager"
                 fetchPriority={i === 0 ? 'high' : 'auto'}
                 style={{ objectPosition: s.pos || 'center' }}
