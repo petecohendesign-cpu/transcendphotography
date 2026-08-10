@@ -2,7 +2,7 @@
 title: "How to Choose the Perfect Wedding Photographer: 11 Questions to Ask Before Booking"
 date: "2025-04-01"
 category: "wedding"
-excerpt: "Your wedding day is one of the most memorable events of your life, and your wedding photos will be cherished for years to come. Choosing the right wed..."
+excerpt: "The essential questions to ask a wedding photographer before booking, coverage, albums, image rights, payment terms, and more, from an LA photographer."
 featuredImage: "/blog-images/wedding-photographer-questions-before-booking-featured.jpg"
 ---
 

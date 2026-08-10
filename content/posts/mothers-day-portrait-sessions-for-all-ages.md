@@ -2,17 +2,17 @@
 title: "Laura &amp; Marie - Mother’s Day Mini Photography Session in Southern California"
 date: "2025-04-09"
 category: "portrait"
-excerpt: "Because Every Stage of Life Deserves a Mother’s Day Memory  One of the best parts of being a Southern California portrait photographer is getting to w..."
+excerpt: "Mother's Day portrait sessions for all ages in Los Angeles, celebrating moms, grandmothers, and every stage of family life with relaxed, natural photos."
 featuredImage: "/blog-images/mothers-day-portrait-sessions-for-all-ages-featured.jpg"
 ---
 
-Because Every Stage of Life Deserves a Mother’s Day Memory
+## Because Every Stage of Life Deserves a Mother’s Day Memory
 
 One of the best parts of being a Southern California portrait photographer is getting to witness real and meaningful relationships through the lens. With Mother’s Day quickly approaching, I had the chance to photograph something that felt especially close to home.
 
 I did a natural light portrait session with my awesome girlfriend and her incredible mom. There was no big setup or dramatic backdrop. Just soft, golden light, a quiet location in Southern California, and two people who clearly care about each other a lot.
 
-More Than Just “Mom and Me” Photos
+## More Than Just “Mom and Me” Photos
 
 Most people picture Mother’s Day photo sessions as something you do when your kids are still little. And yes, those are always adorable. But this session reminded me how valuable it is to capture that connection when we’re adults, too.
 
