@@ -15,6 +15,9 @@ const nextConfig = {
       { source: '/weddings', destination: '/for-couples', permanent: true },
       { source: '/branding', destination: '/brand-photography', permanent: true },
       { source: '/portrait-photography', destination: '/portraits', permanent: true },
+      { source: '/packages', destination: '/contact', permanent: true },
+      // Old client-gallery URL -> hosted Pic-Time galleries
+      { source: '/galleries', destination: 'https://transcendphoto.pic-time.com/portfolio', permanent: true, basePath: false },
     ]
   },
   async headers() {

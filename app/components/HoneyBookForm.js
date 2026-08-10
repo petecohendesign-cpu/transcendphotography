@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect } from 'react'
 import Script from 'next/script'
 
 /**
@@ -10,6 +11,29 @@ import Script from 'next/script'
 const PID = '66450f3663c0600007d48291'
 
 export default function HoneyBookForm() {
+  // The form loads in a cross-origin iframe, so GA4 can't see a submit.
+  // As a proxy, fire a GA4 event the first time a visitor clicks into the
+  // iframe: the parent window blurs and the iframe becomes activeElement.
+  useEffect(() => {
+    let fired = false
+    const onBlur = () => {
+      setTimeout(() => {
+        if (fired) return
+        const el = document.activeElement
+        const container = document.querySelector(`.hb-p-${PID}-1`)
+        if (el && el.tagName === 'IFRAME' && container && container.contains(el)) {
+          fired = true
+          window.gtag?.('event', 'contact_form_engaged', {
+            form: 'honeybook',
+            page_location: window.location.pathname,
+          })
+        }
+      }, 0)
+    }
+    window.addEventListener('blur', onBlur)
+    return () => window.removeEventListener('blur', onBlur)
+  }, [])
+
   return (
     <>
       <div className={`hb-p-${PID}-1`} />
