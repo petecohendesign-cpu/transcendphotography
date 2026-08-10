@@ -3,6 +3,7 @@ import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 import Reveal from '../../components/Reveal'
 import BlogGallery from '../../components/BlogGallery'
+import PicTimeGallery from '../../components/PicTimeGallery'
 import { getPostBySlug, getSlugs, getAllPosts } from '../../lib/blog'
 import { notFound } from 'next/navigation'
 
@@ -82,6 +83,10 @@ export default function BlogPost({ params }) {
           style={{ fontSize: '16px', fontWeight: 300, lineHeight: 1.7, color: 'var(--espresso)', paddingBottom: '60px' }}
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
+
+        {post.picTimeId && post.picTimeGallery && (
+          <PicTimeGallery id={post.picTimeId} gallery={post.picTimeGallery} />
+        )}
 
         {post.galleryImages && post.galleryImages.length > 0 && (
           <div style={{ marginBottom: '60px' }}>
