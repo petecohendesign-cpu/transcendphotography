@@ -18,6 +18,23 @@ const nextConfig = {
       { source: '/packages', destination: '/contact', permanent: true },
       // Old client-gallery URL -> hosted Pic-Time galleries
       { source: '/galleries', destination: 'https://transcendphoto.pic-time.com/portfolio', permanent: true, basePath: false },
+
+      // Old Squarespace URLs still indexed in Google (from Search Console) -> nearest live page
+      { source: '/testimonials', destination: '/about', permanent: true },
+      { source: '/engagement-couples-photography', destination: '/for-couples', permanent: true },
+      { source: '/wedding-photography-portfolio', destination: '/for-couples', permanent: true },
+      { source: '/explore-my-photo-portfolio', destination: '/', permanent: true },
+      { source: '/mothers-day-minis', destination: '/blog/mothers-day-portrait-sessions-for-all-ages', permanent: true },
+
+      // Old blog permalinks (renamed slugs / dated Squarespace URLs) -> nearest live content
+      { source: '/blog/best-places-for-engagement-portraits-in-los-angeles', destination: '/for-couples', permanent: true },
+      { source: '/blog/hyatt-regency-boston-harbor-waterfront-wedding-photography', destination: '/for-couples', permanent: true },
+      { source: '/blog/james-and-bria-engagement-party-hotel-hoxton', destination: '/for-couples', permanent: true },
+      { source: '/blog/wedding-photography-secrets-5-ways-to-get-stunning-photos-on-your-big-day', destination: '/blog/wedding-photography-tips-free-guide-download', permanent: true },
+      { source: '/blog/2024/11/6/revisiting-a-fusion-of-traditions-capturing-a-two-day-catholic-and-indian-wedding-celebration', destination: '/for-couples', permanent: true },
+      // Old Squarespace tag pages and dated permalinks -> blog index
+      { source: '/blog/tag/:tag*', destination: '/blog', permanent: true },
+      { source: '/blog/:year(\\d{4})/:month/:day/:rest*', destination: '/blog', permanent: true },
     ]
   },
   async headers() {
