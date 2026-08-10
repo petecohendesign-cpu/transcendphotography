@@ -41,8 +41,45 @@ export default function BlogPost({ params }) {
   const allPosts = getAllPosts()
   const related = allPosts.filter(p => p.slug !== params.slug).slice(0, 3)
 
+  const SITE = 'https://www.transcendphoto.net'
+  const url = `${SITE}/blog/${params.slug}`
+
+  // Article structured data (rich results / article cards)
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    ...(post.featuredImage ? { image: [`${SITE}${post.featuredImage}`] } : {}),
+    ...(post.date ? { datePublished: post.date, dateModified: post.date } : {}),
+    author: { '@type': 'Person', name: 'Pete Cohen', url: `${SITE}/about` },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Transcend Photography',
+      logo: { '@type': 'ImageObject', url: `${SITE}/images/logo.png` },
+    },
+    mainEntityOfPage: url,
+  }
+
+  // FAQ structured data (only when the post declares an faq list in frontmatter)
+  const faqSchema = Array.isArray(post.faq) && post.faq.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: post.faq.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
       <Nav variant="solid" />
       <Reveal />
 

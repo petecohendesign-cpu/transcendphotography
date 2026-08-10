@@ -4,6 +4,13 @@ date: "2025-07-03"
 category: "wedding"
 excerpt: "A photographer's guide to the Bel-Air Bay Club, an ocean-view wedding venue in Pacific Palisades, Los Angeles: the ceremony lawn, Grand Ballroom, bridal suites, and why it photographs so well."
 featuredImage: "/blog-images/bel-air-bay-club-wedding-venue-los-angeles-featured.jpg"
+faq:
+  - q: "Where is the Bel-Air Bay Club?"
+    a: "The Bel-Air Bay Club sits in the hills of Pacific Palisades in Los Angeles, overlooking the Pacific Ocean."
+  - q: "Is the Bel-Air Bay Club a good wedding venue?"
+    a: "Yes. With an ocean-view ceremony lawn, a Grand Ballroom, on-site bridal suites, and classic 1927 Spanish-style architecture, it is one of the most photogenic ocean-view wedding venues in Los Angeles."
+  - q: "Does the Bel-Air Bay Club have ocean views?"
+    a: "Yes. The ceremony lawn, terrace, Grand Ballroom, bridal suites, and every on-site guest room look out over the Pacific."
 ---
 
 If you're looking for a wedding venue in Los Angeles with a view that stops you in your tracks, the Bel-Air Bay Club should definitely be on your radar. Tucked into the hills of Pacific Palisades, this place has one of the most amazing ocean views I've ever seen at a venue. It feels private, peaceful, and elevated in pretty much every sense.
