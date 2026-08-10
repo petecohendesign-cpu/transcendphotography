@@ -9,6 +9,7 @@ import ParallaxImage from '../components/ParallaxImage'
 import LivingTile from '../components/LivingTile'
 import NativeFrame from '../components/NativeFrame'
 import QuickContact from '../components/QuickContact'
+import TrustStrip from '../components/TrustStrip'
 
 const OFFERS = [
   ['All-day coverage', 'From getting ready to the last dance, every moment, captured with intention.'],
@@ -278,6 +279,7 @@ export default function Weddings() {
           <div className="label" style={{ marginBottom: '16px' }}>Begin</div>
           <h2 className="h2">Tell me about your day</h2>
         </div>
+        <TrustStrip />
         <div className="reveal"><HoneyBook placement="4" /></div>
       </section>
 

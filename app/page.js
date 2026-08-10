@@ -94,9 +94,12 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <a className="hm-cta" href={SLIDES[idx].href} key={idx}>
-            {SLIDES[idx].cta} &nbsp;&rarr;
-          </a>
+          <div className="hm-ctas" key={idx}>
+            <a className="hm-primary" href="/contact">Check availability</a>
+            <a className="hm-cta" href={SLIDES[idx].href}>
+              {SLIDES[idx].cta} &nbsp;&rarr;
+            </a>
+          </div>
         </div>
 
         <div className="hscroll">Scroll</div>

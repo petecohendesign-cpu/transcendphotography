@@ -8,6 +8,7 @@ import PageHeroSlideshow from '../components/PageHeroSlideshow'
 import LivingTile from '../components/LivingTile'
 import NativeFrame from '../components/NativeFrame'
 import QuickContact from '../components/QuickContact'
+import TrustStrip from '../components/TrustStrip'
 
 const OFFERS = [
   ['Personal branding', 'Headshots and brand portraits for creatives, founders, and professionals.'],
@@ -230,6 +231,7 @@ export default function Portraits() {
           <div className="label" style={{ marginBottom: '16px' }}>Begin</div>
           <h2 className="h2">Book your session</h2>
         </div>
+        <TrustStrip />
         <div className="reveal"><HoneyBook placement="2" /></div>
       </section>
 

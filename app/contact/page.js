@@ -2,6 +2,7 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
 import HoneyBookForm from '../components/HoneyBookForm'
+import TrustStrip from '../components/TrustStrip'
 
 export const metadata = {
   title: 'Contact, Transcend Photography',
@@ -48,6 +49,7 @@ export default function Contact() {
             Tell me what you&rsquo;re dreaming up. Pick the path that fits, or just call, I&rsquo;m happy to talk it through.
           </p>
         </header>
+        <TrustStrip />
         <div className="reveal" style={{ maxWidth: '760px', margin: '0 auto' }}>
           <HoneyBookForm />
         </div>

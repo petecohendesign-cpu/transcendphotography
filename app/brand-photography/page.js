@@ -7,6 +7,7 @@ import Reveal from '../components/Reveal'
 import HoneyBook from '../components/HoneyBook'
 import PageHeroSlideshow from '../components/PageHeroSlideshow'
 import QuickContact from '../components/QuickContact'
+import TrustStrip from '../components/TrustStrip'
 
 const OFFERS = [
   ['Product photography', 'Clean, considered product imagery and styled compositions that sell.'],
@@ -203,6 +204,7 @@ export default function Branding() {
           <div className="label" style={{ marginBottom: '16px' }}>Begin</div>
           <h2 className="h2">Let&rsquo;s build your library</h2>
         </div>
+        <TrustStrip />
         <div className="reveal"><HoneyBook placement="12" /></div>
       </section>
 
