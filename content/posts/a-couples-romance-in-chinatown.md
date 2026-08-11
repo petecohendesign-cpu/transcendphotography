@@ -1,7 +1,7 @@
 ---
 title: "Romantic Night Shoot in Chinatown: Lanterns &amp; Love"
 date: "2025-01-02"
-category: "portrait"
+category: "wedding"
 excerpt: "A romantic night engagement session in LA's Chinatown: glowing red lanterns, neon streets, and cinematic film photography for a one-of-a-kind couple's shoot."
 featuredImage: "/blog-images/a-couples-romance-in-chinatown-featured.jpg"
 ---

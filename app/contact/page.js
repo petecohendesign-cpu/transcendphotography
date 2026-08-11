@@ -9,6 +9,13 @@ export const metadata = {
   description:
     'Start an inquiry for wedding, branding, or portrait photography in Los Angeles. Call, email, or tell me about your project.',
   alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact, Transcend Photography',
+    description:
+      'Start an inquiry for wedding, branding, or portrait photography in Los Angeles.',
+    url: '/contact',
+    type: 'website',
+  },
 }
 
 const PATHS = [

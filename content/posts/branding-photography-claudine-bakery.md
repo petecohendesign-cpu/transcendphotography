@@ -1,7 +1,7 @@
 ---
 title: "A Sweet Session at Claudine’s Bakery in Encino"
 date: "2025-08-28"
-category: "portrait"
+category: "branding"
 excerpt: "A brand and food photography session at Claudine's Bakery in Encino: new menu items, pastries, and the warm atmosphere of a beloved local cafe."
 featuredImage: "/blog-images/branding-photography-claudine-bakery-featured.jpg"
 ---

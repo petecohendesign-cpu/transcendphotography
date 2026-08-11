@@ -61,6 +61,17 @@ export default function BlogPost({ params }) {
     mainEntityOfPage: url,
   }
 
+  // Breadcrumb trail: Home > The Journal > this post
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE },
+      { '@type': 'ListItem', position: 2, name: 'The Journal', item: `${SITE}/blog` },
+      { '@type': 'ListItem', position: 3, name: post.title, item: url },
+    ],
+  }
+
   // FAQ structured data (only when the post declares an faq list in frontmatter)
   const faqSchema = Array.isArray(post.faq) && post.faq.length
     ? {
@@ -77,6 +88,7 @@ export default function BlogPost({ params }) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {faqSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}

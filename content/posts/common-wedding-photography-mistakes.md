@@ -1,7 +1,7 @@
 ---
 title: "11 Common Wedding Photography Mistakes and How to Avoid Them"
 date: "2024-03-18"
-category: "Wedding Photography"
+category: "wedding"
 excerpt: "Even the most carefully planned weddings can run into photography pitfalls. Here are 11 mistakes couples make, and exactly how to avoid them."
 featuredImage: "/blog-images/common-wedding-photography-mistakes-featured.jpg"
 ---

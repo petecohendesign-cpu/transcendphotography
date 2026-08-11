@@ -1,7 +1,7 @@
 ---
 title: "Why Is Wedding Photography So Expensive? The Real Costs Explained"
 date: "2024-03-10"
-category: "Wedding Photography"
+category: "wedding"
 excerpt: "Wedding photography often surprises couples with its price tag. Here's an honest breakdown of what you're actually paying for, and why it's worth it."
 featuredImage: "/blog-images/wedding-photography-understanding-the-costs-featured.png"
 ---

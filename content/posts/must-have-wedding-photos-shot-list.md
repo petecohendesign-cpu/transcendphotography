@@ -1,7 +1,7 @@
 ---
 title: "11 Must-Have Wedding Photos You Can't Skip"
 date: "2024-03-10"
-category: "Wedding Photography"
+category: "wedding"
 excerpt: "A great wedding album covers more than the obvious moments. Here are the 11 photos every couple should make sure are on their photographer's radar."
 featuredImage: "/blog-images/must-have-wedding-photos-shot-list-featured.jpg"
 ---

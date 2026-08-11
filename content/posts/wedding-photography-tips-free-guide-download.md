@@ -1,7 +1,7 @@
 ---
 title: "Essential Wedding Photography Tips: A Free Guide"
 date: "2024-03-11"
-category: "Wedding Photography"
+category: "wedding"
 excerpt: "Wedding planning is overwhelming. This free guide covers everything you need to know about working with a photographer, from finding the right fit to making the most of your wedding day."
 featuredImage: "/blog-images/wedding-photography-tips-free-guide-download-featured.jpg"
 ---

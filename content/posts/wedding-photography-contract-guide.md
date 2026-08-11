@@ -1,7 +1,7 @@
 ---
 title: "Protect Your Memories: Why Every Couple Needs a Wedding Photography Contract."
 date: "2025-04-16"
-category: "branding"
+category: "wedding"
 excerpt: "What every wedding photography contract should include, payment terms, image rights, cancellation policies, and more, from an LA wedding photographer."
 featuredImage: "/blog-images/wedding-photography-contract-guide-featured.jpg"
 ---

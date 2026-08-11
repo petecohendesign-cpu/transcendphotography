@@ -56,12 +56,17 @@ const businessSchema = {
     addressRegion: 'CA',
     addressCountry: 'US',
   },
+  geo: { '@type': 'GeoCoordinates', latitude: 34.0522, longitude: -118.2437 },
   areaServed: ['Los Angeles', 'Southern California', 'Worldwide'],
   founder: { '@type': 'Person', name: 'Pete Cohen' },
-  knowsAbout: ['Wedding Photography', 'Brand Photography', 'Portrait Photography'],
+  knowsAbout: [
+    'Wedding Photography', 'Brand Photography', 'Portrait Photography',
+    'Engagement Photography', 'Headshot Photography', 'Family Photography',
+  ],
   sameAs: [
     'https://instagram.com/transcendphoto',
     'https://facebook.com/transcendphoto',
+    'https://transcendphoto.pic-time.com/portfolio',
   ],
 }
 

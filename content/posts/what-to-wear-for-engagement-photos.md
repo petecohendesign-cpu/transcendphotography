@@ -1,7 +1,7 @@
 ---
 title: "What to Wear for Your Engagement Photos: Tips for Adventurous and Creative Couples"
 date: "2024-03-21"
-category: "Engagement Photography"
+category: "wedding"
 excerpt: "Your engagement photo outfits say a lot about your love story. Here's how to choose looks that feel authentic, photograph beautifully, and make you both feel confident."
 featuredImage: "/blog-images/what-to-wear-for-engagement-photos-featured.jpg"
 ---

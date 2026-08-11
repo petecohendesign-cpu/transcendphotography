@@ -34,6 +34,8 @@ const nextConfig = {
       { source: '/blog/2024/11/6/revisiting-a-fusion-of-traditions-capturing-a-two-day-catholic-and-indian-wedding-celebration', destination: '/for-couples', permanent: true },
       // Renamed to fix a typo'd slug (famly -> clean location slug)
       { source: '/blog/famly-session-palos-verdes', destination: '/blog/palos-verdes-family-portraits', permanent: true },
+      // Renamed to drop the odd date prefix
+      { source: '/blog/2025-8-21-a-photographers-guide-to-a-stress-free-wedding-day-timeline', destination: '/blog/wedding-day-timeline-guide', permanent: true },
       // Old Squarespace tag pages and dated permalinks -> blog index
       { source: '/blog/tag/:tag*', destination: '/blog', permanent: true },
       { source: '/blog/:year(\\d{4})/:month/:day/:rest*', destination: '/blog', permanent: true },

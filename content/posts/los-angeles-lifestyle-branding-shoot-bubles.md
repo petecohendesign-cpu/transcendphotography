@@ -1,7 +1,7 @@
 ---
 title: "A Brand Story: Capturing the Essence of Bubles Champagne"
 date: "2025-10-17"
-category: "wedding"
+category: "branding"
 excerpt: "A golden-hour lifestyle branding shoot for Bubles Champagne in Montecito Heights, LA: styled champagne carts, DTLA skyline views, and cinematic brand storytelling."
 featuredImage: "/blog-images/los-angeles-lifestyle-branding-shoot-bubles-featured.jpg"
 ---

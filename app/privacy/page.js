@@ -6,6 +6,13 @@ export const metadata = {
   description:
     'How Transcend Photography collects, uses, and protects your personal information.',
   alternates: { canonical: '/privacy' },
+  openGraph: {
+    title: 'Privacy Policy, Transcend Photography',
+    description:
+      'How Transcend Photography collects, uses, and protects your personal information.',
+    url: '/privacy',
+    type: 'website',
+  },
 }
 
 const S = { marginBottom: '40px' }

@@ -52,6 +52,10 @@ export default function Home() {
       <Nav variant="overlay" />
       <Reveal />
 
+      <h1 className="sr-only">
+        Transcend Photography, a Los Angeles wedding, brand, and portrait photographer
+      </h1>
+
       {/* Hero slideshow */}
       <div className="hero">
         {SLIDES.map((s, i) => (

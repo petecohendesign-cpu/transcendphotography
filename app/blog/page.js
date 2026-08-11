@@ -4,6 +4,20 @@ import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
 import { getAllPosts } from '../lib/blog'
 
+export const metadata = {
+  title: 'The Journal | Transcend Photography',
+  description:
+    'Stories, planning guides, and galleries on wedding, brand, and portrait photography in Los Angeles.',
+  alternates: { canonical: '/blog' },
+  openGraph: {
+    title: 'The Journal | Transcend Photography',
+    description:
+      'Stories, planning guides, and galleries on wedding, brand, and portrait photography in Los Angeles.',
+    url: '/blog',
+    type: 'website',
+  },
+}
+
 export default function Blog() {
   const posts = getAllPosts()
 
