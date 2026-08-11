@@ -63,10 +63,18 @@ const businessSchema = {
     'Wedding Photography', 'Brand Photography', 'Portrait Photography',
     'Engagement Photography', 'Headshot Photography', 'Family Photography',
   ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5.0',
+    reviewCount: '11',
+    bestRating: '5',
+  },
   sameAs: [
     'https://instagram.com/transcendphoto',
     'https://facebook.com/transcendphoto',
+    'https://www.tiktok.com/@transcend.photo',
     'https://transcendphoto.pic-time.com/portfolio',
+    'https://share.google/N6RVTKBXfjKtKroRZ',
   ],
 }
 

@@ -10,7 +10,7 @@ export default function TrustStrip() {
     <div className="trust reveal" role="group" aria-label="Why clients choose Transcend">
       <div className="trust-rating">
         <Stars count={5} size={15} />
-        <span className="trust-label">Five-star reviews on Google</span>
+        <span className="trust-label">5.0 on Google &middot; 11 reviews</span>
       </div>
       <span className="trust-dot" aria-hidden="true" />
       <div className="trust-cred">
