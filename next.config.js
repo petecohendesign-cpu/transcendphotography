@@ -36,6 +36,11 @@ const nextConfig = {
       { source: '/blog/famly-session-palos-verdes', destination: '/blog/palos-verdes-family-portraits', permanent: true },
       // Renamed to drop the odd date prefix
       { source: '/blog/2025-8-21-a-photographers-guide-to-a-stress-free-wedding-day-timeline', destination: '/blog/wedding-day-timeline-guide', permanent: true },
+      // More old Squarespace URLs still getting traffic (found in GA, not in the first export)
+      { source: '/blog/feeling-comfortable-while-on-camera', destination: '/blog/posing-tips-for-couples-and-portraits', permanent: true },
+      { source: '/blog/a-guide-to-wedding-photography-styles', destination: '/for-couples', permanent: true },
+      { source: '/wedding-guide-download', destination: '/blog/wedding-photography-tips-free-guide-download', permanent: true },
+      { source: '/concert-photography', destination: '/portraits', permanent: true },
       // Old Squarespace tag pages and dated permalinks -> blog index
       { source: '/blog/tag/:tag*', destination: '/blog', permanent: true },
       { source: '/blog/:year(\\d{4})/:month/:day/:rest*', destination: '/blog', permanent: true },
