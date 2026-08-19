@@ -41,6 +41,7 @@ const nextConfig = {
       { source: '/blog/a-guide-to-wedding-photography-styles', destination: '/for-couples', permanent: true },
       { source: '/wedding-guide-download', destination: '/blog/wedding-photography-tips-free-guide-download', permanent: true },
       { source: '/concert-photography', destination: '/portraits', permanent: true },
+      { source: '/engagement-portrait-photography-packages', destination: '/for-couples', permanent: true },
       // Old Squarespace tag pages and dated permalinks -> blog index
       { source: '/blog/tag/:tag*', destination: '/blog', permanent: true },
       { source: '/blog/:year(\\d{4})/:month/:day/:rest*', destination: '/blog', permanent: true },
