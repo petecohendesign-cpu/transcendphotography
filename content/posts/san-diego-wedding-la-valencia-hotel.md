@@ -77,7 +77,7 @@ Yes. The garden terrace and many of the hotel's event spaces look out over La Jo
 
 If you're getting married at the La Valencia Hotel, or just considering it, I'd love to be part of your day. As a [La Valencia Hotel wedding photographer](/for-couples) who has already shot here, I know how to make the most of its light, its ocean views over La Jolla Cove, and all that beautiful Mediterranean detail. Whether you're deep into planning or just starting to look, [contact me here](/contact) or browse the [journal](/blog) for more wedding stories and galleries.
 
-I'd love to hear what you're dreaming up for your La Valencia Hotel wedding.
+I'd love to hear what you're dreaming up for your La Valencia Hotel wedding. And if you love ocean-view venues, take a look at my guide to the [Bel-Air Bay Club](/blog/bel-air-bay-club-wedding-venue-los-angeles), an ocean-view wedding venue up in Los Angeles.
 
 ---
 

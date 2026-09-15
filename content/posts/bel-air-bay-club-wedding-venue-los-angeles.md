@@ -84,7 +84,7 @@ Yes. The ceremony lawn, terrace, Grand Ballroom, bridal suites, and every on-sit
 
 If you're getting married at the Bel-Air Bay Club, or just thinking about it, I'd love to be part of your day. As a [wedding photographer in Los Angeles](/for-couples), I know how to make the most of this venue's light and views. Whether you're deep into planning or just browsing options, [contact me here](/contact) or head to the [journal](/blog) to see more wedding stories and galleries.
 
-Either way, I'd love to hear more about what you're dreaming up for your Bel-Air Bay Club wedding.
+Either way, I'd love to hear more about what you're dreaming up for your Bel-Air Bay Club wedding. And if you're open to venues a little further south, see my guide to a [La Valencia Hotel wedding](/blog/san-diego-wedding-la-valencia-hotel) in La Jolla.
 
 ---
 
