@@ -4,6 +4,13 @@ date: "2025-07-03"
 category: "wedding"
 excerpt: "A photographer's guide to the Bel-Air Bay Club, an ocean-view wedding venue in Pacific Palisades, Los Angeles: the ceremony lawn, Grand Ballroom, bridal suites, and why it photographs so well."
 featuredImage: "/blog-images/bel-air-bay-club-wedding-venue-los-angeles-featured.jpg"
+galleryHeading: "Bel-Air Bay Club Wedding Photos"
+galleryIntro: "A look at how this ocean-view Los Angeles wedding venue photographs across the property, from the ceremony lawn overlooking the Pacific to the Grand Ballroom and Spanish-style architecture."
+video:
+  id: "I71TnjRZKZY"
+  title: "Bel-Air Bay Club Wedding Venue Tour"
+  description: "A photographer's video tour of the Bel-Air Bay Club, an ocean-view wedding venue in Pacific Palisades, Los Angeles."
+  uploadDate: "2026-09-14"
 faq:
   - q: "Where is the Bel-Air Bay Club?"
     a: "The Bel-Air Bay Club sits in the hills of Pacific Palisades in Los Angeles, overlooking the Pacific Ocean."
@@ -85,26 +92,3 @@ Yes. The ceremony lawn, terrace, Grand Ballroom, bridal suites, and every on-sit
 If you're getting married at the Bel-Air Bay Club, or just thinking about it, I'd love to be part of your day. As a [wedding photographer in Los Angeles](/for-couples), I know how to make the most of this venue's light and views. Whether you're deep into planning or just browsing options, [contact me here](/contact) or head to the [journal](/blog) to see more wedding stories and galleries.
 
 Either way, I'd love to hear more about what you're dreaming up for your Bel-Air Bay Club wedding. And if you're open to venues a little further south, see my guide to a [La Valencia Hotel wedding](/blog/san-diego-wedding-la-valencia-hotel) in La Jolla.
-
----
-
-## Bel-Air Bay Club Photos
-
-Here are some of my favorite Bel-Air Bay Club photos, showing how this ocean-view Los Angeles wedding venue looks across the property, from the ceremony lawn to the Grand Ballroom. If you're planning a Bel-Air Bay Club wedding, I hope these give you a real feel for the space.
-
-<div class="blog-gallery">
-  <img src="/blog-images/bel-air-bay-club-wedding-venue-los-angeles-0.jpg" alt="Bel-Air Bay Club wedding venue ocean view" />
-  <img src="/blog-images/bel-air-bay-club-wedding-venue-los-angeles-1.jpg" alt="Bel-Air Bay Club ceremony lawn overlooking the Pacific" />
-  <img src="/blog-images/bel-air-bay-club-wedding-venue-los-angeles-2.jpg" alt="Bel-Air Bay Club Grand Ballroom" />
-  <img src="/blog-images/bel-air-bay-club-wedding-venue-los-angeles-3.jpg" alt="Bel-Air Bay Club terrace and coastal view" />
-  <img src="/blog-images/bel-air-bay-club-wedding-venue-los-angeles-4.jpg" alt="Bel-Air Bay Club bridal suite" />
-  <img src="/blog-images/bel-air-bay-club-wedding-venue-los-angeles-5.jpg" alt="Bel-Air Bay Club Spanish-style architecture" />
-  <img src="/blog-images/bel-air-bay-club-wedding-venue-los-angeles-6.jpg" alt="Bel-Air Bay Club wedding photography Los Angeles" />
-  <img src="/blog-images/bel-air-bay-club-wedding-venue-los-angeles-7.jpg" alt="Bel-Air Bay Club palm-lined grounds" />
-  <img src="/blog-images/bel-air-bay-club-wedding-venue-los-angeles-8.jpg" alt="Bel-Air Bay Club ocean-view reception" />
-  <img src="/blog-images/bel-air-bay-club-wedding-venue-los-angeles-9.jpg" alt="Bel-Air Bay Club rose garden" />
-  <img src="/blog-images/bel-air-bay-club-wedding-venue-los-angeles-10.jpg" alt="Bel-Air Bay Club guest rooms with ocean views" />
-  <img src="/blog-images/bel-air-bay-club-wedding-venue-los-angeles-11.jpg" alt="Bel-Air Bay Club Pacific Palisades wedding venue" />
-  <img src="/blog-images/bel-air-bay-club-wedding-venue-los-angeles-12.jpg" alt="Bel-Air Bay Club ceremony details" />
-  <img src="/blog-images/bel-air-bay-club-wedding-venue-los-angeles-13.jpg" alt="Bel-Air Bay Club Los Angeles wedding venue" />
-</div>

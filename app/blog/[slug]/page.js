@@ -85,12 +85,29 @@ export default function BlogPost({ params }) {
       }
     : null
 
+  // VideoObject structured data (only when the post declares a video in frontmatter)
+  const videoSchema = post.video
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'VideoObject',
+        name: post.video.title || post.title,
+        description: post.video.description || post.excerpt,
+        thumbnailUrl: [`https://i.ytimg.com/vi/${post.video.id}/maxresdefault.jpg`],
+        uploadDate: post.video.uploadDate || post.date,
+        embedUrl: `https://www.youtube.com/embed/${post.video.id}`,
+        contentUrl: `https://www.youtube.com/watch?v=${post.video.id}`,
+      }
+    : null
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {faqSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
+      {videoSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }} />
       )}
       <Nav variant="solid" />
       <Reveal />
@@ -127,6 +144,19 @@ export default function BlogPost({ params }) {
           </div>
         )}
 
+        {post.video && (
+          <div style={{ position: 'relative', width: '100%', aspectRatio: '16 / 9', marginBottom: '60px', borderRadius: '2px', overflow: 'hidden' }}>
+            <iframe
+              src={`https://www.youtube.com/embed/${post.video.id}`}
+              title={post.video.title || post.title}
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
+            />
+          </div>
+        )}
+
         <div
           className="blog-content"
           style={{ fontSize: '16px', fontWeight: 300, lineHeight: 1.7, color: 'var(--espresso)', paddingBottom: '60px' }}
@@ -140,8 +170,13 @@ export default function BlogPost({ params }) {
         {post.galleryImages && post.galleryImages.length > 0 && (
           <div style={{ marginBottom: '60px' }}>
             <h2 style={{ fontSize: '28px', fontFamily: 'var(--font-serif), serif', fontWeight: 300, marginBottom: '24px' }}>
-              Gallery
+              {post.galleryHeading || 'Gallery'}
             </h2>
+            {post.galleryIntro && (
+              <p style={{ fontSize: '16px', fontWeight: 300, lineHeight: 1.7, color: 'var(--taupe)', marginBottom: '28px' }}>
+                {post.galleryIntro}
+              </p>
+            )}
             <BlogGallery
               images={post.galleryImages.map((src, i) => ({
                 src,
