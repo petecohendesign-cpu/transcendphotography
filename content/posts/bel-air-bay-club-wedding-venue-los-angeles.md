@@ -88,7 +88,9 @@ Either way, I'd love to hear more about what you're dreaming up for your Bel-Air
 
 ---
 
-## Gallery
+## Bel-Air Bay Club Photos
+
+Here are some of my favorite Bel-Air Bay Club photos, showing how this ocean-view Los Angeles wedding venue looks across the property, from the ceremony lawn to the Grand Ballroom. If you're planning a Bel-Air Bay Club wedding, I hope these give you a real feel for the space.
 
 <div class="blog-gallery">
   <img src="/blog-images/bel-air-bay-club-wedding-venue-los-angeles-0.jpg" alt="Bel-Air Bay Club wedding venue ocean view" />
