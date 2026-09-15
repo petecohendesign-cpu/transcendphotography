@@ -78,3 +78,25 @@ Yes. The garden terrace and many of the hotel's event spaces look out over La Jo
 If you're getting married at the La Valencia Hotel, or just considering it, I'd love to be part of your day. As a [wedding photographer](/for-couples) who has shot at this venue, I know how to make the most of its light, its views, and all that beautiful Mediterranean detail. Whether you're deep into planning or just starting to look, [contact me here](/contact) or browse the [journal](/blog) for more wedding stories and galleries.
 
 I'd love to hear what you're dreaming up for your La Valencia Hotel wedding.
+
+---
+
+## Gallery
+
+<div class="blog-gallery">
+  <img src="/blog-images/san-diego-wedding-la-valencia-hotel-0.jpg" alt="La Valencia Hotel garden terrace set for a wedding ceremony overlooking La Jolla" />
+  <img src="/blog-images/san-diego-wedding-la-valencia-hotel-1.jpg" alt="Wedding dress hanging outside the Veranda Ballroom at the La Valencia Hotel" />
+  <img src="/blog-images/san-diego-wedding-la-valencia-hotel-2.jpg" alt="Wedding dress at the pink entrance of the La Valencia Hotel in La Jolla" />
+  <img src="/blog-images/san-diego-wedding-la-valencia-hotel-3.jpg" alt="Wedding dress by a window with an ocean view at the La Valencia Hotel" />
+  <img src="/blog-images/san-diego-wedding-la-valencia-hotel-4.jpg" alt="Groom and groomsmen in a Mediterranean archway at the La Valencia Hotel" />
+  <img src="/blog-images/san-diego-wedding-la-valencia-hotel-5.jpg" alt="Groom and groomsmen in front of the pink La Valencia Hotel facade" />
+  <img src="/blog-images/san-diego-wedding-la-valencia-hotel-6.jpg" alt="Ocean-view wedding ceremony on the garden terrace at the La Valencia Hotel" />
+  <img src="/blog-images/san-diego-wedding-la-valencia-hotel-7.jpg" alt="Bride and groom at their La Valencia Hotel ceremony overlooking La Jolla Cove" />
+  <img src="/blog-images/san-diego-wedding-la-valencia-hotel-8.jpg" alt="Newlyweds portrait in the gardens of the La Valencia Hotel" />
+  <img src="/blog-images/san-diego-wedding-la-valencia-hotel-9.jpg" alt="Bride and groom on the La Jolla cliffs above the Pacific near the La Valencia Hotel" />
+  <img src="/blog-images/san-diego-wedding-la-valencia-hotel-10.jpg" alt="Couple kissing on a La Valencia Hotel balcony overlooking the ocean" />
+  <img src="/blog-images/san-diego-wedding-la-valencia-hotel-11.jpg" alt="Wedding guests in the windows of the historic pink La Valencia Hotel" />
+  <img src="/blog-images/san-diego-wedding-la-valencia-hotel-12.jpg" alt="Wedding reception on the dance floor at the La Valencia Hotel" />
+  <img src="/blog-images/san-diego-wedding-la-valencia-hotel-13.jpg" alt="Bride and groom cutting the cake at their La Valencia Hotel wedding reception" />
+  <img src="/blog-images/san-diego-wedding-la-valencia-hotel-14.jpg" alt="Floral centerpiece at a La Valencia Hotel wedding reception" />
+</div>
