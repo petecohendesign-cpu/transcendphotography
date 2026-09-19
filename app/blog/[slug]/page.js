@@ -145,15 +145,17 @@ export default function BlogPost({ params }) {
         )}
 
         {post.video && (
-          <div style={{ position: 'relative', width: '100%', aspectRatio: '16 / 9', marginBottom: '60px', borderRadius: '2px', overflow: 'hidden' }}>
-            <iframe
-              src={`https://www.youtube.com/embed/${post.video.id}`}
-              title={post.video.title || post.title}
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
-            />
+          <div style={{ marginBottom: '60px', ...(post.video.orientation === 'vertical' ? { maxWidth: '405px', marginLeft: 'auto', marginRight: 'auto' } : {}) }}>
+            <div style={{ position: 'relative', width: '100%', aspectRatio: post.video.orientation === 'vertical' ? '9 / 16' : '16 / 9', borderRadius: '2px', overflow: 'hidden' }}>
+              <iframe
+                src={`https://www.youtube.com/embed/${post.video.id}`}
+                title={post.video.title || post.title}
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
+              />
+            </div>
           </div>
         )}
 
