@@ -29,27 +29,27 @@ const STEPS = [
 const TIERS = [
   {
     name: 'The Mini',
-    price: '$650',
+    price: '$350',
     note: 'A relaxed start',
     items: ['45-minute session', 'One location or studio', 'One outfit', '15 edited high-res images', 'Private online gallery'],
   },
   {
     name: 'The Signature',
-    price: '$1,200',
+    price: '$650',
     note: 'Most popular',
     feature: true,
     items: ['90-minute session', 'Two locations or looks', 'Wardrobe & styling guidance', '40 edited high-res images', 'Print release included'],
   },
   {
     name: 'The Editorial',
-    price: '$2,500',
+    price: '$1,500',
     note: 'Full creative direction',
     items: ['Half-day session', 'Multiple looks & locations', 'Creative direction & moodboard', '80+ edited high-res images', 'Hair & makeup coordination'],
   },
 ]
 
 const FAQ = [
-  ['How much do portrait sessions cost in Los Angeles?', 'Sessions start at $650 for a 45-minute Mini, $1,200 for the 90-minute Signature, and $2,500 for a half-day Editorial session with full creative direction.'],
+  ['How much do portrait sessions cost in Los Angeles?', 'Sessions start at $350 for a 45-minute Mini, $650 for the 90-minute Signature, and $1,500 for a half-day Editorial session with full creative direction.'],
   ['What types of portraits do you photograph?', 'Professional headshots, personal branding portraits, actors and creatives, families, couples, and personal editorial work, all with a relaxed, documentary approach.'],
   ['Do sessions take place in a studio or on location?', 'Both. I shoot in-studio and on location across Los Angeles, and we choose the setting that fits your style and the mood you want.'],
   ['Do you help with wardrobe and styling?', 'Yes. Signature and Editorial sessions include wardrobe and styling guidance, and Editorial sessions can add hair and makeup coordination.'],
