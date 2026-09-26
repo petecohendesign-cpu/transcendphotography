@@ -4,6 +4,11 @@ date: "2025-01-02"
 category: "wedding"
 excerpt: "A romantic night engagement session in LA's Chinatown: glowing red lanterns, neon streets, and cinematic film photography for a one-of-a-kind couple's shoot."
 featuredImage: "/blog-images/a-couples-romance-in-chinatown-featured.jpg"
+video:
+  id: "t4e1LzUeJDc"
+  title: "Chinatown Night Couples Session Film"
+  description: "A short film from a romantic night couples session in LA's Chinatown, among the red lanterns and neon streets."
+  uploadDate: "2026-09-26"
 ---
 
 Looking for a romantic and unique couple’s photoshoot idea in Los Angeles? Chinatown at night is the perfect location, combining the charm of its historic architecture with the vibrant lights of the city after dark. The neons, and lantern-lined walkways create an atmosphere that’s both intimate and cinematic, a dream for any couple looking to capture their love story in a one-of-a-kind setting.
