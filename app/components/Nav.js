@@ -6,6 +6,7 @@ const LINKS = [
   { href: '/brand-photography', label: 'Branding' },
   { href: '/for-couples', label: 'Weddings' },
   { href: '/portraits', label: 'Portraits' },
+  { href: '/headshots', label: 'Headshots' },
   { href: '/about', label: 'About' },
 ]
 
