@@ -56,6 +56,12 @@ const FAQ = [
   ['Do you offer ongoing content for social media?', 'Yes. My monthly retainer delivers a steady, on-brand library sized for feed, stories, reels, and web, so you always have fresh content ready to post.'],
 ]
 
+const CASES = [
+  ['Media.Monks', 'Creative office and workspace photography for a global agency in Los Angeles.', '/blog/creative-office-photography-mediamonks-los-angeles'],
+  ['Claudine Bakery', 'Brand and lifestyle photography for a neighborhood LA bakery.', '/blog/branding-photography-claudine-bakery'],
+  ['Bubles Champagne', 'A lifestyle branding shoot for a champagne gift brand.', '/blog/los-angeles-lifestyle-branding-shoot-bubles'],
+]
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -133,6 +139,23 @@ export default function Branding() {
             <div key={i} className="imgblk" style={{ aspectRatio: '1 / 1', position: 'relative' }}>
               <Image src={src} alt={cap} fill sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" style={{ objectFit: 'cover' }} />
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Selected brand work */}
+      <section className="section wrap reveal">
+        <div className="center" style={{ marginBottom: '48px' }}>
+          <div className="label" style={{ marginBottom: '16px' }}>Selected work</div>
+          <h2 className="h2">Recent brand &amp; commercial projects</h2>
+        </div>
+        <div className="offers">
+          {CASES.map(([title, desc, href], i) => (
+            <a key={i} className="offer" href={href} style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
+              <h3>{title}</h3>
+              <p>{desc}</p>
+              <span className="arrow" style={{ marginTop: '14px', display: 'inline-block' }}>View the project →</span>
+            </a>
           ))}
         </div>
       </section>
