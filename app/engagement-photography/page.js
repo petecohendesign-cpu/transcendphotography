@@ -86,8 +86,8 @@ export default function EngagementPhotography() {
 
       {/* Motion moment */}
       <section className="section wrap reveal" style={{ paddingTop: 0 }}>
-        <div style={{ display: 'flex', gap: '48px', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
-          <div style={{ flex: '0 0 auto', width: 'min(340px, 100%)' }}>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div className="vhover" tabIndex={0} style={{ width: 'min(340px, 100%)' }}>
             <video
               src="/videos/tracy-nathan-engagement.mp4"
               poster="/videos/tracy-nathan-engagement-poster.jpg"
@@ -96,17 +96,13 @@ export default function EngagementPhotography() {
               loop
               playsInline
               preload="metadata"
-              style={{ width: '100%', display: 'block', borderRadius: '2px' }}
             />
-          </div>
-          <div style={{ flex: '1 1 300px', maxWidth: '420px' }}>
-            <div className="label" style={{ marginBottom: '16px' }}>In motion</div>
-            <h2 className="h2" style={{ marginBottom: '18px' }}>A moment, moving</h2>
-            <p style={{ color: 'var(--taupe)', lineHeight: 1.75, marginBottom: '20px' }}>
-              A few seconds from a recent engagement session at Pasadena City Hall — because
-              sometimes a still frame isn&rsquo;t quite enough.
-            </p>
-            <a href="/blog/pasadena-city-hall-engagement-los-angeles" className="arrow">See the full Pasadena City Hall session →</a>
+            <div className="vhover-cap">
+              <div className="label">In motion</div>
+              <h3 className="vhover-title">A moment, moving</h3>
+              <p className="vhover-text">A few seconds from a recent engagement session at Pasadena City Hall.</p>
+              <a href="/blog/pasadena-city-hall-engagement-los-angeles" className="arrow vhover-link">See the full session →</a>
+            </div>
           </div>
         </div>
       </section>
