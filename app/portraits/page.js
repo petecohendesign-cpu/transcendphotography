@@ -95,9 +95,6 @@ export default function Portraits() {
           Intimate, editorial portraiture, the kind that captures presence, not just
           a likeness. Honest, considered, and unmistakably <em>yours</em>.
         </p>
-        <p style={{ marginTop: '20px', color: 'var(--taupe)', lineHeight: 1.7, maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>
-          Need <a href="/headshots">professional headshots</a> for work or your team? Those have their own page.
-        </p>
       </section>
 
       <section className="wrap" style={{ padding: '10px 48px 110px' }}>
