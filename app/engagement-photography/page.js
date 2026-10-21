@@ -55,13 +55,10 @@ export default function EngagementPhotography() {
         label="Engagement Sessions"
         title={<>Engagement photos that<br />feel like the two of you</>}
         slides={[
-          { src: '/images/engagement-pc-5.jpg', alt: 'Engagement session among palm trees in Los Angeles' },
-          { src: '/images/engagement-pc-1.jpg', alt: 'Engagement session under a garden arch' },
-          { src: '/images/engagement-pc-9.jpg', alt: 'Engagement session in Chinatown at night' },
-          { src: '/images/engagement-pc-13.jpg', alt: 'Engagement couple dancing on the beach' },
-          { src: '/images/engagement-pc-8.jpg', alt: 'Engagement session in an arched colonnade' },
-          { src: '/images/engagement-pc-7.jpg', alt: 'Engagement session at Pasadena City Hall' },
           { src: '/images/engagement-pc-12.jpg', alt: 'Engagement session by the lake at sunset' },
+          { src: '/images/engagement-pc-13.jpg', alt: 'Engagement couple dancing on the beach' },
+          { src: '/images/engagement-pc-9.jpg', alt: 'Engagement session in Chinatown at night', pos: 'center 45%' },
+          { src: '/images/engagement-pc-1.jpg', alt: 'Engagement session under a garden arch', pos: 'center 50%' },
         ]}
       />
 
