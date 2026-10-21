@@ -154,7 +154,7 @@ export default function EngagementPhotography() {
       {/* Mid-page CTA */}
       <section className="wrap center reveal" style={{ paddingBottom: '110px' }}>
         <p className="serif" style={{ fontSize: 'clamp(22px,3vw,30px)', fontWeight: 300, marginBottom: '26px' }}>
-          Let&rsquo;s plan something you&rsquo;ll want to frame.
+          Let&rsquo;s plan your session.
         </p>
         <a href="#inquire" className="btn">Inquire Now</a>
       </section>
