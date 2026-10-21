@@ -71,6 +71,7 @@ With this many options, it helps to narrow things down by a few questions:
 - **How many guests?** Some venues shine for 40, others for 250. Guest count rules a lot of this out quickly.
 - **Indoor, outdoor, or both?** LA weather is forgiving, but a rain or heat plan matters depending on the season.
 - **What's the light like?** As a photographer, this is what I look at first. The best venues have soft, flattering light in the late afternoon — ask when the sun hits the ceremony space.
+- **What's the budget?** Venue cost is only part of the picture — for help planning the rest, see my guide to [how much a wedding photographer costs in Los Angeles](/blog/wedding-photographer-cost-los-angeles).
 
 Whatever you choose, the venue sets the tone for the whole day, and for your photos. If you'd like help thinking it through, or you've already booked and need a photographer who knows how to make the most of the space, I'd love to talk.
 
