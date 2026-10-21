@@ -1,11 +1,11 @@
 export const metadata = {
-  title: 'Portrait Photographer in Los Angeles | Transcend Photography',
+  title: 'Portrait & Headshot Photographer in Los Angeles | Transcend Photography',
   description:
-    'Editorial portrait sessions in Los Angeles: headshots, creative professionals, families, and personal work, photographed with a documentary eye.',
+    'Portrait and professional headshot sessions in Los Angeles — editorial headshots for LinkedIn and work, plus creatives, families, and personal portraits.',
   alternates: { canonical: '/portraits' },
   openGraph: {
-    title: 'Portrait Photographer in Los Angeles | Transcend Photography',
-    description: 'Editorial portrait sessions in Los Angeles: headshots, creatives, families, and personal work.',
+    title: 'Portrait & Headshot Photographer in Los Angeles | Transcend Photography',
+    description: 'Portrait and professional headshot sessions in Los Angeles — headshots for LinkedIn and work, plus creatives and families.',
     url: 'https://www.transcendphoto.net/portraits',
   },
 }

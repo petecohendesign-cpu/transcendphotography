@@ -54,6 +54,8 @@ const FAQ = [
   ['Do sessions take place in a studio or on location?', 'Both. I shoot in-studio and on location across Los Angeles, and we choose the setting that fits your style and the mood you want.'],
   ['Do you help with wardrobe and styling?', 'Yes. Signature and Editorial sessions include wardrobe and styling guidance, and Editorial sessions can add hair and makeup coordination.'],
   ['Do you photograph families?', 'Absolutely. Family sessions are relaxed and unposed, focused on real connection and natural moments rather than stiff, formal poses.'],
+  ['What should I wear for a professional headshot?', 'Solid colors you feel confident in, in the style your work calls for — a blazer, a clean shirt, or smart casual. I send a short what-to-wear guide before every session so you arrive camera-ready.'],
+  ['Do you photograph team or corporate headshots?', 'Yes. For teams, I bring a consistent studio setup to your Los Angeles office so everyone’s professional headshots match across your website and LinkedIn.'],
 ]
 
 const faqSchema = {
@@ -199,6 +201,27 @@ export default function Portraits() {
           Additional edited images and prints available à la carte. Commercial and press
           usage quoted separately.
         </p>
+      </section>
+
+      {/* Professional headshots */}
+      <section className="section wrap reveal" style={{ background: 'var(--bone-2)' }}>
+        <div className="center" style={{ marginBottom: '36px' }}>
+          <div className="label" style={{ marginBottom: '16px' }}>Professional headshots</div>
+          <h2 className="h2">Professional headshots in Los Angeles</h2>
+        </div>
+        <div style={{ maxWidth: '760px', margin: '0 auto', color: 'var(--taupe)', lineHeight: 1.75 }}>
+          <p style={{ marginBottom: '18px' }}>
+            Need a professional headshot for LinkedIn, your website, or the press? I photograph clean,
+            confident headshots for individuals and teams across Los Angeles — founders, executives,
+            creatives, and companies that want a consistent look. Sessions happen in-studio, on
+            location, or on-site at your office.
+          </p>
+          <p>
+            Every professional headshot is delivered retouched and cropped for LinkedIn, web, and
+            print, so it&rsquo;s ready to use the moment you get it. Booking for a whole team? I bring a
+            consistent studio setup to you so everyone&rsquo;s headshots match.
+          </p>
+        </div>
       </section>
 
       {/* Local SEO content + FAQ */}
