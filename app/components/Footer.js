@@ -23,6 +23,7 @@ export default function Footer() {
           <div className="fcol">
             <div className="fhead">Work</div>
             <a className="nlink" href="/for-couples">Weddings</a>
+            <a className="nlink" href="/engagement-photography">Engagements</a>
             <a className="nlink" href="/brand-photography">Branding</a>
             <a className="nlink" href="/portraits">Portraits</a>
           </div>

@@ -161,6 +161,9 @@ export default function Weddings() {
       <section className="wrap" style={{ paddingBottom: '110px' }}>
         <div className="reveal center" style={{ marginBottom: '40px' }}>
           <div className="label">Engagement sessions</div>
+          <p style={{ marginTop: '14px', color: 'var(--taupe)' }}>
+            <a href="/engagement-photography" className="arrow">Explore engagement photography →</a>
+          </p>
         </div>
         <div className="gal gal-3 reveal">
           <ParallaxImage style={{ height: '480px' }} speed={0.16} src="/images/engagement-pc-5.jpg" alt="Engagement session among palm trees" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 72%" />

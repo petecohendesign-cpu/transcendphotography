@@ -21,7 +21,7 @@ const nextConfig = {
 
       // Old Squarespace URLs still indexed in Google (from Search Console) -> nearest live page
       { source: '/testimonials', destination: '/about', permanent: true },
-      { source: '/engagement-couples-photography', destination: '/for-couples', permanent: true },
+      { source: '/engagement-couples-photography', destination: '/engagement-photography', permanent: true },
       { source: '/wedding-photography-portfolio', destination: '/for-couples', permanent: true },
       { source: '/explore-my-photo-portfolio', destination: '/', permanent: true },
       { source: '/mothers-day-minis', destination: '/blog/mothers-day-portrait-sessions-for-all-ages', permanent: true },
@@ -41,7 +41,7 @@ const nextConfig = {
       { source: '/blog/a-guide-to-wedding-photography-styles', destination: '/for-couples', permanent: true },
       { source: '/wedding-guide-download', destination: '/blog/wedding-photography-tips-free-guide-download', permanent: true },
       { source: '/concert-photography', destination: '/portraits', permanent: true },
-      { source: '/engagement-portrait-photography-packages', destination: '/for-couples', permanent: true },
+      { source: '/engagement-portrait-photography-packages', destination: '/engagement-photography', permanent: true },
       // Old Squarespace tag pages and dated permalinks -> blog index
       { source: '/blog/tag/:tag*', destination: '/blog', permanent: true },
       { source: '/blog/:year(\\d{4})/:month/:day/:rest*', destination: '/blog', permanent: true },
