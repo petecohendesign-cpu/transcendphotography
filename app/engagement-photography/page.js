@@ -87,40 +87,6 @@ export default function EngagementPhotography() {
         </div>
       </section>
 
-      {/* Engagement films */}
-      <section className="section wrap reveal" style={{ paddingTop: 0 }}>
-        <div className="center" style={{ marginBottom: '40px' }}>
-          <div className="label" style={{ marginBottom: '16px' }}>In motion</div>
-          <h2 className="h2">Engagement films</h2>
-        </div>
-        <div style={{ display: 'flex', gap: '24px', alignItems: 'stretch', flexWrap: 'wrap', justifyContent: 'center' }}>
-          <div style={{ flex: '2 1 440px', minWidth: 'min(100%, 440px)' }}>
-            <div style={{ position: 'relative', width: '100%', aspectRatio: '16 / 9', borderRadius: '2px', overflow: 'hidden' }}>
-              <iframe
-                src="https://www.youtube.com/embed/t4e1LzUeJDc"
-                title="Chinatown night couples session film"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
-              />
-            </div>
-          </div>
-          <div style={{ flex: '1 1 260px', maxWidth: '300px' }}>
-            <div style={{ position: 'relative', width: '100%', aspectRatio: '9 / 16', borderRadius: '2px', overflow: 'hidden' }}>
-              <iframe
-                src="https://www.youtube.com/embed/1c-WYGUEPoQ"
-                title="Echo Park engagement film"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Gallery */}
       <section className="wrap" style={{ paddingBottom: '110px' }}>
         <div className="reveal center" style={{ marginBottom: '40px' }}>
