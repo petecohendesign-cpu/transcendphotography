@@ -38,3 +38,5 @@ Still deciding where to shoot? Browse my guide to the [best engagement photo loc
   <img src="/blog-images/pasadena-city-hall-engagement-los-angeles-9.jpg" alt="pasadena-city-hall-engagement-los-angeles" />
   <img src="/blog-images/pasadena-city-hall-engagement-los-angeles-10.jpg" alt="pasadena-city-hall-engagement-los-angeles" />
 </div>
+
+Planning your own engagement session? Learn more about my [Los Angeles engagement photography](/engagement-photography) and book a session.

@@ -43,4 +43,4 @@ For an urban, editorial feel, the Downtown Arts District brings brick warehouses
 
 Start with the feeling you want your photos to have, natural and relaxed, classic and elegant, or bold and cinematic, and let that guide you. Think about where you actually spend time together, and don't underestimate the power of good light: golden hour makes almost any LA location sing.
 
-If you're planning your engagement session and want help picking the perfect spot, I'd love to help. See more of my [couples and wedding work](/for-couples), or [reach out here](/contact) to start planning.
+If you're planning your engagement session and want help picking the perfect spot, I'd love to help. Explore my [Los Angeles engagement photography](/engagement-photography), see more of my [couples and wedding work](/for-couples), or [reach out here](/contact) to start planning.

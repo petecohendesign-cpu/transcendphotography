@@ -46,4 +46,4 @@ Professional grooming makes a real difference. But more importantly, test your o
 
 The couples who feel most at ease on their session days are almost always the ones who put thought into their wardrobe in advance. When you're not worrying about how you look, you're free to just be together, and that's exactly when the best photos happen.
 
-Questions about what to wear for your session? [Get in touch](/for-couples) and I'm happy to help you plan it out.
+Questions about what to wear for your session? Here's more on my [Los Angeles engagement photography](/engagement-photography), or [get in touch](/contact) and I'm happy to help you plan it out.

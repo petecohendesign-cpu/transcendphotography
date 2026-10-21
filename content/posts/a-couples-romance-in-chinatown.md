@@ -76,3 +76,5 @@ Whether you’re celebrating an engagement, an anniversary, or just want to docu
   <img src="/blog-images/a-couples-romance-in-chinatown-22.jpg" alt="a-couples-romance-in-chinatown" />
   <img src="/blog-images/a-couples-romance-in-chinatown-23.jpg" alt="a-couples-romance-in-chinatown" />
 </div>
+
+Dreaming up a night session of your own? See my [Los Angeles engagement photography](/engagement-photography) to explore sessions and book one.
