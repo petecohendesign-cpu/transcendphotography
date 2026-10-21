@@ -41,3 +41,5 @@ And if you’re a local business owner looking for photography that shows off yo
   <img src="/blog-images/branding-photography-claudine-bakery-10.jpg" alt="branding-photography-claudine-bakery" />
   <img src="/blog-images/branding-photography-claudine-bakery-11.jpg" alt="branding-photography-claudine-bakery" />
 </div>
+
+See more of my [Los Angeles brand photography](/brand-photography) for small businesses and makers.

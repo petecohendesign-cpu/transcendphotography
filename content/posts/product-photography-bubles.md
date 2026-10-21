@@ -97,3 +97,5 @@ transcendphoto.net
   <img src="/blog-images/product-photography-bubles-4.jpg" alt="product-photography-bubles" />
   <img src="/blog-images/product-photography-bubles-5.jpg" alt="product-photography-bubles" />
 </div>
+
+This product shoot was part of a larger [brand photography](/brand-photography) project — see more of my work for brands.

@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
   const post = getPostBySlug(params.slug)
   if (!post) return {}
   return {
-    title: `${post.title} | Transcend Photography`,
+    title: post.title,
     description: post.excerpt,
     openGraph: {
       title: post.title,

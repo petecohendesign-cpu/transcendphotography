@@ -1,5 +1,5 @@
 ---
-title: "Laura &amp; Marie - Mother’s Day Mini Photography Session in Southern California"
+title: "Laura & Marie: A Mother’s Day Mini Session in LA"
 date: "2025-04-09"
 category: "portrait"
 excerpt: "Mother's Day portrait sessions for all ages in Los Angeles, celebrating moms, grandmothers, and every stage of family life with relaxed, natural photos."

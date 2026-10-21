@@ -55,3 +55,5 @@ If you’re a local business owner, I’d love to connect with you at future cha
   <img src="/blog-images/van-nuys-gutters-ribbon-cutting-10.jpg" alt="van-nuys-gutters-ribbon-cutting" />
   <img src="/blog-images/van-nuys-gutters-ribbon-cutting-11.jpg" alt="van-nuys-gutters-ribbon-cutting" />
 </div>
+
+Planning an event, launch, or ribbon cutting? See my [Los Angeles brand photography](/brand-photography).

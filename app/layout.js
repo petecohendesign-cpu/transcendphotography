@@ -52,11 +52,11 @@ const businessSchema = {
   priceRange: '$$-$$$',
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Los Angeles',
+    addressLocality: 'Encino',
     addressRegion: 'CA',
     addressCountry: 'US',
   },
-  geo: { '@type': 'GeoCoordinates', latitude: 34.0522, longitude: -118.2437 },
+  geo: { '@type': 'GeoCoordinates', latitude: 34.1591, longitude: -118.5012 },
   areaServed: ['Los Angeles', 'Southern California', 'Worldwide'],
   founder: { '@type': 'Person', name: 'Pete Cohen' },
   knowsAbout: [

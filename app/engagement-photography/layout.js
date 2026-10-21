@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Los Angeles Engagement Photographer | Transcend Photography',
   description:
-    'Relaxed, editorial engagement sessions across Los Angeles — natural, cinematic couples photography at the locations you love. Standalone or added to a wedding, starting at $400.',
+    'Relaxed, editorial engagement sessions in Los Angeles — natural, cinematic couples photography at the places you love. Standalone or with a wedding, from $400.',
   alternates: { canonical: '/engagement-photography' },
   openGraph: {
     title: 'Los Angeles Engagement Photographer | Transcend Photography',
