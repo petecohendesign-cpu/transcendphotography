@@ -2,7 +2,7 @@
 title: "The Best Wedding Venues in Los Angeles: A Photographer's Guide"
 date: "2026-10-21"
 category: "wedding"
-excerpt: "A Los Angeles wedding photographer's guide to the best wedding venues in LA — ocean-view, historic, garden, and modern spaces, and how to choose the one that fits you."
+excerpt: "A Los Angeles wedding photographer's guide to the best wedding venues in LA — ocean-view, historic, garden, and modern spaces, and how to choose yours."
 featuredImage: "/blog-images/bel-air-bay-club-wedding-venue-los-angeles-featured.jpg"
 faq:
   - q: "What are the best wedding venues in Los Angeles?"
