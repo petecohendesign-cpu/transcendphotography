@@ -19,15 +19,15 @@ Los Angeles has one of the most incredible ranges of wedding venues anywhere —
 
 If you want that endless blue horizon behind you, LA's coastline delivers.
 
-### Bel-Air Bay Club — Pacific Palisades
+### [Bel-Air Bay Club](https://www.belairbayclub.com/) — Pacific Palisades
 
 This is one I've [photographed in person](/blog/bel-air-bay-club-wedding-venue-los-angeles), and it's hard to beat. Perched in the hills of Pacific Palisades, the Bel-Air Bay Club pairs classic 1927 Spanish-style architecture with an ocean-view ceremony lawn, a Grand Ballroom, and some of the best coastal light in the city. It's elegant without feeling fussy, and the views do a lot of the work.
 
-### Terranea Resort — Rancho Palos Verdes
+### [Terranea Resort](https://www.terranea.com/) — Rancho Palos Verdes
 
 A full oceanfront resort on the Palos Verdes peninsula, Terranea offers dramatic bluff-top ceremony sites, manicured lawns, and everything a destination-style weekend needs on one property. Great for larger celebrations and out-of-town guests.
 
-### Calamigos Ranch — Malibu
+### [Calamigos Ranch](https://www.calamigosevents.com/weddings) — Malibu
 
 Technically in the Santa Monica Mountains, Calamigos is a Malibu favorite for a reason: multiple outdoor ceremony settings, mature oaks, waterfalls, and a relaxed, natural feel. Ideal for couples who want rustic and lush without leaving LA.
 
@@ -35,15 +35,15 @@ Technically in the Santa Monica Mountains, Calamigos is a Malibu favorite for a 
 
 For timeless architecture and a sense of occasion, LA's historic spaces are stunning.
 
-### Vibiana — Downtown LA
+### [Vibiana](https://vibiana.com/) — Downtown LA
 
 A restored former cathedral in the heart of Downtown, Vibiana is pure drama — soaring ceilings, old-world detail, and a romantic courtyard. It photographs like nowhere else and suits couples who want something grand and a little cinematic.
 
-### The Ebell of Los Angeles — Mid-Wilshire
+### [The Ebell of Los Angeles](https://ebelloflosangeles.com/) — Mid-Wilshire
 
 A 1920s landmark with a grand ballroom, a beautiful courtyard, and an on-site theater, the Ebell is classic and elegant. There's a reason it's a perennial favorite for refined, timeless weddings.
 
-### The MacArthur — Westlake
+### [The MacArthur](https://themacarthur.com/) — Westlake
 
 Another restored 1920s gem, The MacArthur's opulent ballrooms and ornate architecture make a statement. Great for couples who love glamour and vintage character.
 
@@ -51,15 +51,15 @@ Another restored 1920s gem, The MacArthur's opulent ballrooms and ornate archite
 
 For something softer, greener, or more personal.
 
-### Carondelet House — Downtown LA
+### [Carondelet House](https://www.carondelethouse.com/) — Downtown LA
 
 An intimate Italian villa-style venue with ivy, warm interiors, and candlelit charm. Perfect for smaller, design-forward weddings that feel personal and romantic.
 
-### Millwick — Arts District
+### [Millwick](https://marvimon.com/millwick/) — Arts District
 
 A garden oasis tucked into Downtown's Arts District, Millwick blends industrial architecture with lush greenery and string lights. It's a favorite for couples who want modern and natural in the same space.
 
-### The Houdini Estate — Laurel Canyon
+### [The Houdini Estate](https://www.thehoudiniestate.com/) — Laurel Canyon
 
 A historic estate with terraced gardens, stonework, and a storied past, the Houdini Estate feels like a hidden world minutes from the city. Lovely for intimate, atmospheric celebrations.
 
