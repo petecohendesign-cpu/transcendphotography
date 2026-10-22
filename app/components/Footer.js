@@ -25,6 +25,7 @@ export default function Footer() {
             <a className="nlink" href="/for-couples">Weddings</a>
             <a className="nlink" href="/engagement-photography">Engagements</a>
             <a className="nlink" href="/brand-photography">Branding</a>
+            <a className="nlink" href="/food-photography">Food & Restaurants</a>
             <a className="nlink" href="/portraits">Portraits</a>
           </div>
           <div className="fcol">
