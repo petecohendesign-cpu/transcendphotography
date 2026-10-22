@@ -54,7 +54,7 @@ const FAQ = [
   ['Do sessions take place in a studio or on location?', 'Both. I shoot in-studio and on location across Los Angeles, and we choose the setting that fits your style and the mood you want.'],
   ['Do you help with wardrobe and styling?', 'Yes. Signature and Editorial sessions include wardrobe and styling guidance, and Editorial sessions can add hair and makeup coordination.'],
   ['Do you photograph families?', 'Absolutely. Family sessions are relaxed and unposed, focused on real connection and natural moments rather than stiff, formal poses.'],
-  ['What should I wear for a professional headshot?', 'Solid colors you feel confident in, in the style your work calls for — a blazer, a clean shirt, or smart casual. I send a short what-to-wear guide before every session so you arrive camera-ready.'],
+  ['What should I wear for a professional headshot?', 'Solid colors you feel confident in, in the style your work calls for, a blazer, a clean shirt, or smart casual. I send a short what-to-wear guide before every session so you arrive camera-ready.'],
   ['Do you photograph team or corporate headshots?', 'Yes. For teams, I bring a consistent studio setup to your Los Angeles office so everyone’s professional headshots match across your website and LinkedIn.'],
 ]
 
@@ -212,7 +212,7 @@ export default function Portraits() {
         <div style={{ maxWidth: '760px', margin: '0 auto', color: 'var(--taupe)', lineHeight: 1.75 }}>
           <p style={{ marginBottom: '18px' }}>
             Need a professional headshot for LinkedIn, your website, or the press? I photograph clean,
-            confident headshots for individuals and teams across Los Angeles — founders, executives,
+            confident headshots for individuals and teams across Los Angeles, founders, executives,
             creatives, and companies that want a consistent look. Sessions happen in-studio, on
             location, or on-site at your office.
           </p>

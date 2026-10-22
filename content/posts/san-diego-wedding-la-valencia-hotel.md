@@ -2,7 +2,7 @@
 title: "La Valencia Hotel Wedding: A Photographer's Guide to La Jolla's Pink Lady"
 date: "2025-09-14"
 category: "wedding"
-excerpt: "A photographer's guide to the La Valencia Hotel — La Jolla's historic 'Pink Lady,' its ocean-view terrace over the cove, and why it photographs beautifully."
+excerpt: "A photographer's guide to the La Valencia Hotel, La Jolla's historic 'Pink Lady,' its ocean-view terrace over the cove, and why it photographs beautifully."
 featuredImage: "/blog-images/san-diego-wedding-la-valencia-hotel-featured.jpg"
 galleryHeading: "La Valencia Hotel Wedding Photos"
 galleryIntro: "A look at how the La Valencia Hotel photographs across a wedding day, from the pink facade and Veranda Ballroom to the ocean-view garden ceremony and the La Jolla cliffs."

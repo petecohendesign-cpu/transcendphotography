@@ -34,4 +34,4 @@ I had such a blast capturing Jenn and Ben's engagement photos at Echo Park Lake.
 
 Jenn and Ben, thank you for letting me capture this chapter of your love story. I can't wait to see you guys tie the knot!
 
-Thinking about a session of your own? Here's everything about my [Los Angeles engagement photography](/engagement-photography) — sessions, locations, and how to book.
+Thinking about a session of your own? Here's everything about my [Los Angeles engagement photography](/engagement-photography), sessions, locations, and how to book.

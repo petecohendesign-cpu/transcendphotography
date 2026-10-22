@@ -2,7 +2,7 @@
 title: "Bel-Air Bay Club Wedding Venue: An Ocean-View Gem in Los Angeles"
 date: "2025-07-03"
 category: "wedding"
-excerpt: "A photographer's guide to the Bel-Air Bay Club — an ocean-view wedding venue in Pacific Palisades, LA, and why it photographs so beautifully."
+excerpt: "A photographer's guide to the Bel-Air Bay Club, an ocean-view wedding venue in Pacific Palisades, LA, and why it photographs so beautifully."
 featuredImage: "/blog-images/bel-air-bay-club-wedding-venue-los-angeles-featured.jpg"
 galleryHeading: "Bel-Air Bay Club Wedding Photos"
 galleryIntro: "A look at how this ocean-view Los Angeles wedding venue photographs across the property, from the ceremony lawn overlooking the Pacific to the Grand Ballroom and Spanish-style architecture."

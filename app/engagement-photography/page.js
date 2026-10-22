@@ -22,13 +22,13 @@ const HIGHLIGHTS = [
 const STEPS = [
   ['Reach out', 'Tell me about the two of you and the kind of session you’re imagining.'],
   ['Plan it together', 'We choose a location and timing, and talk through wardrobe so you arrive relaxed.'],
-  ['The session', 'A relaxed, unhurried shoot with gentle direction — mostly just the two of you being you.'],
+  ['The session', 'A relaxed, unhurried shoot with gentle direction, mostly just the two of you being you.'],
   ['Your gallery', 'Edited, high-res images in a private online gallery, ready to share.'],
 ]
 
 const FAQ = [
   ['How much does an engagement session cost in Los Angeles?', 'Engagement sessions start at $400. You can book a session on its own, or add one to a wedding collection when I’m photographing your wedding.'],
-  ['Where do you photograph engagement sessions?', 'All across Los Angeles — from Echo Park Lake and Pasadena City Hall to Chinatown at night. If you’re not sure where, I’ll help you choose a location that fits your style.'],
+  ['Where do you photograph engagement sessions?', 'All across Los Angeles, from Echo Park Lake and Pasadena City Hall to Chinatown at night. If you’re not sure where, I’ll help you choose a location that fits your style.'],
   ['What should we wear?', 'Coordinated but not matching, in colors and textures you feel most like yourselves in. I share a full what-to-wear guide once we book.'],
   ['Do we have to be getting married to book?', 'Not at all. Engagement, anniversary, or just-because couples sessions are all welcome.'],
   ['How soon will we get our photos?', 'Your edited gallery is delivered in a private online gallery, typically within about two weeks.'],
@@ -205,7 +205,7 @@ export default function EngagementPhotography() {
         <div style={{ maxWidth: '760px', margin: '0 auto', color: 'var(--taupe)', lineHeight: 1.75 }}>
           <p style={{ marginBottom: '18px' }}>
             As a Los Angeles engagement photographer, I create natural, editorial engagement
-            photos for couples all over the city — relaxed sessions with a documentary eye
+            photos for couples all over the city, relaxed sessions with a documentary eye
             that keep things genuine rather than stiff or overly posed. Whether it&rsquo;s a
             golden-hour session at Echo Park Lake, the arches of Pasadena City Hall, or the
             neon and lanterns of Chinatown at night, we&rsquo;ll find the setting that feels
