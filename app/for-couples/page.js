@@ -43,9 +43,9 @@ const TIERS = [
   },
   {
     name: 'The Full Story',
-    price: '$10,500',
-    note: 'The complete experience',
-    items: ['Up to 12 hours of coverage', 'Second shooter & assistant', 'Engagement session + 35mm film', 'Cinematic highlight film', 'Heirloom fine-art album'],
+    price: '$8,000',
+    note: 'A full wedding day',
+    items: ['Up to 12 hours of coverage', 'Second shooter included', 'Engagement session + 35mm film', 'Full gallery, 800+ edited images', 'Priority 48-hour sneak peek'],
   },
 ]
 
@@ -238,8 +238,10 @@ export default function Weddings() {
           ))}
         </div>
         <p className="pricing-note">
-          Every wedding is unique, collections are a starting point and can be tailored to
-          your timeline and vision. Custom quotes available on request.
+          Every wedding is unique, so these collections are a starting point and can be tailored
+          to your timeline and vision. Heirloom fine-art albums, additional hours, and multi-day or
+          destination coverage are available as add-ons, and fully custom collections can be built
+          on request.
         </p>
       </section>
 
