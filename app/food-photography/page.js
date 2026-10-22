@@ -18,6 +18,33 @@ const OFFERS = [
   ['Seasonal refreshes', 'Keep your menu and feed current with ongoing shoots as dishes change.'],
 ]
 
+const TIERS = [
+  {
+    name: 'Menu Starter',
+    price: '$650',
+    note: 'Up to 90 minutes',
+    items: ['Up to 90 minutes on-site', 'Up to 8 dishes', '15 edited high-res images'],
+  },
+  {
+    name: 'Menu Half-Day',
+    price: '$1,500',
+    note: 'Up to 4 hours',
+    items: ['Up to 4 hours on-site', 'Up to 20 dishes plus interiors', '30 edited high-res images'],
+  },
+  {
+    name: 'Full Restaurant Day',
+    price: '$2,800',
+    note: 'Up to 8 hours',
+    items: ['Up to 8 hours on-site', 'Full menu, interiors, chef and team', '70+ edited high-res images'],
+  },
+]
+
+const RETAINER = {
+  name: 'Seasonal Refresh',
+  price: '$1,000',
+  items: ['Monthly shoot, up to 2 hours', 'New dishes, specials, and seasonal content', '30 edited high-res images per month', 'Monthly planning call & priority booking', '3-month minimum'],
+}
+
 const STEPS = [
   ['Tell me about your spot', 'Share your restaurant, the dishes you want to feature, and where you’ll use the photos.'],
   ['Plan the shot list', 'We pick the dishes and shots that matter most, on-site at your restaurant.'],
@@ -26,8 +53,8 @@ const STEPS = [
 ]
 
 const FAQ = [
-  ['How much does restaurant food photography cost in Los Angeles?', 'Food shoots start at $500 for a focused menu session. Larger shoots, interiors, and monthly content are quoted based on the number of dishes, locations, and how you’ll use the images.'],
-  ['How many dishes can you shoot?', 'A starter session covers a focused selection of your signature dishes. For a full menu, we’ll plan a half or full day so every plate gets the attention it deserves.'],
+  ['How much does restaurant food photography cost in Los Angeles?', 'Food shoots start at $650 for the Menu Starter. Half-day and full-day shoots, interiors, and monthly content are quoted based on the number of dishes, locations, and how you’ll use the images.'],
+  ['How many dishes can you shoot?', 'The Menu Starter covers up to 8 dishes. The Half-Day covers up to 20 plus interiors, and the Full Restaurant Day covers a full menu.'],
   ['Do you shoot at my restaurant?', 'Yes. I shoot on-site at your restaurant, using your plating, your space, and your light, usually between services so it doesn’t disrupt your guests.'],
   ['Can I use the photos for delivery apps and menus?', 'Absolutely. Every image comes cropped and sized for your menus, website, and delivery platforms like DoorDash, Uber Eats, and Yelp, plus social, with a commercial usage license.'],
   ['How soon will I get the photos?', 'Edited galleries are delivered quickly so you can get your new menu and social content live without a long wait.'],
@@ -150,19 +177,35 @@ export default function FoodPhotography() {
           <div className="label" style={{ marginBottom: '16px' }}>Investment</div>
           <h2 className="h2">Food & restaurant photography</h2>
         </div>
-        <div className="reveal center" style={{ maxWidth: '620px', margin: '0 auto' }}>
-          <div style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 300, fontSize: 'clamp(40px,7vw,64px)', lineHeight: 1, marginBottom: '14px' }}>
-            Starting at $500
-          </div>
-          <p style={{ color: 'var(--taupe)', lineHeight: 1.75, marginBottom: '26px' }}>
-            A focused menu shoot at your restaurant, a selection of your signature dishes,
-            professionally lit and styled, delivered as edited high-res images with crops for your
-            menu, website, delivery apps, and social, plus a commercial usage license.
-          </p>
-          <p className="pricing-note">
-            Full menus, interiors, and monthly content shoots quoted on request.
-          </p>
+        <div className="pricing reveal">
+          {TIERS.map((t, i) => (
+            <div key={i} className="tier">
+              <div className="tname">{t.name}</div>
+              <div className="tprice">{t.price}<small> starting</small></div>
+              <div className="tnote">{t.note}</div>
+              <ul>{t.items.map((it, j) => <li key={j}>{it}</li>)}</ul>
+            </div>
+          ))}
         </div>
+
+        <div className="retainer reveal">
+          <div className="retainer-head">
+            <div>
+              <div className="label" style={{ marginBottom: '10px' }}>Ongoing content</div>
+              <div className="tname" style={{ marginBottom: '4px' }}>{RETAINER.name}</div>
+              <div className="retainer-sub">Keep your menu and feed current with a monthly shoot as dishes and specials change.</div>
+            </div>
+            <div className="retainer-price">
+              From {RETAINER.price}<small>/mo</small>
+            </div>
+          </div>
+          <ul className="retainer-list">{RETAINER.items.map((it, j) => <li key={j}>{it}</li>)}</ul>
+        </div>
+
+        <p className="pricing-note">
+          Every shoot includes crops for menus, delivery apps, your website and social, plus a
+          commercial usage license.
+        </p>
       </section>
 
       {/* Local SEO content + FAQ */}

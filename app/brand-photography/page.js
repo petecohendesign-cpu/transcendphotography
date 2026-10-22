@@ -27,6 +27,12 @@ const STEPS = [
 
 const TIERS = [
   {
+    name: 'Starter Shoot',
+    price: '$650',
+    note: 'Up to 90 minutes',
+    items: ['Up to 90 minutes on-site', 'One location', '15 edited high-res images', 'Social-ready crops', 'Commercial usage license'],
+  },
+  {
     name: 'Half-Day',
     price: '$1,500',
     note: 'Up to 4 hours',
@@ -35,21 +41,21 @@ const TIERS = [
   {
     name: 'Full-Day',
     price: '$2,800',
-    note: 'Most popular',
-    feature: true,
+    note: 'Up to 8 hours',
     items: ['Up to 8 hours of production', 'Multiple setups & looks', '70+ edited high-res images', 'Product, lifestyle & team coverage', 'Extended commercial license'],
-  },
-  {
-    name: 'Retainer',
-    price: '$2,000',
-    note: 'Per month',
-    perMonth: true,
-    items: ['Monthly content shoot', 'Steady, on-brand library', 'Priority scheduling', 'Sized for feed, stories & web', 'Quarterly creative planning'],
   },
 ]
 
+const RETAINER = {
+  name: 'Monthly Retainer',
+  price: '$1,000',
+  from: true,
+  note: 'Per month',
+  items: ['One content shoot per month, up to 2 hours', '30 edited high-res images per month', 'Monthly planning call', 'Priority booking & faster delivery', 'Sized for feed, stories, and web', '3-month minimum commitment', 'Larger brands: custom quote'],
+}
+
 const FAQ = [
-  ['How much does brand photography cost in Los Angeles?', 'My brand sessions start at $1,500 for a half-day and $2,800 for a full day, with monthly content retainers from $2,000. Every project gets a custom quote based on your shot list and usage.'],
+  ['How much does brand photography cost in Los Angeles?', 'My brand photography starts at $650 for a Starter Shoot, $1,500 for a half-day, and $2,800 for a full day, with monthly content retainers from $1,000. Every project gets a custom quote based on your shot list and usage.'],
   ['What kinds of businesses do you photograph?', 'Restaurants and hospitality, product and e-commerce brands, makers, creative agencies, and personal brands, anyone who needs considered, on-brand imagery that actually sells.'],
   ['What areas of Los Angeles do you serve?', "I'm based in Encino and photograph brands across Los Angeles, from Santa Monica and West Hollywood to Downtown LA, Studio City, and the greater San Fernando Valley."],
   ['Can I use the photos for ads and commercial use?', 'Yes. Every brand shoot includes a commercial usage license, with extended licensing available for larger campaigns.'],
@@ -95,7 +101,7 @@ export default function Branding() {
           { src: '/images/branding-bubles-1.jpg',    alt: 'Bubles product photography' },
           { src: '/images/branding-pc-7.jpg',        alt: 'Claudine portrait session' },
           { src: '/images/branding-ilnido-1.jpg',   alt: 'Il Nido editorial branding' },
-          { src: '/images/branding-pc-12.jpg',       alt: 'PodBox product photography' },
+          { src: '/images/branding-pc-12.jpg',       alt: 'Product photography for a brand' },
         ]}
       />
 
@@ -131,7 +137,7 @@ export default function Branding() {
             ['/images/branding-pc-4.jpg', 'Bubles lifestyle'],
             ['/images/branding-pc-9.jpg', 'Brand lifestyle'],
             ['/images/branding-pc-7.jpg', 'Claudine editorial'],
-            ['/images/branding-pc-12.jpg', 'PodBox product'],
+            ['/images/branding-pc-12.jpg', 'Product photography for a brand'],
             ['/images/branding-pc-5.jpg', 'Bubles gift set'],
             ['/images/branding-claudine-2.jpg', 'Claudine, interior'],
             ['/images/branding-pc-10.jpg', 'Brand editorial'],
@@ -182,15 +188,29 @@ export default function Branding() {
         </div>
         <div className="pricing reveal">
           {TIERS.map((t, i) => (
-            <div key={i} className={`tier${t.feature ? ' feature' : ''}`}>
-              {t.feature && <span className="tbadge">Most popular</span>}
+            <div key={i} className="tier">
               <div className="tname">{t.name}</div>
-              <div className="tprice">{t.price}<small>{t.perMonth ? '/mo' : ' starting'}</small></div>
+              <div className="tprice">{t.price}<small> starting</small></div>
               <div className="tnote">{t.note}</div>
               <ul>{t.items.map((it, j) => <li key={j}>{it}</li>)}</ul>
             </div>
           ))}
         </div>
+
+        <div className="retainer reveal">
+          <div className="retainer-head">
+            <div>
+              <div className="label" style={{ marginBottom: '10px' }}>Ongoing content</div>
+              <div className="tname" style={{ marginBottom: '4px' }}>{RETAINER.name}</div>
+              <div className="retainer-sub">Keep a steady stream of fresh imagery for your feed, site, and ads.</div>
+            </div>
+            <div className="retainer-price">
+              From {RETAINER.price}<small>/mo</small>
+            </div>
+          </div>
+          <ul className="retainer-list">{RETAINER.items.map((it, j) => <li key={j}>{it}</li>)}</ul>
+        </div>
+
         <p className="pricing-note">
           Every brand brief is different, final pricing reflects scope, deliverables, and
           usage. Reach out for a tailored proposal.

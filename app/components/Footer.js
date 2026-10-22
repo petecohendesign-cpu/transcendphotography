@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="fcontact">
             <a href="mailto:pete@transcendphoto.net">pete@transcendphoto.net</a>
             &nbsp;·&nbsp;
-            <a href="tel:2036715273">203.671.5273</a>
+            <a href="tel:2036715273">(203) 671-5273</a>
           </div>
         </div>
         <div className="fcols">

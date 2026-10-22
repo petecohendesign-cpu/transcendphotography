@@ -1,6 +1,7 @@
 'use client'
 
 import Nav from '../components/Nav'
+import FaqAccordion from '../components/FaqAccordion'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
 import HoneyBook from '../components/HoneyBook'
@@ -19,6 +20,21 @@ const HIGHLIGHTS = [
   ['Your gallery, quickly', 'A private online gallery of edited, high-resolution images, delivered within weeks.'],
 ]
 
+const TIERS = [
+  {
+    name: 'Engagement Session',
+    price: '$450',
+    note: 'A relaxed hour',
+    items: ['60 minutes, one location', '25 edited high-res images', 'Private online gallery'],
+  },
+  {
+    name: 'Extended Engagement',
+    price: '$650',
+    note: 'More time & looks',
+    items: ['90 minutes, two locations or looks', '40 edited high-res images', 'Private online gallery'],
+  },
+]
+
 const STEPS = [
   ['Reach out', 'Tell me about the two of you and the kind of session you’re imagining.'],
   ['Plan it together', 'We choose a location and timing, and talk through wardrobe so you arrive relaxed.'],
@@ -27,7 +43,7 @@ const STEPS = [
 ]
 
 const FAQ = [
-  ['How much does an engagement session cost in Los Angeles?', 'Engagement sessions start at $400. You can book a session on its own, or add one to a wedding collection when I’m photographing your wedding.'],
+  ['How much does an engagement session cost in Los Angeles?', 'Engagement sessions start at $450. You can book a session on its own, or add one to a wedding collection when I’m photographing your wedding.'],
   ['Where do you photograph engagement sessions?', 'All across Los Angeles, from Echo Park Lake and Pasadena City Hall to Chinatown at night. If you’re not sure where, I’ll help you choose a location that fits your style.'],
   ['What should we wear?', 'Coordinated but not matching, in colors and textures you feel most like yourselves in. I share a full what-to-wear guide once we book.'],
   ['Do we have to be getting married to book?', 'Not at all. Engagement, anniversary, or just-because couples sessions are all welcome.'],
@@ -181,19 +197,20 @@ export default function EngagementPhotography() {
           <div className="label" style={{ marginBottom: '16px' }}>Investment</div>
           <h2 className="h2">Engagement sessions</h2>
         </div>
-        <div className="reveal center" style={{ maxWidth: '620px', margin: '0 auto' }}>
-          <div style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 300, fontSize: 'clamp(40px,7vw,64px)', lineHeight: 1, marginBottom: '14px' }}>
-            Starting at $400
-          </div>
-          <p style={{ color: 'var(--taupe)', lineHeight: 1.75, marginBottom: '26px' }}>
-            Every session includes a relaxed shoot at a location you love, gentle direction
-            the whole way through, and a private online gallery of edited, high-resolution
-            images. Book a session on its own, or add one to a wedding collection.
-          </p>
-          <p className="pricing-note">
-            Additional edited images and prints available à la carte.
-          </p>
+        <div className="pricing reveal" style={{ gridTemplateColumns: 'repeat(2, 1fr)', maxWidth: '720px', margin: '0 auto' }}>
+          {TIERS.map((t, i) => (
+            <div key={i} className="tier">
+              <div className="tname">{t.name}</div>
+              <div className="tprice">{t.price}</div>
+              <div className="tnote">{t.note}</div>
+              <ul>{t.items.map((it, j) => <li key={j}>{it}</li>)}</ul>
+            </div>
+          ))}
         </div>
+        <p className="pricing-note">
+          Engagement sessions are included in The Celebration and The Full Story. Booking The
+          Elopement? Add an engagement session for $400.
+        </p>
       </section>
 
       {/* Local SEO content + FAQ */}
@@ -222,12 +239,7 @@ export default function EngagementPhotography() {
         </div>
         <div style={{ maxWidth: '760px', margin: '52px auto 0' }}>
           <h2 className="h2" style={{ textAlign: 'center', marginBottom: '30px' }}>Common questions</h2>
-          {FAQ.map(([q, a], i) => (
-            <div key={i} style={{ borderTop: '1px solid var(--hairline)', padding: '22px 0' }}>
-              <h3 style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 400, fontSize: '20px', marginBottom: '10px', color: 'var(--espresso)' }}>{q}</h3>
-              <p style={{ color: 'var(--taupe)', lineHeight: 1.7 }}>{a}</p>
-            </div>
-          ))}
+          <FaqAccordion items={FAQ} />
         </div>
       </section>
 

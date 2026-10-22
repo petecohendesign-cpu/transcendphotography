@@ -9,11 +9,11 @@ import LivingTile from '../components/LivingTile'
 import NativeFrame from '../components/NativeFrame'
 import QuickContact from '../components/QuickContact'
 import TrustStrip from '../components/TrustStrip'
+import FaqAccordion from '../components/FaqAccordion'
 
 const OFFERS = [
   ['All-day coverage', 'From getting ready to the last dance, every moment, captured with intention.'],
   ['Engagement sessions', 'A relaxed way to add depth to your story and get comfortable on camera.'],
-  ['Highlight films', 'A cinematic edit of your best moments, made to share and revisit.'],
   ['Custom collections', 'Packages shaped around your timeline, vision, and budget.'],
   ['35mm film add-on', 'Analog grain and a timeless, one-of-a-kind texture alongside digital.'],
   ['Sneak-peek galleries', 'A first selection within days, so you can relive it right away.'],
@@ -35,10 +35,10 @@ const TIERS = [
   },
   {
     name: 'The Celebration',
-    price: '$6,500',
+    price: '$5,000',
     note: 'Most requested',
     feature: true,
-    items: ['Up to 8 hours of coverage', 'Second shooter included', 'Engagement session', 'Sneak-peek gallery in 72 hours', 'Full gallery, 600+ edited images'],
+    items: ['Up to 8 hours of coverage', 'Single photographer', 'Engagement session', 'Sneak-peek gallery in 72 hours', 'Full gallery, 600+ edited images'],
   },
   {
     name: 'The Full Story',
@@ -49,7 +49,7 @@ const TIERS = [
 ]
 
 const FAQ = [
-  ['How much does a wedding photographer cost in Los Angeles?', 'Most LA couples invest between $3,000 and $6,500 for wedding photography. My collections start at $3,500 for elopements and $6,500 for full-day coverage, with custom quotes available.'],
+  ['How much does a wedding photographer cost in Los Angeles?', 'Most LA couples invest between $3,000 and $6,000 for wedding photography. My collections start at $3,500 for elopements and $5,000 for full-day coverage, with custom quotes available.'],
   ['What areas of Los Angeles do you photograph?', "I'm based in Los Angeles and photograph weddings across Southern California, including Malibu, Pasadena, Santa Monica, Downtown LA, Pacific Palisades, and Palos Verdes. I also travel for destination weddings worldwide."],
   ['Do you offer engagement sessions?', "Yes. Engagement sessions are included in my Celebration and Full Story collections and can be added to any package. They're a relaxed way to get comfortable on camera before the wedding day."],
   ['How many photos will we receive, and when?', 'A full wedding gallery typically includes 600+ edited, high-resolution images in a private online gallery, with a sneak-peek selection delivered within 72 hours.'],
@@ -214,9 +214,9 @@ export default function Weddings() {
         </div>
         <p className="pricing-note">
           Every wedding is unique, so these collections are a starting point and can be tailored
-          to your timeline and vision. Heirloom fine-art albums, additional hours, and multi-day or
-          destination coverage are available as add-ons, and fully custom collections can be built
-          on request.
+          to your timeline and vision. Add a second photographer to the Elopement or Celebration for $1,000.
+          Additional hours and multi-day or destination coverage are available as add-ons, and
+          fully custom collections can be built on request.
         </p>
       </section>
 
@@ -245,12 +245,7 @@ export default function Weddings() {
         </div>
         <div style={{ maxWidth: '760px', margin: '52px auto 0' }}>
           <h2 className="h2" style={{ textAlign: 'center', marginBottom: '30px' }}>Common questions</h2>
-          {FAQ.map(([q, a], i) => (
-            <div key={i} style={{ borderTop: '1px solid var(--hairline)', padding: '22px 0' }}>
-              <h3 style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 400, fontSize: '20px', marginBottom: '10px', color: 'var(--espresso)' }}>{q}</h3>
-              <p style={{ color: 'var(--taupe)', lineHeight: 1.7 }}>{a}</p>
-            </div>
-          ))}
+          <FaqAccordion items={FAQ} />
         </div>
       </section>
 
