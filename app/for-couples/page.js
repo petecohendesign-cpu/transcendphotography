@@ -5,7 +5,6 @@ import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
 import HoneyBook from '../components/HoneyBook'
 import PageHeroSlideshow from '../components/PageHeroSlideshow'
-import ParallaxImage from '../components/ParallaxImage'
 import LivingTile from '../components/LivingTile'
 import NativeFrame from '../components/NativeFrame'
 import QuickContact from '../components/QuickContact'
@@ -158,51 +157,27 @@ export default function Weddings() {
         </div>
       </section>
 
-      <section className="wrap" style={{ paddingBottom: '110px' }}>
-        <div className="reveal center" style={{ marginBottom: '40px' }}>
-          <div className="label">Engagement sessions</div>
-          <p style={{ marginTop: '14px', color: 'var(--taupe)' }}>
-            <a href="/engagement-photography" className="arrow">Explore engagement photography →</a>
-          </p>
+      <section className="section wrap reveal">
+        <div className="center" style={{ marginBottom: '36px' }}>
+          <div className="label" style={{ marginBottom: '16px' }}>Engagement sessions</div>
+          <h2 className="h2">Before the big day</h2>
         </div>
-        <div className="gal gal-3 reveal">
-          <ParallaxImage style={{ height: '480px' }} speed={0.16} src="/images/engagement-pc-5.jpg" alt="Engagement session among palm trees" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center 72%" />
-          <ParallaxImage style={{ height: '480px' }} speed={0.08} src="/images/engagement-pc-1.jpg" alt="Engagement session under a garden arch" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="center" />
-          <ParallaxImage style={{ height: '480px' }} speed={0.16} src="/images/engagement-pc-9.jpg" alt="Engagement session in Chinatown at night" sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw" objectPosition="22% center" />
+        <div style={{ maxWidth: '760px', margin: '0 auto' }}>
+          <LivingTile
+            aspect="3 / 2"
+            sizes="(max-width: 800px) 100vw, 760px"
+            delay={0}
+            slides={[
+              { src: '/images/engagement-pc-9.jpg', alt: 'Engagement session in Chinatown at night', pos: '22% center' },
+              { src: '/images/engagement-pc-20.jpg', alt: 'Engagement session at Echo Park Lake in Los Angeles' },
+              { src: '/images/engagement-pc-21.jpg', alt: 'Engagement session on the beach at sunset' },
+              { src: '/images/engagement-pc-22.jpg', alt: 'Engagement session with the downtown Los Angeles skyline' },
+              { src: '/images/engagement-pc-23.jpg', alt: 'Engagement session on a tree-lined path in autumn' },
+            ]}
+          />
         </div>
-        <div className="gal gal-2 reveal" style={{ marginTop: '20px' }}>
-          <LivingTile
-            className="tall"
-            height="660px"
-            sizes="(max-width: 900px) 100vw, 60vw"
-            delay={800}
-            slides={[
-              { src: '/images/engagement-pc-8.jpg', alt: 'Engagement session in an arched colonnade', pos: 'center 42%' },
-              { src: '/images/engagement-pc-2.jpg', alt: 'Engagement session in a courtyard' },
-              { src: '/images/engagement-pc-7.jpg', alt: 'Engagement session at Pasadena City Hall', pos: 'center 60%' },
-              { src: '/images/engagement-pc-4.jpg', alt: 'Engagement session on a palm-lined street', pos: 'center 60%' },
-              { src: '/images/engagement-pc-6.jpg', alt: 'Engagement session under a grand archway', pos: 'center 90%' },
-              { src: '/images/engagement-pc-11.jpg', alt: 'Engagement couple embracing', pos: 'center 30%' },
-            ]}
-          />
-          <LivingTile
-            height="318px"
-            sizes="(max-width: 900px) 100vw, 40vw"
-            delay={2500}
-            slides={[
-              { src: '/images/engagement-pc-13.jpg', alt: 'Engagement session dancing on the beach' },
-              { src: '/images/engagement-pc-12.jpg', alt: 'Engagement session by the lake at sunset', pos: 'center 40%' },
-            ]}
-          />
-          <LivingTile
-            height="318px"
-            sizes="(max-width: 900px) 100vw, 40vw"
-            delay={4200}
-            slides={[
-              { src: '/images/engagement-pc-3.jpg', alt: 'Engagement session in a garden pavilion' },
-              { src: '/images/engagement-pc-14.jpg', alt: 'Engagement couple dip on the beach at sunset', pos: 'center 40%' },
-            ]}
-          />
+        <div className="center" style={{ marginTop: '28px' }}>
+          <a href="/engagement-photography" className="arrow">See more engagement sessions →</a>
         </div>
       </section>
 
