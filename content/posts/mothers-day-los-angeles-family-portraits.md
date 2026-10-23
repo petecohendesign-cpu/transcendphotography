@@ -34,7 +34,7 @@ Want In Next Time?
 
 If you missed this round of LA mini sessions, no problem. I’ll be offering more throughout the year. Fall is usually the busiest season, especially with families looking for updated portraits before the holidays, so getting on the waitlist early is a good idea.
 
-And if you want something more customized, you can always book a full family portrait session in Los Angeles. These are longer sessions that give us more time, more flexibility, and more freedom to explore different locations or shoot at your home.
+And if you want something more customized, you can always book a full [family portrait session in Los Angeles](/family-photography). These are longer sessions that give us more time, more flexibility, and more freedom to explore different locations or shoot at your home.
 
 ## Let’s Plan Your Next Session
 

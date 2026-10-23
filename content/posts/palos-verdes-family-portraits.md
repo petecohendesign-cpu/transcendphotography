@@ -11,3 +11,5 @@ picTimeGallery: "-fadulsfamilyshoot"
 This past April, I had the pleasure of taking some family photos for a close friend from work. It's always special to photograph someone you have a personal connection with, and this session was no different.
 
 I love being able to capture meaningful moments for my friends and create lasting memories. This shoot has me looking forward to more photo sessions that combine my passion for photography with cherished friendships.
+
+Looking to document your own family? See more of my [family portrait photography in Los Angeles](/family-photography).

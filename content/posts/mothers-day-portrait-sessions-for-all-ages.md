@@ -18,7 +18,7 @@ Most people picture Mother’s Day photo sessions as something you do when your 
 
 There’s something really meaningful about photographing adult relationships. The kind that has grown over years of shared experiences, life changes, and unconditional support. The way these two laughed and looked at each other said everything. You could feel the closeness without needing to stage anything.
 
-As a family photographer in Los Angeles, I always try to catch those natural, quiet moments. The ones that don’t feel posed. This shoot had a lot of those. Honest and full of heart.
+As a [family photographer in Los Angeles](/family-photography), I always try to catch those natural, quiet moments. The ones that don’t feel posed. This shoot had a lot of those. Honest and full of heart.
 
 So whether you're a new mom, a grown daughter, or somewhere in between, Mother’s Day is always a good excuse to pause and celebrate your bond. And it’s never too late to hop in front of the camera with someone you love.
 

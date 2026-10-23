@@ -206,8 +206,10 @@ export default function FamilyPhotography() {
           <p>
             Whether it&rsquo;s a new baby, a Mother&rsquo;s Day session, or the whole family in one
             place for the first time in years, I&rsquo;d love to help. See a recent{' '}
-            <a href="/blog/mothers-day-los-angeles-family-portraits">family portrait session in LA</a>,
-            or explore my <a href="/portraits">Los Angeles portrait photography</a>.
+            <a href="/blog/mothers-day-los-angeles-family-portraits">family mini session in LA</a>, a{' '}
+            <a href="/blog/mothers-day-portrait-sessions-for-all-ages">Mother&rsquo;s Day session with grown daughters</a>,
+            or the <a href="/blog/palos-verdes-family-portraits">Fadul family session</a>, and explore my{' '}
+            <a href="/portraits">Los Angeles portrait photography</a>.
           </p>
         </div>
         <div style={{ maxWidth: '760px', margin: '52px auto 0' }}>
