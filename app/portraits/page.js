@@ -111,6 +111,20 @@ export default function Portraits() {
         </div>
       </section>
 
+      {/* Family sessions callout */}
+      <section className="section" style={{ background: 'var(--bone-2)' }}>
+        <div className="wrap reveal center" style={{ maxWidth: '680px' }}>
+          <div className="label" style={{ marginBottom: '16px' }}>Family sessions</div>
+          <h2 className="h2" style={{ marginBottom: '18px' }}>Here for family portraits?</h2>
+          <p style={{ color: 'var(--taupe)', lineHeight: 1.75, marginBottom: '30px' }}>
+            Relaxed, unposed sessions for parents, kids, newborns, and whole families, from a
+            first Mother&rsquo;s Day to three generations in one frame. See the family work and
+            session details on its own page.
+          </p>
+          <a href="/family-photography" className="btn">View family sessions</a>
+        </div>
+      </section>
+
       <section className="wrap" style={{ paddingBottom: '110px' }}>
         {/* Editorial rows: every image at its native aspect ratio, zero cropping. */}
         <div className="edrow reveal">
