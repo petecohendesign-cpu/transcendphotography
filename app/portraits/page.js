@@ -233,7 +233,7 @@ export default function Portraits() {
 
       {/* Family sessions callout */}
       <section className="section" style={{ background: 'var(--bone-2)' }}>
-        <div className="wrap reveal center" style={{ maxWidth: '680px' }}>
+        <div className="wrap reveal center" style={{ maxWidth: '680px', margin: '0 auto' }}>
           <div className="label" style={{ marginBottom: '16px' }}>Family sessions</div>
           <h2 className="h2" style={{ marginBottom: '18px' }}>Here for family portraits?</h2>
           <p style={{ color: 'var(--taupe)', lineHeight: 1.75, marginBottom: '30px' }}>
