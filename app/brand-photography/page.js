@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Nav from '../components/Nav'
+import FaqAccordion from '../components/FaqAccordion'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
 import HoneyBook from '../components/HoneyBook'
@@ -234,12 +235,7 @@ export default function Branding() {
         </div>
         <div style={{ maxWidth: '760px', margin: '52px auto 0' }}>
           <h2 className="h2" style={{ textAlign: 'center', marginBottom: '30px' }}>Common questions</h2>
-          {FAQ.map(([q, a], i) => (
-            <div key={i} style={{ borderTop: '1px solid var(--hairline)', padding: '22px 0' }}>
-              <h3 style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 400, fontSize: '20px', marginBottom: '10px', color: 'var(--espresso)' }}>{q}</h3>
-              <p style={{ color: 'var(--taupe)', lineHeight: 1.7 }}>{a}</p>
-            </div>
-          ))}
+          <FaqAccordion items={FAQ} />
         </div>
       </section>
 
