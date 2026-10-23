@@ -203,36 +203,18 @@ export default function Portraits() {
         </p>
       </section>
 
-      {/* Professional headshots */}
-      <section className="section wrap reveal" style={{ background: 'var(--bone-2)' }}>
-        <div className="center" style={{ marginBottom: '36px' }}>
-          <div className="label" style={{ marginBottom: '16px' }}>Professional headshots</div>
-          <h2 className="h2">Professional headshots in Los Angeles</h2>
-        </div>
-        <div style={{ maxWidth: '760px', margin: '0 auto', color: 'var(--taupe)', lineHeight: 1.75 }}>
-          <p style={{ marginBottom: '18px' }}>
-            Need a professional headshot for LinkedIn, your website, or the press? I photograph clean,
-            confident headshots for individuals and teams across Los Angeles, founders, executives,
-            creatives, and companies that want a consistent look. Sessions happen in-studio, on
-            location, or on-site at your office.
-          </p>
-          <p>
-            Every professional headshot is delivered retouched and cropped for LinkedIn, web, and
-            print, so it&rsquo;s ready to use the moment you get it. Booking for a whole team? I bring a
-            consistent studio setup to you so everyone&rsquo;s headshots match.
-          </p>
-        </div>
-      </section>
-
       {/* Local SEO content + FAQ */}
       <section className="section wrap reveal">
         <div className="center" style={{ marginBottom: '36px' }}>
           <div className="label" style={{ marginBottom: '16px' }}>Los Angeles portrait photography</div>
-          <h2 className="h2">Portrait photography across LA</h2>
+          <h2 className="h2">Portrait &amp; headshot photography across LA</h2>
         </div>
         <div style={{ maxWidth: '760px', margin: '0 auto', color: 'var(--taupe)', lineHeight: 1.75 }}>
           <p style={{ marginBottom: '18px' }}>
             As a Los Angeles portrait photographer, I create relaxed, editorial portraits for professionals, creatives, actors, families, and anyone who wants images that feel like themselves. Sessions happen in-studio or on location across LA, with a documentary eye that keeps things natural rather than stiff or overly posed.
+          </p>
+          <p style={{ marginBottom: '18px' }}>
+            That includes professional headshots for LinkedIn, your website, or the press, clean, confident images for individuals and teams, founders, executives, and creatives. I shoot in-studio, on location, or on-site at your office, and every headshot is delivered retouched and cropped for LinkedIn, web, and print. Booking for a whole team? I bring a consistent studio setup to you so everyone&rsquo;s headshots match.
           </p>
           <p>
             Whether you need a standout headshot, a personal branding set, or a family session to remember, I&rsquo;d love to help. See a recent <a href="/blog/mothers-day-los-angeles-family-portraits">family portrait session in LA</a> for a feel of the experience.
