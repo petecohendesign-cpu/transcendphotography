@@ -31,29 +31,31 @@ const TIERS = [
     name: 'The Elopement',
     price: '$3,500',
     note: 'Intimate & elopements',
-    items: ['Up to 4 hours of coverage', 'Single photographer', 'Private online gallery', 'High-resolution downloads', 'Print release'],
+    items: ['Up to 4 hours of coverage', 'Single photographer', '250+ edited images', 'Sneak peek, 20 images in 72 hours', 'Private gallery in 4 weeks, print release'],
   },
   {
     name: 'The Celebration',
     price: '$5,000',
     note: 'Most requested',
     feature: true,
-    items: ['Up to 8 hours of coverage', 'Single photographer', 'Engagement session', 'Sneak-peek gallery in 72 hours', 'Full gallery, 600+ edited images'],
+    items: ['Up to 8 hours of coverage', 'Single photographer', 'Engagement session included', '600+ edited images', 'Sneak peek, 40 images in 72 hours', 'Private gallery in 6 weeks'],
   },
   {
     name: 'The Full Story',
     price: '$8,000',
     note: 'A full wedding day',
-    items: ['Up to 12 hours of coverage', 'Second shooter included', 'Engagement session + 35mm film', 'Full gallery, 800+ edited images', 'Priority 48-hour sneak peek'],
+    items: ['Up to 12 hours of coverage', 'Second shooter included', 'Engagement session + 35mm film', '800+ edited images', 'Priority sneak peek, 60 images in 48 hours', 'Private gallery in 6 weeks'],
   },
 ]
 
 const FAQ = [
   ['How much does a wedding photographer cost in Los Angeles?', 'Most LA couples invest between $3,000 and $6,000 for wedding photography. My collections start at $3,500 for elopements and $5,000 for full-day coverage, with custom quotes available.'],
-  ['What areas of Los Angeles do you photograph?', "I'm based in Los Angeles and photograph weddings across Southern California, including Malibu, Pasadena, Santa Monica, Downtown LA, Pacific Palisades, and Palos Verdes. I also travel for destination weddings worldwide."],
+  ['What areas of Los Angeles do you photograph?', "I'm based in Los Angeles and photograph weddings across Southern California, including Malibu, Pasadena, Santa Monica, Downtown LA, Pacific Palisades, and Palos Verdes, and I travel for destination weddings worldwide. Travel within about 50 miles of LA is included, with anything beyond quoted up front; for destination weddings I arrive the day before."],
   ['Do you offer engagement sessions?', "Yes. Engagement sessions are included in my Celebration and Full Story collections and can be added to any package. They're a relaxed way to get comfortable on camera before the wedding day."],
-  ['How many photos will we receive, and when?', 'A full wedding gallery typically includes 600+ edited, high-resolution images in a private online gallery, with a sneak-peek selection delivered within 72 hours.'],
+  ['How many photos will we receive, and when?', 'Each collection includes a private online gallery of edited, high-resolution images, 250+ for an elopement, 600+ for a full-day Celebration, and 800+ for the Full Story. You get a sneak-peek selection within 72 hours (48 hours for the Full Story), and your full gallery in 4 to 6 weeks, up to 8 weeks in peak season.'],
   ['Do you shoot film?', '35mm film is available as an add-on, blending analog grain and timeless texture alongside full digital coverage.'],
+  ['Do you offer wedding videography?', "I focus on documentary photography, so I don't shoot video or highlight films. If you'd like a videographer, I'm happy to recommend one and coordinate with them on the day so we stay out of each other's shots."],
+  ['What is your payment schedule?', 'A 50% retainer and signed contract reserve your date, with the remaining 50% due 30 days before the wedding. Everything runs through HoneyBook so it is easy to track.'],
 ]
 
 const faqSchema = {
@@ -213,10 +215,10 @@ export default function Weddings() {
           ))}
         </div>
         <p className="pricing-note">
-          Every wedding is unique, so these collections are a starting point and can be tailored
-          to your timeline and vision. Add a second photographer to the Elopement or Celebration for $1,000.
-          Additional hours and multi-day or destination coverage are available as add-ons, and
-          fully custom collections can be built on request.
+          Every wedding is unique, so these collections are a starting point. Available add-ons
+          include a second photographer, extra hours of coverage, an engagement session, 35mm
+          film, rehearsal dinner coverage, and a day-after session, priced on inquiry. Fully
+          custom and multi-day collections can be built on request.
         </p>
       </section>
 
