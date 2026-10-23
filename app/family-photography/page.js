@@ -126,10 +126,6 @@ export default function FamilyPhotography() {
           />
         </div>
         <div className="edrow reveal">
-          <NativeFrame src="/images/family-pc-5.jpg" alt="Mother and daughter by the lake, black and white" w={2000} h={1333} drift={16} style={{ flex: '1.5 1 0%' }} />
-          <NativeFrame src="/images/family-pc-6.jpg" alt="Mother and daughter close together, black and white" w={2000} h={1333} drift={12} style={{ flex: '1.5 1 0%' }} />
-        </div>
-        <div className="edrow reveal">
           <NativeFrame src="/images/family-pc-9.jpg" alt="Mother kissing her child at golden hour, black and white" w={2000} h={1335} drift={12} style={{ flex: '1.498 1 0%' }} />
           <NativeFrame src="/images/family-pc-12.jpg" alt="Mother and son laughing together" w={2000} h={1335} drift={14} style={{ flex: '1.498 1 0%' }} />
         </div>
