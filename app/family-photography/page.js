@@ -23,7 +23,7 @@ const TIERS = [
     name: 'The Mini',
     price: '$350',
     note: 'A relaxed start',
-    items: ['45-minute session', 'One location', 'Up to 5 people', '15 edited high-res images', 'Private online gallery'],
+    items: ['45-minute session', 'One location', 'Up to 6 people', '15 edited high-res images', 'Private online gallery'],
   },
   {
     name: 'The Signature',
@@ -43,10 +43,10 @@ const TIERS = [
 const FAQ = [
   ['How much do family portrait sessions cost in Los Angeles?', 'Family sessions start at $350 for a 45-minute Mini, $650 for the 90-minute Signature, and $1,500 for a half-day Editorial session. Each one includes a private online gallery of edited, high-resolution images.'],
   ['Where do you photograph family sessions?', 'Wherever fits your family best. We can shoot somewhere that’s special to you, a spot I recommend that suits your style, or right at your own home. Parks, gardens, the beach, a favorite neighborhood, or in-studio are all on the table, and if you’re not sure, I’ll help you choose.'],
-  ['How many people can be in a session?', 'Anywhere from a parent and child to large, multi-generational gatherings. Just let me know your headcount when you reach out and I’ll recommend the right session length.'],
+  ['How many people can be in a session?', 'A family session includes up to 6 people, and pets are welcome. Additional guests are $50 each, up to 15 people total, and larger groups are quoted. Just let me know your headcount when you reach out and I’ll recommend the right session length.'],
   ['Do sessions work with babies and young kids?', 'Absolutely. Family sessions are relaxed and unposed, and I work around naps, snacks, and moods so little ones can just be themselves. The best moments usually happen in between the “posed” ones.'],
   ['What should we wear?', 'Coordinated but not matching, in colors and textures you feel most like yourselves in. I send a full what-to-wear guide once we book so it’s one less thing to think about.'],
-  ['Do you photograph newborns, milestones, and Mother’s Day sessions?', 'Yes, newborn and milestone sessions, Mother’s Day minis, and extended-family reunions are all welcome. Tell me what you’re celebrating and we’ll build the session around it.'],
+  ['Do you photograph milestones and Mother’s Day sessions?', 'Yes, milestone sessions, Mother’s Day minis, and extended-family reunions are all welcome. Tell me what you’re celebrating and we’ll build the session around it. I don’t offer newborn sessions, but families with older babies and toddlers are a great fit, and I’m happy to refer you to a newborn specialist.'],
   ['How soon will we get our photos?', 'Your edited gallery is delivered in a private online gallery, typically within about two weeks.'],
 ]
 
@@ -139,14 +139,14 @@ export default function FamilyPhotography() {
           />
         </div>
         <div className="edrow reveal">
-          <NativeFrame src="/images/family-pc-14.jpg" alt="Mother holding her newborn close, black and white" w={1335} h={2000} drift={14} style={{ flex: '0.667 1 0%' }} />
+          <NativeFrame src="/images/family-pc-14.jpg" alt="Mother holding her baby close, black and white" w={1335} h={2000} drift={14} style={{ flex: '0.667 1 0%' }} />
           <LivingTile
             aspect="3 / 2"
             style={{ flex: '1.5 1 0%' }}
             sizes="(max-width: 760px) 100vw, 55vw"
             delay={1300}
             slides={[
-              { src: '/images/family-pc-15.jpg', alt: 'Parents with their newborn on the front steps, black and white' },
+              { src: '/images/family-pc-15.jpg', alt: 'Parents with their baby on the front steps, black and white' },
               { src: '/images/family-pc-8.jpg', alt: 'Father lifting his baby in a golden wildflower field' },
             ]}
           />
@@ -199,7 +199,7 @@ export default function FamilyPhotography() {
         <div style={{ maxWidth: '760px', margin: '0 auto', color: 'var(--taupe)', lineHeight: 1.75 }}>
           <p style={{ marginBottom: '18px' }}>
             As a Los Angeles family photographer, I create relaxed, editorial family portraits for
-            parents, kids, newborns, and multi-generational families, all with a documentary eye that
+            parents, kids, and multi-generational families, all with a documentary eye that
             keeps things natural rather than stiff or overly posed. Sessions happen on location across
             LA, from the Valley to the Westside, or in-studio.
           </p>

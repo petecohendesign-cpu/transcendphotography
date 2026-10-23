@@ -32,7 +32,7 @@ const TIERS = [
     name: 'The Mini',
     price: '$350',
     note: 'A relaxed start',
-    items: ['45-minute session', 'One location or studio', 'One outfit', '15 edited high-res images', 'Private online gallery'],
+    items: ['45-minute session', 'One location or studio', 'One outfit', '15 edited high-res images', 'Print release included'],
   },
   {
     name: 'The Signature',
@@ -56,7 +56,7 @@ const FAQ = [
   ['Do you help with wardrobe and styling?', 'Yes. Signature and Editorial sessions include wardrobe and styling guidance, and Editorial sessions can add hair and makeup coordination.'],
   ['Do you photograph families?', 'Absolutely. Family sessions are relaxed and unposed, focused on real connection and natural moments rather than stiff, formal poses.'],
   ['What should I wear for a professional headshot?', 'Solid colors you feel confident in, in the style your work calls for, a blazer, a clean shirt, or smart casual. I send a short what-to-wear guide before every session so you arrive camera-ready.'],
-  ['Do you photograph team or corporate headshots?', 'Yes. For teams, I bring a consistent studio setup to your Los Angeles office so everyone’s professional headshots match across your website and LinkedIn.'],
+  ['Do you photograph team or corporate headshots?', 'Yes. Team headshots are $750 for up to 5 people, plus $100 per additional person, with two retouched images each, cropped for LinkedIn, web, and print, and delivered within a week. I bring a consistent setup to your Los Angeles office so everyone’s headshots match across your website and LinkedIn.'],
 ]
 
 const faqSchema = {
@@ -233,7 +233,7 @@ export default function Portraits() {
           <div className="label" style={{ marginBottom: '16px' }}>Family sessions</div>
           <h2 className="h2" style={{ marginBottom: '18px' }}>Here for family portraits?</h2>
           <p style={{ color: 'var(--taupe)', lineHeight: 1.75, marginBottom: '30px' }}>
-            Relaxed, unposed sessions for parents, kids, newborns, and whole families, from a
+            Relaxed, unposed sessions for parents, kids, and whole families, from a
             first Mother&rsquo;s Day to three generations in one frame. See the family work and
             session details on its own page.
           </p>
