@@ -21,29 +21,23 @@ const OFFERS = [
 
 const TIERS = [
   {
-    name: 'Menu Starter',
+    name: 'Starter Shoot',
     price: '$650',
     note: 'Up to 90 minutes',
-    items: ['Up to 90 minutes on-site', 'Up to 8 dishes', '15 edited high-res images'],
+    items: ['Up to 90 minutes on-site', 'Up to 6 dishes or drinks', '15 edited high-res images', 'A few interior & detail shots', 'Delivered in 7 business days'],
   },
   {
-    name: 'Menu Half-Day',
+    name: 'Full Menu Shoot',
     price: '$1,500',
     note: 'Up to 4 hours',
-    items: ['Up to 4 hours on-site', 'Up to 20 dishes plus interiors', '30 edited high-res images'],
-  },
-  {
-    name: 'Full Restaurant Day',
-    price: '$2,800',
-    note: 'Up to 8 hours',
-    items: ['Up to 8 hours on-site', 'Full menu, interiors, chef and team', '70+ edited high-res images'],
+    items: ['Up to 4 hours on-site', 'Up to 15 dishes and 5 drinks', '40 edited high-res images', 'Interiors, exterior, chef & staff, service', 'Delivered in 10 business days'],
   },
 ]
 
 const RETAINER = {
-  name: 'Seasonal Refresh',
+  name: 'Monthly Retainer',
   price: '$1,000',
-  items: ['Monthly shoot, up to 2 hours', 'New dishes, specials, and seasonal content', '30 edited high-res images per month', 'Monthly planning call & priority booking', '3-month minimum'],
+  items: ['One 2-hour shoot per month', '20 edited high-res images per month', '6 to 8 items: new dishes, specials, seasonal', 'Rotating space, staff & lifestyle content', 'Monthly shot list, quarterly planning call', '3-month minimum'],
 }
 
 const STEPS = [
@@ -54,11 +48,12 @@ const STEPS = [
 ]
 
 const FAQ = [
-  ['How much does restaurant food photography cost in Los Angeles?', 'Food shoots start at $650 for the Menu Starter. Half-day and full-day shoots, interiors, and monthly content are quoted based on the number of dishes, locations, and how you’ll use the images.'],
-  ['How many dishes can you shoot?', 'The Menu Starter covers up to 8 dishes. The Half-Day covers up to 20 plus interiors, and the Full Restaurant Day covers a full menu.'],
+  ['How much does restaurant food photography cost in Los Angeles?', 'Food shoots start at $650 for a Starter Shoot and $1,500 for a Full Menu Shoot, with monthly content retainers from $1,000. Larger or custom shoots are quoted based on the number of dishes, locations, and how you’ll use the images.'],
+  ['How many dishes can you shoot?', 'The Starter Shoot covers up to 6 dishes or drinks. The Full Menu Shoot covers up to 15 dishes and 5 drinks, plus interiors, your exterior, and your team. Need more? A custom shoot is quoted to fit your menu.'],
+  ['Do you offer video?', 'Yes. I shoot and edit short vertical clips, plating, pours, and the room, for Reels, TikTok, and Stories, filmed during the same visit as the photos. Video is available as an add-on on any shoot, or built into a monthly retainer.'],
   ['Do you shoot at my restaurant?', 'Yes. I shoot on-site at your restaurant, using your plating, your space, and your light, usually between services so it doesn’t disrupt your guests.'],
   ['Can I use the photos for delivery apps and menus?', 'Absolutely. Every image comes cropped and sized for your menus, website, and delivery platforms like DoorDash, Uber Eats, and Yelp, plus social, with a commercial usage license.'],
-  ['How soon will I get the photos?', 'Edited galleries are delivered quickly so you can get your new menu and social content live without a long wait.'],
+  ['How soon will I get the photos?', 'You get a few sneak-peek images within 48 hours, then your full edited gallery in 7 to 10 business days depending on the package, so you can get your new menu and social content live fast.'],
 ]
 
 const faqSchema = {
@@ -178,7 +173,7 @@ export default function FoodPhotography() {
           <div className="label" style={{ marginBottom: '16px' }}>Investment</div>
           <h2 className="h2">Food & restaurant photography</h2>
         </div>
-        <div className="pricing reveal">
+        <div className="pricing reveal" style={{ gridTemplateColumns: 'repeat(2, 1fr)', maxWidth: '720px', margin: '0 auto' }}>
           {TIERS.map((t, i) => (
             <div key={i} className="tier">
               <div className="tname">{t.name}</div>
