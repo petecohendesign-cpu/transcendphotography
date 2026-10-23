@@ -22,7 +22,7 @@ const STEPS = [
   ['Discovery call', 'We learn your brand, audience, and what success looks like for the project.'],
   ['Creative proposal', 'Custom pricing, a shot list, and a clear creative direction.'],
   ['Production', 'We bring the vision to life with professional gear and a calm set.'],
-  ['Delivery & edits', 'A hi-res gallery with refined editing and revisions until it\u2019s right.'],
+  ['Delivery & edits', 'A hi-res gallery with refined editing and a round of revisions included.'],
 ]
 
 const TIERS = [
@@ -36,13 +36,13 @@ const TIERS = [
     name: 'Half-Day',
     price: '$1,500',
     note: 'Up to 4 hours',
-    items: ['Pre-shoot creative planning', 'One location', '30 edited high-res images', 'Social-ready crops included', 'Commercial usage license'],
+    items: ['Pre-shoot creative planning', 'One location', '40 edited high-res images', 'Social-ready crops included', 'Commercial usage license'],
   },
   {
     name: 'Full-Day',
     price: '$2,800',
     note: 'Up to 8 hours',
-    items: ['Up to 8 hours of production', 'Multiple setups & looks', '70+ edited high-res images', 'Product, lifestyle & team coverage', 'Extended commercial license'],
+    items: ['Up to 8 hours of production', 'Multiple setups & looks', '60 edited high-res images', 'Product, lifestyle & team coverage', 'Extended commercial license'],
   },
 ]
 
@@ -51,15 +51,16 @@ const RETAINER = {
   price: '$1,000',
   from: true,
   note: 'Per month',
-  items: ['One content shoot per month, up to 2 hours', '30 edited high-res images per month', 'Monthly planning call', 'Priority booking & faster delivery', 'Sized for feed, stories, and web', '3-month minimum commitment', 'Larger brands: custom quote'],
+  items: ['One content shoot per month, up to 2 hours', '25 edited high-res images per month', 'Monthly shot list, quarterly planning call', 'Priority booking & faster delivery', 'Sized for feed, stories, and web', '3-month minimum commitment', 'Larger brands: custom quote'],
 }
 
 const FAQ = [
   ['How much does brand photography cost in Los Angeles?', 'My brand photography starts at $650 for a Starter Shoot, $1,500 for a half-day, and $2,800 for a full day, with monthly content retainers from $1,000. Every project gets a custom quote based on your shot list and usage.'],
-  ['What kinds of businesses do you photograph?', 'Restaurants and hospitality, product and e-commerce brands, makers, creative agencies, and personal brands, anyone who needs considered, on-brand imagery that actually sells.'],
+  ['What kinds of businesses do you photograph?', 'Restaurants and hospitality, local service businesses like med spas, gyms, salons, and barbers, realtors (personal branding, not listing photos), product and e-commerce brands, makers, creative agencies, and personal brands, anyone who needs considered, on-brand imagery that actually sells.'],
   ['What areas of Los Angeles do you serve?', "I'm based in Encino and photograph brands across Los Angeles, from Santa Monica and West Hollywood to Downtown LA, Studio City, and the greater San Fernando Valley."],
   ['Can I use the photos for ads and commercial use?', 'Yes. Every brand shoot includes a commercial usage license, with extended licensing available for larger campaigns.'],
   ['Do you offer ongoing content for social media?', 'Yes. My monthly retainer delivers a steady, on-brand library sized for feed, stories, reels, and web, so you always have fresh content ready to post.'],
+  ['Do you offer video?', 'Yes. Short-form vertical video is available as an add-on on any shoot, a handful of clips for reels, ads, and launches, filmed alongside the photos. Ongoing video can be built into a monthly content retainer too.'],
 ]
 
 const CASES = [
@@ -225,7 +226,7 @@ export default function Branding() {
         </div>
         <div style={{ maxWidth: '760px', margin: '0 auto', color: 'var(--taupe)', lineHeight: 1.75 }}>
           <p style={{ marginBottom: '18px' }}>
-            I&rsquo;m a Los Angeles brand and product photographer based in Encino, creating considered visual stories for restaurants, makers, and modern brands across LA, from Santa Monica and West Hollywood to Downtown and the Valley. The goal is always the same: imagery that looks like you, not like everyone else, and that actually moves your business.
+            I&rsquo;m a Los Angeles brand and product photographer based in Encino, creating considered visual stories for restaurants, med spas, gyms, salons, and realtors, product and e-commerce brands, makers, agencies, and personal brands across LA, from Santa Monica and West Hollywood to Downtown and the Valley. The goal is always the same: imagery that looks like you, not like everyone else, and that actually moves your business.
           </p>
           <p>
             From product and <a href="/food-photography">food and restaurant photography</a> to lifestyle and team imagery, I build content that works across your website, ads, and social feed. Curious what goes into it? Read <a href="/blog/what-is-brand-photography">what brand photography is and why it matters</a>, or see a recent <a href="/blog/los-angeles-lifestyle-branding-shoot-bubles">lifestyle branding shoot</a>.
