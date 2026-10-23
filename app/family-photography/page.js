@@ -13,7 +13,7 @@ import FaqAccordion from '../components/FaqAccordion'
 
 const STEPS = [
   ['Reach out', 'Tell me about your family, how many of you there are, and the feeling you want to remember.'],
-  ['Plan it together', 'We pick a location and time, and I share a simple what-to-wear guide so everyone arrives relaxed.'],
+  ['Plan it together', 'We choose a location, somewhere that’s special to your family, a spot I suggest, or your own home, and I share a simple what-to-wear guide so everyone arrives relaxed.'],
   ['The session', 'An easy, unhurried hour or two with gentle direction, built to work around little ones and their moods.'],
   ['Your gallery', 'Warm, hand-edited images in a private online gallery, typically within about two weeks.'],
 ]
@@ -42,7 +42,7 @@ const TIERS = [
 
 const FAQ = [
   ['How much do family portrait sessions cost in Los Angeles?', 'Family sessions start at $350 for a 45-minute Mini, $650 for the 90-minute Signature, and $1,500 for a half-day Editorial session. Each one includes a private online gallery of edited, high-resolution images.'],
-  ['Where do you photograph family sessions?', 'All across Los Angeles, at parks, gardens, the beach, a favorite neighborhood spot, or at home. I shoot in-studio too. If you’re not sure where, I’ll help you choose a setting that fits your family.'],
+  ['Where do you photograph family sessions?', 'Wherever fits your family best. We can shoot somewhere that’s special to you, a spot I recommend that suits your style, or right at your own home. Parks, gardens, the beach, a favorite neighborhood, or in-studio are all on the table, and if you’re not sure, I’ll help you choose.'],
   ['How many people can be in a session?', 'Anywhere from a parent and child to large, multi-generational gatherings. Just let me know your headcount when you reach out and I’ll recommend the right session length.'],
   ['Do sessions work with babies and young kids?', 'Absolutely. Family sessions are relaxed and unposed, and I work around naps, snacks, and moods so little ones can just be themselves. The best moments usually happen in between the “posed” ones.'],
   ['What should we wear?', 'Coordinated but not matching, in colors and textures you feel most like yourselves in. I send a full what-to-wear guide once we book so it’s one less thing to think about.'],
@@ -126,8 +126,17 @@ export default function FamilyPhotography() {
           />
         </div>
         <div className="edrow reveal">
-          <NativeFrame src="/images/family-pc-9.jpg" alt="Mother kissing her child at golden hour, black and white" w={2000} h={1335} drift={12} style={{ flex: '1.498 1 0%' }} />
-          <NativeFrame src="/images/family-pc-12.jpg" alt="Mother and son laughing together" w={2000} h={1335} drift={14} style={{ flex: '1.498 1 0%' }} />
+          <NativeFrame src="/images/family-pc-16.jpg" alt="Extended family gathered under a park gazebo in Los Angeles" w={1333} h={2000} drift={12} style={{ flex: '0.667 1 0%' }} />
+          <LivingTile
+            aspect="3 / 2"
+            style={{ flex: '1.5 1 0%' }}
+            sizes="(max-width: 760px) 100vw, 55vw"
+            delay={1900}
+            slides={[
+              { src: '/images/family-pc-9.jpg', alt: 'Mother kissing her child at golden hour, black and white' },
+              { src: '/images/family-pc-12.jpg', alt: 'Mother and son laughing together' },
+            ]}
+          />
         </div>
         <div className="edrow reveal">
           <NativeFrame src="/images/family-pc-14.jpg" alt="Mother holding her newborn close, black and white" w={1335} h={2000} drift={14} style={{ flex: '0.667 1 0%' }} />
