@@ -8,6 +8,12 @@ export const metadata = {
     description:
       'Restaurant and food photography in Los Angeles, menu, dish, and interior photos that fill tables and sell online. Starting at $650.',
     url: 'https://www.transcendphoto.net/food-photography',
+    type: 'website',
+    images: [{ url: '/og/food.jpg', width: 1200, height: 630, alt: 'Plated pasta at a Los Angeles restaurant' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/og/food.jpg'],
   },
 }
 

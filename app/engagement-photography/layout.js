@@ -8,6 +8,12 @@ export const metadata = {
     description:
       'Relaxed, editorial engagement sessions across Los Angeles, natural, cinematic couples photography at the locations you love, starting at $450.',
     url: 'https://www.transcendphoto.net/engagement-photography',
+    type: 'website',
+    images: [{ url: '/og/engagement.jpg', width: 1200, height: 630, alt: 'Engagement session on the beach at sunset in Los Angeles' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/og/engagement.jpg'],
   },
 }
 
