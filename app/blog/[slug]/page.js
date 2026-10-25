@@ -129,9 +129,11 @@ export default function BlogPost({ params }) {
           <h1 style={{ fontSize: 'clamp(36px,6vw,56px)', fontFamily: 'var(--font-serif), serif', fontWeight: 300, lineHeight: 1.1, marginBottom: '24px' }}>
             {post.title}
           </h1>
-          <p style={{ fontSize: '14px', color: 'var(--taupe)' }}>
-            {post.date && new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-          </p>
+          {post.date && !post.hideDate && (
+            <p style={{ fontSize: '14px', color: 'var(--taupe)' }}>
+              {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+          )}
         </header>
 
         {post.featuredImage && (
@@ -148,7 +150,7 @@ export default function BlogPost({ params }) {
           <div style={{ marginBottom: '60px', ...(post.video.orientation === 'vertical' ? { maxWidth: '405px', marginLeft: 'auto', marginRight: 'auto' } : {}) }}>
             <div style={{ position: 'relative', width: '100%', aspectRatio: post.video.orientation === 'vertical' ? '9 / 16' : '16 / 9', borderRadius: '2px', overflow: 'hidden' }}>
               <iframe
-                src={`https://www.youtube.com/embed/${post.video.id}`}
+                src={`https://www.youtube-nocookie.com/embed/${post.video.id}?rel=0&modestbranding=1&playsinline=1`}
                 title={post.video.title || post.title}
                 loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

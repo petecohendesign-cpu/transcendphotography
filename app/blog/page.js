@@ -55,9 +55,11 @@ export default function Blog() {
                     {post.title}
                   </Link>
                 </h2>
-                <p style={{ fontSize: '14px', color: 'var(--taupe)', marginBottom: '16px' }}>
-                  {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-                </p>
+                {!post.hideDate && (
+                  <p style={{ fontSize: '14px', color: 'var(--taupe)', marginBottom: '16px' }}>
+                    {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                  </p>
+                )}
                 <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--espresso)', lineHeight: 1.5, marginBottom: '16px' }}>
                   {post.excerpt}
                 </p>

@@ -230,7 +230,7 @@ export default function Branding() {
             I&rsquo;m a Los Angeles brand and product photographer based in Encino, creating considered visual stories for restaurants, med spas, gyms, salons, and realtors, product and e-commerce brands, makers, agencies, and personal brands across LA, from Santa Monica and West Hollywood to Downtown and the Valley. The goal is always the same: imagery that looks like you, not like everyone else, and that actually moves your business.
           </p>
           <p>
-            From product and <a href="/food-photography">food and restaurant photography</a> to lifestyle and team imagery, I build content that works across your website, ads, and social feed. Curious what goes into it? Read <a href="/blog/what-is-brand-photography">what brand photography is and why it matters</a>, or see a recent <a href="/blog/los-angeles-lifestyle-branding-shoot-bubles">lifestyle branding shoot</a>.
+            From product and <a href="/food-photography">food and restaurant photography</a> to lifestyle and team imagery, I build content that works across your website, ads, and social feed. Curious what goes into it? Read <a href="/blog/what-is-brand-photography">what brand photography is and why it matters</a>, see a recent <a href="/blog/los-angeles-lifestyle-branding-shoot-bubles">lifestyle branding shoot</a>, or a <a href="/blog/the-city-golf-indoor-golf-video">short-form video for an indoor golf studio in Sherman Oaks</a>.
           </p>
         </div>
         <div style={{ maxWidth: '760px', margin: '52px auto 0' }}>
