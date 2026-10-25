@@ -27,7 +27,7 @@ export default function About() {
         <div>
           <div className="label" style={{ marginBottom: '24px' }}>The story</div>
           <p>I&rsquo;m Pete, a Los Angeles photographer working across weddings, brands, and portraits. For the last decade, my job has been the same in every setting: notice the real moment, and be ready for it.</p>
-          <p>I came to photography sideways, through years as a touring musician and a career in design, and both still shape how I shoot. But the day I photographed my first wedding in 2015, everything else became background.</p>
+          <p>I came to photography sideways, through years as a touring musician and more than a decade as a creative lead and designer in branding and advertising. Both still shape how I shoot: one taught me timing and feel, the other, art direction and story. But the day I photographed my first wedding in 2015, everything else became background.</p>
           <p>Since then it&rsquo;s been hundreds of weddings, sessions, and shoots across two coasts, and I still get the same jolt every time a moment comes together in the frame.</p>
         </div>
       </section>
@@ -42,6 +42,18 @@ export default function About() {
         </div>
         <div className="imgblk" style={{ position: 'relative', height: '560px' }}>
           <Image src="/images/about-self-3.jpg" alt="Pete Cohen on location" fill sizes="(max-width: 900px) 100vw, 50vw" style={{ objectFit: 'cover' }} />
+        </div>
+      </section>
+
+      {/* The differentiator: agency / creative-direction background */}
+      <section className="section wrap reveal center">
+        <div className="label" style={{ marginBottom: '24px' }}>The difference</div>
+        <h2 className="serif" style={{ fontWeight: 300, fontSize: 'clamp(30px,4.5vw,52px)', lineHeight: 1.15, marginBottom: '34px', maxWidth: '15em', marginLeft: 'auto', marginRight: 'auto' }}>
+          I think like an art director,<br />not just a photographer
+        </h2>
+        <div style={{ maxWidth: '680px', margin: '0 auto', textAlign: 'left' }}>
+          <p style={{ marginBottom: '18px' }}>Most photographers learn to make a beautiful image. I spent more than a decade as a creative lead and designer in branding and advertising, directing campaigns, building brand identities, and deciding which images would actually move a business forward.</p>
+          <p>So I don&rsquo;t just show up and shoot. I think about the story, who it&rsquo;s for, and where it will live. It&rsquo;s the same eye I bring to brands like Media.Monks and to a couple&rsquo;s wedding day, the difference between pictures that look nice and images that do a job.</p>
         </div>
       </section>
 
