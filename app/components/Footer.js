@@ -18,6 +18,10 @@ export default function Footer() {
             &nbsp;·&nbsp;
             <a href="tel:2036715273">(203) 671-5273</a>
           </div>
+          <a className="fmember" href="https://www.shermanoaksencinochamber.org" target="_blank" rel="noopener noreferrer">
+            <span className="fmember-label">Proud member</span>
+            <img src="/images/sherman-oaks-chamber-logo.png" alt="Member of the Sherman Oaks Chamber of Commerce" />
+          </a>
         </div>
         <div className="fcols">
           <div className="fcol">

@@ -723,6 +723,10 @@ footer .ftag { font-family: var(--font-serif), serif; font-style: italic; font-s
 footer .fcontact { font-size: 11px; letter-spacing: 0.14em; margin-top: 18px; }
 footer .fcontact a { text-decoration: none; transition: color .4s; }
 footer .fcontact a:hover { color: var(--clay-light); }
+footer .fmember { display: inline-flex; flex-direction: column; gap: 9px; margin-top: 24px; text-decoration: none; }
+footer .fmember-label { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #8f8578; }
+footer .fmember img { width: 190px; height: auto; background: var(--bone); padding: 11px 15px; border-radius: 4px; display: block; transition: transform .3s ease; }
+footer .fmember:hover img { transform: translateY(-2px); }
 footer .fcols { display: flex; gap: 72px; flex-wrap: wrap; }
 footer .fcol { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
 footer .fhead { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--clay-light); margin-bottom: 6px; }
