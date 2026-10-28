@@ -81,7 +81,7 @@ export default function Portraits() {
         title={<>Portraits that capture<br />who you really are</>}
         slides={[
           { src: '/images/portrait-pc-4.jpg',  alt: 'Portrait of a musician with his guitar' },
-          { src: '/images/portrait-pc-1.jpg',  alt: 'Editorial portrait on the Manhattan waterfront' },
+          { src: '/images/portrait-pace-night.jpg',  alt: 'Black and white editorial portrait of actor Dominic Pace at night' },
           { src: '/images/portrait-pc-8.jpg',  alt: 'Father and child portrait' },
           { src: '/images/portrait-pc-9.jpg',  alt: 'Studio headshot' },
           { src: '/images/portrait-pc-6.jpg',  alt: 'Lifestyle portrait outdoors' },
@@ -152,9 +152,6 @@ export default function Portraits() {
         <div className="edrow reveal">
           <NativeFrame src="/images/portrait-christine.jpg" alt="Dramatic editorial portrait" w={1500} h={1001} drift={14} style={{ flex: '1.499 1 0%' }} />
           <NativeFrame src="/images/portrait-heather.jpg" alt="Night portrait with city bokeh" w={1500} h={1001} drift={16} style={{ flex: '1.499 1 0%' }} />
-        </div>
-        <div className="edrow reveal">
-          <NativeFrame src="/images/portrait-james.jpg" alt="Cinematic portrait under string lights" w={1500} h={1001} drift={12} style={{ flex: '1.499 1 0%' }} />
         </div>
         <div className="edrow reveal">
           <NativeFrame src="/images/portrait-family-2.jpg" alt="Family portrait with dog on the waterfront" w={1500} h={1001} drift={12} style={{ flex: '1.499 1 0%' }} />
