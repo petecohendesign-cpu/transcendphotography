@@ -122,7 +122,7 @@ export default function Portraits() {
             sizes="(max-width: 760px) 100vw, 65vw"
             delay={0}
             slides={[
-              { src: '/images/portrait-pc-10.jpg', alt: 'Studio portrait with camera' },
+              { src: '/images/portrait-pc-10.jpg', alt: 'Editorial studio portrait of a man' },
               { src: '/images/portrait-pc-3.jpg', alt: 'Editorial portrait in a parking structure' },
             ]}
           />
@@ -151,10 +151,9 @@ export default function Portraits() {
         </div>
         <div className="edrow reveal">
           <NativeFrame src="/images/portrait-christine.jpg" alt="Dramatic editorial portrait" w={1500} h={1001} drift={14} style={{ flex: '1.499 1 0%' }} />
-          <NativeFrame src="/images/portrait-danilo.jpg" alt="Studio portrait of a man" w={1200} h={1200} drift={10} style={{ flex: '1 1 0%' }} />
+          <NativeFrame src="/images/portrait-heather.jpg" alt="Night portrait with city bokeh" w={1500} h={1001} drift={16} style={{ flex: '1.499 1 0%' }} />
         </div>
         <div className="edrow reveal">
-          <NativeFrame src="/images/portrait-heather.jpg" alt="Night portrait with city bokeh" w={1500} h={1001} drift={16} style={{ flex: '1.499 1 0%' }} />
           <NativeFrame src="/images/portrait-james.jpg" alt="Cinematic portrait under string lights" w={1500} h={1001} drift={12} style={{ flex: '1.499 1 0%' }} />
         </div>
         <div className="edrow reveal">
