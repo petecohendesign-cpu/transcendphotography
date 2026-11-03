@@ -50,7 +50,7 @@ const TIERS = [
 ]
 
 const FAQ = [
-  ['How much do portrait sessions cost in Los Angeles?', 'Sessions start at $350 for a 45-minute Mini, $650 for the 90-minute Signature, and $1,500 for a half-day Editorial session with full creative direction.'],
+  ['How much do portrait sessions cost in Los Angeles?', 'Portrait sessions start at $350. Final pricing depends on session length, locations, and the number of edited images, and every booking gets a quote tailored to what you need.'],
   ['What types of portraits do you photograph?', 'Professional headshots, personal branding portraits, actors and creatives, families, couples, and personal editorial work, all with a relaxed, documentary approach.'],
   ['Do sessions take place in a studio or on location?', 'Both. I shoot in-studio and on location across Los Angeles, and we choose the setting that fits your style and the mood you want.'],
   ['Do you help with wardrobe and styling?', 'Yes. Signature and Editorial sessions include wardrobe and styling guidance, and Editorial sessions can add hair and makeup coordination.'],
@@ -183,16 +183,16 @@ export default function Portraits() {
           <div className="label" style={{ marginBottom: '16px' }}>Investment</div>
           <h2 className="h2">Session pricing</h2>
         </div>
-        <div className="pricing reveal">
-          {TIERS.map((t, i) => (
-            <div key={i} className={`tier${t.feature ? ' feature' : ''}`}>
-              {t.feature && <span className="tbadge">Most popular</span>}
-              <div className="tname">{t.name}</div>
-              <div className="tprice">{t.price}</div>
-              <div className="tnote">{t.note}</div>
-              <ul>{t.items.map((it, j) => <li key={j}>{it}</li>)}</ul>
-            </div>
-          ))}
+        <div className="reveal center" style={{ maxWidth: '620px', margin: '0 auto' }}>
+          <div style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 300, fontSize: 'clamp(44px,8vw,72px)', lineHeight: 1, marginBottom: '20px' }}>
+            Starting at $350
+          </div>
+          <p style={{ color: 'var(--taupe)', lineHeight: 1.75, marginBottom: '32px' }}>
+            From a quick headshot to a half-day editorial session, pricing depends on time,
+            locations, and the number of edited images. Tell me what you have in mind and
+            I&rsquo;ll put together a quote that fits.
+          </p>
+          <a className="btn" href="#inquire">Request pricing</a>
         </div>
         <p className="pricing-note">
           Additional edited images and prints available à la carte. Commercial and press

@@ -197,15 +197,15 @@ export default function EngagementPhotography() {
           <div className="label" style={{ marginBottom: '16px' }}>Investment</div>
           <h2 className="h2">Engagement sessions</h2>
         </div>
-        <div className="pricing reveal" style={{ gridTemplateColumns: 'repeat(2, 1fr)', maxWidth: '720px', margin: '0 auto' }}>
-          {TIERS.map((t, i) => (
-            <div key={i} className="tier">
-              <div className="tname">{t.name}</div>
-              <div className="tprice">{t.price}</div>
-              <div className="tnote">{t.note}</div>
-              <ul>{t.items.map((it, j) => <li key={j}>{it}</li>)}</ul>
-            </div>
-          ))}
+        <div className="reveal center" style={{ maxWidth: '620px', margin: '0 auto' }}>
+          <div style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 300, fontSize: 'clamp(44px,8vw,72px)', lineHeight: 1, marginBottom: '20px' }}>
+            Starting at $450
+          </div>
+          <p style={{ color: 'var(--taupe)', lineHeight: 1.75, marginBottom: '32px' }}>
+            Book a session on its own, or add one to a wedding collection. Pricing depends on
+            time and locations, reach out and I&rsquo;ll put together a quote.
+          </p>
+          <a className="btn" href="#inquire">Request pricing</a>
         </div>
         <p className="pricing-note">
           Engagement sessions are included in The Celebration and The Full Story. Booking The

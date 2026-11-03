@@ -48,8 +48,8 @@ const STEPS = [
 ]
 
 const FAQ = [
-  ['How much does restaurant food photography cost in Los Angeles?', 'Food shoots start at $650 for a Starter Shoot and $1,500 for a Full Menu Shoot, with monthly content retainers from $1,000. Larger or custom shoots are quoted based on the number of dishes, locations, and how you’ll use the images.'],
-  ['How many dishes can you shoot?', 'The Starter Shoot covers up to 6 dishes or drinks. The Full Menu Shoot covers up to 15 dishes and 5 drinks, plus interiors, your exterior, and your team. Need more? A custom shoot is quoted to fit your menu.'],
+  ['How much does restaurant food photography cost in Los Angeles?', 'Food shoots start at $450, scaling up to full menu days and monthly content retainers. Larger or custom shoots are quoted based on the number of dishes, locations, and how you’ll use the images.'],
+  ['How many dishes can you shoot?', 'A focused shoot covers a handful of your signature dishes or drinks; a larger session covers up to 15 dishes and 5 drinks, plus interiors, your exterior, and your team. Need more? A custom shoot is quoted to fit your menu.'],
   ['Do you offer video?', 'Yes. I shoot and edit short vertical clips, plating, pours, and the room, for Reels, TikTok, and Stories, filmed during the same visit as the photos. Video is available as an add-on on any shoot, or built into a monthly retainer.'],
   ['Do you shoot at my restaurant?', 'Yes. I shoot on-site at your restaurant, using your plating, your space, and your light, usually between services so it doesn’t disrupt your guests.'],
   ['Can I use the photos for delivery apps and menus?', 'Absolutely. Every image comes cropped and sized for your menus, website, and delivery platforms like DoorDash, Uber Eats, and Yelp, plus social, with a commercial usage license.'],
@@ -173,29 +173,16 @@ export default function FoodPhotography() {
           <div className="label" style={{ marginBottom: '16px' }}>Investment</div>
           <h2 className="h2">Food & restaurant photography</h2>
         </div>
-        <div className="pricing reveal" style={{ gridTemplateColumns: 'repeat(2, 1fr)', maxWidth: '720px', margin: '0 auto' }}>
-          {TIERS.map((t, i) => (
-            <div key={i} className="tier">
-              <div className="tname">{t.name}</div>
-              <div className="tprice">{t.price}<small> starting</small></div>
-              <div className="tnote">{t.note}</div>
-              <ul>{t.items.map((it, j) => <li key={j}>{it}</li>)}</ul>
-            </div>
-          ))}
-        </div>
-
-        <div className="retainer reveal">
-          <div className="retainer-head">
-            <div>
-              <div className="label" style={{ marginBottom: '10px' }}>Ongoing content</div>
-              <div className="tname" style={{ marginBottom: '4px' }}>{RETAINER.name}</div>
-              <div className="retainer-sub">Keep your menu and feed current with a monthly shoot as dishes and specials change.</div>
-            </div>
-            <div className="retainer-price">
-              From {RETAINER.price}<small>/mo</small>
-            </div>
+        <div className="reveal center" style={{ maxWidth: '620px', margin: '0 auto' }}>
+          <div style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 300, fontSize: 'clamp(44px,8vw,72px)', lineHeight: 1, marginBottom: '20px' }}>
+            Starting at $450
           </div>
-          <ul className="retainer-list">{RETAINER.items.map((it, j) => <li key={j}>{it}</li>)}</ul>
+          <p style={{ color: 'var(--taupe)', lineHeight: 1.75, marginBottom: '32px' }}>
+            From a focused menu shoot to a full restaurant day or monthly content, pricing
+            reflects the number of dishes, locations, and how you&rsquo;ll use the images.
+            Reach out for a tailored quote.
+          </p>
+          <a className="btn" href="#inquire">Request pricing</a>
         </div>
 
         <p className="pricing-note">

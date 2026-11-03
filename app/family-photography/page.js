@@ -41,7 +41,7 @@ const TIERS = [
 ]
 
 const FAQ = [
-  ['How much do family portrait sessions cost in Los Angeles?', 'Family sessions start at $350 for a 45-minute Mini, $650 for the 90-minute Signature, and $1,500 for a half-day Editorial session. Each one includes a private online gallery of edited, high-resolution images.'],
+  ['How much do family portrait sessions cost in Los Angeles?', 'Family sessions start at $350. Final pricing depends on session length, location, and group size, and every booking gets a quote tailored to your family. Each session includes a private online gallery of edited, high-resolution images.'],
   ['Where do you photograph family sessions?', 'Wherever fits your family best. We can shoot somewhere that’s special to you, a spot I recommend that suits your style, or right at your own home. Parks, gardens, the beach, a favorite neighborhood, or in-studio are all on the table, and if you’re not sure, I’ll help you choose.'],
   ['How many people can be in a session?', 'A family session includes up to 6 people, and pets are welcome. Additional guests are $50 each, up to 15 people total, and larger groups are quoted. Just let me know your headcount when you reach out and I’ll recommend the right session length.'],
   ['Do sessions work with babies and young kids?', 'Absolutely. Family sessions are relaxed and unposed, and I work around naps, snacks, and moods so little ones can just be themselves. The best moments usually happen in between the “posed” ones.'],
@@ -173,20 +173,19 @@ export default function FamilyPhotography() {
           <div className="label" style={{ marginBottom: '16px' }}>Investment</div>
           <h2 className="h2">Family session pricing</h2>
         </div>
-        <div className="pricing reveal">
-          {TIERS.map((t, i) => (
-            <div key={i} className={`tier${t.feature ? ' feature' : ''}`}>
-              {t.feature && <span className="tbadge">Most booked</span>}
-              <div className="tname">{t.name}</div>
-              <div className="tprice">{t.price}</div>
-              <div className="tnote">{t.note}</div>
-              <ul>{t.items.map((it, j) => <li key={j}>{it}</li>)}</ul>
-            </div>
-          ))}
+        <div className="reveal center" style={{ maxWidth: '620px', margin: '0 auto' }}>
+          <div style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 300, fontSize: 'clamp(44px,8vw,72px)', lineHeight: 1, marginBottom: '20px' }}>
+            Starting at $350
+          </div>
+          <p style={{ color: 'var(--taupe)', lineHeight: 1.75, marginBottom: '32px' }}>
+            From a relaxed mini to a half-day session, pricing depends on time, location, and
+            group size. Reach out and I&rsquo;ll help you choose the right fit.
+          </p>
+          <a className="btn" href="#inquire">Request pricing</a>
         </div>
         <p className="pricing-note">
-          Family sessions follow my portrait session pricing. Additional edited images and prints
-          are available à la carte, and larger or multi-family gatherings can be quoted on request.
+          Additional edited images and prints are available à la carte, and larger or
+          multi-family gatherings can be quoted on request.
         </p>
       </section>
 

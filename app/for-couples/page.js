@@ -49,7 +49,7 @@ const TIERS = [
 ]
 
 const FAQ = [
-  ['How much does a wedding photographer cost in Los Angeles?', 'Most LA couples invest between $3,000 and $6,000 for wedding photography. My collections start at $3,500 for elopements and $5,000 for full-day coverage, with custom quotes available.'],
+  ['How much does a wedding photographer cost in Los Angeles?', 'My wedding collections start at $3,500. Most couples invest more depending on coverage, hours, and add-ons, and every wedding gets a custom quote built around the day.'],
   ['What areas of Los Angeles do you photograph?', "I'm based in Los Angeles and photograph weddings across Southern California, including Malibu, Pasadena, Santa Monica, Downtown LA, Pacific Palisades, and Palos Verdes, and I travel for destination weddings worldwide. Travel within about 50 miles of LA is included, with anything beyond quoted up front; for destination weddings I arrive the day before."],
   ['Do you offer engagement sessions?', "Yes. Engagement sessions are included in my Celebration and Full Story collections and can be added to any package. They're a relaxed way to get comfortable on camera before the wedding day."],
   ['How many photos will we receive, and when?', 'Each collection includes a private online gallery of edited, high-resolution images, 250+ for an elopement, 600+ for a full-day Celebration, and 800+ for the Full Story. You get a sneak-peek selection within 72 hours (48 hours for the Full Story), and your full gallery in 4 to 6 weeks, up to 8 weeks in peak season.'],
@@ -203,16 +203,15 @@ export default function Weddings() {
           <div className="label" style={{ marginBottom: '16px' }}>Investment</div>
           <h2 className="h2">Wedding collections</h2>
         </div>
-        <div className="pricing reveal">
-          {TIERS.map((t, i) => (
-            <div key={i} className={`tier${t.feature ? ' feature' : ''}`}>
-              {t.feature && <span className="tbadge">Most popular</span>}
-              <div className="tname">{t.name}</div>
-              <div className="tprice">{t.price}<small> starting</small></div>
-              <div className="tnote">{t.note}</div>
-              <ul>{t.items.map((it, j) => <li key={j}>{it}</li>)}</ul>
-            </div>
-          ))}
+        <div className="reveal center" style={{ maxWidth: '620px', margin: '0 auto' }}>
+          <div style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 300, fontSize: 'clamp(44px,8vw,72px)', lineHeight: 1, marginBottom: '20px' }}>
+            Starting at $3,500
+          </div>
+          <p style={{ color: 'var(--taupe)', lineHeight: 1.75, marginBottom: '32px' }}>
+            Every wedding is unique, so I build each collection around your day, your coverage,
+            and your priorities. Reach out for full pricing and to check your date.
+          </p>
+          <a className="btn" href="#inquire">Request pricing</a>
         </div>
         <p className="pricing-note">
           Every wedding is unique, so these collections are a starting point. Available add-ons

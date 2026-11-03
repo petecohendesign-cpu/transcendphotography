@@ -56,7 +56,7 @@ const RETAINER = {
 }
 
 const FAQ = [
-  ['How much does brand photography cost in Los Angeles?', 'My brand photography starts at $650 for a Starter Shoot, $1,500 for a half-day, and $2,800 for a full day, with monthly content retainers from $1,000. Every project gets a custom quote based on your shot list and usage.'],
+  ['How much does brand photography cost in Los Angeles?', 'Brand photography starts at $450, scaling up to half- and full-day productions and monthly content retainers. Every project gets a custom quote based on your shot list, deliverables, and usage.'],
   ['What kinds of businesses do you photograph?', 'Restaurants and hospitality, local service businesses like med spas, gyms, salons, and barbers, realtors (personal branding, not listing photos), product and e-commerce brands, makers, creative agencies, and personal brands, anyone who needs considered, on-brand imagery that actually sells.'],
   ['What areas of Los Angeles do you serve?', "I'm based in Encino and photograph brands across Los Angeles, from Santa Monica and West Hollywood to Downtown LA, Studio City, and the greater San Fernando Valley."],
   ['Can I use the photos for ads and commercial use?', 'Yes. Every brand shoot includes a commercial usage license, with extended licensing available for larger campaigns.'],
@@ -188,35 +188,17 @@ export default function Branding() {
           <div className="label" style={{ marginBottom: '16px' }}>Investment</div>
           <h2 className="h2">Project & retainer rates</h2>
         </div>
-        <div className="pricing reveal">
-          {TIERS.map((t, i) => (
-            <div key={i} className="tier">
-              <div className="tname">{t.name}</div>
-              <div className="tprice">{t.price}<small> starting</small></div>
-              <div className="tnote">{t.note}</div>
-              <ul>{t.items.map((it, j) => <li key={j}>{it}</li>)}</ul>
-            </div>
-          ))}
-        </div>
-
-        <div className="retainer reveal">
-          <div className="retainer-head">
-            <div>
-              <div className="label" style={{ marginBottom: '10px' }}>Ongoing content</div>
-              <div className="tname" style={{ marginBottom: '4px' }}>{RETAINER.name}</div>
-              <div className="retainer-sub">Keep a steady stream of fresh imagery for your feed, site, and ads.</div>
-            </div>
-            <div className="retainer-price">
-              From {RETAINER.price}<small>/mo</small>
-            </div>
+        <div className="reveal center" style={{ maxWidth: '620px', margin: '0 auto' }}>
+          <div style={{ fontFamily: 'var(--font-serif), serif', fontWeight: 300, fontSize: 'clamp(44px,8vw,72px)', lineHeight: 1, marginBottom: '20px' }}>
+            Starting at $450
           </div>
-          <ul className="retainer-list">{RETAINER.items.map((it, j) => <li key={j}>{it}</li>)}</ul>
+          <p style={{ color: 'var(--taupe)', lineHeight: 1.75, marginBottom: '32px' }}>
+            Every brand brief is different. Pricing reflects your shot list, deliverables, and
+            usage, from a focused content shoot to a full production day or an ongoing monthly
+            retainer. Reach out for a tailored proposal.
+          </p>
+          <a className="btn" href="#inquire">Request pricing</a>
         </div>
-
-        <p className="pricing-note">
-          Every brand brief is different, final pricing reflects scope, deliverables, and
-          usage. Reach out for a tailored proposal.
-        </p>
       </section>
 
       {/* Local SEO content + FAQ */}
