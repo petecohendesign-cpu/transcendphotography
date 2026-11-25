@@ -9,6 +9,7 @@ const cormorant = Cormorant_Garamond({
   style: ['normal', 'italic'],
   variable: '--font-serif',
   display: 'swap',
+  fallback: ['Georgia', 'Times New Roman', 'serif'],
 })
 
 const jost = Jost({
@@ -16,6 +17,7 @@ const jost = Jost({
   weight: ['300', '400', '500'],
   variable: '--font-sans',
   display: 'swap',
+  fallback: ['Helvetica Neue', 'Arial', 'sans-serif'],
 })
 
 export const metadata = {
