@@ -543,6 +543,12 @@ html.intro-lock { overflow: hidden; }
 /* Parallax: inner wrapper is taller than the frame so vertical drift never
    reveals an edge. The transform is driven per-frame by ParallaxImage.js. */
 .parallax-inner { position: absolute; top: -18%; left: 0; right: 0; height: 136%; will-change: transform; }
+/* Full-bleed parallax band */
+.pband { position: relative; overflow: hidden; margin: 70px 0; }
+.pband .imgblk { border-radius: 0; }
+.pband-scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(180deg, rgba(20,16,12,.3) 0%, rgba(20,16,12,.12) 42%, rgba(20,16,12,.44) 100%); }
+.pband-cap { position: absolute; inset: 0; z-index: 3; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 24px; pointer-events: none; }
+.pband-cap span { font-family: var(--font-serif), 'Cormorant Garamond', serif; font-style: italic; font-weight: 400; font-size: clamp(26px, 4vw, 52px); color: #fff; text-shadow: 0 2px 30px rgba(0,0,0,.5); letter-spacing: .01em; }
 @media (prefers-reduced-motion: reduce) {
   .parallax-inner { top: 0; height: 100%; transform: none !important; }
 }

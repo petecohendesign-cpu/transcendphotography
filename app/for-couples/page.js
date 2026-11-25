@@ -7,6 +7,7 @@ import HoneyBook from '../components/HoneyBook'
 import PageHeroSlideshow from '../components/PageHeroSlideshow'
 import LivingTile from '../components/LivingTile'
 import NativeFrame from '../components/NativeFrame'
+import ParallaxImage from '../components/ParallaxImage'
 import QuickContact from '../components/QuickContact'
 import TrustStrip from '../components/TrustStrip'
 import FaqAccordion from '../components/FaqAccordion'
@@ -158,6 +159,20 @@ export default function Weddings() {
           <NativeFrame src="/images/wedding-pc-24.jpg" alt="Bride and bridesmaids from behind with bouquets" w={1500} h={1001} drift={22} style={{ flex: '1.499 1 0%' }} />
           <NativeFrame src="/images/wedding-pc-18.jpg" alt="Winery cellar reception table" w={2400} h={1602} drift={16} style={{ flex: '1.498 1 0%' }} />
         </div>
+      </section>
+
+      {/* Full-bleed parallax moment */}
+      <section className="pband reveal">
+        <ParallaxImage
+          src="/images/wedding-pc-10.jpg"
+          alt="Bride and groom walking by the water at golden hour"
+          speed={0.18}
+          sizes="100vw"
+          objectPosition="center 45%"
+          style={{ height: 'clamp(380px, 72vh, 760px)', borderRadius: 0 }}
+        />
+        <div className="pband-scrim" />
+        <div className="pband-cap"><span>The day, exactly how it felt</span></div>
       </section>
 
       <section className="section wrap reveal">
