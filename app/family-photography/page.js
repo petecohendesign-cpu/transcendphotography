@@ -157,6 +157,26 @@ export default function FamilyPhotography() {
         </div>
       </section>
 
+      {/* Featured journal post */}
+      <section className="section wrap reveal" style={{ paddingTop: 0 }}>
+        <a href="/blog/at-home-family-session-los-angeles" className="jfeature">
+          <div
+            className="jf-img"
+            style={{ backgroundImage: 'url(/blog-images/at-home-family-session-los-angeles-featured.jpg)' }}
+            aria-hidden="true"
+          />
+          <div className="jf-body">
+            <div className="label">From the journal</div>
+            <div className="jf-title">At-home family sessions:<br />a guide to in-home photography</div>
+            <p className="jf-text">
+              Why in-home sessions feel so natural, what they look like from soft indoor
+              light to the backyard, and how to prepare, with a recent session in Burbank.
+            </p>
+            <span className="arrow">Read the guide →</span>
+          </div>
+        </a>
+      </section>
+
       <section className="section" style={{ background: 'var(--bone-2)' }}>
         <div className="reveal center" style={{ marginBottom: '60px' }}>
           <div className="label" style={{ marginBottom: '16px' }}>How it works</div>
