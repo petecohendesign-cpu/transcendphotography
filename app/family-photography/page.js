@@ -71,7 +71,7 @@ export default function FamilyPhotography() {
         label="Family Sessions"
         title={<>Family portraits that<br />feel like home</>}
         slides={[
-          { src: '/images/family-pc-4.jpg',  alt: 'Mother in a yellow dress and her daughters on a park bridge' },
+          { src: '/images/family-pc-17.jpg', alt: 'Family nuzzling their baby in a tender embrace, black and white' },
           { src: '/images/family-pc-10.jpg', alt: 'Family of four with their dog in a wildflower field' },
           { src: '/images/family-pc-8.jpg',  alt: 'Father lifting his baby in a golden wildflower field' },
           { src: '/images/family-pc-13.jpg', alt: 'Family with their dog and young son outdoors in Los Angeles' },
@@ -153,16 +153,7 @@ export default function FamilyPhotography() {
         </div>
         <div className="edrow reveal">
           <NativeFrame src="/images/family-pc-18.jpg" alt="Mother and daughter on a garden path" w={1333} h={2000} drift={14} style={{ flex: '0.667 1 0%' }} />
-          <LivingTile
-            aspect="3 / 2"
-            style={{ flex: '1.5 1 0%' }}
-            sizes="(max-width: 760px) 100vw, 55vw"
-            delay={1600}
-            slides={[
-              { src: '/images/family-pc-17.jpg', alt: 'Family nuzzling their baby, black and white' },
-              { src: '/images/family-pc-19.jpg', alt: 'Family of four relaxing on a blanket in a Los Angeles garden' },
-            ]}
-          />
+          <NativeFrame src="/images/family-pc-19.jpg" alt="Family of four relaxing on a blanket in a Los Angeles garden" w={2000} h={1333} drift={12} style={{ flex: '1.5 1 0%' }} />
         </div>
       </section>
 
