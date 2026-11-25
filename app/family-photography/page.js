@@ -151,6 +151,19 @@ export default function FamilyPhotography() {
             ]}
           />
         </div>
+        <div className="edrow reveal">
+          <NativeFrame src="/images/family-pc-18.jpg" alt="Mother and daughter on a garden path" w={1333} h={2000} drift={14} style={{ flex: '0.667 1 0%' }} />
+          <LivingTile
+            aspect="3 / 2"
+            style={{ flex: '1.5 1 0%' }}
+            sizes="(max-width: 760px) 100vw, 55vw"
+            delay={1600}
+            slides={[
+              { src: '/images/family-pc-17.jpg', alt: 'Family nuzzling their baby, black and white' },
+              { src: '/images/family-pc-19.jpg', alt: 'Family of four relaxing on a blanket in a Los Angeles garden' },
+            ]}
+          />
+        </div>
       </section>
 
       <section className="section" style={{ background: 'var(--bone-2)' }}>
