@@ -72,7 +72,7 @@ export default function FamilyPhotography() {
         title={<>Family portraits that<br />feel like home</>}
         slides={[
           { src: '/images/family-pc-17.jpg', alt: 'Family nuzzling their baby in a tender embrace, black and white' },
-          { src: '/images/family-pc-10.jpg', alt: 'Family of four with their dog in a wildflower field' },
+          { src: '/images/family-pc-10.jpg', alt: 'Family of four together in a wildflower field at golden hour' },
           { src: '/images/family-pc-8.jpg',  alt: 'Father lifting his baby in a golden wildflower field' },
           { src: '/images/family-pc-13.jpg', alt: 'Family with their dog and young son outdoors in Los Angeles' },
         ]}
@@ -96,6 +96,10 @@ export default function FamilyPhotography() {
       <section className="wrap" style={{ paddingBottom: '110px' }}>
         {/* Editorial rows: every image at its native aspect ratio, zero cropping. */}
         <div className="edrow reveal">
+          <NativeFrame src="/images/family-pc-18.jpg" alt="Mother and daughter on a garden path" w={1333} h={2000} drift={14} style={{ flex: '0.667 1 0%' }} />
+          <NativeFrame src="/images/family-pc-19.jpg" alt="Family of four relaxing on a blanket in a Los Angeles garden" w={2000} h={1333} drift={12} style={{ flex: '1.5 1 0%' }} />
+        </div>
+        <div className="edrow reveal">
           <NativeFrame src="/images/family-pc-7.jpg" alt="Mother and child walking a wildflower path at golden hour" w={2000} h={1461} drift={14} style={{ flex: '1.369 1 0%' }} />
           <LivingTile
             aspect="3 / 2"
@@ -103,7 +107,7 @@ export default function FamilyPhotography() {
             sizes="(max-width: 760px) 100vw, 55vw"
             delay={0}
             slides={[
-              { src: '/images/family-pc-10.jpg', alt: 'Family of four with their dog in a wildflower field' },
+              { src: '/images/family-pc-10.jpg', alt: 'Family of four together in a wildflower field at golden hour' },
               { src: '/images/family-pc-13.jpg', alt: 'Family with their dog and young son outdoors' },
             ]}
           />
@@ -150,10 +154,6 @@ export default function FamilyPhotography() {
               { src: '/images/family-pc-8.jpg', alt: 'Father lifting his baby in a golden wildflower field' },
             ]}
           />
-        </div>
-        <div className="edrow reveal">
-          <NativeFrame src="/images/family-pc-18.jpg" alt="Mother and daughter on a garden path" w={1333} h={2000} drift={14} style={{ flex: '0.667 1 0%' }} />
-          <NativeFrame src="/images/family-pc-19.jpg" alt="Family of four relaxing on a blanket in a Los Angeles garden" w={2000} h={1333} drift={12} style={{ flex: '1.5 1 0%' }} />
         </div>
       </section>
 
