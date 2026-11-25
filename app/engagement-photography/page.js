@@ -145,7 +145,7 @@ export default function EngagementPhotography() {
               { src: '/images/engagement-pc-6.jpg', alt: 'Engagement session under a grand archway', pos: 'center 90%' },
               { src: '/images/engagement-pc-3.jpg', alt: 'Engagement session in a garden pavilion' },
               { src: '/images/engagement-pc-10.jpg', alt: 'Engagement couple walking together' },
-              { src: '/images/engagement-pc-1.jpg', alt: 'Engagement session under a garden arch' },
+              { src: '/images/engagement-pc-24.jpg', alt: 'Engagement couple on the beach at sunset in Malibu' },
             ]}
           />
           <LivingTile
@@ -154,7 +154,7 @@ export default function EngagementPhotography() {
             delay={2500}
             slides={[
               { src: '/images/engagement-pc-14.jpg', alt: 'Engagement couple dip on the beach at sunset', pos: 'center 40%' },
-              { src: '/images/engagement-pc-12.jpg', alt: 'Engagement session by the lake at sunset', pos: 'center 40%' },
+              { src: '/images/engagement-pc-25.jpg', alt: 'Engagement couple on a garden footbridge in Los Angeles', pos: 'center 40%' },
             ]}
           />
           <LivingTile
@@ -162,7 +162,7 @@ export default function EngagementPhotography() {
             sizes="(max-width: 900px) 100vw, 40vw"
             delay={4200}
             slides={[
-              { src: '/images/engagement-pc-13.jpg', alt: 'Engagement session dancing on the beach' },
+              { src: '/images/engagement-pc-26.jpg', alt: 'Engagement couple holding hands in a brick garden pergola', pos: 'center 40%' },
               { src: '/images/engagement-pc-7.jpg', alt: 'Engagement session at Pasadena City Hall', pos: 'center 60%' },
             ]}
           />
