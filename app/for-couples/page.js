@@ -76,6 +76,7 @@ export default function Weddings() {
       <Reveal />
 
       <PageHeroSlideshow
+        parallax
         label="Weddings & Couples"
         title={<>Your day, preserved<br />in images you'll treasure forever</>}
         slides={[
@@ -116,7 +117,7 @@ export default function Weddings() {
         {/* Editorial rows: every image at its native aspect ratio, zero cropping.
             flex-grow = aspect ratio, so items in a row share one height. */}
         <div className="edrow reveal">
-          <NativeFrame src="/images/wedding-pc-12.jpg" alt="Bride and groom silhouetted in a doorway" w={1000} h={1498} drift={14} style={{ flex: '0.668 1 0%' }} />
+          <NativeFrame src="/images/wedding-pc-12.jpg" alt="Bride and groom silhouetted in a doorway" w={1000} h={1498} drift={22} style={{ flex: '0.668 1 0%' }} />
           <LivingTile
             aspect="3 / 2"
             style={{ flex: '1.5 1 0%' }}
@@ -131,8 +132,8 @@ export default function Weddings() {
           />
         </div>
         <div className="edrow reveal">
-          <NativeFrame src="/images/wedding-pc-1.jpg" alt="Bride and groom hands with engagement ring" w={1000} h={667} drift={12} style={{ flex: '1.5 1 0%' }} />
-          <NativeFrame src="/images/wedding-pc-13.jpg" alt="Ring bearers holding a sign" w={1500} h={1001} drift={20} style={{ flex: '1.499 1 0%' }} />
+          <NativeFrame src="/images/wedding-pc-1.jpg" alt="Bride and groom hands with engagement ring" w={1000} h={667} drift={18} style={{ flex: '1.5 1 0%' }} />
+          <NativeFrame src="/images/wedding-pc-13.jpg" alt="Ring bearers holding a sign" w={1500} h={1001} drift={30} style={{ flex: '1.499 1 0%' }} />
         </div>
         <div className="edrow reveal">
           <LivingTile
@@ -147,15 +148,15 @@ export default function Weddings() {
               { src: '/images/wedding-pc-3.jpg', alt: 'Groom buttoning his jacket while getting ready' },
             ]}
           />
-          <NativeFrame src="/images/wedding-pc-23.jpg" alt="Sparkler send-off, bride and groom walking through the crowd" w={2000} h={1335} drift={16} style={{ flex: '1.498 1 0%' }} />
+          <NativeFrame src="/images/wedding-pc-23.jpg" alt="Sparkler send-off, bride and groom walking through the crowd" w={2000} h={1335} drift={26} style={{ flex: '1.498 1 0%' }} />
         </div>
         <div className="edrow reveal">
-          <NativeFrame src="/images/wedding-pc-22.jpg" alt="Bridal details, shoes, rings, and invitation" w={2400} h={1600} drift={12} style={{ flex: '1.5 1 0%' }} />
-          <NativeFrame src="/images/wedding-pc-20.png" alt="Bride with flower girl in black and white" w={1000} h={1250} drift={18} style={{ flex: '0.8 1 0%' }} />
+          <NativeFrame src="/images/wedding-pc-22.jpg" alt="Bridal details, shoes, rings, and invitation" w={2400} h={1600} drift={20} style={{ flex: '1.5 1 0%' }} />
+          <NativeFrame src="/images/wedding-pc-20.png" alt="Bride with flower girl in black and white" w={1000} h={1250} drift={28} style={{ flex: '0.8 1 0%' }} />
         </div>
         <div className="edrow reveal">
-          <NativeFrame src="/images/wedding-pc-24.jpg" alt="Bride and bridesmaids from behind with bouquets" w={1500} h={1001} drift={14} style={{ flex: '1.499 1 0%' }} />
-          <NativeFrame src="/images/wedding-pc-18.jpg" alt="Winery cellar reception table" w={2400} h={1602} drift={10} style={{ flex: '1.498 1 0%' }} />
+          <NativeFrame src="/images/wedding-pc-24.jpg" alt="Bride and bridesmaids from behind with bouquets" w={1500} h={1001} drift={22} style={{ flex: '1.499 1 0%' }} />
+          <NativeFrame src="/images/wedding-pc-18.jpg" alt="Winery cellar reception table" w={2400} h={1602} drift={16} style={{ flex: '1.498 1 0%' }} />
         </div>
       </section>
 
