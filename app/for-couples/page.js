@@ -170,11 +170,12 @@ export default function Weddings() {
             sizes="(max-width: 800px) 100vw, 760px"
             delay={0}
             slides={[
+              { src: '/images/engagement-pc-15.jpg', alt: 'Engagement couple embracing under a garden archway in Los Angeles' },
+              { src: '/images/engagement-pc-19.jpg', alt: 'Engagement couple dancing on the beach at sunset' },
               { src: '/images/engagement-pc-9.jpg', alt: 'Engagement session in Chinatown at night', pos: '22% center' },
-              { src: '/images/engagement-pc-20.jpg', alt: 'Engagement session at Echo Park Lake in Los Angeles' },
-              { src: '/images/engagement-pc-21.jpg', alt: 'Engagement session on the beach at sunset' },
-              { src: '/images/engagement-pc-22.jpg', alt: 'Engagement session with the downtown Los Angeles skyline' },
-              { src: '/images/engagement-pc-23.jpg', alt: 'Engagement session on a tree-lined path in autumn' },
+              { src: '/images/engagement-pc-17.jpg', alt: 'Engagement couple laughing beneath a tree at golden hour' },
+              { src: '/images/engagement-pc-16.jpg', alt: 'Engagement couple in a garden pavilion at golden hour' },
+              { src: '/images/engagement-pc-18.jpg', alt: 'Engagement couple kissing on a bench under an archway, black and white' },
             ]}
           />
         </div>
