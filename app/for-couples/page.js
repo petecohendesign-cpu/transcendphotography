@@ -171,8 +171,6 @@ export default function Weddings() {
           objectPosition="center 45%"
           style={{ height: 'clamp(380px, 72vh, 760px)', borderRadius: 0 }}
         />
-        <div className="pband-scrim" />
-        <div className="pband-cap"><span>The day, exactly how it felt</span></div>
       </section>
 
       <section className="section wrap reveal">
