@@ -80,8 +80,9 @@ export default function Portraits() {
         label="Portrait Sessions"
         title={<>Portraits that capture<br />who you really are</>}
         slides={[
-          { src: '/images/portrait-pc-4.jpg',  alt: 'Portrait of a musician with his guitar' },
           { src: '/images/portrait-pace-night.jpg',  alt: 'Black and white editorial portrait of actor Dominic Pace at night' },
+          { src: '/images/portrait-rosa-family.jpg',  alt: 'Family of four together in a Los Angeles garden at golden hour', pos: 'center 40%' },
+          { src: '/images/portrait-pc-4.jpg',  alt: 'Portrait of a musician with his guitar' },
           { src: '/images/portrait-pc-8.jpg',  alt: 'Father and child portrait' },
           { src: '/images/portrait-pc-9.jpg',  alt: 'Studio headshot' },
           { src: '/images/portrait-pc-6.jpg',  alt: 'Lifestyle portrait outdoors' },
