@@ -78,7 +78,7 @@ export default function Portraits() {
 
       <PageHeroSlideshow
         label="Portrait Sessions"
-        title={<>Portraits that capture<br />who you really are</>}
+        title={<>Be seen,<br />as you are</>}
         slides={[
           { src: '/images/portrait-pace-night.jpg',  alt: 'Black and white editorial portrait of actor Dominic Pace at night' },
           { src: '/images/portrait-rosa-family.jpg',  alt: 'Family of four together in a Los Angeles garden at golden hour', pos: 'center 40%' },
