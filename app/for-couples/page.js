@@ -164,8 +164,8 @@ export default function Weddings() {
       {/* Full-bleed parallax moment */}
       <section className="pband reveal">
         <ParallaxImage
-          src="/images/wedding-pc-10.jpg"
-          alt="Bride and groom walking by the water at golden hour"
+          src="/images/wedding-pc-26.jpg"
+          alt="Bride and groom in a vineyard at golden hour"
           speed={0.18}
           sizes="100vw"
           objectPosition="center 45%"
